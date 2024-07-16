@@ -132,6 +132,17 @@ Primary use:
   }
 }
 
+.dis{
+  /* disable highlight and drag */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+
+
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ Simple slide100 ]*/
@@ -208,6 +219,15 @@ Primary use:
   line-height: 1.1;
 }
 
+.l1-txt3 {
+  font-family: "Macondo Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 40px;
+  color: #fff;
+  line-height: 1.1;
+}
 
 /*==================================================================
    SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
@@ -521,6 +541,11 @@ Primary use:
   /*---------------------------------------------*/
    .respon1 {
     font-size: 80px;
+  }
+
+  .l1-txt3{
+    font-size: 30px;
+  
   }
   
 }
