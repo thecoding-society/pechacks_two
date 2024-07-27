@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap");
+
+:root {
+  --primary-color: #ff833e;
+  --primary-color-dark: #db6f35;
+  --text-dark: #333333;
+  --text-light: #767268;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Bebas Neue", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color)
+}
+
+img {
+  width: 100%;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 30px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--white);
+}
+
+.nav__logo a img {
+  width: 200px;
+}
+
+.header__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem 2rem;
+  display: grid;
+  gap: 2rem;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.header__image img {
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+.header__content .con-1,
+.header__content .con-2 {
+  margin-bottom: .5rem;
+  font-family: var(--header-font);
+  color: var(--text-dark);
+}
+
+.header__content .con-1 {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 5.5rem;
+}
+
+.header__content .con-2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 5.5rem;
+}
+
+.header__content h1 span {
+  color: var(--primary-color);
+}
+
+.nav__btns button {
+  width: fit-content;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-style: var(--header-font);
+  white-space: nowrap;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header__content button:hover,
+.nav__btns button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+@media (min-width: 768px) {
+  nav {
+    max-width: var(--max-width);
+    margin: auto;
+  }
+
+  .nav__header {
+    background-color: var(--white);
+  }
+
+  .nav__logo a {
+    color: var(--text-dark);
+  }
+
+  .nav__btns {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sign__in {
+    color: var(--white);
+    background-color: var(--primary-color);
+  }
+
+  .sign__in:hover {
+    background-color: var(--primary-color-dark);
+  }
+
+  .header__container {
+    padding-block: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .header__content :is(h1, p) {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__content button {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav {
+    max-width: 900px;
+  }
+  .nav__btns a button {
+    width: 150px;
+    font-size: .8rem;
+    padding: .8rem;
+  }
+  .nav__logo a img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__content .con-1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 2px;
+  }
+  
+  .header__content .con-2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .header__container {
+    padding: 1.5rem 1rem 2rem;
+  }
+  .nav__btns a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  .main-container {
+    border-radius: 10px;
+  }
+}
