@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap");
 
 :root {
   --primary-color: #ff833e;
@@ -18,10 +18,28 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color)
 }
 
 img {
   width: 100%;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 30px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: white;
 }
 
 nav {
@@ -146,35 +164,46 @@ nav {
     width: fit-content;
   }
 }
-@media (max-width: 500px){
-    .nav{
-        max-width: 900px;
-    }
-    .nav__btns a button{
-        width: 150px;
-        font-size: .8rem;
-        padding: .8rem;
-    }
-    .nav__logo a img{
-        width: 120px;
-    }
 
+@media (max-width: 500px) {
+  .nav {
+    max-width: 900px;
+  }
+  .nav__btns a button {
+    width: 150px;
+    font-size: .8rem;
+    padding: .8rem;
+  }
+  .nav__logo a img {
+    width: 120px;
+  }
 }
-@media (max-width: 768px){
-    .header__content .con-1 {
-        font-size: 2.5rem;
-        font-weight: 400;
-        line-height: 3rem;
-        letter-spacing: 2px;
-      }
-      
-      .header__content .con-2 {
-        font-size: 1.5rem;
-        font-weight: 400;
-        line-height: 2.5rem;
-        letter-spacing: 2px;
-      }
-      .header__container {
-        padding: 3rem 1rem 2rem;
-      }
+
+@media (max-width: 768px) {
+  .header__content .con-1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 2px;
+  }
+  
+  .header__content .con-2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .header__container {
+    padding: 1.5rem 1rem 2rem;
+  }
+  .nav__btns a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  .main-container {
+    border-radius: 10px;
+  }
 }
