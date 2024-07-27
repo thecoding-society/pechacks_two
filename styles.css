@@ -91,7 +91,7 @@ nav {
 }
 
 .header__content .con-2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 5.5rem;
 }
@@ -105,25 +105,28 @@ nav {
   padding: 1rem 2rem;
   outline: none;
   border: none;
-  font-size: 1rem;
+  font-family: var(--header-font);
+  letter-spacing: 2px;
+  font-size: 1.4rem;
   font-style: var(--header-font);
   white-space: nowrap;
   color: var(--white);
-  background-color: var(--primary-color);
+  background-color: var(--text-dark);
   border-radius: 10px;
-  transition: 0.3s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
 .header__content button:hover,
 .nav__btns button:hover {
-  background-color: var(--primary-color-dark);
+  background-color: #fa6516;
 }
 
 @media (min-width: 768px) {
   nav {
     max-width: var(--max-width);
     margin: auto;
+    padding: auto;
   }
 
   .nav__header {
@@ -164,21 +167,6 @@ nav {
     width: fit-content;
   }
 }
-
-@media (max-width: 500px) {
-  .nav {
-    max-width: 900px;
-  }
-  .nav__btns a button {
-    width: 150px;
-    font-size: .8rem;
-    padding: .8rem;
-  }
-  .nav__logo a img {
-    width: 120px;
-  }
-}
-
 @media (max-width: 768px) {
   body {
     background-color: var(--white);
@@ -209,4 +197,26 @@ nav {
   .main-container {
     border-radius: 10px;
   }
+  nav {
+    padding: 10px 0;
+  }
+  .nav__header{
+    padding: 1rem 0 ;
+  }
 }
+
+@media (max-width: 500px) {
+  nav {
+    padding: 10px 0;
+    max-width: 900px;
+  }
+  .nav__btns a button {
+    /* width: 150px; */
+    font-size: .9rem;
+    padding: .8rem;
+  }
+  .nav__logo a img {
+    width: 150px;
+  }
+}
+
