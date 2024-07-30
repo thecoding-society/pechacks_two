@@ -543,6 +543,10 @@ Header Style
   color: #fff;
 }
 
+.container .logo{
+  width: 200px;
+}
+
 .visible{
   display:inline !important;
 }
@@ -656,6 +660,9 @@ Header Style
     background: #fff;
     padding-left: 0px !important;
     padding-right: 0px !important;
+  }
+  .container .logo{
+    width: 140px;
   }
   
 }
@@ -1635,10 +1642,10 @@ Footer Style
 --------------------------------------------- 
 */
 
-footer {
+/* footer {
   margin-top: 150px;
   position: relative;
-  background-color: #7a6ad8;
+  background-color: white;
   vertical-align: middle;
   min-height: 150px;
   border-radius: 150px 150px 0px 0px;
@@ -1663,7 +1670,7 @@ footer p a:hover {
 }
 
 footer::before {
-  background: url(../images/contact-dec-01.png);
+  background: url(../images/contact-dec.png);
   position: absolute;
   left: 30px;
   transform: rotate(180deg);
@@ -1673,7 +1680,7 @@ footer::before {
   height: 119px;
   content: '';
   z-index: 2;
-}
+} */
 
 /* 
 ---------------------------------------------
