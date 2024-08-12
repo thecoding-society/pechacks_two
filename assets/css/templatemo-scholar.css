@@ -132,10 +132,14 @@ body {
 .section {
   padding-top: 30px;
   margin-top: 120px;
+  background: #3b5d50;
+  position: center;
+  
 }
 
 .section-heading {
   margin-bottom: 60px;
+  position: center;
 }
 
 .section-heading h2 {
@@ -144,6 +148,7 @@ body {
   text-transform: capitalize;
   margin: 20px 0;
   line-height: 44px;
+  position: center;
 }
 
 .section-heading h2 em {
@@ -169,6 +174,7 @@ body {
   padding: 0px 25px;
   border-radius: 20px;
   transition: all .3s;
+
 }
 
 .main-button a:hover {
@@ -682,15 +688,15 @@ Banner Style
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/banner-item-01.jpg);
+  background-image: url(../images/Banner_1.JPG);
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/banner-item-02.jpg);
+  background-image: url(../images/Banner_2.JPG);
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/banner-item-03.jpg);
+  background-image: url(../images/Banner_3.JPG);
 }
 
 .main-banner .item {
@@ -786,7 +792,7 @@ Banner Style
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   opacity: 1;
-  transition: all .3s;
+  transition: all .1s;
 }
 
 .main-banner .owl-nav .owl-prev i {
@@ -822,7 +828,7 @@ Services Style
   display: inline-block;
   text-align: center;
   line-height: 190px;
-  background-color: #7a6ad8;
+  background-color: #3b5d50;
   border-radius: 50%;
   position: absolute;
   right: 0;
@@ -837,7 +843,7 @@ Services Style
 .services .service-item .main-content {
   border-radius: 25px;
   padding: 80px 30px 50px 30px;
-  background-color: #f1f0fe;
+  background-color:#7dadb6;
   margin-bottom: 30px;
   margin-right: 80px;
   transition: all .4s;
@@ -852,7 +858,7 @@ Services Style
 }
 
 .services .service-item p {
-  color: #4a4a4a;
+  color: #ffffff;
   margin-bottom: 25px;
 }
 
