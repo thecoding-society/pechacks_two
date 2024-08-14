@@ -1919,3 +1919,95 @@ body {
     width: 95%;
   }
 }
+
+
+/*--------------------------------------------- */
+/* Domains Styles */
+.domains-container {
+  position: relative;
+  width: 600px; /* Increased container size */
+  height: 500px; /* Increased container size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.domains-container .center {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #FF5722;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+}
+
+.domains-container .box {
+  position: absolute;
+  width: 100px;  /* Reduced size for better spacing */
+  height: 100px; /* Reduced size for better spacing */
+  background-color: #4CAF50;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+}
+
+.domains-container .box:nth-child(2) { background-color: #4CAF50; }
+.domains-container .box:nth-child(3) { background-color: #FF5722; }
+.domains-container .box:nth-child(4) { background-color: #2196F3; }
+.domains-container .box:nth-child(5) { background-color: #FFC107; }
+.domains-container .box:nth-child(6) { background-color: #9C27B0; }
+.domains-container .box:nth-child(7) { background-color: #3F51B5; }
+.domains-container .box:nth-child(8) { background-color: #4CAF50; }
+.domains-container .box:nth-child(9) { background-color: #FF5722; }
+.domains-container .box:nth-child(10) { background-color: #2196F3; }
+.domains-container .box:nth-child(11) { background-color: #FFC107; }
+.domains-container .box:nth-child(12) { background-color: #9C27B0; }
+.domains-container .box:nth-child(13) { background-color: #3F51B5; }
+
+
+/* sponsers style */
+/* Styles for the sponsors container */
+.sponsors-container {
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: 200%; /* Adjust this based on the number of images */
+  animation: scroll 30s linear infinite;
+}
+
+.slider-track img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Animation for the scrolling effect */
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}

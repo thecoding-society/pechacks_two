@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap");
 
 :root {
   --primary-color: #ff833e;
@@ -212,11 +212,45 @@ nav {
   }
   .nav__btns a button {
     /* width: 150px; */
-    font-size: .9rem;
+    /* font-size: .9rem;
     padding: .8rem;
   }
   .nav__logo a img {
     width: 150px;
   }
+} */ 
+
+/*-------------------------------------------------------------------------------------------------------------------------------- */ 
+
+/* Styles for the sponsors container */
+.sponsors-container {
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
 }
 
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: 200%; /* Adjust this based on the number of images */
+  animation: scroll 30s linear infinite;
+}
+
+.slider-track img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Animation for the scrolling effect */
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
