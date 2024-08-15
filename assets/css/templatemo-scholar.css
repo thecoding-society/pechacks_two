@@ -1925,24 +1925,29 @@ body {
 /* Domains Styles */
 .domains-container {
   position: relative;
-  width: 600px; /* Increased container size */
-  height: 500px; /* Increased container size */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  max-width: 800px; /* Maximum width for larger screens */
+  max-height: 800px; /* Maximum height for larger screens */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center the elements horizontally */
+  align-items: center; /* Center the elements vertically */
+  margin: 0 auto; /* Center the container within the page */
 }
 
 .domains-container .center {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 10vw; /* Width responsive to viewport width */
+  height: 10vw; /* Height responsive to viewport width */
+  max-width: 150px; /* Maximum width */
+  max-height: 150px; /* Maximum height */
   background-color: #FF5722;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   z-index: 10;
@@ -1950,20 +1955,23 @@ body {
 
 .domains-container .box {
   position: absolute;
-  width: 100px;  /* Reduced size for better spacing */
-  height: 100px; /* Reduced size for better spacing */
+  width: 12vw;  /* Width responsive to viewport width */
+  height: 12vw; /* Height responsive to viewport width */
+  max-width: 120px; /* Maximum width */
+  max-height: 120px; /* Maximum height */
   background-color: #4CAF50;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: bold;
   text-align: center;
   opacity: 0; /* Initially hidden */
 }
 
+/* Colors for each box */
 .domains-container .box:nth-child(2) { background-color: #4CAF50; }
 .domains-container .box:nth-child(3) { background-color: #FF5722; }
 .domains-container .box:nth-child(4) { background-color: #2196F3; }
@@ -1976,6 +1984,36 @@ body {
 .domains-container .box:nth-child(11) { background-color: #FFC107; }
 .domains-container .box:nth-child(12) { background-color: #9C27B0; }
 .domains-container .box:nth-child(13) { background-color: #3F51B5; }
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .domains-container {
+      height: 80vh; /* Adjust height for smaller screens */
+  }
+
+  .domains-container .center,
+  .domains-container .box {
+      width: 20vw; /* Adjust size for smaller screens */
+      height: 20vw; /* Adjust size for smaller screens */
+      max-width: 100px; /* Maximum width on small screens */
+      max-height: 100px; /* Maximum height on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .domains-container {
+      height: 70vh; /* Adjust height for smaller screens */
+  }
+
+  .domains-container .center,
+  .domains-container .box {
+      width: 25vw; /* Adjust size for smaller screens */
+      height: 25vw; /* Adjust size for smaller screens */
+      max-width: 80px; /* Maximum width on very small screens */
+      max-height: 80px; /* Maximum height on very small screens */
+  }
+}
+
 
 
 /* sponsers style */

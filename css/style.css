@@ -31,9 +31,12 @@ a {
     font-weight: 600; }
 
 .custom-navbar {
-  background: #3b5d50 !important;
+  background: beige !important;
   padding-top: 20px;
   padding-bottom: 20px; }
+  .custom-navbar .container img {
+    width: 200px;
+  }
   .custom-navbar .navbar-brand {
     font-size: 32px;
     font-weight: 600; }
@@ -51,7 +54,7 @@ a {
       margin-right: 15px; } }
   .custom-navbar .custom-navbar-nav li a {
     font-weight: 500;
-    color: #ffffff !important;
+    color: black !important;
     opacity: .5;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
@@ -95,8 +98,59 @@ a {
       .custom-navbar .custom-navbar-cta li:first-child {
         margin-right: 20px; }
 
+        /* Domains Styles */
+.domains-container {
+  position: relative;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  max-width: 800px; /* Maximum width for larger screens */
+  max-height: 500px; /* Maximum height for larger screens */
+  display: flex;
+  justify-content: center; /* Center the elements horizontally */
+  align-items: center; /* Center the elements vertically */
+  margin: 0 auto; /* Center the container within the page */
+}
+
+.domains-container .center {
+  position: absolute;
+  bottom: 90px;
+  left: 190px;
+  width: 10vw; /* Width responsive to viewport width */
+  height: 10vw; /* Height responsive to viewport width */
+  max-width: 150px; /* Maximum width */
+  max-height: 150px; /* Maximum height */
+  background-color: #FF5722;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+}
+
+.domains-container .box {
+  position: absolute;
+  width: 12vw;  /* Width responsive to viewport width */
+  height: 12vw; /* Height responsive to viewport width */
+  max-width: 120px; /* Maximum width */
+  max-height: 120px; /* Maximum height */
+  background-color: #4CAF50;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+}
+
 .hero {
-  background: #3b5d50;
+  background: beige;
   padding: calc(4rem - 30px) 0 0rem 0; }
   @media (min-width: 768px) {
     .hero {
@@ -112,13 +166,13 @@ a {
         max-width: 450px; } }
   .hero h1 {
     font-weight: 700;
-    color: #ffffff;
+    color: black;
     margin-bottom: 30px; }
     @media (min-width: 1400px) {
       .hero h1 {
         font-size: 54px; } }
   .hero p {
-    color: rgba(255, 255, 255, 0.5);
+    color: black;
     margin-bottom: 30px;
     font-size: 1.5rem;
   }
@@ -188,10 +242,10 @@ a {
     .btn.btn-secondary:hover {
       background: #f8b810;
       border-color: #f8b810; }
-  .btn.btn-white-outline {
+  .btn .btn-white-outline {
     background: transparent;
     border-width: 2px;
-    border-color: rgba(255, 255, 255, 0.3); }
+    background-color: #000000; }
     .btn.btn-white-outline:hover {
       border-color: white;
       color: #ffffff; }
@@ -318,9 +372,11 @@ a {
   .we-help-section .imgs-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[27];
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: repeat(27, 1fr);
-    position: relative; }
+    position: relative;
+}
+
     .we-help-section .imgs-grid:before {
       position: absolute;
       content: "";
