@@ -1,3 +1,5 @@
+// Domains Script 
+
 $(document).ready(function() {
     var t = 0;
     var r = 250; // Radius for proper spacing

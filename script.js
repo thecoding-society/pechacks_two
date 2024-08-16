@@ -1,47 +1,49 @@
-$(document).ready(function() {
-    var t = 0;
-    var speed = 0.002; // Slower speed for readability
+// // 
 
-    function moveBox(boxId, offset, r, xcenter, ycenter) {
-        var tLocal = offset;
+// $(document).ready(function() {
+//     var t = 0;
+//     var speed = 0.002; // Slower speed for readability
 
-        function animateBox() {
-            tLocal -= speed; // Decrement angle to rotate
+//     function moveBox(boxId, offset, r, xcenter, ycenter) {
+//         var tLocal = offset;
 
-            var newLeft = Math.floor(xcenter + (r * Math.cos(tLocal)));
-            var newTop = Math.floor(ycenter - (r * Math.sin(tLocal)));
+//         function animateBox() {
+//             tLocal -= speed; // Decrement angle to rotate
 
-            $(boxId).css({
-                top: newTop + 'px',
-                left: newLeft + 'px',
-                opacity: (Math.sin(tLocal) > 0) ? 1 : 0 // Fade out on lower half
-            });
+//             var newLeft = Math.floor(xcenter + (r * Math.cos(tLocal)));
+//             var newTop = Math.floor(ycenter - (r * Math.sin(tLocal)));
 
-            requestAnimationFrame(animateBox);
-        }
+//             $(boxId).css({
+//                 top: newTop + 'px',
+//                 left: newLeft + 'px',
+//                 opacity: (Math.sin(tLocal) > 0) ? 1 : 0 // Fade out on lower half
+//             });
 
-        animateBox();
-    }
+//             requestAnimationFrame(animateBox);
+//         }
 
-    function initializeBoxes() {
-        var containerWidth = $('.domains-container').width();
-        var containerHeight = $('.domains-container').height();
-        var r = containerWidth / 3; // Dynamic radius based on container width
-        var xcenter = containerWidth / 4; // Dynamic x-center
-        var ycenter = containerHeight / 2; // Dynamic y-center
+//         animateBox();
+//     }
 
-        // Animate each box with a delay
-        var numBoxes = 12;
-        for (var i = 0; i < numBoxes; i++) {
-            moveBox('#box' + (i + 1), i * (Math.PI / (numBoxes / 2)), r, xcenter, ycenter);
-        }
-    }
+//     function initializeBoxes() {
+//         var containerWidth = $('.domains-container').width();
+//         var containerHeight = $('.domains-container').height();
+//         var r = containerWidth / 3; // Dynamic radius based on container width
+//         var xcenter = containerWidth / 4; // Dynamic x-center
+//         var ycenter = containerHeight / 2; // Dynamic y-center
 
-    // Initialize on document ready
-    initializeBoxes();
+//         // Animate each box with a delay
+//         var numBoxes = 12;
+//         for (var i = 0; i < numBoxes; i++) {
+//             moveBox('#box' + (i + 1), i * (Math.PI / (numBoxes / 2)), r, xcenter, ycenter);
+//         }
+//     }
 
-    // Recalculate on window resize
-    $(window).resize(function() {
-        initializeBoxes();
-    });
-});
+//     // Initialize on document ready
+//     initializeBoxes();
+
+//     // Recalculate on window resize
+//     $(window).resize(function() {
+//         initializeBoxes();
+//     });
+// });
