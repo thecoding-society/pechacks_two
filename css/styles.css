@@ -78,6 +78,82 @@ h2 {
 
 /** Glimpses **/
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sponsors {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    animation: scroll-left 20s linear infinite;
+}
+
+.slider img {
+    width: 250px;
+    height: auto;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.slider img:hover {
+    transform: scale(1.1);
+}
+
+/* Extend the width of the slider-track for duplication */
+.slider-track {
+    width: calc(250px * 10 + 15px * 9);
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+}
+}
+
+
+/** Glimpses **/
+
 .previous_ed{
     margin-top: 1rem;
 }

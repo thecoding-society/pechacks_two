@@ -101,65 +101,16 @@ a {
         margin-right: 20px; }
 
         /* Domains Styles */
-.domains-container {
-  position: relative;
-  width: 100%; /* Full width */
-  height: 100vh; /* Full viewport height */
-  max-width: 800px; /* Maximum width for larger screens */
-  max-height: 500px; /* Maximum height for larger screens */
-  display: flex;
-  justify-content: center; /* Center the elements horizontally */
-  align-items: center; /* Center the elements vertically */
-  margin: 0 auto; /* Center the container within the page */
-}
-
-.domains-container .center {
-  position: absolute;
-  bottom: 90px;
-  left: 190px;
-  width: 10vw; /* Width responsive to viewport width */
-  height: 10vw; /* Height responsive to viewport width */
-  max-width: 150px; /* Maximum width */
-  max-height: 150px; /* Maximum height */
-  background-color: #FF5722;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
-  z-index: 10;
-}
-
-.domains-container .box {
-  position: absolute;
-  width: 12vw;  /* Width responsive to viewport width */
-  height: 12vw; /* Height responsive to viewport width */
-  max-width: 120px; /* Maximum width */
-  max-height: 120px; /* Maximum height */
-  background-color: #4CAF50;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
-  opacity: 0; /* Initially hidden */
-}
 
 .hero {
   background: beige;
-  padding: calc(4rem - 30px) 0 0rem 0; }
+}
   @media (min-width: 768px) {
     .hero {
-      padding: calc(4rem - 30px) 0 4rem 0; } }
+      padding: calc(2.5rem - 30px) 0 4rem 0; } }
   @media (min-width: 992px) {
     .hero {
-      padding: calc(8rem - 30px) 0 8rem 0; } }
+      padding: calc(3.5rem - 30px) 0 8rem 0; } }
   .hero .intro-excerpt {
     position: relative;
     z-index: 4; }
@@ -771,8 +722,10 @@ textarea {
     background: rgba(59, 93, 80, 0.2); }
 
 
-  /* Domains CSS */
-  section .domains{
+    /* Domains CSS */
+
+
+section .domains{
     height: 80vh;
 }
 .wrapper {
@@ -842,6 +795,11 @@ textarea {
     font-weight: 700;
 }
 
+.dom_p{
+    font-size: 20px;
+    margin: 20px;
+}
+
 input {
     display: none;
 }
@@ -890,8 +848,11 @@ input:checked + .clash .description {
 }
 
 @media (max-width: 768px) {
+    .wrapper{
+        height: auto;
+    }
     .container1 {
-        height: 800px;
+        height: auto;
         flex-direction: column;
         align-items: center;
         overflow-x: hidden;
@@ -901,6 +862,7 @@ input:checked + .clash .description {
     .clash {
         width: 400px;
         margin: 10px 0;
+        box-shadow: none;
     }
 
     .clash > .marvel > .description {
