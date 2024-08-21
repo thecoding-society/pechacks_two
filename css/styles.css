@@ -193,10 +193,27 @@ h2 {
 }
 
 /* Responsive adjustments for glimpse cards */
+
+@media(max-width: 1150px) and (min-width: 768px){
+    .glimpses_container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1rem;
+        height: 650px;
+    }
+    .remove{
+        display: none;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     .glimpses_container {
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 1rem;
+        height: 540px;
+    }
+    .remove{
+        display: none;
     }
 
     .glimpse_flip-card {
@@ -209,6 +226,7 @@ h2 {
     .glimpses_container {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 0.5rem;
+        height: 450px;
     }
 
     .glimpse_flip-card {
