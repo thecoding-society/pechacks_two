@@ -230,3 +230,35 @@ h2 {
 .col-lg-2 {
     margin-top: var(--bs-gutter-y);
 }
+
+/* Timeline Styles */
+
+.whole{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whole img{
+    width: 75%;
+}
+
+.whole .small{
+    display: none;
+}
+
+@media(max-width:900px){
+    .whole .big{
+        width: 80%;
+    }
+}
+
+@media(max-width: 768px){
+    .whole img{
+        display: none;
+    }
+    .whole .small{
+        display: block;
+    }
+}
