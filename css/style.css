@@ -5,6 +5,11 @@
 * License: https://creativecommons.org/licenses/by/3.0/
 */
 
+:root {
+  --primary-color: black;
+}
+
+
 /* Domains CSS */ 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 body {
@@ -546,8 +551,8 @@ a {
     opacity: .7; } */
 
     .footer-section {
-      background-color: #000000; /* Dark background for the footer */
-      color: #fff; /* White text color for contrast */
+      background-color: #a3d293	; /* Dark background for the footer */
+      color: var(--primary-color); /* White text color for contrast */
       padding: 60px 0; /* Spacing around the footer content */
       position: relative;
       font-family: 'Roboto', sans-serif; /* Modern font choice */
@@ -556,13 +561,13 @@ a {
   .footer-logo-wrap {
       font-size: 24px; /* Larger font size for the logo */
       font-weight: bold;
-      color: #f9c922; /* Golden color for the logo text */
+      color: var(--primary-color); /* Golden color for the logo text */
       margin-bottom: 20px; /* Space below the logo */
   }
   
   .footer-section p {
       font-size: 16px;
-      color: #ddd; /* Lighter color for the paragraph text */
+      color: var(--primary-color); /* Lighter color for the paragraph text */
   }
   
   .footer-section .custom-social li {
@@ -571,19 +576,19 @@ a {
   }
   
   .footer-section .custom-social li a {
-      color: #ddd; /* Lighter color for the social icons */
+      color: var(--primary-color); /* Lighter color for the social icons */
       font-size: 20px; /* Slightly larger font size for visibility */
       transition: color 0.3s ease; /* Smooth transition for hover effect */
   }
   
   .footer-section .custom-social li a:hover {
-      color: #f9c922; /* Highlight social icons on hover */
+      color: var(--primary-color); /* Highlight social icons on hover */
   }
   
   .footer-section h4 {
       font-size: 18px;
       margin-bottom: 20px;
-      color: #f9c922; /* Golden color for the headings */
+      color: var(--primary-color); /* Golden color for the headings */
       font-weight: 600;
   }
   
@@ -597,18 +602,18 @@ a {
   }
   
   .footer-section .footer-links ul li a {
-      color: #ddd; /* Lighter color for the links */
+      color: var(--primary-color); /* Lighter color for the links */
       text-decoration: none; /* No underline on links */
       transition: color 0.3s ease; /* Smooth transition for hover effect */
   }
   
   .footer-section .footer-links ul li a:hover {
-      color: #f9c922; /* Highlight links on hover */
+      color: var(--primary-color); /* Highlight links on hover */
   }
   
   .footer-section .footer-links ul li i {
       margin-right: 8px; /* Space between icon and link text */
-      color: #f9c922; /* Icon color */
+      color: var(--primary-color); /* Icon color */
   }
   
   .footer-section .container {
@@ -844,7 +849,7 @@ input:checked + .clash .description {
     }
 
     input:checked + .clash {
-        width: 300px;
+        width: 270px;
     }
 
     input:checked + .clash .description {
@@ -866,7 +871,7 @@ input:checked + .clash .description {
     }
 
     .clash {
-        width: 400px;
+        width: 320px;
         margin: 10px 0;
         box-shadow: none;
     }
@@ -880,7 +885,7 @@ input:checked + .clash .description {
     }
 
     input:checked + .clash {
-        width: 400px;
+        width: 320px;
     }
 
     input:checked + .clash .description {
@@ -922,6 +927,9 @@ input:checked + .clash .description {
         background-image: none;
         background: linear-gradient(to top, #dfe9f3, #ffffff);
     }
+}
+@media(max-width: 425px){
+  
 }
 
 .col-lg-2{
