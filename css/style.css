@@ -206,7 +206,7 @@ a {
 .section-title {
   color: #2f2f2f; }
 
-.product-section {
+/* .product-section {
   padding: 7rem 0; }
   .product-section .product-item {
     text-align: center;
@@ -276,9 +276,9 @@ a {
       opacity: 1;
       visibility: visible; }
     .product-section .product-item:hover:before {
-      height: 70%; }
+      height: 70%; } */
 
-.why-choose-section {
+/* .why-choose-section {
   padding: 7rem 0; }
   .why-choose-section .img-wrap {
     position: relative; }
@@ -294,10 +294,10 @@ a {
       -ms-transform: translate(-40%, -40%);
       transform: translate(-40%, -40%);
       z-index: -1; }
-    .why-choose-section .img-wrap img {
-      border-radius: 20px; }
+    .why-choose-section .img-wrap img { */
+      /* border-radius: 20px; } */
 
-.feature {
+/* .feature {
   margin-bottom: 30px; }
   .feature .icon {
     display: inline-block;
@@ -362,16 +362,16 @@ a {
         -ms-grid-row-span: 5;
         grid-row: 1 / span 5;
         padding-left: 20px; }
-      .we-help-section .imgs-grid .grid.grid-3 {
-        -ms-grid-column: 14;
+      .we-help-section .imgs-grid .grid.grid-3 { */
+        /* -ms-grid-column: 14;
         -ms-grid-column-span: 16;
         grid-column: 14 / span 16;
         -ms-grid-row: 6;
         -ms-grid-row-span: 27;
         grid-row: 6 / span 27;
-        padding-top: 20px; }
+        padding-top: 20px; } */
 
-.custom-list {
+/* .custom-list {
   width: 100%; }
   .custom-list li {
     display: inline-block;
@@ -513,12 +513,12 @@ a {
         transition: .3s all ease;
         background-color: #d6d6d6; }
       .testimonial-slider-wrap .tns-nav button:hover:before, .testimonial-slider-wrap .tns-nav button.tns-nav-active:before {
-        background-color: #3b5d50; }
+        background-color: #3b5d50; } */
 
-.before-footer-section {
-  padding: 7rem 0 12rem 0 !important; }
+/* .before-footer-section {
+  padding: 7rem 0 12rem 0 !important; } */
 
-.blog-section {
+/* .blog-section {
   padding: 7rem 0 12rem 0; }
   .blog-section .post-entry a {
     text-decoration: none; }
@@ -543,98 +543,104 @@ a {
       .blog-section .post-entry .post-content-entry .meta a {
         font-weight: 600; }
   .blog-section .post-entry:hover .post-thumbnail img, .blog-section .post-entry:focus .post-thumbnail img {
-    opacity: .7; }
+    opacity: .7; } */
 
-.footer-section {
-  padding: 80px 0;
-  background: #ffffff; }
-  .footer-section .relative {
-    position: relative; }
-  .footer-section a {
-    text-decoration: none;
-    color: #2f2f2f;
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease; }
-    .footer-section a:hover {
-      color: rgba(47, 47, 47, 0.5); }
-  .footer-section .subscription-form {
-    margin-bottom: 40px;
-    position: relative;
-    z-index: 2;
-    margin-top: 100px; }
-    @media (min-width: 992px) {
-      .footer-section .subscription-form {
-        margin-top: 0px;
-        margin-bottom: 80px; } }
-    .footer-section .subscription-form h3 {
-      font-size: 18px;
-      font-weight: 500;
-      color: #3b5d50; }
-    .footer-section .subscription-form .form-control {
-      height: 50px;
-      border-radius: 10px;
-      font-family: "Inter", sans-serif; }
-      .footer-section .subscription-form .form-control:active, .footer-section .subscription-form .form-control:focus {
-        outline: none;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        border-color: #3b5d50;
-        -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
-        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2); }
-      .footer-section .subscription-form .form-control::-webkit-input-placeholder {
-        font-size: 14px; }
-      .footer-section .subscription-form .form-control::-moz-placeholder {
-        font-size: 14px; }
-      .footer-section .subscription-form .form-control:-ms-input-placeholder {
-        font-size: 14px; }
-      .footer-section .subscription-form .form-control:-moz-placeholder {
-        font-size: 14px; }
-    .footer-section .subscription-form .btn {
-      border-radius: 10px !important; }
-  .footer-section .sofa-img {
-    position: absolute;
-    top: -200px;
-    z-index: 1;
-    right: 0; }
-    .footer-section .sofa-img img {
-      max-width: 380px; }
-  .footer-section .links-wrap {
-    margin-top: 0px; }
-    @media (min-width: 992px) {
-      .footer-section .links-wrap {
-        margin-top: 54px; } }
-    .footer-section .links-wrap ul li {
-      margin-bottom: 10px; }
-  .footer-section .footer-logo-wrap .footer-logo {
-    font-size: 32px;
-    font-weight: 500;
-    text-decoration: none;
-    color: #3b5d50; }
+    .footer-section {
+      background-color: #000000; /* Dark background for the footer */
+      color: #fff; /* White text color for contrast */
+      padding: 60px 0; /* Spacing around the footer content */
+      position: relative;
+      font-family: 'Roboto', sans-serif; /* Modern font choice */
+  }
+  
+  .footer-logo-wrap {
+      font-size: 24px; /* Larger font size for the logo */
+      font-weight: bold;
+      color: #f9c922; /* Golden color for the logo text */
+      margin-bottom: 20px; /* Space below the logo */
+  }
+  
+  .footer-section p {
+      font-size: 16px;
+      color: #ddd; /* Lighter color for the paragraph text */
+  }
+  
   .footer-section .custom-social li {
-    margin: 2px;
-    display: inline-block; }
-    .footer-section .custom-social li a {
-      width: 40px;
-      height: 40px;
-      text-align: center;
-      line-height: 40px;
-      display: inline-block;
-      background: #dce5e4;
-      color: #3b5d50;
-      border-radius: 50%; }
-      .footer-section .custom-social li a:hover {
-        background: #3b5d50;
-        color: #ffffff; }
-  .footer-section .border-top {
-    border-color: #dce5e4; }
-    .footer-section .border-top.copyright {
-      font-size: 14px !important; }
+      display: inline-block; /* Horizontal alignment of social icons */
+      margin-right: 10px; /* Space between social icons */
+  }
+  
+  .footer-section .custom-social li a {
+      color: #ddd; /* Lighter color for the social icons */
+      font-size: 20px; /* Slightly larger font size for visibility */
+      transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .footer-section .custom-social li a:hover {
+      color: #f9c922; /* Highlight social icons on hover */
+  }
+  
+  .footer-section h4 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #f9c922; /* Golden color for the headings */
+      font-weight: 600;
+  }
+  
+  .footer-section .footer-links ul {
+      list-style: none;
+      padding: 0;
+  }
+  
+  .footer-section .footer-links ul li {
+      margin-bottom: 10px; /* Space between the links */
+  }
+  
+  .footer-section .footer-links ul li a {
+      color: #ddd; /* Lighter color for the links */
+      text-decoration: none; /* No underline on links */
+      transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .footer-section .footer-links ul li a:hover {
+      color: #f9c922; /* Highlight links on hover */
+  }
+  
+  .footer-section .footer-links ul li i {
+      margin-right: 8px; /* Space between icon and link text */
+      color: #f9c922; /* Icon color */
+  }
+  
+  .footer-section .container {
+      max-width: 1200px; /* Limit container width for better alignment */
+  }
+  
+  .footer-section .row {
+      justify-content: space-between; /* Space out the columns evenly */
+  }
+  
+  @media (max-width: 768px) {
+      .footer-section .col-lg-4,
+      .footer-section .col-lg-2,
+      .footer-section .col-md-6 {
+          margin-bottom: 30px; /* Add space between columns on smaller screens */
+      }
+  
+      .footer-section .custom-social {
+          text-align: center; /* Center-align social icons on smaller screens */
+      }
+  
+      .footer-section h4 {
+          text-align: center; /* Center-align headings on smaller screens */
+      }
+  
+      .footer-section .footer-links ul li {
+          text-align: center; /* Center-align links on smaller screens */
+      }
+  }
+  
 
-.untree_co-section {
-  padding: 7rem 0; }
-
-.form-control {
+/* .form-control {
   height: 50px;
   border-radius: 10px;
   font-family: "Inter", sans-serif; }
@@ -652,9 +658,9 @@ a {
   .form-control:-ms-input-placeholder {
     font-size: 14px; }
   .form-control:-moz-placeholder {
-    font-size: 14px; }
+    font-size: 14px; } */
 
-.service {
+/* .service {
   line-height: 1.5; }
   .service .service-icon {
     border-radius: 10px;
@@ -666,9 +672,9 @@ a {
     text-align: center;
     background: #3b5d50;
     margin-right: 20px;
-    color: #ffffff; }
+    color: #ffffff; } */
 
-textarea {
+/* textarea {
   height: auto !important; }
 
 .site-blocks-table {
@@ -719,7 +725,7 @@ textarea {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: rgba(59, 93, 80, 0.2); }
+    background: rgba(59, 93, 80, 0.2); } */
 
 
     /* Domains CSS */
@@ -920,4 +926,88 @@ input:checked + .clash .description {
 
 .col-lg-2{
   margin-top: var(--bs-gutter-y);
+}
+
+
+
+
+/* Partner With us */
+.cta {
+  background-color: #343a40; /* Dark background to distinguish the CTA section */
+  color: #ffffff; /* White text for contrast */
+  padding: 60px 0; /* Padding for spacing around the content */
+  text-align: center;
+}
+
+.cta h2 a {
+  color: #f9c922; /* Golden color for the call-to-action link */
+  text-decoration: none; /* No underline for the CTA link */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.cta h2 a:hover {
+  color: #ffffff; /* Change color on hover for emphasis */
+}
+
+.cta .card {
+  background-color: #495057; /* Slightly lighter background for the card */
+  border: none; /* Remove the card border */
+  border-radius: 8px; /* Rounded corners for the card */
+  padding: 30px; /* Padding inside the card */
+  color: #ffffff; /* Ensure text is visible on the card background */
+  margin-top: 20px; /* Space above the card */
+}
+
+.cta .card h3 {
+  font-size: 24px; /* Larger font size for the card title */
+  font-weight: bold;
+  margin-bottom: 20px; /* Space below the title */
+  color: #f9c922; /* Golden color for the title */
+}
+
+.cta .card p {
+  font-size: 16px; /* Standard font size for readability */
+  line-height: 1.5; /* Improve readability with line spacing */
+  color: #e1e1e1; /* Lighter shade of white for paragraph text */
+  margin-bottom: 30px; /* Space below the paragraph */
+}
+
+.cta-btn {
+  display: inline-block; /* Display buttons inline */
+  background-color: #f9c922; /* Golden background for buttons */
+  color: #343a40; /* Dark color for text */
+  padding: 10px 20px; /* Padding inside the buttons */
+  border-radius: 5px; /* Rounded corners for buttons */
+  text-decoration: none; /* Remove underline from buttons */
+  font-weight: bold; /* Bold text for buttons */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+.cta-btn:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #343a40; /* Dark text color on hover */
+}
+
+.sponsor-brochure, .contact-cta {
+  margin: 0 10px; /* Space between the buttons */
+}
+
+@media (max-width: 768px) {
+  .cta h2 {
+      font-size: 20px; /* Slightly smaller font for mobile */
+  }
+
+  .cta .card h3 {
+      font-size: 20px; /* Adjust title size for mobile */
+  }
+
+  .cta-btn {
+      padding: 8px 16px; /* Adjust button padding for mobile */
+      font-size: 14px; /* Slightly smaller text in buttons */
+  }
+
+  .cta .card p {
+      font-size: 14px; /* Adjust paragraph size for readability on mobile */
+  }
 }
