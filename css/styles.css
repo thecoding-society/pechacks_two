@@ -363,7 +363,7 @@ h2 {
 }
 
 .whole img{
-    width: 75%;
+    width: 100%;
 }
 
 .whole .small{
@@ -372,7 +372,7 @@ h2 {
 
 @media(max-width:900px){
     .whole .big{
-        width: 80%;
+        width: 100%;
     }
 }
 
