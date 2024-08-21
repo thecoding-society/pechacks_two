@@ -1,7 +1,4 @@
 /* Reset CSS for consistency across browsers */
-
-
-/* Sponser Slider css */
 *,
 *::before,
 *::after {
@@ -23,12 +20,7 @@ h2 {
     color: #333;
 }
 
-.sponsors {
-    width: 100%;
-    overflow: hidden;
-    margin: 20px 0;
-}
-
+.sponsors,
 .slider-container {
     width: 100%;
     overflow: hidden;
@@ -72,101 +64,43 @@ h2 {
     }
     100% {
         transform: translateX(-50%);
-}
-}
-
-
-/** Glimpses **/
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    }
 }
 
-/* Global styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #ffffff;
+/* Responsive adjustments for slider images */
+@media screen and (max-width: 768px) {
+    .slider img {
+        width: 200px;
+        margin: 0 10px;
+    }
     
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.sponsors {
-    width: 100%;
-    overflow: hidden;
-    margin: 20px 0;
-}
-
-.slider-container {
-    width: 100%;
-    overflow: hidden;
-    margin: 20px 0;
-}
-
-.category {
-    margin-bottom: 40px;
-}
-
-.slider {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.slider-track {
-    display: flex;
-    animation: scroll-left 20s linear infinite;
-}
-
-.slider img {
-    width: 250px;
-    height: auto;
-    margin: 0 15px;
-    transition: transform 0.3s ease;
-}
-
-.slider img:hover {
-    transform: scale(1.1);
-}
-
-/* Extend the width of the slider-track for duplication */
-.slider-track {
-    width: calc(250px * 10 + 15px * 9);
-}
-
-@keyframes scroll-left {
-    0% {
-        transform: translateX(0);
+    .slider-track {
+        width: calc(200px * 10 + 10px * 9);
     }
-    100% {
-        transform: translateX(-50%);
-}
 }
 
+@media screen and (max-width: 480px) {
+    .slider img {
+        width: 150px;
+        margin: 0 5px;
+    }
+    
+    .slider-track {
+        width: calc(150px * 10 + 5px * 9);
+    }
+}
 
 /** Glimpses **/
 
-.previous_ed{
+.previous_ed {
     margin-top: 1rem;
 }
-.glimpses_of_events{
+
+.glimpses_of_events {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-/* .glimpses_of_events_heading h2{
-    font-weight: 700;
-    margin-bottom: 1rem;
-} */
 
 .glimpses_of_events .addBack {
     transform: rotateY(180deg);
@@ -190,34 +124,14 @@ h2 {
     gap: 1rem;
 }
 
-/* .row3_last-card {
-    margin-top: 3rem !important;
-} */
-
 .col-lg-2 {
     padding-left: 0.30rem;
-  
     margin-top: 0.10rem;
     margin-bottom: 0.10rem;
 }
 
-/* .glimps_RowOnesecondCard,
-.glimps_RowOneFourthCard {
-    margin-bottom: 3rem !important;
-} */
-
-/* .glimps_RowTwosecondCard,
-.glimps_RowTwoFourthCard {
-    position: absolute;
-    margin-top: 90px;
-    padding-right: 0.60rem !important;
-    padding-left: 0.60rem !important;
-} */
-
-
 .glimpse_flip-card {
     background-color: transparent;
-    /* width: 100%; */
     height: 240px;
     perspective: 1000px;
 }
@@ -227,10 +141,8 @@ h2 {
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: 0.2s ease,
-        padding 0.8s linear;
+    transition: 0.2s ease, padding 0.8s linear;
     transform-style: preserve-3d;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
 }
 
 .glimpse_flip-card-front,
@@ -239,34 +151,23 @@ h2 {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
 }
 
-.glimpse_flip-card-front img {
+.glimpse_flip-card-front img,
+.glimpse_flip-card-back img {
     width: 100%;
     height: 100%;
     border-radius: 15px;
     object-fit: cover;
 }
 
-.glimpse_flip-card-back img {
-    width: 100%;
-    height: 100%;
-    border-radius: 18px;
-    object-fit: cover;
-}
-
 .glimpse_flip-card-back {
-
     transform: rotateY(180deg);
 }
 
 .glimpse_flip-card {
     width: 12rem;
-    /* Adjust card width as needed */
     height: 12rem;
-    /* Adjust card height as needed */
-    /* margin: 5px; */
     perspective: 1000px;
 }
 
@@ -283,72 +184,49 @@ h2 {
 
 .glimpses_container {
     display: grid;
-    /* grid-auto-flow: dense; */
     grid-template-rows: auto;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
     grid-column-gap: 2rem;
 }
 
-@media screen and (max-width: 550px){
+/* Responsive adjustments for glimpse cards */
+@media screen and (max-width: 768px) {
     .glimpses_container {
-        /* width: 100%; */
-        grid-template-rows: auto;
         grid-template-columns: repeat(3, 1fr);
-        align-items: center;
         grid-column-gap: 1rem;
     }
 
-    .row2,.row4{
+    .glimpse_flip-card {
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .glimpses_container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0.5rem;
+    }
+
+    .glimpse_flip-card {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .row2, .row4 {
         display: none;
     }
-
-    .glimpse_flip-card{
-        height: 12rem;
-        width: 12rem;
-    }
-   /* .main{
-    width: 31rem;
-   } */
-}
-
-@media screen and (min-width: 550px) and (max-width: 768px) {
-    .glimpses_container{
-        grid-template-columns: repeat(5,1fr);
-    }
-
-    .glimpse_flip-card{
-        height: 18rem;
-        width: 15rem;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 990px) {
-    .glimpses_container{
-        grid-template-columns: repeat(5,1fr);
-        
-    }
-
-    .glimpse_flip-card{
-        height: 18rem;
-        width: 15rem;
-    }
-
-    
 }
 
 .lgx-photo-gallery-black .lgx-inner {
     background: rgba(78, 98, 129, 0.93);
 }
-/* #glimpses .pb100 {
-    padding-left: 0;
-    padding-right: 0;
-} */
-.section_title h5{
+
+.section_title h5 {
     color: white;
 }
-.lgx-photo-gallery-black .lgx-inner {
-    background: rgba(78, 98, 129, 0.93);
-}
-.col-lg-2{
+
+.col-lg-2 {
     margin-top: var(--bs-gutter-y);
 }
