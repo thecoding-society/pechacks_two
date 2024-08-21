@@ -917,3 +917,7 @@ input:checked + .clash .description {
         background: linear-gradient(to top, #dfe9f3, #ffffff);
     }
 }
+
+.col-lg-2{
+  margin-top: var(--bs-gutter-y);
+}

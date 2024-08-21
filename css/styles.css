@@ -349,3 +349,6 @@ h2 {
 .lgx-photo-gallery-black .lgx-inner {
     background: rgba(78, 98, 129, 0.93);
 }
+.col-lg-2{
+    margin-top: var(--bs-gutter-y);
+}
