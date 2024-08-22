@@ -22,7 +22,7 @@ body {
   line-height: 28px;
   color: #6a6a6a;
   font-size: 14px;
-  background-color: #eff2f1; }
+}
 
 a {
   text-decoration: none;
@@ -38,9 +38,13 @@ a {
     font-weight: 600; }
 
 .custom-navbar {
-  background: beige !important;
+  background:  #FFF2D7 !important;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
   .custom-navbar .container img {
     width: 200px;
   }
@@ -108,7 +112,7 @@ a {
         /* Domains Styles */
 
 .hero {
-  background: beige;
+  background: #FFF2D7;
 }
   @media (min-width: 768px) {
     .hero {
@@ -481,10 +485,6 @@ input:checked + .clash {
   width: 600px;
 }
 
-input:hover + .clash {
-    width: 600px;
-}
-
 input:checked + .clash .description {
     opacity: 1 !important;
     transform: translateY(0) !important;
@@ -541,7 +541,7 @@ input:checked + .clash .description {
     }
 
     .clash {
-        width: 320px;
+        width: 400px;
         margin: 10px 0;
         box-shadow: none;
     }
@@ -555,7 +555,7 @@ input:checked + .clash .description {
     }
 
     input:checked + .clash {
-        width: 320px;
+        width: 400px;
     }
 
     input:checked + .clash .description {
@@ -599,7 +599,23 @@ input:checked + .clash .description {
     }
 }
 @media(max-width: 425px){
-  
+  .clash {
+    width:300px;
+    margin: 10px 0;
+    box-shadow: none;
+}
+
+.clash > .marvel > .description {
+    width: 250px;
+}
+
+.description h4 {
+    opacity: 1 !important;
+}
+
+input:checked + .clash {
+    width: 300px;
+}
 }
 
 .col-lg-2{
@@ -611,81 +627,81 @@ input:checked + .clash .description {
 
 /* Partner With us */
 .cta {
-  background-color: #343a40; /* Dark background to distinguish the CTA section */
-  color: #ffffff; /* White text for contrast */
-  padding: 60px 0; /* Padding for spacing around the content */
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 60px 0;
   text-align: center;
 }
 
 .cta h2 a {
-  color: #f9c922; /* Golden color for the call-to-action link */
-  text-decoration: none; /* No underline for the CTA link */
+  color: #f9c922;
+  text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease; /* Smooth transition on hover */
+  transition: color 0.3s ease;
 }
 
 .cta h2 a:hover {
-  color: #ffffff; /* Change color on hover for emphasis */
+  color: #ffffff;
 }
 
 .cta .card {
-  background-color: #495057; /* Slightly lighter background for the card */
-  border: none; /* Remove the card border */
-  border-radius: 8px; /* Rounded corners for the card */
-  padding: 30px; /* Padding inside the card */
-  color: #ffffff; /* Ensure text is visible on the card background */
-  margin-top: 20px; /* Space above the card */
+  background-color: #495057;
+  border: none;
+  border-radius: 8px;
+  padding: 30px;
+  color: #ffffff;
+  margin-top: 20px;
 }
 
 .cta .card h3 {
-  font-size: 24px; /* Larger font size for the card title */
+  font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px; /* Space below the title */
-  color: #f9c922; /* Golden color for the title */
+  margin-bottom: 20px;
+  color: #f9c922;
 }
 
 .cta .card p {
-  font-size: 16px; /* Standard font size for readability */
-  line-height: 1.5; /* Improve readability with line spacing */
-  color: #e1e1e1; /* Lighter shade of white for paragraph text */
-  margin-bottom: 30px; /* Space below the paragraph */
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e1e1e1;
+  margin-bottom: 30px;
 }
 
 .cta-btn {
-  display: inline-block; /* Display buttons inline */
-  background-color: #f9c922; /* Golden background for buttons */
-  color: #343a40; /* Dark color for text */
-  padding: 10px 20px; /* Padding inside the buttons */
-  border-radius: 5px; /* Rounded corners for buttons */
-  text-decoration: none; /* Remove underline from buttons */
-  font-weight: bold; /* Bold text for buttons */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+  display: inline-block;
+  background-color: #f9c922;
+  color: #343a40;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-btn:hover {
-  background-color: #ffffff; /* White background on hover */
-  color: #343a40; /* Dark text color on hover */
+  background-color: #ffffff;
+  color: #343a40;
 }
 
 .sponsor-brochure, .contact-cta {
-  margin: 0 10px; /* Space between the buttons */
+  margin: 0 10px;
 }
 
 @media (max-width: 768px) {
   .cta h2 {
-      font-size: 20px; /* Slightly smaller font for mobile */
+    font-size: 20px;
   }
 
   .cta .card h3 {
-      font-size: 20px; /* Adjust title size for mobile */
+    font-size: 20px;
   }
 
   .cta-btn {
-      padding: 8px 16px; /* Adjust button padding for mobile */
-      font-size: 14px; /* Slightly smaller text in buttons */
+    padding: 8px 16px;
+    font-size: 14px;
   }
 
   .cta .card p {
-      font-size: 14px; /* Adjust paragraph size for readability on mobile */
+    font-size: 14px;
   }
 }

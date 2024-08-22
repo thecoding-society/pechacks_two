@@ -38,7 +38,7 @@
 	<!-- Start Header/Navigation -->
 	<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
-		<div class="container">
+		<div class="container ">
 			<img class="logo" src="assets/images/logo.png" alt="Logo">
 			<a class="navbar-brand" href="index.html"></a>
 
@@ -47,7 +47,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<div class="collapse navbar-collapse" id="navbarsFurni">
+			<div class="collapse navbar-collapse navi" id="navbarsFurni">
 				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
 					<li class="nav-item active"><a class="nav-link" href="#Home">Home</a></li>
 					<li><a class="nav-link" href="#About">About</a></li>
@@ -64,7 +64,7 @@
 
 	<!-- Start of Home Page -->
 	<section class="back_home">
-		<div class="hero" id="Home">
+		<div class="hero" id="Home" data-aos="zoom-in">
 			<div class="container">
 				<div class="row justify-content-between align-items-center">
 					<div class="col-lg-5">
@@ -121,8 +121,7 @@
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-		<br>
-		<br>
+		
 	</section>
 	<!-- End of Home Page -->
 
@@ -133,24 +132,23 @@
 			<div id="About" data-aos="fade-down">
 				<br>
 				<pre><h2><b>About</b></h2></pre>
-				<div class="col-lg-5 align-self-center">
-					<!-- <div class="section-heading"> -->
-					<!-- <h2><b>About Us</b></h2> -->
-					<br>
-					<h3>Welcome, Hackers!</h3>
-					<br>
-					<p class="about-para">
-						"Welcome to <span>PEC HACKS</span>, where innovation meets
-						impact! We are thrilled to invite you to this exciting hackathon
-						organized by <span>Panimalar Engineering College</span>. It is
-						your gateway to a world of possibilities, where passionate
-						individuals like you come together to unleash their creativity,
-						solve real-world challenges, and make a meaningful difference."
-					</p>
-					<p class="prize-pool">
-						Prize Pool of <span>₹ 20 Lakh+</span>
-					</p>
+				<div class="about-section" style="display: flex; align-items: center;">
+					<div class="col-lg-5 align-self-center">
+						<br>
+						<h3>Welcome, Hackers!</h3>
+						<br>
+						<p class="about-para">
+							"Welcome to <span>PEC HACKS</span>, where innovation meets impact! We are thrilled to invite you to this exciting hackathon organized by <span>Panimalar Engineering College</span>. It is your gateway to a world of possibilities, where passionate individuals like you come together to unleash their creativity, solve real-world challenges, and make a meaningful difference."
+						</p>
+						<p class="prize-pool">
+							Prize Pool of <span>₹ 20 Lakh+</span>
+						</p>
+					</div>
+					<div class="about_img">
+						<img src="img/about_img.png" alt="About_Img">
+					</div>
 				</div>
+				
 			</div>
 		</div>
 		</div>
@@ -447,7 +445,6 @@
 	<!-- End of Domains Section -->
 
 	<!-- Start of Timeline	 -->
-	<br>
 	<section class="whole back_timeline">
 		<img class="big" src="img/mob.png" alt="Timeline">
 		<img class="small" src="img/big.png" alt="Timeline">
@@ -516,48 +513,46 @@
 	<!-- End of partner with us -->
 
 	<!-- Start of Prices Section -->
+	<section class="back_prices">
+		<br>
+	<br>
+	<div data-aos="fade-down">
+		<pre><h2><b>Prices</b></h2></pre><br><br>
 	<div class="award-container">
         <div class="first-row">
             <div class="award-box">
-                <img class="winners" src="img/Prices/winner_1.avif" alt="First Prize Winner">
+                <img class="winners" src="img/Prices/prices.jpg" alt="First Prize Winner">
                 <div class="award-content">
-                    <h3>First Prize</h3>
-                    
-                    <br>
+                    <h3>First Prize</h3><br>
                     <p>Cash Prize of INR 60,000+</p>
                 </div>
             </div>
         </div>
         <div class="second-row">
             <div class="award-box">
-                <img class="winners" src="img/Prices/winner_1.avif" alt="Second Prize Winner">
+                <img class="winners" src="img/Prices/sec.jpg" alt="Second Prize Winner">
                 <div class="award-content">
-                    <h3>Second Prize</h3>
-                    
-                    <br>
+                    <h3>Second Prize</h3><br>
                     <p>Cash Prize of INR 50,000+</p>
                 </div>
             </div>
             <div class="award-box">
-                <img class="winners" src="img/Prices/winner_1.avif" alt="Third Prize Winner">
+                <img class="winners" src="img/Prices/third.jpg" alt="Third Prize Winner">
                 <div class="award-content">
-                    <h3>Third Prize</h3>
-                    
-                    <br>
+                    <h3>Third Prize</h3><br>
                     <p>Cash Prize of INR 40,000+</p>
                 </div>
             </div>
             <div class="award-box">
-                <img class="winners" src="img/Prices/winner_1.avif" alt="School Prize Winner">
+                <img class="winners" src="img/Prices/school.jpg" alt="School Prize Winner">
                 <div class="award-content">
-                    <h3>School Prize</h3>
-                    
-                    <br>
+                    <h3>School Prize</h3> <br>
                     <p>Cash Prize of INR 30,000+</p>
                 </div>
             </div>
         </div>
     </div>
+	</section>
 	<!-- End of Prices Section -->
 
 
@@ -565,9 +560,8 @@
 	<section id="Contact" class="contact back_contact">
 		<div class="container" data-aos="fade-down">
 			<div class="section-title"><br><br>
-				<!-- <span>Contact</span> -->
-				<h2>Contact</h2>
-				<p>Feel Free To Contact Us</p>
+				<pre><h2><b>Contact</b></h2></pre>
+				<p>Feel Free To Contact Us</p><br><br>
 			</div>
 
 			<div class="row aos-init" data-aos="none">
@@ -596,11 +590,12 @@
 	<!-- End of Contact us -->
 
 	<!-- Start of FAQ's Section -->
-	<section class="bsb-faq-2 bg-light py-3 py-md-5 py-xl-8 back_faq">
+	<section class="bsb-faq-2 py-3 py-md-5 py-xl-8 back_faq">
 		<div data-aos="fade-down">
 			<br>
-		<pre><h2><b>Frequently Asked Questions</b></h2></pre>
-		<div class="container">
+		<pre><h2 style="color: white;"><b>Frequently Asked Questions</b></h2></pre>
+		</div>
+		<div class="container" data-aos="fade-right">
 			<div class="row justify-content-center">
 				<div class="col-12 col-lg-8">
 					<div class="accordion accordion-flush" id="accordionExample">
