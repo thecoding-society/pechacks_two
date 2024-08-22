@@ -24,9 +24,13 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.0/css/hover.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.0/css/hover-min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title>PEC Hacks | Hackathon</title>
 	<!-- <link rel="stylesheet" href="styles.css"> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -59,7 +63,7 @@
 
 
 	<!-- Start of Home Page -->
-	<section>
+	<section class="back_home">
 		<div class="hero" id="Home">
 			<div class="container">
 				<div class="row justify-content-between align-items-center">
@@ -126,7 +130,7 @@
 	<!-- Start of About Section -->
 	<section class="back_about">
 		<div class="container">
-			<div id="About">
+			<div id="About" data-aos="fade-down">
 				<br>
 				<pre><h2><b>About</b></h2></pre>
 				<div class="col-lg-5 align-self-center">
@@ -152,17 +156,17 @@
 		</div>
 		</div>
 		</div>
-		</div>
-	</section><br><br>
+		</div><br><br>
+	</section>
 	<!-- End of About Section -->
 
 
 	<!-- Start of Glimpse of PEC Hacks Section -->
-	<section>
-		<div>
+	<section class="back_glimpse">
+		<div data-aos="fade-down">
 			<div class="lgx-inner pb100 pt80">
 				<div class="container">
-					<div class="section_title">
+					<div class="section_title"><br><br>
 						<pre><h2><b>Glimpses of PEC Hacks <br> Previous Edition</b></h2></pre>
 					</div>
 					<br>
@@ -372,10 +376,11 @@
 
 
 	<!-- Start of Domains Section -->
-	<section id="Domains">
+	<section id="Domains" class="back_domains" >
 		<br>
 		<br>
-		<pre><h2><b>Domains</b></h2></pre>
+		<div data-aos="fade-down">
+			<pre><h2><b>Domains</b></h2></pre>
 		<h2 class="dom_p">Get ready for the hackathon by exploring the problem domains and preparing your innovative
 			solutions!</h2>
 		<div class="wrapper">
@@ -435,25 +440,41 @@
 					</div>
 				</label>
 			</div>
+		</div><br><br><br>
 		</div>
 	</section>
-	<br><br>
 
 	<!-- End of Domains Section -->
 
 	<!-- Start of Timeline	 -->
 	<br>
-	<br>
-	<section class="whole">
+	<section class="whole back_timeline">
 		<img class="big" src="img/mob.png" alt="Timeline">
 		<img class="small" src="img/big.png" alt="Timeline">
-	</section><br><br>
+	</section>
 	<!-- End of Timeline -->
 
 
 	<!-- Start of Sponsers Section -->
-	<section>
-
+	<section class="back_sponsers" >
+		<div data-aos="fade-down">
+			<br>
+		<pre><h2><b>Sponsers</b></h2></pre>
+		<div class="sponsers">
+		<br>
+		<pre><h2><b>Gold Sponsers</b></h2></pre>
+			<div class="gold">
+				<img class="hvr-float-shadow" src="imag/image/4.png" alt="Gold_Sponser_1">
+				<img class="hvr-float-shadow" src="imag/image/5.png" alt="Gold_Sponser_2">
+			</div>
+		</div>
+		<br>
+		<pre><h2><b>Silver Sponsers</b></h2></pre>
+			<div class="gold silver">
+				<img class="hvr-float-shadow" src="imag/image/16.png" alt="Silver_Sponse">
+			</div>
+		</div>
+		</div>
 	</section>
 	<!-- End of Sponsers Section -->
 
@@ -462,14 +483,12 @@
 	<section>
 		
 	</section>
-	<br>
-	<br>
 	<!-- End of Media Support and community partners -->
 
 
 	<!-- Start of Partner with us -->
-	<section id="proposal" class="cta">
-		<div class="container">
+	<section id="proposal" class="cta back_puw" >
+		<div class="container" data-aos="fade-down">
 			<div class="card card-body">
 				<div class="text-center">
 					<h3 class="non-selectable">WANT TO PARTNER WITH US?</h3>
@@ -494,14 +513,58 @@
 		</div>
 	</section>
 	
-	<br>
 	<!-- End of partner with us -->
+
+	<!-- Start of Prices Section -->
+	<div class="award-container">
+        <div class="first-row">
+            <div class="award-box">
+                <img class="winners" src="img/Prices/winner_1.avif" alt="First Prize Winner">
+                <div class="award-content">
+                    <h3>First Prize</h3>
+                    
+                    <br>
+                    <p>Cash Prize of INR 60,000+</p>
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="award-box">
+                <img class="winners" src="img/Prices/winner_1.avif" alt="Second Prize Winner">
+                <div class="award-content">
+                    <h3>Second Prize</h3>
+                    
+                    <br>
+                    <p>Cash Prize of INR 50,000+</p>
+                </div>
+            </div>
+            <div class="award-box">
+                <img class="winners" src="img/Prices/winner_1.avif" alt="Third Prize Winner">
+                <div class="award-content">
+                    <h3>Third Prize</h3>
+                    
+                    <br>
+                    <p>Cash Prize of INR 40,000+</p>
+                </div>
+            </div>
+            <div class="award-box">
+                <img class="winners" src="img/Prices/winner_1.avif" alt="School Prize Winner">
+                <div class="award-content">
+                    <h3>School Prize</h3>
+                    
+                    <br>
+                    <p>Cash Prize of INR 30,000+</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- End of Prices Section -->
 
 
 	<!-- Start of Contact us -->
-	<section id="Contact" class="contact">
-		<div class="container">
-			<div class="section-title">
+	<section id="Contact" class="contact back_contact">
+		<div class="container" data-aos="fade-down">
+			<div class="section-title"><br><br>
 				<!-- <span>Contact</span> -->
 				<h2>Contact</h2>
 				<p>Feel Free To Contact Us</p>
@@ -533,7 +596,10 @@
 	<!-- End of Contact us -->
 
 	<!-- Start of FAQ's Section -->
-	<section class="bsb-faq-2 bg-light py-3 py-md-5 py-xl-8">
+	<section class="bsb-faq-2 bg-light py-3 py-md-5 py-xl-8 back_faq">
+		<div data-aos="fade-down">
+			<br>
+		<pre><h2><b>Frequently Asked Questions</b></h2></pre>
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-12 col-lg-8">
@@ -681,16 +747,17 @@
 				</div>
 			</div>
 		</div>
+		</div>
 	</section>
 	<!-- End of FAQ's Section -->
 
 
 	<!-- Start of Footer section -->
-	<footer class="footer-section">
+	<footer class="footer-section" >
 		<div class="container relative">
 			<div class="row g-5">
 				<div class="col-lg-4">
-					<div class="mb-4 footer-logo-wrap">
+					<div class="mb-4 footer-logo-wrap" data-aos="fade-down">
 						PEC Hacks
 					</div>
 					<p class="mb-4">Hacking Together!</p>
@@ -746,6 +813,9 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/tiny-slider.js"></script>
 	<script src="js/custom.js"></script>
+	<script>
+		AOS.init();
+	  </script>
 	<!-- End of Footer section -->
 
 
