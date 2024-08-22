@@ -22,75 +22,7 @@ h2 {
     color: #333;
 }
 
-.sponsors,
-.slider-container {
-    width: 100%;
-    overflow: hidden;
-    margin: 20px 0;
-}
 
-.category {
-    margin-bottom: 40px;
-}
-
-.slider {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.slider-track {
-    display: flex;
-    animation: scroll-left 20s linear infinite;
-}
-
-.slider img {
-    width: 250px;
-    height: auto;
-    margin: 0 15px;
-    transition: transform 0.3s ease;
-}
-
-.slider img:hover {
-    transform: scale(1.1);
-}
-
-/* Extend the width of the slider-track for duplication */
-.slider-track {
-    width: calc(250px * 10 + 15px * 9);
-}
-
-@keyframes scroll-left {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-/* Responsive adjustments for slider images */
-@media screen and (max-width: 768px) {
-    .slider img {
-        width: 200px;
-        margin: 0 10px;
-    }
-    
-    .slider-track {
-        width: calc(200px * 10 + 10px * 9);
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .slider img {
-        width: 150px;
-        margin: 0 5px;
-    }
-    
-    .slider-track {
-        width: calc(150px * 10 + 5px * 9);
-    }
-}
 
 /** Glimpses **/
 
