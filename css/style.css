@@ -563,39 +563,23 @@ input:checked + .clash .description {
         transform: translateY(0) !important;
     }
     
-    .clash {
-        background-image: none;
-        background-color: lightgrey;
-    }
-
     .clash[for="c1"] {
-        background-image: none;
-        background: linear-gradient(to top, #dfe9f3, #ffffff);
+        background-image: url('../img/Domains/image\ \(7\).png');
     }
-
     .clash[for="c2"] {
-        background-image: none;
-        background: linear-gradient(to top, #dfe9f3, #ffffff);
+        background-image: url('../img/Domains/image\ \(6\).png');
     }
-
     .clash[for="c3"] {
-        background-image: none;
-        background: linear-gradient(to top, #dfe9f3, #ffffff);
+        background-image: url('../img/Domains/image\ \(8\).png');
     }
-
     .clash[for="c4"] {
-        background-image: none;
-        background: linear-gradient(to top, #dfe9f3, #ffffff);
+        background-image: url('../img/Domains/image\ \(11\).png');
     }
-
     .clash[for="c5"] {
-        background-image: none;
-        background: linear-gradient(to top, #dfe9f3, #ffffff);
+        background-image: url('../img/Domains/image\ \(9\).png');
     }
-
     .clash[for="c6"] {
-        background-image: none;
-        background: linear-gradient(to top, #dfe9f3, #ffffff);
+        background-image: url('../img/Domains/image\ \(10\).png');
     }
 }
 @media(max-width: 425px){
