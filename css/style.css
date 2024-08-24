@@ -10,29 +10,28 @@
 }
 
 
-#countdown-timer {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  font-family: Arial, sans-serif;
-  font-size: 24px;
-  color: #333;
+
+/* timer */
+#timer {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 100;
+	color: rgb(17, 15, 15);
+	text-shadow: 0 0 20px #253030;
 }
 
-.time-unit {
-  text-align: center;
+#timer div {
+  /* background-color: grey; */
+  display: inline-block;
+  min-width: 140px;
+  background: rgba(255, 255, 255, 0.1);
 }
 
-.time-unit span {
+#timer div span {
+  color: #00000a;
   display: block;
-  font-size: 48px;
-  font-weight: bold;
-}
-
-.label {
-  margin-top: 5px;
-  font-size: 16px;
-  color: #555;
+  font-size: .5em;
+  font-weight: 800;
 }
 
 
