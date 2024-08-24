@@ -25,12 +25,12 @@ h2 {
                                                     /* Sections Styles  */
 
 .back_about {
-    background-color: #add8e6;
+    background-color: rgb(154, 154, 74);
 }
 
 .back_home {
-    background-color: #ffF2d7;
-    min-height: 90vh;
+    background-color: rgb(154, 154, 74);
+    min-height: 0vh;
 }
 
 .back_glimpse {
