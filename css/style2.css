@@ -627,3 +627,7 @@ h2 {
     font-family: "Anton SC", sans-serif;
     font-weight: 400;
 }
+
+#white-back{
+	color: rgb(224, 224, 225)
+}
