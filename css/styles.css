@@ -12,8 +12,8 @@
 /* Global styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    padding: 5px;
+    background-color: #000000;
+    /* padding: 6px; */
 }
 
 h2 {
@@ -25,27 +25,27 @@ h2 {
                                                     /* Sections Styles  */
 
 .back_about {
-    background-color: lightblue;
+    background-color: #9e6509;
 }
 
 .back_home {
-    background-color: beige;
+    background-color: rgb(210, 134, 11);
 }
 
 .back_glimpse {
-    background-color: lightgreen;
+    background-color: #c1b46d;
 }
 
 .back_domains {
-    background-color: lightgoldenrodyellow;
+    background-color: #9e6509;
 }
 
 .back_sponsers {
-    background-color: #A7BEAE;
+    background-color:#ffcd3c;
 }
 
 .back_puw {
-    background-color: #D3C5E5;
+    background-color: #9e6509;
 }
 
 .back_timeline {
@@ -53,14 +53,14 @@ h2 {
 }
 
 .back_contact {
-    background-color: aqua;
+    background-color: #f2c173;
 }
 
 .back_faq {
-    background-color: black;
+    background-color:#dc940c;
 }
 .back_prices{
-    background-color:  #97BC62;
+    background-color:  #ffcd3c;
 }
 
                                                 /* Responsive for Sections styles */
@@ -387,7 +387,7 @@ h2 {
     max-width: 320px;
     height: 25vw;
     max-height: 320px;
-    background-color: #D3C5E5;
+    background-color: #f1b10b;
     border: 2px solid #ccc;
     border-radius: 15px;
     display: flex;
