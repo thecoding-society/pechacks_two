@@ -27,6 +27,7 @@ h2 {
 /* Sections Styles  */
 
 .back_about {
+	min-height: 90vh;
 	background-color: rgb(154, 154, 74);
 }
 
@@ -56,11 +57,11 @@ h2 {
 }
 
 .back_contact {
-	background-color: rgb(219, 175, 32);
+	background-color: #7650a5;
 }
 
 .back_faq {
-	background-color: rgb(154, 154, 74);
+	background-color: #333;
 }
 .back_prices {
 	background-color: #e0cc17;
@@ -579,11 +580,17 @@ h2 {
 }
 
 #heading-pec {
-	font-size: 4rem;
+	font-size: 9rem;
 	font-weight: 500;
-	letter-spacing: 0.5rem;
+    line-height: 1;
+    letter-spacing: .01em;
+	margin-bottom: 4rem;
 }
-
+#hero-sub{
+	font-size: 2.4rem;
+	color: #37007a;
+	line-height: 4vw;
+}
 #faq-head {
 	color: white;
 }

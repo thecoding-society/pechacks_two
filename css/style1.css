@@ -133,7 +133,7 @@ a.more {
 }
 
 .custom-navbar {
-	background: #d6ac53 !important ;
+	background: #f2c173 !important ;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	position: sticky;
@@ -261,7 +261,7 @@ a.more {
 .hero .intro-excerpt {
 	position: relative;
 	z-index: 4;
-	padding-left: 20px;
+
 }
 
 @media (min-width: 992px) {
@@ -376,14 +376,16 @@ a.more {
 }
 
 .btn.btn-secondary {
-	color: #2f2f2f;
-	background: #f9bf29;
-	border-color: #f9bf29;
+	color: #fff;
+	background: #37007a;
+	border-color: #37007a;
+	margin-bottom: 20px;
+	margin-top: 10px;
 }
 
 .btn.btn-secondary:hover {
-	background: #f8b810;
-	border-color: #f8b810;
+	background: #4900a2;
+	border-color: #fff;
 }
 
 .btn .btn-white-outline {
@@ -578,6 +580,9 @@ a.more {
     background: rgba(59, 93, 80, 0.2); } */
 
 /* Domains CSS */
+
+
+
 
 section .domains {
 	height: 80vh;
