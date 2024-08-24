@@ -191,18 +191,20 @@ a.more {
 
 @media (min-width: 992px) {
   .hero {
-    padding: 4rem 0;
+    padding: 6rem 0;
   }
 }
 
 .hero .intro-excerpt {
   position: relative;
   z-index: 4;
+  padding-left: 20px;
 }
 
 @media (min-width: 992px) {
   .hero .intro-excerpt {
-    max-width: 450px;
+    max-width: 600px;
+
   }
 }
 
