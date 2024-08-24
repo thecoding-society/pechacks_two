@@ -25,11 +25,12 @@ h2 {
                                                     /* Sections Styles  */
 
 .back_about {
-    background-color: rgb(219, 175, 32);
+    background-color: #add8e6;
 }
 
 .back_home {
-    background-color: beige;
+    background-color: #ffF2d7;
+    min-height: 90vh;
 }
 
 .back_glimpse {
@@ -569,3 +570,23 @@ h2 {
     }
 }
 
+
+
+/* font */
+.anton-sc-regular {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .3rem;
+}
+  
+#heading-pec {
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: .5rem;
+    
+}
+
+#faq-head{
+    color: white ;
+}
