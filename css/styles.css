@@ -12,8 +12,8 @@
 /* Global styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #000000;
-    /* padding: 6px; */
+    background-color: #f4f4f4;
+    padding: 5px;
 }
 
 h2 {
@@ -25,42 +25,42 @@ h2 {
                                                     /* Sections Styles  */
 
 .back_about {
-    background-color: #9e6509;
+    background-color: rgb(219, 175, 32);
 }
 
 .back_home {
-    background-color: rgb(210, 134, 11);
+    background-color: beige;
 }
 
 .back_glimpse {
-    background-color: #c1b46d;
+    background-color: rgb(138, 122, 69);
 }
 
 .back_domains {
-    background-color: #9e6509;
+    background-color: rgb(154, 154, 74);
 }
 
 .back_sponsers {
-    background-color:#ffcd3c;
+    background-color: #e0cc17;
 }
 
 .back_puw {
-    background-color: #9e6509;
+    background-color: rgb(154, 154, 74);
 }
 
 .back_timeline {
-    background-color: black;
+    background-color: rgb(138, 122, 69);;
 }
 
 .back_contact {
-    background-color: #f2c173;
+    background-color: rgb(219, 175, 32);;
 }
 
 .back_faq {
-    background-color:#dc940c;
+    background-color: rgb(154, 154, 74);;
 }
 .back_prices{
-    background-color:  #ffcd3c;
+    background-color:  #e0cc17;
 }
 
                                                 /* Responsive for Sections styles */
@@ -387,7 +387,7 @@ h2 {
     max-width: 320px;
     height: 25vw;
     max-height: 320px;
-    background-color: #f1b10b;
+    background-color: #D3C5E5;
     border: 2px solid #ccc;
     border-radius: 15px;
     display: flex;
