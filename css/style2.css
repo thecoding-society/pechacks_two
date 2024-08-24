@@ -11,9 +11,11 @@
 
 /* Global styles */
 body {
-	font-family: "Arial", sans-serif;
+
 	background-color: #f4f4f4;
 	/* padding: 5px; */
+	font-family: "Montserrat", sans-serif;
+  
 }
 
 h2 {
@@ -29,8 +31,8 @@ h2 {
 }
 
 .back_home {
-	background-color: rgb(154, 154, 74);
-	min-height: 0vh;
+	background-color: #f2c173;
+	min-height: 90vh;
 }
 
 .back_glimpse {
@@ -584,4 +586,37 @@ h2 {
 
 #faq-head {
 	color: white;
+}
+
+
+
+.heading {
+    text-align: center;
+    position: relative;
+    height: 20.798vw;
+}
+.heading-shadow, .heading-small {
+    width: 100%;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+}
+.heading-shadow {
+    color: hsla(0, 0%, 100%, .16);
+    font-style: normal;
+    font-size: 16vw;
+    line-height: 20.798vw;
+}
+
+.heading-small {
+    top: 11.806vw;
+    font-size: 5.556vw;
+    position: absolute;
+    line-height: 5.546vw;
+    display: flex;
+    justify-content: center;
+}
+.heading-shadow, .heading-small {
+    width: 100%;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
 }
