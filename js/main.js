@@ -13,7 +13,9 @@ const preloader = document.querySelector('#preloader');
 
     setTimeout(() => {
         preloader.style.opacity = 0;
+        preloader.style.display = 'none';
     }, 1000)
+
 
 
   });
