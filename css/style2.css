@@ -8,7 +8,9 @@
 	margin: 0;
 	padding: 0;
 }
-
+html,body{
+    overflow-x: hidden;
+}
 /* Global styles */
 body {
 
@@ -27,13 +29,13 @@ h2 {
 /* Sections Styles  */
 
 .back_about {
-	min-height: 90vh;
-	background-color: rgb(154, 154, 74);
+	min-height: 80vh;
+	background-color: #9a9a4a;
 }
 
 .back_home {
 	background-color: #f2c173;
-	min-height: 70vh;
+	min-height: 92vh;
 }
 
 .back_glimpse {
@@ -41,19 +43,19 @@ h2 {
 }
 
 .back_domains {
-	background-color: rgb(154, 154, 74);
+	background-color: #9a9a4a;
 }
 
 .back_sponsers {
-	background-color: rgb(154, 154, 74);
+	background-color: #9a9a4a;
 }
 
 .back_puw {
-	background-color: rgb(154, 154, 74);
+	background-color: #9a9a4a;
 }
 
 .back_timeline {
-	background-color: rgb(138, 122, 69);
+	background-color: #9a9a4a;
 }
 
 .back_contact {
