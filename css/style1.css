@@ -9,94 +9,6 @@
 	--primary-color: black;
 }
 
-/* timer */
-#timer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: nowrap;
-	font-size: 3vw; /* Responsive font size */
-	font-weight: 700;
-	color: #c7c7c7;
-	padding: 20px;
-}
-
-#timer div {
-	display: flex; /* Flexbox for centering */
-	justify-content: center; /* Center horizontally */
-	align-items: center; /* Center vertically */
-	flex-direction: column; /* Stack text inside vertically */
-	flex: 1 1 auto;
-	min-width: 10vw; /* Responsive min-width */
-	padding: 2vw; /* Responsive padding */
-	margin: 0 1vw;
-	border-radius: 15px;
-	background: linear-gradient(45deg, #1a1a1a, #4b4b4b);
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 20px rgba(77, 255, 255, 0.3);
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#timer div:hover {
-	transform: scale(1.1);
-	box-shadow: 0 0 25px rgba(77, 255, 255, 0.6), 0 0 25px rgba(255, 255, 77, 0.6);
-}
-
-#timer div span {
-	color: #b3b3ff;
-	display: block;
-	font-size: 1.5vw; /* Responsive font size */
-	font-weight: 900;
-	text-align: center;
-}
-
-/* Media Query for devices with a width of 768px or less */
-@media (max-width: 768px) {
-	#timer {
-		font-size: 4vw;
-	}
-
-	#timer div {
-		min-width: 20vw;
-		padding: 3vw;
-	}
-
-	#timer div span {
-		font-size: 2vw;
-	}
-}
-
-/* Media Query for devices with a width of 480px or less */
-@media (max-width: 480px) {
-	#timer {
-		font-size: 5vw;
-	}
-
-	#timer div {
-		min-width: 25vw;
-		padding: 4vw;
-	}
-
-	#timer div span {
-		font-size: 3vw;
-	}
-}
-
-/* Media Query for devices with a width of 320px or less */
-@media (max-width: 320px) {
-	#timer {
-		font-size: 6vw;
-	}
-
-	#timer div {
-		min-width: 30vw;
-		padding: 5vw;
-	}
-
-	#timer div span {
-		font-size: 4vw;
-	}
-}
-
 /* Domains CSS */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
@@ -875,5 +787,11 @@ input:checked + .clash .description {
 
 	.cta .card p {
 		font-size: 14px;
+	}
+}
+@media(max-width: 480px){
+	.puw-btn{
+		display: flex;
+		flex-direction: column;
 	}
 }

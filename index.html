@@ -110,7 +110,7 @@
 							<div class="intro-excerpt">
 								<p class="mb-4 anton-sc-regular" id="hero-sub">December 28-29, 2024</p>
 								<p class="mb-4 anton-sc-regular" id="hero-sub">36-hr Hackathon in Chennai</p>
-								<p>
+								<p class="hero-buttons">
 									<a
 										href="https://forms.office.com/Pages/ResponsePage.aspx?id=WmGV2-v5aUGGvyjMKpYvwPc0bwQGrCxPs6nrYoFGOnhURU1YREtJOVVZNFA2Q0E1WERBTEQyS1BLWi4u"
 										class="btn btn-secondary me-2"
@@ -128,49 +128,6 @@
 
 						<!-- timer -->
 						<div class="col-lg-6">
-							<script>
-								function updateTimer() {
-									// Set the future date (change this to Dec 28 if needed)
-									future = Date.parse("Dec 28, 2024 8:00:00");
-									now = new Date();
-									diff = future - now;
-
-									// If the difference is negative, the event has passed
-									if (diff <= 0) {
-										document.getElementById("timer").innerHTML = "<div>Event has passed</div>";
-										return; // Stop further execution
-									}
-
-									days = Math.floor(diff / (1000 * 60 * 60 * 24));
-									hours = Math.floor(diff / (1000 * 60 * 60));
-									mins = Math.floor(diff / (1000 * 60));
-									secs = Math.floor(diff / 1000);
-
-									d = days;
-									h = hours - days * 24;
-									m = mins - hours * 60;
-									s = secs - mins * 60;
-
-									document.getElementById("timer").innerHTML =
-										"<div>" +
-										d +
-										"<span> Days</span></div>" +
-										"<div>" +
-										h +
-										"<span> Hours</span></div>" +
-										"<div>" +
-										m +
-										"<span> Minutes</span></div>" +
-										"<div>" +
-										s +
-										"<span> Seconds</span></div>";
-								}
-
-								setInterval(updateTimer, 1000);
-							</script>
-
-							<style></style>
-							<br />
 							<div id="timer" class="non-selectable"></div>
 						</div>
 						<!-- timeer -->
@@ -643,9 +600,11 @@
 							generation of innovators and driving technological advancements.
 						</p>
 						<br />
-						<a class="cta-btn sponsor-brochure" href="assets/PEC Hacks 2.0 - Sponsor Deck.pdf">View Brochure</a>
-						<span> | </span>
-						<a class="cta-btn contact-cta" href="#Contact">Contact Us</a>
+						<div class="puw-btn">
+							<a class="cta-btn sponsor-brochure" href="assets/PEC Hacks 2.0 - Sponsor Deck.pdf">View Brochure</a>
+							<span> | </span>
+							<a class="cta-btn contact-cta" href="#contact">Contact Us</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1023,6 +982,7 @@
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
+		<script src="script.js"></script>
 		<script>
 			AOS.init();
 		</script>
