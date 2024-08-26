@@ -556,6 +556,17 @@ h2 {
 	}
 }
 
+@media(min-width: 768px ) and ( max-width: 815px){
+	.award-content h3 {
+		font-size: 25px !important;
+		margin: 20px;
+	}
+	
+	.award-content p {
+		font-size: 20px !important;
+	}
+}
+
 /* Contact Us Styles */
 
 #Contact .container {
@@ -570,7 +581,7 @@ h2 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	gap: 350px;
+	gap: 35px;
 }
 
 #Contact .col-lg-6,
@@ -754,7 +765,7 @@ div .contact_name .name{
 	#hero-sub{
 		font-size: 1rem;
 		color: #37007a;
-		line-height: 3vw;
+		line-height: 5vw;
 		text-align: center;
 	}
 	.hero-buttons{
@@ -766,6 +777,12 @@ div .contact_name .name{
 	}
 	.hero-buttons a{
 		width: 80%;
+	}
+}
+
+@media(max-width: 1000px) and (min-width: 768px){
+	.hero{
+		height: 750px !important;
 	}
 }
 
@@ -828,7 +845,7 @@ div .contact_name .name{
 /* Media Query for devices with a width of 480px or less */
 @media (max-width: 480px) {
 	#timer {
-		font-size: 3	vw;
+		font-size: 3vw;
 	}
 
 	#timer div {
@@ -854,5 +871,30 @@ div .contact_name .name{
 
 	#timer div span {
 		font-size: 4vw;
+	}
+}
+
+@media (max-width: 425px) {
+	#timer {
+		font-size: 2.5vw;
+	}
+
+	#timer div {
+		min-width: 12vw;
+		padding: 3.5vw;
+	}
+
+	#timer div span {
+		font-size: 2.5vw;
+	}
+}
+
+.faq_res{
+	margin-top: none;
+}
+
+@media(max-width: 992px){
+	.faq_res{
+		margin-top: 25px;
 	}
 }
