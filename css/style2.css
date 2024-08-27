@@ -1,6 +1,12 @@
 /* Section */
 
 /* Reset CSS for consistency across browsers */
+
+:root {
+	--primary-color: black;
+	--BGCOLOR: #cc1616
+}
+
 *,
 *::before,
 *::after {
@@ -30,12 +36,13 @@ h2 {
 
 .back_about {
 	min-height: 80vh;
-	background-color: #9a9a4a;
+	background-color: #f4f4f4;
 }
 
 .back_home {
-	background-color: #f2c173;
-	min-height: 92vh;
+	background-color: #f4f4f4;
+	min-height: 100vh;
+	padding-top: 10%;
 }
 .back_glimpse {
     /* background-color: rgb(138, 122, 69); */
@@ -47,11 +54,11 @@ h2 {
 
 
 .back_domains {
-	background-color: #9a9a4a;
+	background-color: #aa1d39;
 }
 
 .back_sponsers {
-	background-color: #9a9a4a;
+	background-color: #aa1d39;
 }
 
 .back_puw {
@@ -651,7 +658,7 @@ div .contact_name .name{
 }
 #hero-sub{
 	font-size: 2.4rem;
-	color: #37007a;
+	color: var(--BGCOLOR);
 	line-height: 4vw;
 }
 #faq-head {
@@ -753,7 +760,7 @@ div .contact_name .name{
 	}
 	#hero-sub{
 		font-size: 1.5rem;
-		color: #37007a;
+		color: ;
 		line-height: 4vw;
 	}
 	.hero-buttons a{

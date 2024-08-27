@@ -7,6 +7,7 @@
 
 :root {
 	--primary-color: black;
+	--BGCOLOR: #cc1616
 }
 
 /* Domains CSS */
@@ -167,7 +168,7 @@ a.more {
 /* Domains Styles */
 
 .hero {
-	background: #f2c173;
+	background: #f4f4f4;
 	height: 700px !important;
 }
 
@@ -302,14 +303,14 @@ a.more {
 
 .btn.btn-secondary {
 	color: #fff;
-	background: #37007a;
-	border-color: #37007a;
+	background:var(--BGCOLOR);
+	border-color: var(--BGCOLOR);
 	margin-bottom: 20px;
 	margin-top: 10px;
 }
 
 .btn.btn-secondary:hover {
-	background: #4900a2;
+	background: var(--BGCOLOR);
 	border-color: #fff;
 }
 
