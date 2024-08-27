@@ -604,11 +604,11 @@ input:checked + .clash .description {
 }
 
 .clash[for="c2"] {
-	background-image: url("../img/Domains/ai.jpeg");
+	background-image: url("../img/Domains/ai.jpg");
 }
 
 .clash[for="c3"] {
-	background-image: url("../img/Domains/health care.png");
+	background-image: url("../img/Domains/healthcare.jpg");
 }
 
 .clash[for="c4"] {
@@ -616,7 +616,7 @@ input:checked + .clash .description {
 }
 
 .clash[for="c5"] {
-	background-image: url("../img/Domains/open.jpg");
+	background-image: url("../img/Domains/open.png");
 }
 
 .clash[for="c6"] {
