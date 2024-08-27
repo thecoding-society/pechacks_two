@@ -46,7 +46,7 @@ a.more {
 }
 
 .custom-navbar {
-	background: #f2c173 !important ;
+	background: var(--BGCOLOR) !important ;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	position: fixed;
@@ -616,7 +616,7 @@ input:checked + .clash .description {
 }
 
 .clash[for="c5"] {
-	background-image: url("../img/Domains/open.png");
+	background-image: url("../img/Domains/open.png.custom-navbar");
 }
 
 .clash[for="c6"] {

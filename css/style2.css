@@ -62,11 +62,11 @@ h2 {
 }
 
 .back_puw {
-	background-color: #9a9a4a;
+	background-color: #f0f5fa;
 }
 
 .back_timeline {
-	background-color: #9a9a4a;
+	background-color: #f0f5fa;
 }
 
 .back_contact {
@@ -678,7 +678,7 @@ div .contact_name .name{
     font-weight: 400;
 }
 .heading-shadow {
-    color: hsla(0, 0%, 100%, .16);
+    color: hsla(0, 0%, 100%, 0.16);
     font-style: normal;
     font-size: 16vw;
     line-height: 20.798vw;
