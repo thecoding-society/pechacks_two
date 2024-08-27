@@ -37,10 +37,14 @@ h2 {
 	background-color: #f2c173;
 	min-height: 92vh;
 }
-
 .back_glimpse {
-	background-color: rgb(138, 122, 69);
+    /* background-color: rgb(138, 122, 69); */
+	background-image: url('../img/xyz.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 .back_domains {
 	background-color: #9a9a4a;
