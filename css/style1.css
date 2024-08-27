@@ -46,7 +46,7 @@ a.more {
 }
 
 .custom-navbar {
-	background: #f2c173 !important ;
+	background: var(--BGCOLOR) !important ;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	position: fixed;
@@ -94,7 +94,7 @@ a.more {
 
 .custom-navbar .custom-navbar-nav li a {
 	font-weight: 500;
-	color: black !important;
+	color: #f0f5fa !important;
 	opacity: 0.5;
 	-webkit-transition: 0.3s all ease;
 	-o-transition: 0.3s all ease;
@@ -109,7 +109,7 @@ a.more {
 		bottom: 0;
 		left: 8px;
 		right: 8px;
-		background: #f9bf29;
+		background: #f0f5fa;
 		height: 5px;
 		opacity: 1;
 		visibility: visible;
@@ -604,11 +604,11 @@ input:checked + .clash .description {
 }
 
 .clash[for="c2"] {
-	background-image: url("../img/Domains/ai.jpeg");
+	background-image: url("../img/Domains/ai.jpg");
 }
 
 .clash[for="c3"] {
-	background-image: url("../img/Domains/health care.png");
+	background-image: url("../img/Domains/healthcare.jpg");
 }
 
 .clash[for="c4"] {
@@ -616,7 +616,7 @@ input:checked + .clash .description {
 }
 
 .clash[for="c5"] {
-	background-image: url("../img/Domains/open.jpg");
+	background-image: url("../img/Domains/schooltrack.png");
 }
 
 .clash[for="c6"] {
@@ -761,7 +761,7 @@ input:checked + .clash .description {
 	font-size: 16px;
 	line-height: 1.5;
 	color: #e1e1e1;
-	margin-bottom: 30px;
+
 }
 
 .cta-btn {
