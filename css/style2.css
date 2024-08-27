@@ -431,7 +431,7 @@ h2 {
 .award-box {
 	width: 25vw;
 	max-width: 320px;
-	height: 25vw;
+	height: 15vw;
 	max-height: 320px;
 	background-color: #d3c5e5;
 	border: 2px solid #ccc;
@@ -455,7 +455,7 @@ h2 {
 
 .award-box img {
 	width: 36%;
-	height: 35%;
+	height: 55%;
 	border-radius: 50%;
 	position: absolute;
 	top: -20%;
