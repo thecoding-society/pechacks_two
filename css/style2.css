@@ -381,6 +381,7 @@ h2 {
 .gold img {
 	width: 30%;
 	border: 2px solid black;
+	border-radius: 20px;
 }
 
 .silver {
