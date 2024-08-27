@@ -6,8 +6,9 @@
 */
 
 :root {
+	--cherry-red: #aa1d39;
 	--primary-color: black;
-	--BGCOLOR: #cc1616
+	--BGCOLOR: #cc1616;
 }
 
 /* Domains CSS */
