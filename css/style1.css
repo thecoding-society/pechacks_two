@@ -94,7 +94,7 @@ a.more {
 
 .custom-navbar .custom-navbar-nav li a {
 	font-weight: 500;
-	color: black !important;
+	color: #f0f5fa !important;
 	opacity: 0.5;
 	-webkit-transition: 0.3s all ease;
 	-o-transition: 0.3s all ease;
@@ -109,7 +109,7 @@ a.more {
 		bottom: 0;
 		left: 8px;
 		right: 8px;
-		background: #f9bf29;
+		background: #f0f5fa;
 		height: 5px;
 		opacity: 1;
 		visibility: visible;

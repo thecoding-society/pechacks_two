@@ -968,3 +968,8 @@ div .contact_name .name{
 .contact_name {
     text-align: center; /* Center the text */
 }
+
+
+#light-des{
+	color: #f0f5fa;
+}
