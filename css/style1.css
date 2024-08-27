@@ -48,9 +48,10 @@ a.more {
 	background: #f2c173 !important ;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	position: sticky;
+	position: fixed;
 	top: 0;
 	z-index: 100;
+	width: 100%;
 }
 
 .custom-navbar .container img {
