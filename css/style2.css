@@ -39,7 +39,7 @@ h2 {
 }
 .back_glimpse {
     /* background-color: rgb(138, 122, 69); */
-	background-image: url('../img/xyz.jpeg');
+	background-image: url('../img/gallerybg.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -922,14 +922,14 @@ div .contact_name .name{
     transition: opacity 0.3s;
 }
 
-.contact-container:hover::before {
+/* .contact-container:hover::before {
     opacity: 1;
-}
+} */
 
-.contact-container:hover {
-    transform: translateY(-5px); /* Slightly lift the container on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add a soft shadow on hover */
-}
+/* .contact-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+} */
 
 .icon-style {
     font-size: 45px; /* Larger icon */
@@ -956,11 +956,7 @@ div .contact_name .name{
     transition: color 0.3s; /* Smooth transition for text color */
 }
 
-.contact-container:hover .icon-style, 
-.contact-container:hover .contact-title, 
-.contact-container:hover .contact-detail {
-    color: #0056b3; /* Change color on hover for a cohesive effect */
-}
+
 
 .contact_name {
     text-align: center; /* Center the text */
