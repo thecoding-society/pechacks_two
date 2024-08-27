@@ -1,6 +1,12 @@
 /* Section */
 
 /* Reset CSS for consistency across browsers */
+
+:root {
+	--primary-color: black;
+	--BGCOLOR: #cc1616
+}
+
 *,
 *::before,
 *::after {
@@ -30,24 +36,29 @@ h2 {
 
 .back_about {
 	min-height: 80vh;
-	background-color: #9a9a4a;
+	background-color: #f4f4f4;
 }
 
 .back_home {
-	background-color: #f2c173;
-	min-height: 92vh;
+	background-color: #f4f4f4;
+	min-height: 100vh;
+	padding-top: 10%;
+}
+.back_glimpse {
+    /* background-color: rgb(138, 122, 69); */
+	background-image: url('../img/gallerybg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.back_glimpse {
-	background-color: rgb(138, 122, 69);
-}
 
 .back_domains {
-	background-color: #9a9a4a;
+	background-color: #aa1d39;
 }
 
 .back_sponsers {
-	background-color: #9a9a4a;
+	background-color: #aa1d39;
 }
 
 .back_puw {
@@ -84,7 +95,7 @@ h2 {
 }
 
 .back_about span {
-	font-size: 20px;
+	font-size: 30px;
 }
 
 .about_img img {
@@ -377,6 +388,7 @@ h2 {
 .gold img {
 	width: 30%;
 	border: 2px solid black;
+	border-radius: 20px;
 }
 
 .silver {
@@ -426,7 +438,7 @@ h2 {
 .award-box {
 	width: 25vw;
 	max-width: 320px;
-	height: 25vw;
+	height: 15vw;
 	max-height: 320px;
 	background-color: #d3c5e5;
 	border: 2px solid #ccc;
@@ -450,7 +462,7 @@ h2 {
 
 .award-box img {
 	width: 36%;
-	height: 35%;
+	height: 55%;
 	border-radius: 50%;
 	position: absolute;
 	top: -20%;
@@ -646,7 +658,7 @@ div .contact_name .name{
 }
 #hero-sub{
 	font-size: 2.4rem;
-	color: #37007a;
+	color: var(--BGCOLOR);
 	line-height: 4vw;
 }
 #faq-head {
@@ -748,7 +760,7 @@ div .contact_name .name{
 	}
 	#hero-sub{
 		font-size: 1.5rem;
-		color: #37007a;
+		color: ;
 		line-height: 4vw;
 	}
 	.hero-buttons a{
@@ -897,4 +909,62 @@ div .contact_name .name{
 	.faq_res{
 		margin-top: 25px;
 	}
+}
+.contact-container {
+    padding: 20px; /* Add padding for breathing space */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    position: relative; /* Position for pseudo-element */
+}
+
+.contact-container::before {
+    content: ''; 
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+    border-radius: 15px; 
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* .contact-container:hover::before {
+    opacity: 1;
+} */
+
+/* .contact-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+} */
+
+.icon-style {
+    font-size: 45px; /* Larger icon */
+    color: #007bff; /* Icon color */
+    margin-bottom: 15px; /* Space below the icon */
+    transition: color 0.3s; /* Smooth transition for icon color */
+}
+
+.contact-title {
+    font-size: 26px; /* Larger font for title */
+    font-weight: bold; /* Bold title */
+    color: #333; /* Darker title color */
+    margin-bottom: 10px; /* Space below the title */
+    letter-spacing: 1px; /* Slightly spaced letters */
+    text-transform: uppercase; /* Uppercase title */
+    transition: color 0.3s; /* Smooth transition for text color */
+}
+
+.contact-detail {
+    font-size: 17px; /* Slightly larger font size for details */
+    color: #666; /* Softer text color */
+    margin: 0; /* Remove extra margin */
+    line-height: 1.6; /* Improve readability */
+    transition: color 0.3s; /* Smooth transition for text color */
+}
+
+
+
+.contact_name {
+    text-align: center; /* Center the text */
 }
