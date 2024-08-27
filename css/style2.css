@@ -902,3 +902,65 @@ div .contact_name .name{
 		margin-top: 25px;
 	}
 }
+.contact-container {
+    padding: 20px; /* Add padding for breathing space */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    position: relative; /* Position for pseudo-element */
+}
+
+.contact-container::before {
+    content: ''; 
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+    border-radius: 15px; 
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.contact-container:hover::before {
+    opacity: 1;
+}
+
+.contact-container:hover {
+    transform: translateY(-5px); /* Slightly lift the container on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add a soft shadow on hover */
+}
+
+.icon-style {
+    font-size: 45px; /* Larger icon */
+    color: #007bff; /* Icon color */
+    margin-bottom: 15px; /* Space below the icon */
+    transition: color 0.3s; /* Smooth transition for icon color */
+}
+
+.contact-title {
+    font-size: 26px; /* Larger font for title */
+    font-weight: bold; /* Bold title */
+    color: #333; /* Darker title color */
+    margin-bottom: 10px; /* Space below the title */
+    letter-spacing: 1px; /* Slightly spaced letters */
+    text-transform: uppercase; /* Uppercase title */
+    transition: color 0.3s; /* Smooth transition for text color */
+}
+
+.contact-detail {
+    font-size: 17px; /* Slightly larger font size for details */
+    color: #666; /* Softer text color */
+    margin: 0; /* Remove extra margin */
+    line-height: 1.6; /* Improve readability */
+    transition: color 0.3s; /* Smooth transition for text color */
+}
+
+.contact-container:hover .icon-style, 
+.contact-container:hover .contact-title, 
+.contact-container:hover .contact-detail {
+    color: #0056b3; /* Change color on hover for a cohesive effect */
+}
+
+.contact_name {
+    text-align: center; /* Center the text */
+}
