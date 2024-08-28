@@ -138,10 +138,10 @@ h2 {
 }
 
 .new-section img {
-	width: 280px;
-    max-width: 100%;
+	/* width: 280px; */
+    max-width: 200px;
     height: auto;
-    border-radius: 10px; /* Optional: Add rounded corners */
+    border-radius: 0px; /* Optional: Add rounded corners */
     
 }
 
