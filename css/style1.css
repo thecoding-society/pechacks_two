@@ -47,7 +47,7 @@ a.more {
 }
 
 .custom-navbar {
-	background: var(--BGCOLOR) !important ;
+	background: rgb(0, 0, 0);
 	padding-top: 20px;
 	padding-bottom: 20px;
 	position: fixed;
