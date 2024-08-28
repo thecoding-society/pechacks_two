@@ -655,7 +655,7 @@ div .contact_name .name{
 }
 
 #heading-pec {
-	font-size: 9rem;
+	font-size: 7.5rem;
 	font-weight: 500;
     line-height: 1;
     letter-spacing: .01em;
@@ -677,19 +677,19 @@ div .contact_name .name{
     position: relative;
     height: 20.798vw;
 }
-.heading-shadow, .heading-small {
+.heading-shadow, .heading-small, .heading-shadow-p, .heading-small-p {
     width: 100%;
     font-family: "Anton SC", sans-serif;
     font-weight: 400;
 }
-.heading-shadow {
+.heading-shadow, .heading-shadow-p{
     color: hsla(0, 0%, 100%, 0.16);
     font-style: normal;
     font-size: 16vw;
     line-height: 20.798vw;
 }
 
-.heading-small {
+.heading-small, .heading-small-p {
     top: 11.806vw;
     font-size: 5.556vw;
     position: absolute;
@@ -697,14 +697,30 @@ div .contact_name .name{
     display: flex;
     justify-content: center;
 }
-.heading-shadow, .heading-small {
-    width: 100%;
-    font-family: "Anton SC", sans-serif;
-    font-weight: 400;
-}
 
 #white-back{
 	color: rgb(224, 224, 225)
+}
+
+.cont{
+	display: flex;
+	gap: 200px;
+	align-items: center;
+}
+
+.cont img{
+	width: 350px;
+}
+
+.con{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 200px;
+}
+
+.con img{
+	width: 150%;
 }
 
 /*--------------------------------------------------------------
