@@ -703,6 +703,7 @@ div .contact_name .name{
 }
 
 .cont{
+	margin-top: 100px;
 	display: flex;
 	gap: 200px;
 	align-items: center;
