@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 80px;
+            margin: 0;
+            color: #ff6347;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        p {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #8b949e;
+        }
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-size: 18px;
+            border: 1px solid #58a6ff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        a:hover {
+            background-color: #58a6ff;
+            color: #0d1117;
+        }
+        .animation {
+            position: relative;
+            margin: 30px 0;
+        }
+        .animation img {
+            width: 200px;
+            animation: float 4s ease-in-out infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <div class="animation">
+            <img src="" alt="404 Illustration">
+        </div>
+        <p>Oops! The page you’re looking for doesn’t exist. It might have been removed, or the URL could be incorrect.</p>
+        <a href="/">Return to Home</a>
+    </div>
+</body>
+</html>
