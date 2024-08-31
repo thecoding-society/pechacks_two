@@ -995,3 +995,24 @@ div .contact_name .name{
 #light-des{
 	color: #f0f5fa;
 }
+
+
+.not-selectable {
+	user-select: none; /* Prevent text selection */
+	/* other browser */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	/* IE10+ */
+	-webkit-tap-highlight-color: transparent;
+	
+	/* not dragable */
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+
+
+}
