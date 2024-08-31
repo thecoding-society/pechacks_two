@@ -59,6 +59,7 @@ h2 {
 
 .back_sponsers {
 	background-color: #aa1d39;
+	padding-bottom: 4vw;
 }
 
 .back_puw {
@@ -78,6 +79,7 @@ h2 {
 }
 .back_prices {
 	background-color: #f0f5fa;
+	margin-bottom: 8vw;
 }
 
 /* Responsive for Sections styles */
