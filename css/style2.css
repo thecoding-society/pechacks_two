@@ -35,13 +35,13 @@ h2 {
 /* Sections Styles  */
 
 .back_about {
-	min-height: 80vh;
+	min-height: 230vh !important;
 	background-color: #f4f4f4;
 }
 
 .back_home {
 	background-color: #f4f4f4;
-	min-height: 100vh;
+	height: 100vh;
 	padding-top: 10%;
 }
 .back_glimpse {
@@ -177,7 +177,7 @@ h2 {
 
 	.about_img img {
 		margin: 0 auto;
-		width: 300px;
+		width: 400px;
 	}
 	.new-section{
 		display: flex;
@@ -186,6 +186,9 @@ h2 {
 	}
 	.new-section img{
 		width: 250px;
+	}
+	.back_about{
+		height: 280vh;
 	}
 }
 
@@ -428,10 +431,10 @@ h2 {
 }
 .award-container .award-content h3 {
 	color: black;
-	font-size: 30px;
+	font-size: 28px;
 }
 .award-container .award-content p {
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .first-row,
@@ -445,7 +448,7 @@ h2 {
 .award-box {
 	width: 25vw;
 	max-width: 320px;
-	height: 15vw;
+	height: 20vw;
 	max-height: 320px;
 	background-color: #d3c5e5;
 	border: 2px solid #ccc;
@@ -453,7 +456,7 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: center;
 	text-align: center;
 	padding: 20px;
 	border: 2px solid black;
@@ -468,11 +471,11 @@ h2 {
 }
 
 .award-box img {
-	width: 36%;
+	width: 45%;
 	height: 55%;
 	border-radius: 50%;
 	position: absolute;
-	top: -20%;
+	top: -30%;
 	border: 2px solid black;
 	padding: 5px;
 	background-color: #ff6f61;
@@ -514,7 +517,7 @@ h2 {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1024px) and (min-width: 815px) {
 	.award-container {
 		gap: 100px;
 	}
@@ -525,6 +528,26 @@ h2 {
 	}
 	.award-box {
 		height: 28vw;
+	}
+	.award-box img{
+		width: 55%;
+		height: 50%;
+	}
+}
+
+@media(max-width: 815px) and (min-width: 768px){
+	.award-box {
+		height: 25vw !important;
+	}
+	.award-box img{
+		width: 50% !important;
+		height: 45% !important;
+	}
+	.award-container .award-content h3 {
+		font-size: 18px !important;
+	}
+	.award-container .award-content p {
+		font-size: 12px !important;
 	}
 }
 
@@ -691,9 +714,13 @@ div .contact_name .name{
     line-height: 20.798vw;
 }
 
-.heading-small, .heading-small-p {
+.heading-small, .heading-small-p{
     top: 11.806vw;
+    position: absolute;
     font-size: 5.556vw;
+    font-size: 5.556vw;
+    position: absolute;
+	font-size: 5.556vw;
     position: absolute;
     line-height: 5.546vw;
     display: flex;
@@ -724,6 +751,48 @@ div .contact_name .name{
 
 .con img{
 	width: 150%;
+}
+
+@media(max-width: 992px) and (min-width: 768px){
+	.p-res{
+		font-size: 12vw;
+	}
+}
+
+@media(max-width: 768px){
+	.p-res{
+		font-size: 10vw;
+	}
+}
+
+@media(max-width: 1200px){
+	.con{
+		gap: 150px;
+	}
+	.con img{
+		width: 430px;
+	}
+}
+
+@media(max-width: 992px){
+	.con{
+		gap: 70px;
+	}
+	.con img{
+		width: 370px;
+	}
+}
+
+@media(max-width: 768px){
+	.con{
+		flex-direction: column;
+	}
+	.con img{
+		width: 400px;
+	}
+	.cont{
+		margin-top: 30px;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -816,9 +885,15 @@ div .contact_name .name{
 	}
 }
 
-@media(max-width: 1000px) and (min-width: 768px){
+@media(max-width: 1000px){
 	.hero{
 		height: 750px !important;
+	}
+}
+
+@media(max-width: 768px){
+	.hero{
+		height: 650px !important;
 	}
 }
 
@@ -891,6 +966,9 @@ div .contact_name .name{
 
 	#timer div span {
 		font-size: 3vw;
+	}
+	.hero{
+		height: 600px !important;
 	}
 }
 
