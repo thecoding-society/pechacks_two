@@ -35,7 +35,7 @@ h2 {
 /* Sections Styles  */
 
 .back_about {
-	min-height: 230vh !important;
+	min-height: 90vh ;
 	background-color: #f4f4f4;
 }
 
@@ -188,7 +188,7 @@ h2 {
 		width: 250px;
 	}
 	.back_about{
-		height: 280vh;
+		height: 150vh;
 	}
 }
 
@@ -471,7 +471,7 @@ h2 {
 }
 
 .award-box img {
-	width: 45%;
+	width: 55%;
 	height: 55%;
 	border-radius: 50%;
 	position: absolute;
