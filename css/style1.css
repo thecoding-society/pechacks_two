@@ -170,7 +170,7 @@ a.more {
 
 .hero {
 	background: #f4f4f4;
-	height: 700px !important;
+	height: 600px !important;
 }
 
 @media (min-width: 768px) {
