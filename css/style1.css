@@ -170,7 +170,13 @@ a.more {
 
 .hero {
 	background: #f4f4f4;
-	height: 700px !important;
+	height: 600px;
+}
+
+@media(max-width: 1000px) and (min-width: 768px){
+	.back_home{
+		height: 800px !important;
+	}
 }
 
 @media (min-width: 768px) {
