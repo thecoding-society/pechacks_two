@@ -20,7 +20,7 @@ html,body{
 /* Global styles */
 body {
 
-	background-color: #f4f4f4;
+	background-color: #aa1d39;;
 	/* padding: 5px; */
 	font-family: "Montserrat", sans-serif;
   
@@ -63,6 +63,10 @@ h2 {
 }
 
 .back_puw {
+	background-color: #f0f5fa;
+}
+
+.back_contactus {
 	background-color: #f0f5fa;
 }
 
@@ -386,8 +390,8 @@ h2 {
 	}
 }
 
-/* Sponsers Styles */
 
+/* Sponsors Styles */
 .gold {
 	display: flex;
 	column-gap: 40px;
@@ -397,8 +401,24 @@ h2 {
 
 .gold img {
 	width: 30%;
-	border: 2px solid black;
 	border-radius: 20px;
+	box-shadow: 0 4px 8px rgb(0, 0, 0), 0 6px 20px rgb(0, 0, 0);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gold img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure that the anchor tag does not affect image size */
+.gold a {
+	display: inline-block;
+	width: 30%; /* Ensures the anchor tag width matches the image width */
+}
+
+.gold a img {
+	width: 100%; /* Ensures the image inside anchor tag takes full width */
 }
 
 .silver {
@@ -409,6 +429,10 @@ h2 {
 	.gold img {
 		width: 45%;
 	}
+
+	.gold a {
+		width: 45%;
+	}
 }
 
 @media (max-width: 425px) {
@@ -417,6 +441,9 @@ h2 {
 		row-gap: 30px;
 	}
 }
+
+
+
 
 /* Prices Styles */
 
