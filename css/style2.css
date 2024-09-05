@@ -20,7 +20,7 @@ html,body{
 /* Global styles */
 body {
 
-	background-color: #aa1d39;;
+	background-color: #aa1d39;
 	/* padding: 5px; */
 	font-family: "Montserrat", sans-serif;
   
@@ -37,12 +37,14 @@ h2 {
 .back_about {
 	min-height: 90vh ;
 	background-color: #f4f4f4;
+	padding-top: 80px; /* Adjust based on the height of your navbar */
+  	/* margin-top: -80px; Negative margin to counteract the scroll jump */
 }
 
 .back_home {
 	background-color: #f4f4f4;
 	height: 100vh;
-	padding-top: 10%;
+	padding-top: 5%;
 }
 .back_glimpse {
     /* background-color: rgb(138, 122, 69); */
@@ -57,9 +59,10 @@ h2 {
 	background-color: #aa1d39;
 }
 
-.back_sponsers {
+.back_sponsors {
 	background-color: #aa1d39;
 	padding-bottom: 4vw;
+	
 }
 
 .back_puw {
@@ -395,13 +398,13 @@ h2 {
 .gold {
 	display: flex;
 	flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
-	column-gap: 20px; /* Reduce gap between boxes */
+	column-gap: 20px; /* Gap between boxes */
 	justify-content: center;
 	align-items: center;
 }
 
 .gold img {
-	width: 20%; /* Reduce size of boxes */
+	width: 18vw; /* Dynamic width based on viewport width */
 	border-radius: 15px; /* Slightly smaller border radius */
 	box-shadow: 0 4px 8px rgb(0, 0, 0), 0 6px 20px rgb(0, 0, 0);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -415,7 +418,7 @@ h2 {
 /* Ensure that the anchor tag does not affect image size */
 .gold a {
 	display: inline-block;
-	width: 20%; /* Matches the reduced image width */
+	width: 18vw; /* Matches the reduced image width */
 }
 
 .gold a img {
@@ -426,30 +429,66 @@ h2 {
 	padding-bottom: 40px; /* Adjust padding to fit smaller boxes */
 }
 
-@media (max-width: 768px) {
+/* 4K and larger screens (1440px - 3840px+) */
+@media (min-width: 1440px) {
 	.gold img {
-		width: 35%; /* Increase size for medium screens */
+		width: 12vw; /* Smaller size for large screens */
 	}
 
 	.gold a {
-		width: 35%; /* Ensure anchor matches image size */
+		width: 12vw;
 	}
 }
 
+/* Large desktop screens (1024px - 1440px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+	.gold img {
+		width: 15vw; /* Adjusted for larger desktops */
+	}
+
+	.gold a {
+		width: 15vw;
+	}
+}
+
+/* Tablets and small desktops (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.gold img {
+		width: 25vw; /* Increased size for tablets */
+	}
+
+	.gold a {
+		width: 25vw;
+	}
+}
+
+/* Mobile screens (426px - 767px) */
+@media (min-width: 426px) and (max-width: 767px) {
+	.gold img {
+		width: 35vw; /* Increased size for mobile devices */
+	}
+
+	.gold a {
+		width: 35vw;
+	}
+}
+
+/* Small mobile screens (320px - 425px) */
 @media (max-width: 425px) {
 	.gold {
-		flex-direction: column;
-		row-gap: 20px; /* Reduce gap between stacked boxes */
+		flex-direction: column; /* Stacks boxes vertically */
+		row-gap: 20px; /* Gap between stacked boxes */
 	}
 
 	.gold img {
-		width: 70%; /* Larger size for small screens to maintain visibility */
+		width: 80vw; /* Larger size for small mobile devices */
 	}
 
 	.gold a {
-		width: 70%;
+		width: 80vw;
 	}
 }
+
 
 
 
