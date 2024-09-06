@@ -194,7 +194,7 @@ h2 {
 		width: 250px;
 	}
 	.back_about{
-		height: 150vh;
+		height: auto;
 	}
 }
 
@@ -410,6 +410,10 @@ h2 {
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.bronze img{
+	box-shadow: none;
+}
+
 .gold img:hover {
 	transform: scale(1.05);
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
@@ -443,7 +447,8 @@ h2 {
 	display: flex;
 	justify-content: space-around;
 	margin: 0 2px; /* Reduce margin around the images */
-	padding: 0
+	padding: 0;
+	margin-top: 20px
   }
   
   .hvr-float-shadow {
@@ -555,7 +560,8 @@ h2 {
 
 .award-row {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+	width: 100%;
     margin-bottom: 40px;
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
@@ -751,6 +757,9 @@ div .contact_name .name{
 	font-size: 2.4rem;
 	color: var(--BGCOLOR);
 	line-height: 4vw;
+	background-color: white;
+	width: auto;
+	z-index: -100;
 }
 #faq-head {
 	color: white;
@@ -974,6 +983,7 @@ div .contact_name .name{
 	font-weight: 700;
 	color: #c7c7c7;
 	padding: 20px;
+	z-index: 100;
 }
 
 #timer div {

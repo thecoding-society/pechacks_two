@@ -184,6 +184,12 @@ a.more {
 	height: 600px;
 }
 
+@media(min-width: 768px){
+	.dom_p{
+		font-size: 2rem !important;
+	}
+}
+
 .back_home{
 	background: url(../img/home_background.jpg);
 	background-size: cover;
@@ -540,7 +546,7 @@ section .domains {
 
 .wrapper {
 	width: 100vw;
-	height: 65vh;
+	height: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -552,6 +558,7 @@ section .domains {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: start;
+	margin-top: 100px;
 }
 
 .clash {
@@ -678,6 +685,7 @@ input:checked + .clash .description {
 		align-items: center;
 		overflow-x: hidden;
 		width: 500px;
+		margin-top: 20px;
 	}
 
 	.clash {
