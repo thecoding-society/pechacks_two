@@ -439,6 +439,22 @@ h2 {
 		width: 12vw;
 	}
 }
+.owl-carousel .gold {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 2px; /* Reduce margin around the images */
+	padding: 0
+  }
+  
+  .hvr-float-shadow {
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .hvr-float-shadow:hover {
+	transform: translateY(-10px);
+	box-shadow: 0px 8px 15px rgb(255, 255, 255);
+  }
+  
 
 /* Large desktop screens (1024px - 1440px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
