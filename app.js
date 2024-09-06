@@ -34,3 +34,30 @@ $(document).ready(function() {
         moveBox('#box' + (i + 1), i * (Math.PI / (numBoxes / 2)));
     }
 });
+
+// Nav link
+
+document.addEventListener("DOMContentLoaded", function() {
+	const sections = document.querySelectorAll('.section');
+	const navLinks = document.querySelectorAll('.nav-link');
+
+	window.addEventListener('scroll', function() {
+		let current = '';
+
+		sections.forEach((section) => {
+			const sectionTop = section.offsetTop - 100; // Adjust based on navbar height
+			const sectionHeight = section.clientHeight;
+			if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+				current = section.getAttribute('id');
+			}
+		});
+
+		navLinks.forEach((link) => {
+			link.classList.remove('active');
+			if (link.getAttribute('href').substring(1) === current) {
+				link.classList.add('active');
+			}
+		});
+	});
+});
+

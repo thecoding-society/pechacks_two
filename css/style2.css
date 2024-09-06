@@ -86,7 +86,6 @@ h2 {
 }
 .back_prices {
 	background-color: #f0f5fa;
-	margin-bottom: 8vw;
 }
 
 /* Responsive for Sections styles */
@@ -399,6 +398,7 @@ h2 {
 	display: flex;
 	flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
 	column-gap: 20px; /* Gap between boxes */
+	row-gap: 20px;
 	justify-content: center;
 	align-items: center;
 }
@@ -481,11 +481,11 @@ h2 {
 	}
 
 	.gold img {
-		width: 80vw; /* Larger size for small mobile devices */
+		width: 35vw !important; /* Larger size for small mobile devices */
 	}
 
 	.gold a {
-		width: 80vw;
+		width: auto;
 	}
 }
 
@@ -622,7 +622,7 @@ h2 {
     }
 
     .award-content h3 {
-        font-size: 1.1rem; /* Adjust text size */
+        font-size: 1.1rem !important; /* Adjust text size */
     }
 }
 
@@ -738,6 +738,12 @@ div .contact_name .name{
 }
 #faq-head {
 	color: white;
+}
+
+@media(max-width: 425px){
+	#faq-head{
+		font-size: 1rem;
+	}
 }
 
 
@@ -898,7 +904,7 @@ div .contact_name .name{
 	}
 	#hero-sub{
 		font-size: 1.5rem;
-		color: #fff;
+		color: var(--BGCOLOR);
 		line-height: 4vw;
 	}
 	.hero-buttons a{
@@ -909,12 +915,12 @@ div .contact_name .name{
 @media(max-width: 480px){
 	#heading-pec{
 		font-size: 4rem;
-		margin: 2.5rem 0 2.5rem 0;
+		margin: 70px auto 15px auto;
 		text-align: center;
 	}
 	#hero-sub{
 		font-size: 1rem;
-		color: #37007a;
+		color: var(--BGCOLOR);
 		line-height: 5vw;
 		text-align: center;
 	}

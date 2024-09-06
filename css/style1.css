@@ -166,6 +166,18 @@ a.more {
 	margin-right: 20px;
 }
 
+.home_contents, .fans{
+	display: flex;
+	justify-content: space-between;
+	align-items: space-between;
+}
+
+@media(max-width: 1000px){
+	.home_contents, .fans{
+		flex-direction: column;
+	}
+}
+
 /* Domains Styles */
 
 .hero {
@@ -174,7 +186,8 @@ a.more {
 
 .back_home{
 	background: url(../img/home_background.jpg);
-	background-size: contain;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 @media(max-width: 1000px) and (min-width: 768px){
