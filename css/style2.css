@@ -86,7 +86,6 @@ h2 {
 }
 .back_prices {
 	background-color: #f0f5fa;
-	margin-bottom: 8vw;
 }
 
 /* Responsive for Sections styles */
@@ -195,7 +194,7 @@ h2 {
 		width: 250px;
 	}
 	.back_about{
-		height: 150vh;
+		height: auto;
 	}
 }
 
@@ -399,6 +398,7 @@ h2 {
 	display: flex;
 	flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
 	column-gap: 20px; /* Gap between boxes */
+	row-gap: 20px;
 	justify-content: center;
 	align-items: center;
 }
@@ -408,6 +408,10 @@ h2 {
 	border-radius: 15px; /* Slightly smaller border radius */
 	box-shadow: 0 4px 8px rgb(0, 0, 0), 0 6px 20px rgb(0, 0, 0);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bronze img{
+	box-shadow: none;
 }
 
 .gold img:hover {
@@ -439,6 +443,23 @@ h2 {
 		width: 12vw;
 	}
 }
+.owl-carousel .gold {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 2px; /* Reduce margin around the images */
+	padding: 0;
+	margin-top: 20px
+  }
+  
+  .hvr-float-shadow {
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .hvr-float-shadow:hover {
+	transform: translateY(-10px);
+	box-shadow: 0px 8px 15px rgb(255, 255, 255);
+  }
+  
 
 /* Large desktop screens (1024px - 1440px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
@@ -481,11 +502,11 @@ h2 {
 	}
 
 	.gold img {
-		width: 80vw; /* Larger size for small mobile devices */
+		width: 35vw !important; /* Larger size for small mobile devices */
 	}
 
 	.gold a {
-		width: 80vw;
+		width: auto;
 	}
 }
 
@@ -539,7 +560,8 @@ h2 {
 
 .award-row {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+	width: 100%;
     margin-bottom: 40px;
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
@@ -622,7 +644,7 @@ h2 {
     }
 
     .award-content h3 {
-        font-size: 1.1rem; /* Adjust text size */
+        font-size: 1.1rem !important; /* Adjust text size */
     }
 }
 
@@ -735,9 +757,18 @@ div .contact_name .name{
 	font-size: 2.4rem;
 	color: var(--BGCOLOR);
 	line-height: 4vw;
+	background-color: white;
+	width: auto;
+	z-index: -100;
 }
 #faq-head {
 	color: white;
+}
+
+@media(max-width: 425px){
+	#faq-head{
+		font-size: 1rem;
+	}
 }
 
 
@@ -898,7 +929,7 @@ div .contact_name .name{
 	}
 	#hero-sub{
 		font-size: 1.5rem;
-		color: #fff;
+		color: var(--BGCOLOR);
 		line-height: 4vw;
 	}
 	.hero-buttons a{
@@ -909,12 +940,12 @@ div .contact_name .name{
 @media(max-width: 480px){
 	#heading-pec{
 		font-size: 4rem;
-		margin: 2.5rem 0 2.5rem 0;
+		margin: 70px auto 15px auto;
 		text-align: center;
 	}
 	#hero-sub{
 		font-size: 1rem;
-		color: #37007a;
+		color: var(--BGCOLOR);
 		line-height: 5vw;
 		text-align: center;
 	}
@@ -952,6 +983,7 @@ div .contact_name .name{
 	font-weight: 700;
 	color: #c7c7c7;
 	padding: 20px;
+	z-index: 100;
 }
 
 #timer div {
