@@ -17,7 +17,7 @@ $(document).ready(function(){
                 items: 2
             },
             1000: {
-                items: 3 // Display 3 items at a time
+                items: 4 // Display 3 items at a time
             }
         }
     });

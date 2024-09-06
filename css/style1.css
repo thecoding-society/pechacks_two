@@ -181,7 +181,7 @@ a.more {
 /* Domains Styles */
 
 .hero {
-	height: 600px;
+	height: auto;
 }
 
 @media(min-width: 768px){
