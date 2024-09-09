@@ -43,8 +43,14 @@ h2 {
 
 .back_home {
 	background-color: #f4f4f4;
-	height: auto;
+	height: 100vh;
 	padding-top: 5%;
+}
+
+@media(max-width: 768px){
+	.back_home{
+		height: auto;
+	}
 }
 .back_glimpse {
     /* background-color: rgb(138, 122, 69); */
@@ -464,8 +470,18 @@ h2 {
 	/* center vertically */
 	display: flex;
 	align-items: center;
+}
 
-
+@media(max-width: 600px){
+	.bronze_slide{
+		height: 100px !important;
+	}
+	.bronze_slide img{
+		margin-bottom: 15px;
+	}
+	h2 .spon{
+		margin-bottom: none !important;
+	}
 }
 
 .owl-prev, .owl-next {
