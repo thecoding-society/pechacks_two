@@ -209,7 +209,9 @@ nav a.hit::after {
 /* Domains Styles */
 
 .hero {
-	height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @media(min-width: 768px){
@@ -222,6 +224,10 @@ nav a.hit::after {
 	background: url(../img/home_background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.container{
+	padding-top: 50px;
 }
 
 @media(max-width: 1000px) and (min-width: 768px){
