@@ -86,3 +86,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 
+  let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
+let nav = document.querySelector('nav');
+
+// Scroll event to highlight active link
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('hit');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('hit');
+            });
+        }
+    });
+};
+
+// Toggle menu for mobile view
+function toggleMenu() {
+    nav.classList.toggle('active');
+}
+
+// Create the hamburger button dynamically
+const header = document.querySelector('header');
+const hamburger = document.createElement('div');
+hamburger.className = 'hamburger';
+hamburger.innerHTML = '<span></span><span></span><span></span>';
+hamburger.onclick = toggleMenu;
+header.appendChild(hamburger);
+  
