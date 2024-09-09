@@ -474,13 +474,13 @@ h2 {
 
 @media(max-width: 600px){
 	.bronze_slide{
-		height: 100px !important;
+		height: 115px !important;
 	}
 	.bronze_slide img{
 		margin-bottom: 15px;
 	}
-	h2 .spon{
-		margin-bottom: none !important;
+	.spon{
+		margin-bottom: 0 !important;
 	}
 }
 
