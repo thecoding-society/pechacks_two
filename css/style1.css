@@ -200,6 +200,11 @@ nav a.hit::after {
 		flex-direction: column;
 	}
 }
+@media(min-width: 1600px){
+	.home_contents, .fans{
+		column-gap: 100px;
+	}
+}
 
 /* Domains Styles */
 
