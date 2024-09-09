@@ -444,10 +444,28 @@ h2 {
 	}
 }
 .carousel-container {
+	height: 160px;
     max-width: 800px; /* Increase the max width of the carousel container */
     margin: 0 auto; /* Center the container */
     padding: 20px !; /* Apply padding inside the container */
     position: relative; /* Ensure positioning context for the arrows */
+}
+
+#owl-height{
+	height: 180px;
+}
+
+.owl-carousel .owl-stage-outer {
+	height: 180px !important;
+}
+
+.owl-carousel .owl-stage {
+	height: 180px !important;
+	/* center vertically */
+	display: flex;
+	align-items: center;
+
+
 }
 
 .owl-prev, .owl-next {
