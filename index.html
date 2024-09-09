@@ -70,42 +70,25 @@
 
 	<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
 		<!-- Start Header/Navigation -->
-		<nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
-			<div class="container">
-				<img class="logo" src="assets/images/pec_hacks.png" alt="Logo" />
-				<a class="navbar-brand" href="index.html"></a>
+		<header>
+			<a href="#" class="logo"><img src="assets/images/pec_hacks.png" alt="Logo"></a>
+			<nav>
+				<a href="#home" class="hit">Home</a>
+				<a href="#about">About</a>
+				<a href="#domains">Domains</a>
+				<a href="#timeline">Timeline</a>
+				<a href="#prizes">Prizes</a>
+				<a href="#sponsers">Sponsers</a>
+				<a href="#faq">FAQs</a>
+			</nav>
+		</header>
 		
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarsFurni"
-					aria-controls="navbarsFurni"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-		
-				<div class="collapse navbar-collapse navi" id="navbarsFurni">
-					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0" id="nav-js">
-						<li class="nav-item"><a class="nav-link active" href="#Home">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="#About">About</a></li>
-						<li class="nav-item"><a class="nav-link" href="#Domains">Domains</a></li>
-						<li class="nav-item"><a class="nav-link" href="#Timeline">Timeline</a></li>
-						<li class="nav-item"><a class="nav-link" href="#Prizes">Prizes</a></li>
-						<li class="nav-item"><a class="nav-link" href="#Partners">Sponsors</a></li>
-						<li class="nav-item"><a class="nav-link" href="#FAQ">FAQs</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
 		
 		<!-- End Header/Navigation -->
 
 		<!-- Start of Home Page -->
-		<section class="back_home">
-			<div class="hero" id="Home" data-aos="zoom-in" data-aos-once="true">
+		<section class="back_home" id="home">
+			<div class="hero" data-aos="zoom-in" data-aos-once="true">
 				<div class="container">
 					<div>
 						<div class="cont">
@@ -140,9 +123,9 @@
 		<!-- End of Home Page -->
 
 		<!-- Start of About Section -->
-		<section class="back_about">
+		<section class="back_about" id="about">
 			<div class="container abo-pat">
-				<div id="About" data-aos="fade-down" data-aos-once="true">
+				<div data-aos="fade-down" data-aos-once="true">
 					<!-- HEADING -->
 					<div class="heading not-selectable">
 						<h1 class="heading-shadow" id="white-back">ABOUT</h1>
@@ -429,7 +412,7 @@
 		<!-- End of Glimpse of PEC Hacks Section -->
 
 		<!-- Start of Domains Section -->
-		<section id="Domains" class="back_domains">
+		<section id="domains" class="back_domains">
 			<br />
 			<br />
 
@@ -527,14 +510,14 @@
 		<!-- End of Domains Section -->
 
 		<!-- Start of Timeline	 -->
-		<section id="Timeline" class="whole back_timeline">
+		<section id="timeline" class="whole back_timeline">
 			<img class="big not-selectable" src="img/timeline.png" alt="Timeline" />
 			<img class="small not-selectable" src="img/big.png" alt="Timeline" />
 		</section>
 		<!-- End of Timeline -->
 
 		<!-- Start of Prizes Section -->
-		<section id="Prizes" class="back_prices">
+		<section id="prizes" class="back_prices">
 			<br />
 			<br />
 			<div data-aos="fade-down" data-aos-once="true">
@@ -630,7 +613,7 @@
 		<!-- End of Prizes Section -->
 
 		<!-- Start of Sponsors Section -->
-		<section id="Partners" class="back_sponsors">
+		<section id="sponsers" class="back_sponsors">
 			<div data-aos="fade-down" data-aos-once="true">
 				<br />
 				<!-- HEADING -->
@@ -670,7 +653,8 @@
 					<div class="gold">
 						<a href="https://devfolio.co/"><img class="hvr-float-shadow" src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/devfolio.png?updatedAt=1725590141525" alt="DEVFOLIO LOGO" /></a>
 						<a href="https://polygon.technology/"><img class="hvr-float-shadow" src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/polygon.png?updatedAt=1725590145961" alt="POLYGON LOGO" /></a>
-						
+						<a href="https://ethindia.co/"><img class="hvr-float-shadow" src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/ethindia.png?updatedAt=1725590143545" alt="ETHINDIA LOGO" /></a>
+						<a href="https://aptos.dev/"><img class="hvr-float-shadow" src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/aptos.png?updatedAt=1725590141097" alt="APTOS LOGO" /></a>
 					</div>
 					<br>
 					
@@ -679,71 +663,50 @@
 				<h2><b id="light-des">Silver Sponsors</b></h2>
 				<div class="gold silver">
 					<a href="https://github.com/"><img class="hvr-float-shadow" src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/github.png?updatedAt=1725590143567" alt="Silver Sponsor" /></a>
-					<a href="https://ethindia.co/"><img class="hvr-float-shadow" src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/ethindia.png?updatedAt=1725590143545" alt="ETHINDIA LOGO" /></a>
-					<a href="https://aptos.dev/"><img class="hvr-float-shadow" src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/aptos.png?updatedAt=1725590141097" alt="APTOS LOGO" /></a>
 				</div>
 				<h2><b id="light-des">Bronze Sponsors</b></h2>
-				
-				</div>
-				<div class="carousel-container">
-					<div class="owl-carousel owl-theme">
-						<div class="gold">
-							<a href="https://niia.ai/"><img class="hvr-float-shadow"
-									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/niia.png?updatedAt=1725590145992"
-									alt="NavanAi LOGO" /></a>
-						</div>
-						<div class="gold">
-							<a href="https://www.axure.com/"><img class="hvr-float-shadow"
-									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/axure.png?updatedAt=1725590141140"
-									alt="AXURE LOGO" /></a>
-						</div>
-						<div class="gold">
-							<a href="https://flatlogic.com/"><img class="hvr-float-shadow"
-									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/flatlogic.png?updatedAt=1725590141248"
-									alt="Flatlogic LOGO" /></a>
-						</div>
-						<div class="gold ">
-							<a href="https://nordpass.com/"><img class="hvr-float-shadow"
-									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/nordpass.png?updatedAt=1725590144199"
-									alt="Nordpass LOGO" /></a>
-						</div>
-						<div class="gold">
-							<a href="https://nordvpn.com/"><img class="hvr-float-shadow"
-									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/nordvpn.png?updatedAt=1725590144158"
-									alt="Nordvpn LOGO" /></a>
-						</div>
-						<div class="gold">
-							<a href="https://balsamiq.com/"><img class="hvr-float-shadow"
-									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/balsamiq.png?updatedAt=1725590141252"
-									alt="Balsamiq LOGO" /></a>
-						</div>
-						<div class="gold">
-							<a href="https://incogni.com/"><img class="hvr-float-shadow"
-									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/incogni.png?updatedAt=1725590145933"
-									alt="Incogni LOGO" /></a>
-						</div>
-						<div class="gold">
-							<a href="https://saily.com/"><img class="hvr-float-shadow"
-									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/saily.png?updatedAt=1725612006906"
-									alt="Saily LOGO" /></a>
-						</div>
-						<div class="gold">
-							<a href="https://www.slido.com/"><img class="hvr-float-shadow"
-									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/slido.png?updatedAt=1725626942757"
-									alt="Slido LOGO" /></a>
-						</div>
-						<div class="gold">
-							<a href="https://beeceptor.com/"><img class="hvr-float-shadow"
-									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/beeceptor.png?updatedAt=1725626943068"
-									alt="Beeceptor LOGO" /></a>
-						</div>
-						<div class="gold">
-							<a href="https://interviewbuddy.net/"><img class="hvr-float-shadow"
-									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/interview_buddy.png?updatedAt=1725626943355"
-									alt="Interview Buddy LOGO" /></a>
-						</div>
-	
+				<div class="owl-carousel">
+					<div class="gold bronze">
+						<a href="https://niia.ai/"><img class="hvr-float-shadow"
+								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/niia.png?updatedAt=1725590145992"
+								alt="NavanAi LOGO" /></a>
 					</div>
+					<div class="gold bronze">
+						<a href="https://www.axure.com/"><img class="hvr-float-shadow"
+								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/axure.png?updatedAt=1725590141140"
+								alt="AXURE LOGO" /></a>
+					</div>
+					<div class="gold bronze">
+						<a href="https://flatlogic.com/"><img class="hvr-float-shadow"
+								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/flatlogic.png?updatedAt=1725590141248"
+								alt="Flatlogic LOGO" /></a>
+					</div>
+					<div class="gold bronze">
+						<a href="https://nordpass.com/"><img class="hvr-float-shadow"
+								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/nordpass.png?updatedAt=1725590144199"
+								alt="Nordpass LOGO" /></a>
+					</div>
+					<div class="gold bronze">
+						<a href="https://nordvpn.com/"><img class="hvr-float-shadow"
+								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/nordvpn.png?updatedAt=1725590144158"
+								alt="Nordvpn LOGO" /></a>
+					</div>
+					<div class="gold bronze">
+						<a href="https://balsamiq.com/"><img class="hvr-float-shadow"
+								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/balsamiq.png?updatedAt=1725590141252"
+								alt="Balsamiq LOGO" /></a>
+					</div>
+					<div class="gold bronze">
+						<a href="https://incogni.com/"><img class="hvr-float-shadow"
+								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/incogni.png?updatedAt=1725590145933"
+								alt="Incogni LOGO" /></a>
+					</div>
+					<div class="gold bronze">
+						<a href="https://saily.com/"><img class="hvr-float-shadow"
+								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/saily.png?updatedAt=1725612006906"
+								alt="Saily LOGO" /></a>
+					</div>
+				</div>
 				</div>
 				
 				  
@@ -816,7 +779,7 @@
 		<!-- End of Contact us -->
 
 		<!-- Start of FAQ's Section -->
-		<section id="FAQ" class="bsb-faq-2 py-3 py-md-5 py-xl-8 back_faq">
+		<section id="faq" class="bsb-faq-2 py-3 py-md-5 py-xl-8 back_faq">
 			<div data-aos="fade-down" data-aos-once="true">
 				<br />
 				<pre><h2 id="faq-head" class="not-selectable"><b>Frequently Asked Questions</b></h2></pre>
