@@ -91,12 +91,23 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
+	position: relative;
     transition: 0.3s;
 }
 
 nav a:hover,
 nav a.hit {
     color: white;
+}
+
+nav a.hit::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust based on your design */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Line thickness */
+    background-color: rgb(255, 77, 0); /* Highlight line color */
 }
 
 .hamburger {

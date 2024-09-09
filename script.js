@@ -71,22 +71,22 @@ setInterval(updateTimer, 1000);
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-  
-      const target = document.querySelector(this.getAttribute('href'));
-      const offset = 80; // Adjust this value based on your navbar's height
-  
-      const elementPosition = target.offsetTop;
-      const offsetPosition = elementPosition - offset;
-  
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
+        e.preventDefault();
+        
+        const target = document.querySelector(this.getAttribute('href'));
+        const offset = 80; // Adjust this value based on your navbar's height
+        
+        const elementPosition = target.offsetTop;
+        const offsetPosition = elementPosition - offset;
+        
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
     });
-  });
+});
 
-  let sections = document.querySelectorAll('section');
+let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 let nav = document.querySelector('nav');
 
@@ -118,4 +118,3 @@ hamburger.className = 'hamburger';
 hamburger.innerHTML = '<span></span><span></span><span></span>';
 hamburger.onclick = toggleMenu;
 header.appendChild(hamburger);
-  
