@@ -52,6 +52,12 @@ h2 {
 		height: auto;
 	}
 }
+
+@media(max-width: 480px){
+	.back_about{
+		padding-top: 0;
+	}
+}
 .back_glimpse {
     /* background-color: rgb(138, 122, 69); */
 	background-image: url('../img/gallerybg.jpeg');
@@ -106,11 +112,7 @@ h2 {
 .back_about {
 	color: black;
 	font-size: 1.4rem;
-	/* justify text */
 	text-align: justify;
-
-
-
 }
 
 .back_about span {
@@ -1086,6 +1088,7 @@ div .contact_name .name{
 @media (max-width: 480px) {
 	#timer {
 		font-size: 3vw;
+		margin-bottom: 50px;
 	}
 
 	#timer div {
