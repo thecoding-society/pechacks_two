@@ -192,7 +192,7 @@ nav a.hit::after {
 .home_contents, .fans{
 	display: flex;
 	justify-content: space-between;
-	align-items: space-between;
+	column-gap: 20px;
 }
 
 @media(max-width: 1000px){
@@ -368,7 +368,6 @@ nav a.hit::after {
 .btn.btn-secondary {
 	color: #fff;
 	background:var(--BGCOLOR);
-	border-color: var(--BGCOLOR);
 	margin-bottom: 20px;
 	margin-top: 10px;
 }
