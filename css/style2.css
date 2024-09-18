@@ -99,7 +99,9 @@ h2 {
 .back_prices {
 	background-color: #f0f5fa;
 }
-
+.back_judges{
+	background-color: rgb(208, 229, 236);
+}
 /* Responsive for Sections styles */
 @media (min-width: 768px) {
 	.back_glimpse {
