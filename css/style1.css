@@ -99,15 +99,26 @@ nav a:hover,
 nav a.hit {
     color: white;
 }
-
+nav a:hover::after,
 nav a.hit::after {
     content: "";
     position: absolute;
     bottom: -5px; /* Adjust based on your design */
     left: 0;
     width: 100%;
-    height: 2px; /* Line thickness */
-    background-color: rgb(255, 77, 0); /* Highlight line color */
+    height: 4px; /* Line thickness */
+    background-color: #cc1616; /* Highlight line color */
+	transition: width 0.3s ease;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust based on your design */
+    left: 0;
+    width: 0;
+    height: 4px; /* Line thickness */
+    background-color: #cc1616; /* Same color for hover underline */
+    transition: width 0.3s ease;
 }
 
 .hamburger {
