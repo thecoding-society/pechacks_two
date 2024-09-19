@@ -1068,6 +1068,7 @@ div .contact_name .name{
 	font-size: 1.5vw; /* Responsive font size */
 	font-weight: 900;
 	text-align: center;
+	padding-top: 20px;
 }
 
 /* Media Query for devices with a width of 768px or less */
