@@ -1,14 +1,12 @@
-/* Bronze owl carousel */
-
 $(document).ready(function() {
-    $(".owl-carousel").owlCarousel({
+    var owl = $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 10,
         nav: true, // Enable navigation arrows
         dots: false, // Disable dots
         autoplay: true,
         autoplayTimeout: 3000,
-        autoplayHoverPause: false,
+        autoplayHoverPause: true, // This will stop autoplay on hover
         smartSpeed: 1000,
         navText: ["<span>&#8249;</span>", "<span>&#8250;</span>"], // Custom arrow icons
         responsive: {
@@ -23,7 +21,18 @@ $(document).ready(function() {
             }
         }
     });
+
+    // Manually handle hover events
+    $('.owl-carousel .item').hover(
+        function() { // On mouse over
+            owl.trigger('stop.owl.autoplay'); // Stop autoplay
+        },
+        function() { // On mouse leave
+            owl.trigger('play.owl.autoplay'); // Resume autoplay
+        }
+    );
 });
+
 
 
   

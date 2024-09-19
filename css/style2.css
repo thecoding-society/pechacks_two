@@ -455,7 +455,7 @@ h2 {
 }
 .carousel-container {
 	height: 160px;
-    max-width: 800px; /* Increase the max width of the carousel container */
+    max-width: 860px; /* Increase the max width of the carousel container */
     margin: 0 auto; /* Center the container */
     padding: 20px !; /* Apply padding inside the container */
     position: relative; /* Ensure positioning context for the arrows */
