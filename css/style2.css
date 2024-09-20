@@ -102,6 +102,9 @@ h2 {
 .back_judges{
 	background-color: rgb(208, 229, 236);
 }
+.back_teams{
+	background-color: #161623;
+}
 /* Responsive for Sections styles */
 @media (min-width: 768px) {
 	.back_glimpse {
@@ -411,6 +414,12 @@ h2 {
 	row-gap: 20px;
 	justify-content: center;
 	align-items: center;
+}
+
+@media(max-width: 600px){
+	.com{
+		margin-bottom: 40px;
+	}
 }
 
 .gold img {

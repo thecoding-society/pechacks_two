@@ -824,7 +824,7 @@ input:checked + .clash .description {
 	color: #ffffff;
 }
 
-.cta .card {
+.cta .card-ct {
 	background-color: #495057;
 	border: none;
 	border-radius: 8px;
@@ -833,14 +833,14 @@ input:checked + .clash .description {
 	margin-top: 20px;
 }
 
-.cta .card h3 {
+.cta .card-ct h3 {
 	font-size: 24px;
 	font-weight: bold;
 	margin-bottom: 20px;
 	color: #f9c922;
 }
 
-.cta .card p {
+.cta .card-ct p {
 	font-size: 16px;
 	line-height: 1.5;
 	color: #e1e1e1;
@@ -873,7 +873,7 @@ input:checked + .clash .description {
 		font-size: 20px;
 	}
 
-	.cta .card h3 {
+	.cta .card-ct h3 {
 		font-size: 20px;
 	}
 
@@ -882,7 +882,7 @@ input:checked + .clash .description {
 		font-size: 14px;
 	}
 
-	.cta .card p {
+	.cta .card-ct p {
 		font-size: 14px;
 	}
 }
