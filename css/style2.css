@@ -466,7 +466,7 @@ h2 {
 	height: 160px;
     max-width: 860px; /* Increase the max width of the carousel container */
     margin: 0 auto; /* Center the container */
-    padding: 20px !; /* Apply padding inside the container */
+    padding: 20px; /* Apply padding inside the container */
     position: relative; /* Ensure positioning context for the arrows */
 }
 
@@ -483,6 +483,12 @@ h2 {
 	/* center vertically */
 	display: flex;
 	align-items: center;
+}
+
+@media(min-width: 1700px){
+	.carousel-container{
+		max-width: 1075px;
+	}
 }
 
 @media(max-width: 600px){
