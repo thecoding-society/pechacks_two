@@ -1062,3 +1062,15 @@ input:checked + .clash .description {
 	  bottom: 15%;
 	}
   }
+
+  /* FAQ smooth transition */
+  
+  .accordion-collapse {
+	transition: height 0.4s ease;
+	overflow: hidden;
+  }
+  
+  .accordion-collapse.show {
+	height: auto; /* Default height when the element is visible */
+  }
+  
