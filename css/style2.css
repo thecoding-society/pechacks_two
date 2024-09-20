@@ -42,9 +42,10 @@ h2 {
 }
 
 .back_home {
-	background-color: #f4f4f4;
+	background-color: black;
 	height: 100vh;
 	padding-top: 5%;
+	position: relative;
 }
 
 @media(max-width: 768px){
@@ -416,12 +417,6 @@ h2 {
 	align-items: center;
 }
 
-@media(max-width: 600px){
-	.com{
-		margin-bottom: 40px;
-	}
-}
-
 .gold img {
 	width: 18vw; /* Dynamic width based on viewport width */
 	border-radius: 15px; /* Slightly smaller border radius */
@@ -483,12 +478,6 @@ h2 {
 	/* center vertically */
 	display: flex;
 	align-items: center;
-}
-
-@media(min-width: 1700px){
-	.carousel-container{
-		max-width: 1075px;
-	}
 }
 
 @media(max-width: 600px){
@@ -818,17 +807,25 @@ div .contact_name .name{
 }
 
 #heading-pec {
-	font-size: 7.5rem;
-	font-weight: 500;
-    line-height: 1;
-    letter-spacing: .01em;
-	margin-bottom: 4rem;
-}
+	font-size: 8rem;
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: 0.01em;
+	color: black; 
+	position: relative; 
+	z-index: 1;
+	background: none;
+  }
+  
+  .outline{
+	color: transparent;
+    -webkit-text-stroke: 1.5px #fff;
+  }
+
 #hero-sub{
-	font-size: 2.4rem;
+	font-size: 1.5rem;
 	color: var(--BGCOLOR);
 	line-height: 4vw;
-	background-color: white;
 	width: auto;
 	z-index: -100;
 }
@@ -880,7 +877,6 @@ div .contact_name .name{
 
 .cont{
 	margin-top: 100px;
-	display: flex;
 	gap: 200px;
 	align-items: center;
 }
@@ -1050,10 +1046,9 @@ div .contact_name .name{
 	justify-content: center;
 	align-items: center;
 	flex-wrap: nowrap;
-	font-size: 3vw; /* Responsive font size */
+	font-size: 2vw; /* Responsive font size */
 	font-weight: 700;
 	color: #c7c7c7;
-	padding: 20px;
 	z-index: 100;
 }
 
@@ -1063,18 +1058,11 @@ div .contact_name .name{
 	align-items: center; /* Center vertically */
 	flex-direction: column; /* Stack text inside vertically */
 	flex: 1 1 auto;
-	min-width: 10vw; /* Responsive min-width */
+	min-width: 5vw; /* Responsive min-width */
 	padding: 2vw; /* Responsive padding */
 	margin: 0 1vw;
 	border-radius: 15px;
-	background: linear-gradient(45deg, #1a1a1a, #4b4b4b);
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 20px rgba(77, 255, 255, 0.3);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#timer div:hover {
-	transform: scale(1.1);
-	box-shadow: 0 0 25px rgba(77, 255, 255, 0.6), 0 0 25px rgba(255, 255, 77, 0.6);
 }
 
 #timer div span {
