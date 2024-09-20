@@ -450,11 +450,11 @@ h2 {
 /* 4K and larger screens (1440px - 3840px+) */
 @media (min-width: 1440px) {
 	.gold img {
-		width: 12vw; /* Smaller size for large screens */
+		width: 16vw; /* Smaller size for large screens */
 	}
 
 	.gold a {
-		width: 12vw;
+		width: 16vw;
 	}
 }
 .carousel-container {
