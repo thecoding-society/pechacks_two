@@ -127,3 +127,50 @@ hamburger.className = 'hamburger';
 hamburger.innerHTML = '<span></span><span></span><span></span>';
 hamburger.onclick = toggleMenu;
 header.appendChild(hamburger);
+
+// FAQ transition js
+// Select all accordion buttons
+const accordionButtons = document.querySelectorAll('.accordion-button');
+
+// Loop through all accordion buttons
+accordionButtons.forEach(button => {
+  button.addEventListener('click', function () {
+    // Get the currently opened accordion item (if any)
+    const openAccordion = document.querySelector('.accordion-collapse.show');
+
+    // If there's an open accordion and it's not the one that was clicked, close it
+    if (openAccordion && openAccordion !== this.nextElementSibling) {
+      // Remove the 'show' class and apply smooth transition
+      openAccordion.style.height = openAccordion.scrollHeight + 'px';
+      window.getComputedStyle(openAccordion).height; // Force reflow
+      openAccordion.style.height = '0';
+      
+      openAccordion.addEventListener('transitionend', () => {
+        openAccordion.classList.remove('show');
+        openAccordion.style.height = null;
+      }, { once: true });
+
+      // Collapse the previous button
+      openAccordion.previousElementSibling.querySelector('.accordion-button').classList.add('collapsed');
+    }
+
+    // Toggle the clicked accordion item
+    const collapse = this.nextElementSibling;
+
+    if (!collapse.classList.contains('show')) {
+      // Expand the new accordion panel
+      collapse.classList.add('show');
+      collapse.style.height = '0';
+      window.getComputedStyle(collapse).height; // Force reflow
+      collapse.style.height = collapse.scrollHeight + 'px';
+
+      // Remove inline height after transition ends
+      collapse.addEventListener('transitionend', () => {
+        collapse.style.height = null;
+      }, { once: true });
+
+      // Toggle the collapsed state of the button
+      this.classList.remove('collapsed');
+    }
+  });
+});
