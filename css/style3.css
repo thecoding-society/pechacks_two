@@ -45,7 +45,6 @@ body::-webkit-scrollbar-thumb {
     z-index: 1;
     padding: 2em;
     margin-top: 2em;
-    overflow-y: auto;
 }
 
 .grid {
