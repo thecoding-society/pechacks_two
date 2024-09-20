@@ -428,9 +428,6 @@ h2 {
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.bronze img{
-	box-shadow: none;
-}
 
 .gold img:hover {
 	transform: scale(1.05);
@@ -454,6 +451,14 @@ h2 {
 
 	.gold a {
 		width: 16vw;
+	}
+
+	.bronze, .com img{
+		width: 12vw;
+	}
+
+	.bronze, .com a{
+		width: 12vw;
 	}
 }
 .carousel-container {
