@@ -28,7 +28,6 @@ body {
 
 h2 {
 	text-align: center;
-	margin-bottom: 20px;
 	color: #333;
 }
 
@@ -416,9 +415,13 @@ h2 {
 	align-items: center;
 }
 
+.gold, .silver h2{
+	margin-bottom: 5px;
+}
+
 @media(max-width: 600px){
 	.com{
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -465,7 +468,7 @@ h2 {
 	height: 160px;
     max-width: 860px; /* Increase the max width of the carousel container */
     margin: 0 auto; /* Center the container */
-    padding: 20px; /* Apply padding inside the container */
+    padding: 0px 20px 20px 20px; /* Apply padding inside the container */
     position: relative; /* Ensure positioning context for the arrows */
 }
 
@@ -478,7 +481,7 @@ h2 {
 }
 
 .owl-carousel .owl-stage {
-	height: 180px !important;
+	height: 150px !important;
 	/* center vertically */
 	display: flex;
 	align-items: center;
@@ -1098,6 +1101,7 @@ div .contact_name .name{
 
 	#timer div span {
 		font-size: 2vw;
+		padding-top: 0px;
 	}
 }
 
@@ -1115,6 +1119,7 @@ div .contact_name .name{
 
 	#timer div span {
 		font-size: 3vw;
+		padding-top: 0px;
 	}
 	.hero{
 		height: 600px !important;

@@ -44,7 +44,6 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     z-index: 1;
     padding: 2em;
-    margin-top: 2em;
 }
 
 .grid {
