@@ -99,15 +99,26 @@ nav a:hover,
 nav a.hit {
     color: white;
 }
-
+nav a:hover::after,
 nav a.hit::after {
     content: "";
     position: absolute;
     bottom: -5px; /* Adjust based on your design */
     left: 0;
     width: 100%;
-    height: 2px; /* Line thickness */
-    background-color: rgb(255, 77, 0); /* Highlight line color */
+    height: 4px; /* Line thickness */
+    background-color: #cc1616; /* Highlight line color */
+	transition: width 0.3s ease;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust based on your design */
+    left: 0;
+    width: 0;
+    height: 4px; /* Line thickness */
+    background-color: #cc1616; /* Same color for hover underline */
+    transition: width 0.3s ease;
 }
 
 .hamburger {
@@ -568,10 +579,10 @@ nav a.hit::after {
     border-radius: 50%;
     background: rgba(59, 93, 80, 0.2); } */
 
+
+	
+
 /* Domains CSS */
-
-
-
 
 section .domains {
 	height: 80vh;
@@ -813,7 +824,7 @@ input:checked + .clash .description {
 	color: #ffffff;
 }
 
-.cta .card {
+.cta .card-ct {
 	background-color: #495057;
 	border: none;
 	border-radius: 8px;
@@ -822,14 +833,14 @@ input:checked + .clash .description {
 	margin-top: 20px;
 }
 
-.cta .card h3 {
+.cta .card-ct h3 {
 	font-size: 24px;
 	font-weight: bold;
 	margin-bottom: 20px;
 	color: #f9c922;
 }
 
-.cta .card p {
+.cta .card-ct p {
 	font-size: 16px;
 	line-height: 1.5;
 	color: #e1e1e1;
@@ -862,7 +873,7 @@ input:checked + .clash .description {
 		font-size: 20px;
 	}
 
-	.cta .card h3 {
+	.cta .card-ct h3 {
 		font-size: 20px;
 	}
 
@@ -871,7 +882,7 @@ input:checked + .clash .description {
 		font-size: 14px;
 	}
 
-	.cta .card p {
+	.cta .card-ct p {
 		font-size: 14px;
 	}
 }

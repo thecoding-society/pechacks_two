@@ -102,6 +102,9 @@ h2 {
 .back_judges{
 	background-color: rgb(208, 229, 236);
 }
+.back_teams{
+	background-color: #161623;
+}
 /* Responsive for Sections styles */
 @media (min-width: 768px) {
 	.back_glimpse {
@@ -413,6 +416,12 @@ h2 {
 	align-items: center;
 }
 
+@media(max-width: 600px){
+	.com{
+		margin-bottom: 40px;
+	}
+}
+
 .gold img {
 	width: 18vw; /* Dynamic width based on viewport width */
 	border-radius: 15px; /* Slightly smaller border radius */
@@ -455,7 +464,7 @@ h2 {
 }
 .carousel-container {
 	height: 160px;
-    max-width: 800px; /* Increase the max width of the carousel container */
+    max-width: 860px; /* Increase the max width of the carousel container */
     margin: 0 auto; /* Center the container */
     padding: 20px !; /* Apply padding inside the container */
     position: relative; /* Ensure positioning context for the arrows */
