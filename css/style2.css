@@ -423,7 +423,6 @@ h2 {
 }
 
 .gold img {
-	width: 18vw; /* Dynamic width based on viewport width */
 	border-radius: 15px; /* Slightly smaller border radius */
 	box-shadow: 0 4px 8px rgb(0, 0, 0), 0 6px 20px rgb(0, 0, 0);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -441,11 +440,6 @@ h2 {
 /* Ensure that the anchor tag does not affect image size */
 .gold a {
 	display: inline-block;
-	width: 18vw; /* Matches the reduced image width */
-}
-
-.gold a img {
-	width: 100%; /* Ensures the image inside the anchor tag takes full width */
 }
 
 .silver {
@@ -455,11 +449,11 @@ h2 {
 /* 4K and larger screens (1440px - 3840px+) */
 @media (min-width: 1440px) {
 	.gold img {
-		width: 12vw; /* Smaller size for large screens */
+		width: 16vw; /* Smaller size for large screens */
 	}
 
 	.gold a {
-		width: 12vw;
+		width: 16vw;
 	}
 }
 .carousel-container {
