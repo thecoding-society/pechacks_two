@@ -36,6 +36,9 @@ h2 {
 .back_about {
 	min-height: 90vh ;
 	background-color: rgb(244, 234, 217);
+}
+
+.back_about, .back_domains{
 	font-family: "Teko", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
@@ -71,7 +74,7 @@ h2 {
 
 
 .back_domains {
-	background-color: #aa1d39;
+	background-color: #201f1f;
 }
 
 .back_sponsors {
