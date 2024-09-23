@@ -36,9 +36,12 @@ h2 {
 
 .back_about {
 	min-height: 90vh ;
-	background-color: #f4f4f4;
-	padding-top: 80px; /* Adjust based on the height of your navbar */
-  	/* margin-top: -80px; Negative margin to counteract the scroll jump */
+	background-color: rgb(244, 234, 217);
+	font-family: "Teko", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-size: 1.8rem !important;
+	line-height: 40px;
 }
 
 .back_home {
@@ -114,6 +117,32 @@ h2 {
 }
 
 /* About Styles */
+
+.icon-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+  }
+  
+  .icon-reg, .icon-man, .icon-projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+  }
+  
+  .icon-reg p, .icon-man p, .icon-projects p {
+	margin-top: 10px;
+	font-size: 1em;
+	font-family: "Oswald", sans-serif !important;
+	font-optical-sizing: auto !important;
+	font-weight: 600 !important;
+	font-style: normal !important;
+  }
+  
 
 .back_about {
 	color: black;

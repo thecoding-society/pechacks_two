@@ -285,7 +285,8 @@ nav a::after {
 	font-family: "Anton SC", sans-serif;
 	text-align: left !important; 
 	padding-left: 40px;
-	color: white !important; 
+	color: transparent !important;
+	-webkit-text-stroke: 1.5px #fff; 
 	letter-spacing: 1.5px;
   }
 
