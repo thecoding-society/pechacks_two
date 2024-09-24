@@ -174,3 +174,19 @@ accordionButtons.forEach(button => {
     }
   });
 });
+
+
+
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    const heading = document.getElementById('heading-pec'); // "PEC HACKS 2.0" heading
+
+    const headingOffset = heading.offsetTop; // Get the heading's position from the top of the page
+    const scrollPosition = window.scrollY; // Current scroll position
+
+    if (scrollPosition > headingOffset) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });

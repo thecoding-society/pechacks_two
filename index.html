@@ -61,8 +61,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet" />
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Teko:wght@300..700&display=swap');
+		</style>	
 	<!-- Owl Carousel CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 	<link rel="stylesheet"
@@ -89,43 +91,43 @@
 
 	<!-- Start of Home Page -->
 	<section class="back_home" id="home">
+		<!-- Particle container for background effect -->
+		<div id="particles-home"></div>
+	
 		<div class="hero" data-aos="zoom-in" data-aos-once="true">
-			<div class="container">
+			<div class="container-home">
 				<div>
 					<div class="cont">
-						<h1 class="anton-sc-regular heading-pec not-selectable" id="heading-pec"
-							style="background: #f4f4f5;">PEC HACKS 2.0</h1>
-						<!-- <img src="assets/images/pec-logo.jpg" alt="Pec_Logo"> -->
+						<h1 class="anton-sc-regular heading-pec not-selectable" id="heading-pec" style="color: white;">
+							PEC HACKS <br>
+							<span class="outline anton-sc-regular">2.0</span>
+						</h1>
 					</div>
 					<div class="fans">
 						<div class="home_contents">
 							<div class="intro-excerpt">
-								<p class="mb-4 anton-sc-regular not-selectable" id="hero-sub"
-									style="background: #f4f4f5;">December 28-29, 2024</p>
-								<p class="mb-4 anton-sc-regular not-selectable" id="hero-sub"
-									style="background: #f4f4f5;">36-hr Hackathon in Chennai</p>
-								<p class="hero-buttons" style="background: #f4f4f5;">
-									<a href="https://pechacks2.devfolio.co/" class="btn btn-secondary me-2">REGISTER
-										HERE</a>
-									<a href="https://chat.whatsapp.com/C9hPeQw19AI6J0qKE11DEy"
-										style="background-color: black;" class="btn btn-secondary me-2">JOIN OUR
-										COMMUNITY</a>
+								<p class="hero-buttons"></p>
+									<a href="https://pechacks2.devfolio.co/" class="btn btn-secondary me-2">REGISTER HERE</a>
+									<a href="https://chat.whatsapp.com/C9hPeQw19AI6J0qKE11DEy" style="background-color: black;" class="btn btn-secondary me-2">JOIN OUR COMMUNITY</a>
+								</p>
+								<p class=" anton-sc-regular not-selectable" id="hero-sub">
+									December 28-29, 2024
+								</p>
+								<p class=" anton-sc-regular not-selectable" id="hero-sub">
+									36-hr Hackathon in Chennai
 								</p>
 							</div>
 						</div>
-
-						<div class="col-lg-6 d-flex flex-column align-items-center">
-							<!-- <img src="img/pec-logo.png" alt="Organized By" style="max-width: 100%; height: auto;" /> -->
+						<div>
+							<p class="custom" id="hero-sub">SETTING UP IN</p>
 							<div id="timer" class="non-selectable w-100 text-center"></div>
 						</div>
 					</div>
 				</div>
-				<!-- <div class="apply-button" data-hackathon-slug="pechacks2" data-button-theme="dark-inverted"
-					style="height: 44px; width: 312px">
-				</div> -->
 			</div>
 		</div>
 	</section>
+	
 
 	<!-- End of Home Page -->
 
@@ -135,9 +137,9 @@
 			<div data-aos="fade-down" data-aos-once="true">
 				<!-- HEADING -->
 				<div class="heading not-selectable">
-					<h1 class="heading-shadow" id="white-back">ABOUT</h1>
+					<h1 class="heading-shadow" id="white-back" style="color: #ffffff;">ABOUT</h1>
 					<h2 class="heading-small">
-						<div style="overflow: hidden">
+						<div style="overflow: hidden" >
 							<div style="transform: translateY(0%); will-change: auto">A</div>
 						</div>
 						<div style="overflow: hidden">
@@ -167,9 +169,32 @@
 							Join us on this electrifying journey as you team up with brilliant minds, tackle real-world challenges, and push the boundaries of technology."
 						</p>
 						<p class="prize-pool">Prize Pool of <span>₹ 18 Lakh+</span></p>
-					</div>
-					<div class="about_img" data-aos="fade-left" data-aos-once="true">
-						<img src="assets/images/pechacks.png" alt="About_Img" />
+						<script src="https://cdn.lordicon.com/lordicon.js"></script>
+						<div class="icon-container">
+							<div class="icon-reg">
+							  <span class="center">
+								<lord-icon src="https://cdn.lordicon.com/lyrrgrsl.json" trigger="loop" delay="2000" style="width:70px;height:70px"></lord-icon>
+							  </span>
+							  <p>3000+ Registrations</p>
+							</div>
+						  
+							<div class="icon-man">
+							  <span class="center">
+								<script src="https://cdn.lordicon.com/lordicon.js"></script>
+								<lord-icon src="https://cdn.lordicon.com/gkgkfbzm.json" trigger="loop" colors="primary:#121331,secondary:#000000" style="width:80px;height:80px"></lord-icon>
+							  </span>
+							  <p>300+ Hackers</p>
+							</div>
+						  
+							<div class="icon-projects">
+							  <span class="center">
+								<script src="https://cdn.lordicon.com/lordicon.js"></script>
+								<lord-icon src="https://cdn.lordicon.com/xirobkro.json" trigger="loop" style="width:70px;height:70px"></lord-icon>
+							  </span>
+							  <p>60+ Projects</p>
+							</div>
+						  </div>
+						  
 					</div>
 				</div>
 				<br />
@@ -446,7 +471,7 @@
 	<!-- Start of Domains Section -->
 	<section id="domains" class="back_domains">
 		<br />
-		<br />
+		<div id="particles-domains"></div>
 
 		<div data-aos="fade-down" data-aos-once="true">
 			<div class="heading">
@@ -476,7 +501,6 @@
 					</div>
 				</h2>
 			</div>
-			<!-- END  -->
 			<h2 class="dom_p" style="color: #ffffff">Select your own problem statement from any of the domains!</h2>
 
 			<div class="wrapper">
@@ -787,14 +811,14 @@
 							alt="Beeceptor LOGO" />
 					</a>
 				</div>
-				<div class="gold bronze">
+				<div class="gold com">
 					<a href="https://interviewbuddy.net/" target="_blank">
 						<img class="hvr-float-shadow"
 							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/interview_buddy.png?updatedAt=1725626943355"
 							alt="Interview Buddy LOGO" />
 					</a>
 				</div>
-				<div class="gold bronze">
+				<div class="gold com">
 					<a href="https://gen.xyz/" target="_blank">
 						<img class="hvr-float-shadow"
 							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/xyz.png?updatedAt=1725953608575"
@@ -819,13 +843,13 @@
 							alt="SWOC LOGO" />
 					</a>
 				</div>
-				<!-- <div class="gold com">
+				<div class="gold com">
 					<a href="https://gdsc.community.dev/psg-college-of-arts-science-coimbatore-india/" target="_blank">
 						<img class="hvr-float-shadow "
 							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/gdscpsgcas.png?updatedAt=1725590143571"
 							alt="GDSCPSGCAS LOGO" />
 					</a>
-				</div> -->
+				</div>
 				<div class="gold com">
 					<a href="https://avishkaar2024.adityatekkali.edu.in/" target="_blank">
 						<img class="hvr-float-shadow"
@@ -833,14 +857,14 @@
 							alt="avishkaar LOGO" />
 					</a>
 				</div>
-				<!-- <div class="gold com">
+				<div class="gold com">
 					<a href="https://gdsc.community.dev/coimbatore-institute-of-technology-coimbatore-india/"
 						target="_blank">
 						<img class="hvr-float-shadow"
 							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/gdsccit.png?updatedAt=1725941162331"
 							alt="GDSCCIT LOGO" />
 					</a>
-				</div> -->
+				</div>
 				<div class="gold com">
 					<a href="https://www.linkedin.com/company/hack-club-sist/" target="_blank">
 						<img class="hvr-float-shadow"
@@ -1636,16 +1660,14 @@
 
 	<!-- Scripts -->
 	<script src="js/main.js"></script>
-
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/tiny-slider.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="js/script.js"></script>
-	<script>
-		AOS.init();
-	</script>
+	<script>AOS.init();</script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -1653,6 +1675,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<!-- Include Owl Carousel JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="particles.js"></script>
+	<script src="app.js"></script>
 
 	<!-- devfolio -->
 	<!-- <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script> -->
