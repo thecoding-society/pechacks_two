@@ -57,6 +57,12 @@ h2 {
 	.back_home{
 		height: auto;
 	}
+	.icon-container p{
+		font-size: 15px;
+	}
+	.icon-container{
+		flex-direction: column !important;
+	}
 }
 
 @media(max-width: 480px){
@@ -70,11 +76,6 @@ h2 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-
-.back_domains {
-	background-color: #201f1f;
 }
 
 .back_sponsors {
@@ -1020,6 +1021,34 @@ div .contact_name .name{
 	position: relative; 
 	z-index: 1;
 	background: none;
+  }
+
+  @media(max-width: 768px){
+	#heading-pec{
+		font-size: 5rem;
+		font-weight: 200;
+	}
+	.container-home{
+		margin-top: 40px
+	}
+	#hero-sub{
+		font-size: 18px !important;
+	}
+	.hero-intercept a{
+		font-size: 18px;
+	}
+  }
+
+  @media(max-width: 480px){
+	.btn{
+		padding: 3px 10px;
+		font-size: 13px;
+	}
+	.custom{
+		text-align: center !important;
+		margin-bottom: 0px;
+		padding-left: 0px;
+	}
   }
   
   .outline{

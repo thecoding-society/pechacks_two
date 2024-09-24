@@ -56,7 +56,6 @@
 		font-weight: 300;
 		line-height: 1;
 		letter-spacing: .01em;
-		margin: 4rem 0 4rem 0;
 	}
 	#hero-sub{
 		font-size: 1.5rem;
@@ -725,11 +724,10 @@ section .domains {
 
 .wrapper {
 	width: 100vw;
-	height: auto;
+	height: 500px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-bottom: 10vh;
 }
 
 .container1 {
@@ -737,7 +735,6 @@ section .domains {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: start;
-	margin-top: 100px;
 }
 
 .clash {
@@ -966,7 +963,7 @@ input:checked + .clash .description {
 	background-repeat: no-repeat;
 }
 
-#particles-js {
+#particles-home, #particles-domains {
 	position: absolute;
 	background: rgb(34,33,33);
 	background: radial-gradient(circle, rgba(34,33,33,1) 0%, rgba(2,6,8,1) 100%);			
@@ -986,6 +983,15 @@ input:checked + .clash .description {
 @media(max-width: 1000px) and (min-width: 768px){
 	.back_home{
 		height: 800px !important;
+	}
+	.hero{
+		display: flex;
+		justify-content: left;
+		padding-left: 25px !important;
+	}
+	.icon-container p{
+		font-size: 20px;
+
 	}
 }
 
