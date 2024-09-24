@@ -167,6 +167,8 @@ header {
     justify-content: space-around;
     align-items: center;
     z-index: 100;
+	background-color: transparent; /* Black background */
+	transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .logo {
@@ -236,6 +238,10 @@ nav a::after {
     background: white;
     transition: 0.3s;
 }
+header.scrolled {
+    background-color: black; /* Black background when scrolled */
+}
+
 
 @media(max-width: 970px){
 	nav a {
