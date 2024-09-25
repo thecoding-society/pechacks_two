@@ -38,7 +38,7 @@ h2 {
 	background-color: rgb(244, 234, 217);
 }
 
-.back_about, .back_domains, .back_prices{
+.back_about, .back_domains, .back_prices , pre{
 	font-family: "Teko", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
