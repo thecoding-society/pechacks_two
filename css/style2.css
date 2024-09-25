@@ -15,19 +15,7 @@
 	padding: 0;
 }
 
-html,
-body {
-	overflow-x: hidden;
-}
-
 /* Global styles */
-body {
-
-	background-color: #aa1d39;
-	/* padding: 5px; */
-	font-family: "Montserrat", sans-serif;
-
-}
 
 h2 {
 	text-align: center;
@@ -116,7 +104,8 @@ pre,
 }
 
 .back_prices,
-#hackathon-timeline{
+#hackathon-timeline,
+.back_sponsors {
 	background: rgb(34, 33, 33);
 	background: radial-gradient(circle, rgba(34, 33, 33, 1) 0%, rgba(2, 6, 8, 1) 100%);
 }
@@ -1004,19 +993,6 @@ pre,
       "Helvetica Neue", sans-serif;
 } */
 
-body::-webkit-scrollbar {
-	background: #020202;
-	width: 10px;
-}
-
-body::-webkit-scrollbar-track {
-	background: #020202;
-}
-
-body::-webkit-scrollbar-thumb {
-	background: #ffffff;
-	border-radius: 1px;
-}
 
 .container {
 	position: relative;
@@ -1195,10 +1171,6 @@ ul {
 
 	.container .card {
 		width: 290px;
-	}
-
-	body {
-		background-color: black;
 	}
 }
 

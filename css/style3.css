@@ -93,3 +93,54 @@
 		justify-content: center;
 	}
 }
+
+/* Twinkle background style for prices and timeline */
+
+@keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+.twinkle_back {
+    position: relative;
+    z-index: 1; /* To keep content above background */
+    padding: 40px 0; /* Adjust as needed */
+    overflow: hidden;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0; /* Ensure background is behind content */
+    pointer-events: none; /* Make background non-interactive */
+}
+
+.stars {
+    background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.twinkling {
+    width: 10000px;
+    height: 100%;
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    animation: move-background 70s linear infinite;
+}
