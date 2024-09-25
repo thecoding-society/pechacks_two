@@ -14,23 +14,34 @@ window.addEventListener("load", () => {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  
+document.addEventListener("DOMContentLoaded", function () {
+    const accordionItems = document.querySelectorAll('.accordion-button');
 
+    accordionItems.forEach(item => {
+        item.addEventListener('click', function () {
+            const currentAccordion = this.closest('.accordion-item');
+            const accordionCollapse = currentAccordion.querySelector('.accordion-collapse');
 
+            // Close other open accordions
+            accordionItems.forEach(otherItem => {
+                const otherAccordion = otherItem.closest('.accordion-item');
+                if (otherAccordion !== currentAccordion && otherItem.getAttribute('aria-expanded') === 'true') {
+                    otherItem.classList.add('collapsed');
+                    const collapse = otherAccordion.querySelector('.accordion-collapse');
+                    collapse.style.maxHeight = null;
+                    collapse.classList.remove('show');
+                }
+            });
 
-	const nav_list = document.querySelector("#nav-js");
-	const list_items = nav_list.querySelectorAll("li");
-
-	list_items.forEach((item) => {
-		item.addEventListener("click", () => {
-			// remove 'active' class from all list items
-			list_items.forEach((li) => li.classList.remove("active"));
-
-			// add 'active' class to the clicked list item
-			item.classList.add("active");
-		});
-	});
-  
-
+            // Toggle the height of the clicked accordion
+            if (accordionCollapse.classList.contains('show')) {
+                accordionCollapse.style.maxHeight = accordionCollapse.scrollHeight + "px";
+                setTimeout(() => {
+                    accordionCollapse.style.maxHeight = null;
+                }, 10); // Set timeout to allow smooth closing transition
+            } else {
+                accordionCollapse.style.maxHeight = accordionCollapse.scrollHeight + "px";
+            }
+        });
+    });
 });

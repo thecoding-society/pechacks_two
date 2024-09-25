@@ -1084,6 +1084,31 @@ div .contact_name .name{
 	}
 }
 
+.accordion-collapse {
+    height: 0; /* Start with a height of 0 */
+    overflow: hidden;
+    transition: height 0.5s ease-in-out; /* Adjust the duration and easing for a smoother transition */
+}
+
+.accordion-collapse.show {
+    height: auto; /* Let JavaScript handle setting the height dynamically */
+}
+
+.accordion-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f8f9fa; /* Optional: Change background color when active */
+    transform: rotate(0deg); /* Optional: Add an effect like rotation or scaling */
+}
+
+.accordion-button.collapsed {
+    background-color: transparent;
+    transform: rotate(0deg); /* Return to normal state */
+}
+
+
 
 
 .heading {
