@@ -38,7 +38,7 @@ h2 {
 	background-color: rgb(244, 234, 217);
 }
 
-.back_about, .back_domains, .back_prices , pre{
+.back_about, .back_domains, .back_prices , pre, .timeline-item, .cta{
 	font-family: "Teko", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
@@ -103,7 +103,7 @@ h2 {
 .back_faq {
 	background-color: #333;
 }
-.back_prices {
+.back_prices, #hackathon-timeline {
 	background: rgb(34,33,33);
 	background: radial-gradient(circle, rgba(34,33,33,1) 0%, rgba(2,6,8,1) 100%);	
 }
@@ -190,9 +190,10 @@ h2 {
 }
 
 .timeline-date {
-	font-weight: bold;
+	font-weight: normal;
 	margin-bottom: 10px;
 	color: #FFD700;
+	font-size: 20px;
 }
 
 .timeline-content {
@@ -209,6 +210,21 @@ h2 {
 
 .timeline-item:nth-child(even) .timeline-content {
 	margin-right: 20px;
+}
+
+@media(max-width : 768px){
+	.timeline-item:nth-child(even), .timeline-item:nth-child(odd){
+		padding-left: 0;
+		padding-right: 0%;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd) .timeline-content, .timeline-item:nth-child(even) .timeline-content{
+		margin-right: 0;
+		margin-left: 20px;
+	}
+	.timeline-line{
+		left: 0%;
+	}
 }
 
 
@@ -664,7 +680,6 @@ h2 {
 }
 
 .cta .card-ct p {
-	font-size: 16px;
 	line-height: 1.5;
 	color: #e1e1e1;
 
@@ -677,7 +692,7 @@ h2 {
 	padding: 10px 20px;
 	border-radius: 5px;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: 600;
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
