@@ -1084,28 +1084,63 @@ div .contact_name .name{
 	}
 }
 
-.accordion-collapse {
-    height: 0; /* Start with a height of 0 */
-    overflow: hidden;
-    transition: height 0.5s ease-in-out; /* Adjust the duration and easing for a smoother transition */
+/* FAQ Section Styling */
+/* FAQ Section Styling */
+.faq-section {
+    padding: 2rem 1rem;
+    background-color: #dfc58b;
 }
 
-.accordion-collapse.show {
-    height: auto; /* Let JavaScript handle setting the height dynamically */
+.faq-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Accordion Styling */
+.accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .accordion-button {
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: #f8f9fa; /* Optional: Change background color when active */
-    transform: rotate(0deg); /* Optional: Add an effect like rotation or scaling */
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .accordion-button.collapsed {
-    background-color: transparent;
-    transform: rotate(0deg); /* Return to normal state */
+    background-color: #f9f9f9;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e9ecef;
+}
+
+.accordion-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease, opacity 0.7s ease;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.accordion-content p {
+    margin: 1rem 0;
+}
+
+.accordion-content.open {
+    opacity: 1;
+    max-height: 300px; /* Adjust based on your content */
 }
 
 

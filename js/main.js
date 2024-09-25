@@ -14,34 +14,34 @@ window.addEventListener("load", () => {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const accordionItems = document.querySelectorAll('.accordion-button');
+document.addEventListener('DOMContentLoaded', function () {
+    const accordionButtons = document.querySelectorAll('.accordion-button');
+    const accordionContents = document.querySelectorAll('.accordion-content');
 
-    accordionItems.forEach(item => {
-        item.addEventListener('click', function () {
-            const currentAccordion = this.closest('.accordion-item');
-            const accordionCollapse = currentAccordion.querySelector('.accordion-collapse');
+    accordionButtons.forEach((button, index) => {
+        button.addEventListener('click', function () {
+            const content = accordionContents[index];
 
-            // Close other open accordions
-            accordionItems.forEach(otherItem => {
-                const otherAccordion = otherItem.closest('.accordion-item');
-                if (otherAccordion !== currentAccordion && otherItem.getAttribute('aria-expanded') === 'true') {
-                    otherItem.classList.add('collapsed');
-                    const collapse = otherAccordion.querySelector('.accordion-collapse');
-                    collapse.style.maxHeight = null;
-                    collapse.classList.remove('show');
+            // Close all other accordion items
+            accordionContents.forEach((otherContent, otherIndex) => {
+                if (otherIndex !== index) {
+                    otherContent.style.maxHeight = null;
+                    otherContent.classList.remove('open');
+                    accordionButtons[otherIndex].classList.add('collapsed');
                 }
             });
 
-            // Toggle the height of the clicked accordion
-            if (accordionCollapse.classList.contains('show')) {
-                accordionCollapse.style.maxHeight = accordionCollapse.scrollHeight + "px";
-                setTimeout(() => {
-                    accordionCollapse.style.maxHeight = null;
-                }, 10); // Set timeout to allow smooth closing transition
+            // Toggle current accordion item
+            if (content.classList.contains('open')) {
+                content.style.maxHeight = null;
+                content.classList.remove('open');
+                button.classList.add('collapsed');
             } else {
-                accordionCollapse.style.maxHeight = accordionCollapse.scrollHeight + "px";
+                content.style.maxHeight = content.scrollHeight + 'px';
+                content.classList.add('open');
+                button.classList.remove('collapsed');
             }
         });
     });
 });
+
