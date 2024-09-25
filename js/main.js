@@ -14,23 +14,34 @@ window.addEventListener("load", () => {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  
+document.addEventListener('DOMContentLoaded', function () {
+    const accordionButtons = document.querySelectorAll('.accordion-button');
+    const accordionContents = document.querySelectorAll('.accordion-content');
 
+    accordionButtons.forEach((button, index) => {
+        button.addEventListener('click', function () {
+            const content = accordionContents[index];
 
+            // Close all other accordion items
+            accordionContents.forEach((otherContent, otherIndex) => {
+                if (otherIndex !== index) {
+                    otherContent.style.maxHeight = null;
+                    otherContent.classList.remove('open');
+                    accordionButtons[otherIndex].classList.add('collapsed');
+                }
+            });
 
-	const nav_list = document.querySelector("#nav-js");
-	const list_items = nav_list.querySelectorAll("li");
-
-	list_items.forEach((item) => {
-		item.addEventListener("click", () => {
-			// remove 'active' class from all list items
-			list_items.forEach((li) => li.classList.remove("active"));
-
-			// add 'active' class to the clicked list item
-			item.classList.add("active");
-		});
-	});
-  
-
+            // Toggle current accordion item
+            if (content.classList.contains('open')) {
+                content.style.maxHeight = null;
+                content.classList.remove('open');
+                button.classList.add('collapsed');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                content.classList.add('open');
+                button.classList.remove('collapsed');
+            }
+        });
+    });
 });
+

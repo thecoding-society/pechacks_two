@@ -1088,6 +1088,66 @@ div .contact_name .name{
 	}
 }
 
+/* FAQ Section Styling */
+/* FAQ Section Styling */
+.faq-section {
+    padding: 2rem 1rem;
+    background-color: #dfc58b;
+}
+
+.faq-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Accordion Styling */
+.accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-button {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button.collapsed {
+    background-color: #f9f9f9;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e9ecef;
+}
+
+.accordion-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease, opacity 0.7s ease;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.accordion-content p {
+    margin: 1rem 0;
+}
+
+.accordion-content.open {
+    opacity: 1;
+    max-height: 300px; /* Adjust based on your content */
+}
+
+
 
 
 .heading {
