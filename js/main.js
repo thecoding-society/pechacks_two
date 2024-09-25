@@ -45,3 +45,47 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+
+// Time line script
+
+document.addEventListener("DOMContentLoaded", function () {
+    const timelineLine = document.querySelector('.timeline-line');
+    const timelineSection = document.querySelector('#hackathon-timeline');
+    let isLineRevealed = false; // Flag to ensure reveal happens only once
+
+    // Initialize AOS for animating event boxes
+    AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true,     // Trigger animation only once
+    });
+
+    // Reveal timeline line on scroll
+    const revealTimelineLine = () => {
+        if (isLineRevealed) return; // Stop if already revealed
+
+        const sectionRect = timelineSection.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        // Check if timeline section is in the viewport
+        if (sectionRect.top <= windowHeight && sectionRect.bottom >= 0) {
+            const visibleHeight = Math.min(windowHeight - sectionRect.top, sectionRect.height);
+            const totalHeight = sectionRect.height;
+
+            // Calculate the percentage of the section scrolled and adjust the height of the line
+            const scrollPercentage = Math.min(visibleHeight / totalHeight, 1);
+            timelineLine.style.height = `${scrollPercentage * 100}%`;
+
+            // If the line has fully revealed, set the flag to true
+            if (scrollPercentage === 1) {
+                isLineRevealed = true;
+            }
+        }
+    };
+
+    // Listen for scroll event
+    window.addEventListener("scroll", revealTimelineLine);
+
+    // Initial check in case the section is already in view
+    revealTimelineLine();
+});
