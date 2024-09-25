@@ -38,7 +38,7 @@ h2 {
 	background-color: rgb(244, 234, 217);
 }
 
-.back_about, .back_domains{
+.back_about, .back_domains, .back_prices{
 	font-family: "Teko", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
@@ -104,7 +104,8 @@ h2 {
 	background-color: #333;
 }
 .back_prices {
-	background-color: #f0f5fa;
+	background: rgb(34,33,33);
+	background: radial-gradient(circle, rgba(34,33,33,1) 0%, rgba(2,6,8,1) 100%);	
 }
 .back_judges{
 	background-color: rgb(208, 229, 236);
@@ -178,17 +179,98 @@ h2 {
     display: flex;
     justify-content: space-evenly;
 	width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
+/* General styles for award items */
 .award-item {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content */
-    margin: 0 20px; /* Adjust margin for better spacing */
+    align-items: center;
+    margin: 0 20px;
     text-align: center;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 15px;
 }
+
+/* Winner glowing animation - orange */
+.gold-pri {
+    animation: goldGlow 2s infinite ease-in-out;
+}
+
+/* First Runner Up glowing animation - blue */
+.silver-pri {
+    animation: silverGlow 2s infinite ease-in-out;
+}
+
+/* Second Runner Up glowing animation - green */
+.bronze-pri {
+    animation: bronzeGlow 2s infinite ease-in-out;
+}
+
+/* High School Prize glowing animation - purple */
+.school-pri {
+    animation: lightBlueGlow 2s infinite ease-in-out;
+}
+
+/* Best All Girls Team glowing animation - pink */
+.girls-pri {
+    animation: lightPinkGlow 2s infinite ease-in-out;
+}
+
+/* Gold Glow - For Winner */
+@keyframes goldGlow {
+	0%, 100% {
+	  box-shadow: 0 0 30px rgba(255, 215, 0, 0.7), 0 0 60px rgba(255, 223, 0, 0.4), 0 0 100px rgba(255, 223, 0, 0.3);
+	}
+	50% {
+	  box-shadow: 0 0 50px rgba(255, 223, 0, 0.9), 0 0 80px rgba(255, 215, 0, 0.6), 0 0 120px rgba(255, 215, 0, 0.5);
+	}
+  }
+  
+  /* Silver Glow - For First Runner Up */
+  @keyframes silverGlow {
+	0%, 100% {
+	  box-shadow: 0 0 30px rgba(192, 192, 192, 0.7), 0 0 60px rgba(211, 211, 211, 0.4), 0 0 100px rgba(211, 211, 211, 0.3);
+	}
+	50% {
+	  box-shadow: 0 0 50px rgba(211, 211, 211, 0.9), 0 0 80px rgba(192, 192, 192, 0.6), 0 0 120px rgba(192, 192, 192, 0.5);
+	}
+  }
+  
+  /* Bronze Glow - For Second Runner Up */
+  @keyframes bronzeGlow {
+	0%, 100% {
+	  box-shadow: 0 0 30px rgba(205, 127, 50, 0.7), 0 0 60px rgba(244, 164, 96, 0.4), 0 0 100px rgba(244, 164, 96, 0.3);
+	}
+	50% {
+	  box-shadow: 0 0 50px rgba(244, 164, 96, 0.9), 0 0 80px rgba(205, 127, 50, 0.6), 0 0 120px rgba(205, 127, 50, 0.5);
+	}
+  }
+  
+  /* Light Blue Glow - For High School Prize */
+  @keyframes lightBlueGlow {
+	0%, 100% {
+	  box-shadow: 0 0 30px rgba(173, 216, 230, 0.7), 0 0 60px rgba(135, 206, 250, 0.4), 0 0 100px rgba(135, 206, 250, 0.3);
+	}
+	50% {
+	  box-shadow: 0 0 50px rgba(135, 206, 250, 0.9), 0 0 80px rgba(173, 216, 230, 0.6), 0 0 120px rgba(173, 216, 230, 0.5);
+	}
+  }
+  
+  /* Light Pink Glow - For Best All Girls Team */
+  @keyframes lightPinkGlow {
+	0%, 100% {
+	  box-shadow: 0 0 30px rgba(255, 182, 193, 0.7), 0 0 60px rgba(255, 192, 203, 0.4), 0 0 100px rgba(255, 192, 203, 0.3);
+	}
+	50% {
+	  box-shadow: 0 0 50px rgba(255, 192, 203, 0.9), 0 0 80px rgba(255, 182, 193, 0.6), 0 0 120px rgba(255, 182, 193, 0.5);
+	}
+  }
+  
+
 
 .award-box {
     width: 100%; /* Make width flexible */
@@ -217,6 +299,14 @@ h2 {
     background: transparent;
     padding: 10px;
     margin-top: 10px;
+	color: white;
+}
+
+.award-content strong{
+	color: transparent;
+	-webkit-text-stroke: 1.5px #fff;
+	font-size: 25px;
+	margin-left: 10px;
 }
 
 .award-content h3, .award-content p {
