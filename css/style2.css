@@ -1344,8 +1344,10 @@ div .contact_name .name {
 	}
 }
 
-/* FAQ Section Styling */
-/* FAQ Section Styling */
+/*--------------------------------------------------------------
+# FAQs
+--------------------------------------------------------------*/
+
 .faq-section {
 	padding: 2rem 1rem;
 	background-color: #dfc58b;
