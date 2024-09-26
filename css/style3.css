@@ -70,7 +70,6 @@
 .twinkle_back {
     position: relative;
     z-index: 1;
-    padding: 40px 0;
     overflow: hidden;
 }
 .background-container {

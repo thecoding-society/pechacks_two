@@ -132,6 +132,7 @@ pre,
 }
 .award-row {
 	display: flex;
+	row-gap: 50px;
 	justify-content: space-evenly;
 	width: 100%;
 	margin-bottom: 80px;
@@ -290,6 +291,9 @@ pre,
 	margin: 0 auto;
 	padding: 0px 20px 20px 20px;
 	position: relative;
+}
+.spon-title{
+	font-size: 12px !important;
 }
 #owl-height {
 	height: 180px;
@@ -709,6 +713,7 @@ div .contact_name .name {
     transition: all 0.3s ease-in-out;
 }
 #faq .accordion-button {
+	font-family: "Teko", sans-serif !important;
     width: 100%;
     padding: 15px;
     font-size: 18px;
@@ -741,7 +746,7 @@ div .contact_name .name {
     padding: 0 15px;
 }
 #faq .accordion-content p {
-    margin: 15px 0;
+	font-size: 16px !important;
     padding-right: 10px;
     color: #fff; 
 }
@@ -1067,4 +1072,12 @@ div .contact_name .name {
         width: 100%;
         margin-bottom: 20px;
     }
+}
+@media(max-width: 480px){
+	#faq .accordion{
+		padding: 0px !important;
+	}
+	.faq-column{
+		margin-bottom: 0px !important;
+	}
 }
