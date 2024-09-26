@@ -349,7 +349,8 @@ pre,
 	color: #ffffff;
 }
 .cta .card-ct {
-	background-color: #495057;
+	background-color: rgba(235, 235, 235, 0.1);
+	backdrop-filter: blur(8px);
 	border: none;
 	border-radius: 8px;
 	padding: 30px;
