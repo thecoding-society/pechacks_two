@@ -845,7 +845,7 @@ Responsive Styles For Style 1
 	#heading-pec {
 
 		font-size: 4rem;
-		margin: 40px auto 5px auto;
+		margin: 60px auto 5px auto;
 		text-align: center;
 	}
 
@@ -866,7 +866,9 @@ Responsive Styles For Style 1
 	}
 
 	.hero-buttons a {
-		width: 80%;
+		width: 50%;
+		text-align: center;
+		padding: 8px;
 	}
 }
 @media(max-width: 768px) {
