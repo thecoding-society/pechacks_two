@@ -1,5 +1,7 @@
 /* Body, Navbar, about section */
-
+html{
+	overflow-x: hidden;
+}
 
 
 /*--------------------------------------------------------------
@@ -99,6 +101,9 @@
 @media(max-width: 1000px) {
 	.hero {
 		height: 750px !important;
+	}
+	.custom{
+		margin-top: 20px;
 	}
 }
 
@@ -310,6 +315,10 @@ header.scrolled {
 		padding: 15px 20px;
 	}
 
+	#hero-sub{
+		line-height: 0vw !;
+	}
+
 	nav a {
 		font-size: 14px;
 	}
@@ -324,7 +333,7 @@ header.scrolled {
 .fans {
 	display: flex;
 	justify-content: space-between;
-	column-gap: 20px;
+	column-gap: 40px;
 }
 
 @media(max-width: 1000px) {
@@ -1069,6 +1078,14 @@ input:checked+.clash .description {
 	position: relative;
 	z-index: 4;
 
+}
+
+.date-con{
+	margin-top: 40px;
+}
+
+.cont{
+	margin-bottom: 50px;
 }
 
 .custom {

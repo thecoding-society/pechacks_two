@@ -1228,6 +1228,16 @@ div .contact_name .name {
 	width: 200px;
 }
 
+.row-puw{
+	display: flex;
+	justify-content: space-around ;
+	padding: 40px;
+}
+
+.details{
+	text-align: center;
+}
+
 @media (max-width: 768px) {
 	#Contact .row {
 		flex-direction: column;
@@ -1286,6 +1296,11 @@ div .contact_name .name {
 	.btn {
 		padding: 3px 10px;
 		font-size: 13px;
+	}
+
+	.row-puw{
+		flex-direction: column;
+		row-gap: 40px;
 	}
 
 	.custom {
