@@ -599,6 +599,7 @@ pre,
 	width: 100%;
 	justify-content: center;
 	align-items: center;
+	color:#adadad;
 }
 .cardContent p {
 	margin-bottom: 50px;
@@ -1030,6 +1031,7 @@ div .contact_name .name {
 	.first,
 	.cardContent p {
 		margin-bottom: 30px;
+
 	}
 }
 @media(max-width: 768px) {

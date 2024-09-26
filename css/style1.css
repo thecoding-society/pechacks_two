@@ -251,6 +251,7 @@ header.scrolled {
 	height: 100vh;
 	padding-top: 5%;
 	position: relative;
+
 }
 .home_contents, .fans {
 	display: flex;
@@ -258,6 +259,7 @@ header.scrolled {
 	column-gap: 40px;
 }
 .hero {
+	
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -826,11 +828,23 @@ Responsive Styles For Style 1
 --------------------------------------------------------------*/
 @media(max-width: 768px) {
 	.back_home {
-		height: auto;
+		height: 100vh;
 	}
+	
 }
 @media(max-width: 480px) {
+	.hero{
+		position: absolute;
+	transform: translate(-50%,-50%) !important;
+	top: 50%; left: 50%;
+	}
+	.container-home {
+		margin-top: 0px !important;
+		width: 90vw;
+		
+	}
 	#heading-pec {
+
 		font-size: 4rem;
 		margin: 70px auto 15px auto;
 		text-align: center;
@@ -865,7 +879,7 @@ Responsive Styles For Style 1
 	#hero-sub {
 		font-size: 1.5rem;
 		color: var(--BGCOLOR);
-		line-height: 4vw;
+		line-height: 8vw;
 	}
 	.hero-buttons a {
 		font-size: 12px;
@@ -931,7 +945,7 @@ Responsive Styles For Style 1
 }
 @media(max-width: 1000px) and (min-width: 768px) {
 	.back_home {
-		height: 800px !important;
+		height: 100vh !important;
 	}
 	.hero {
 		display: flex;
@@ -986,8 +1000,9 @@ Responsive Styles For Style 1
 }
 @media(max-width: 480px) {
 	.btn {
-		padding: 3px 10px;
-		font-size: 13px;
+		padding: 8px 15px;
+        font-size: 13px;
+        margin: 0px 5px;
 	}
 	.row-puw{
 		flex-direction: column;
