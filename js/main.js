@@ -14,36 +14,38 @@ window.addEventListener("load", () => {
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const accordionButtons = document.querySelectorAll('.accordion-button');
-    const accordionContents = document.querySelectorAll('.accordion-content');
+// Accordion Functionality with Single Open Question and Smooth Transition
+document.addEventListener("DOMContentLoaded", function () {
+    const accordionItems = document.querySelectorAll("#faq .accordion-item");
+    const accordionButtons = document.querySelectorAll("#faq .accordion-button");
 
-    accordionButtons.forEach((button, index) => {
-        button.addEventListener('click', function () {
-            const content = accordionContents[index];
+    accordionButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const content = button.nextElementSibling;
+            const parentItem = button.parentElement;
+            const isActive = parentItem.classList.contains("active");
 
-            // Close all other accordion items
-            accordionContents.forEach((otherContent, otherIndex) => {
-                if (otherIndex !== index) {
-                    otherContent.style.maxHeight = null;
-                    otherContent.classList.remove('open');
-                    accordionButtons[otherIndex].classList.add('collapsed');
-                }
+            // Close all accordion items
+            accordionItems.forEach(item => {
+                item.classList.remove("active");
+                const btn = item.querySelector('.accordion-button');
+                btn.classList.remove('active');  // Remove active class from button as well
+                const content = item.querySelector('.accordion-content');
+                content.style.maxHeight = null; // Close content
+                content.style.padding = "0 15px"; // Ensure padding is reset when collapsed
             });
 
-            // Toggle current accordion item
-            if (content.classList.contains('open')) {
-                content.style.maxHeight = null;
-                content.classList.remove('open');
-                button.classList.add('collapsed');
-            } else {
-                content.style.maxHeight = content.scrollHeight + 'px';
-                content.classList.add('open');
-                button.classList.remove('collapsed');
+            // If clicked button's parent wasn't active, open it
+            if (!isActive) {
+                parentItem.classList.add("active");
+                button.classList.add("active");  // Add active class to the button for icon rotation
+                content.style.maxHeight = content.scrollHeight + "px";  // Set max-height dynamically
+                content.style.padding = "15px 15px";  // Add padding inside the accordion when opened
             }
         });
     });
 });
+
 
 
 
