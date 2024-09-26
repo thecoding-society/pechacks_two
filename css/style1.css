@@ -20,9 +20,78 @@ body {
 ::before,
 ::after {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
+/*--------------------------------------------------------------
+# BASE
+--------------------------------------------------------------*/
 a{
 	text-decoration: none;
+}
+h2 {
+	text-align: center;
+	color: #333;
+}
+.anton-sc-regular {
+	font-family: "Anton SC", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0.3rem;
+}
+#white-back {
+	color: rgb(224, 224, 225)
+}
+.heading {
+	text-align: center;
+	position: relative;
+	height: 20.798vw;
+}
+
+.heading-shadow,
+.heading-small,
+.heading-shadow-p,
+.heading-small-p {
+	width: 100%;
+	font-family: "Anton SC", sans-serif;
+	font-weight: 400;
+}
+
+.heading-shadow,
+.heading-shadow-p {
+	color: hsla(0, 0%, 100%, 0.16);
+	font-style: normal;
+	font-size: 16vw;
+	line-height: 20.798vw;
+}
+
+.heading-small,
+.heading-small-p {
+	top: 11.806vw;
+	position: absolute;
+	font-size: 5.556vw;
+	font-size: 5.556vw;
+	position: absolute;
+	font-size: 5.556vw;
+	position: absolute;
+	line-height: 5.546vw;
+	display: flex;
+	justify-content: center;
+}
+#light-des {
+	color: #f0f5fa;
+}
+.not-selectable {
+	user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
 }
 /*--------------------------------------------------------------
 # UNIVERSAL ROOT COLORS
@@ -31,6 +100,11 @@ a{
 	--cherry-red: #aa1d39;
 	--primary-color: black;
 	--BGCOLOR: #cc1616;
+	--color-one: #990033;
+	--color-two: #161623;
+	--color-negro: #020202;
+	--color-blanco: #ffffff;
+	--color-sombra: #000000;
 }
 /*--------------------------------------------------------------
 # PARTICLES
@@ -172,6 +246,12 @@ header.scrolled {
 /*--------------------------------------------------------------
 # Home & Timer
 --------------------------------------------------------------*/
+.back_home {
+	background-color: black;
+	height: 100vh;
+	padding-top: 5%;
+	position: relative;
+}
 .home_contents, .fans {
 	display: flex;
 	justify-content: space-between;
@@ -200,6 +280,21 @@ header.scrolled {
 }
 .cont{
 	margin-bottom: 50px;
+	margin-top: 100px;
+	gap: 200px;
+	align-items: center;
+}
+.cont img {
+	width: 250px;
+}
+.con {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 200px;
+}
+.con img {
+	width: 150%;
 }
 .custom {
 	font-size: 1.5rem;
@@ -238,6 +333,17 @@ header.scrolled {
 	max-width: 780px;
 	left: -20px;
 }
+.outline {
+	color: transparent;
+	-webkit-text-stroke: 1.5px #fff;
+}
+#hero-sub {
+	font-size: 1.5rem;
+	color: var(--BGCOLOR);
+	line-height: 4vw;
+	width: auto;
+	z-index: -100;
+}
 .hero .hero-img-wrap:after {
 	content: "";
 	position: absolute;
@@ -248,6 +354,16 @@ header.scrolled {
 	background-repeat: no-repeat;
 	right: -100px;
 	top: -0px;
+}
+#heading-pec {
+	font-size: 8rem;
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: 0.01em;
+	color: black;
+	position: relative;
+	z-index: 1;
+	background: none;
 }
 .btn {
 	font-weight: 600;
@@ -360,6 +476,7 @@ header.scrolled {
 }
 .back_about {
 	color: black;
+	background-color: wheat;
 	font-size: 1.4rem;
 	text-align: justify;
 }
@@ -410,6 +527,13 @@ header.scrolled {
 /*--------------------------------------------------------------
 # Glimpses
 --------------------------------------------------------------*/
+.back_glimpse {
+	/* background-color: rgb(138, 122, 69); */
+	background-image: url('../img/gallerybg.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 .glimpses_of_events {
 	display: flex;
 	justify-content: center;
@@ -700,6 +824,11 @@ Responsive Styles For Style 1
 /*--------------------------------------------------------------
 # Home
 --------------------------------------------------------------*/
+@media(max-width: 768px) {
+	.back_home {
+		height: auto;
+	}
+}
 @media(max-width: 480px) {
 	#heading-pec {
 		font-size: 4rem;
@@ -800,6 +929,76 @@ Responsive Styles For Style 1
 		top: -40px;
 	}
 }
+@media(max-width: 1000px) and (min-width: 768px) {
+	.back_home {
+		height: 800px !important;
+	}
+	.hero {
+		display: flex;
+		justify-content: left;
+		padding-left: 25px !important;
+	}
+	.icon-container p {
+		font-size: 20px;
+
+	}
+}
+@media (min-width: 768px) {
+	.hero {
+		padding: calc(2.5rem - 30px) 0 4rem 0;
+	}
+}
+@media (min-width: 992px) {
+	.hero {
+		padding: .5rem 0;
+	}
+}
+@media (max-width: 768px) {
+	#Contact .row {
+		flex-direction: column;
+		align-items: center;
+	}
+	#Contact .col-lg-6,
+	#Contact .col-md-6 {
+		max-width: 100%;
+	}
+	#Contact .row {
+		gap: 20px;
+	}
+}
+@media(max-width: 768px) {
+	#heading-pec {
+		font-size: 5rem;
+		font-weight: 200;
+	}
+	.container-home {
+		margin-top: 40px
+	}
+	#hero-sub {
+		font-size: 18px !important;
+	}
+	.hero-intercept a {
+		font-size: 18px;
+	}
+	.cont {
+		margin-top: 30px;
+	}
+}
+@media(max-width: 480px) {
+	.btn {
+		padding: 3px 10px;
+		font-size: 13px;
+	}
+	.row-puw{
+		flex-direction: column;
+		row-gap: 40px;
+	}
+	.custom {
+		text-align: center !important;
+		margin-bottom: 0px;
+		padding-left: 0px;
+	}
+}
 @media (max-width: 768px) {
 	#timer {
 		font-size: 2.5vw;
@@ -854,33 +1053,14 @@ Responsive Styles For Style 1
 		font-size: 2.5vw;
 	}
 }
-@media(max-width: 1000px) and (min-width: 768px) {
-	.back_home {
-		height: 800px !important;
-	}
-	.hero {
-		display: flex;
-		justify-content: left;
-		padding-left: 25px !important;
-	}
-	.icon-container p {
-		font-size: 20px;
-
-	}
-}
-@media (min-width: 768px) {
-	.hero {
-		padding: calc(2.5rem - 30px) 0 4rem 0;
-	}
-}
-@media (min-width: 992px) {
-	.hero {
-		padding: .5rem 0;
-	}
-}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+@media(max-width: 480px) {
+	.back_about {
+		padding-top: 0;
+	}
+}
 @media (max-width: 768px) {
 	.about-section {
 		display: flex;
@@ -889,27 +1069,28 @@ Responsive Styles For Style 1
 		justify-content: center;
 		align-items: center;
 	}
-
 	.about_img {
 		display: flex;
 		align-items: center;
 	}
-
 	.about_img img {
 		margin: 0 auto;
 		width: 400px;
 	}
-
+	.icon-container p {
+		font-size: 15px;
+	}
+	.icon-container {
+		flex-direction: column !important;
+	}
 	.new-section {
 		display: flex;
 		flex-direction: column;
 		gap: 30px;
 	}
-
 	.new-section img {
 		width: 250px;
 	}
-
 	.back_about {
 		height: auto;
 	}
@@ -917,6 +1098,11 @@ Responsive Styles For Style 1
 /*--------------------------------------------------------------
 # Glimpses
 --------------------------------------------------------------*/
+@media (min-width: 768px) {
+	.back_glimpse {
+		padding-bottom: 30px;
+	}
+}
 @media (max-width: 1150px) and (min-width: 768px) {
 	.glimpses_container {
 		grid-template-columns: repeat(3, 1fr);
