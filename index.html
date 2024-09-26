@@ -63,6 +63,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet" />
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Teko:wght@300..700&display=swap');
+	</style>
 	<!-- Owl Carousel CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 	<link rel="stylesheet"
@@ -77,7 +80,7 @@
 			<a href="#home" class="hit">Home</a>
 			<a href="#about">About</a>
 			<a href="#domains">Domains</a>
-			<a href="#timeline">Timeline</a>
+			<a href="#hackathon-timeline">Timeline</a>
 			<a href="#prizes">Prizes</a>
 			<a href="#sponsers">Sponsors</a>
 			<a href="#faq">FAQs</a>
@@ -89,43 +92,48 @@
 
 	<!-- Start of Home Page -->
 	<section class="back_home" id="home">
+		<!-- Particle container for background effect -->
+		<div id="particles-home"></div>
+
 		<div class="hero" data-aos="zoom-in" data-aos-once="true">
-			<div class="container">
+			<div class="container-home">
 				<div>
 					<div class="cont">
-						<h1 class="anton-sc-regular heading-pec not-selectable" id="heading-pec"
-							style="background: #f4f4f5;">PEC HACKS 2.0</h1>
-						<!-- <img src="assets/images/pec-logo.jpg" alt="Pec_Logo"> -->
+						<h1 class="anton-sc-regular heading-pec not-selectable" id="heading-pec" style="color: white;">
+							PEC HACKS <br>
+							<span class="outline anton-sc-regular">2.0</span>
+						</h1>
 					</div>
 					<div class="fans">
 						<div class="home_contents">
 							<div class="intro-excerpt">
-								<p class="mb-4 anton-sc-regular not-selectable" id="hero-sub"
-									style="background: #f4f4f5;">December 28-29, 2024</p>
-								<p class="mb-4 anton-sc-regular not-selectable" id="hero-sub"
-									style="background: #f4f4f5;">36-hr Hackathon in Chennai</p>
-								<p class="hero-buttons" style="background: #f4f4f5;">
-									<a href="https://pechacks2.devfolio.co/" class="btn btn-secondary me-2">REGISTER
-										HERE</a>
-									<a href="https://chat.whatsapp.com/C9hPeQw19AI6J0qKE11DEy"
-										style="background-color: black;" class="btn btn-secondary me-2">JOIN OUR
-										COMMUNITY</a>
+								<p class="hero-buttons"></p>
+								<a href="https://pechacks2.devfolio.co/" class="btn btn-secondary me-2">REGISTER
+									HERE</a>
+								<a href="https://chat.whatsapp.com/C9hPeQw19AI6J0qKE11DEy"
+									style="background-color: black;" class="btn btn-secondary me-2">JOIN OUR
+									COMMUNITY</a>
 								</p>
+								<div class="date-con">
+									<p class=" anton-sc-regular not-selectable" id="hero-sub">
+										December 28-29, 2024
+									</p>
+									<p class=" anton-sc-regular not-selectable" id="hero-sub">
+										36-hr Hackathon in Chennai
+									</p>
+								</div>
 							</div>
 						</div>
-
-						<div class="col-lg-6 d-flex flex-column align-items-center">
-							<!-- <img src="img/pec-logo.png" alt="Organized By" style="max-width: 100%; height: auto;" /> -->
+						<div>
+							<p class="custom" id="hero-sub">SETTING UP IN</p>
 							<div id="timer" class="non-selectable w-100 text-center"></div>
 						</div>
 					</div>
 				</div>
-				<!-- <div class="apply-button" data-hackathon-slug="pechacks2" data-button-theme="dark-inverted"
-					style="height: 44px; width: 312px">
-				</div> -->
 			</div>
 		</div>
 	</section>
+
 
 	<!-- End of Home Page -->
 
@@ -135,7 +143,7 @@
 			<div data-aos="fade-down" data-aos-once="true">
 				<!-- HEADING -->
 				<div class="heading not-selectable">
-					<h1 class="heading-shadow" id="white-back">ABOUT</h1>
+					<h1 class="heading-shadow" id="white-back" style="color: #ffffff;">ABOUT</h1>
 					<h2 class="heading-small">
 						<div style="overflow: hidden">
 							<div style="transform: translateY(0%); will-change: auto">A</div>
@@ -162,14 +170,44 @@
 						<h3>Welcome, Innovators and Change-Makers!</h3>
 						<br />
 						<p class="about-para">
-							"Introducing <span>PEC HACKS 2.0</span>– where boundless creativity meets game-changing innovation!. Hosted by
-							<span>Panimalar Engineering College, Chennai, Tamil Nadu,</span> this hackathon is your Golden-ticket to transform bold ideas into impactful solutions. 
-							Join us on this electrifying journey as you team up with brilliant minds, tackle real-world challenges, and push the boundaries of technology."
+							"Introducing <span>PEC HACKS 2.0</span>– where boundless creativity meets game-changing
+							innovation!. Hosted by
+							<span>Panimalar Engineering College, Chennai, Tamil Nadu,</span> this hackathon is your
+							Golden-ticket to transform bold ideas into impactful solutions.
+							Join us on this electrifying journey as you team up with brilliant minds, tackle real-world
+							challenges, and push the boundaries of technology."
 						</p>
 						<p class="prize-pool">Prize Pool of <span>₹ 18 Lakh+</span></p>
-					</div>
-					<div class="about_img" data-aos="fade-left" data-aos-once="true">
-						<img src="assets/images/pechacks.png" alt="About_Img" />
+						<script src="https://cdn.lordicon.com/lordicon.js"></script>
+						<div class="icon-container">
+							<div class="icon-reg">
+								<span class="center">
+									<lord-icon src="https://cdn.lordicon.com/lyrrgrsl.json" trigger="loop" delay="2000"
+										style="width:70px;height:70px"></lord-icon>
+								</span>
+								<p>3000+ Registrations</p>
+							</div>
+
+							<div class="icon-man">
+								<span class="center">
+									<script src="https://cdn.lordicon.com/lordicon.js"></script>
+									<lord-icon src="https://cdn.lordicon.com/gkgkfbzm.json" trigger="loop"
+										colors="primary:#121331,secondary:#000000"
+										style="width:80px;height:80px"></lord-icon>
+								</span>
+								<p>300+ Hackers</p>
+							</div>
+
+							<div class="icon-projects">
+								<span class="center">
+									<script src="https://cdn.lordicon.com/lordicon.js"></script>
+									<lord-icon src="https://cdn.lordicon.com/xirobkro.json" trigger="loop"
+										style="width:70px;height:70px"></lord-icon>
+								</span>
+								<p>60+ Projects</p>
+							</div>
+						</div>
+
 					</div>
 				</div>
 				<br />
@@ -444,472 +482,615 @@
 	<!-- End of Glimpse of PEC Hacks Section -->
 
 	<!-- Start of Domains Section -->
-	<section id="domains" class="back_domains">
-		<br />
-		<br />
-
-		<div data-aos="fade-down" data-aos-once="true">
-			<div class="heading">
-				<!-- HEADING -->
-				<h1 class="heading-shadow not-selectable">DOMAINS</h1>
-				<h2 class="heading-small not-selectable" style="color: #ffffff">
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">D</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">O</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">M</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">A</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">I</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">N</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">S</div>
-					</div>
-				</h2>
+	<section id="domains" class="twinkle_back">
+		<section class="back_domains">
+			<div class="background-container">
+				<div class="stars"></div>
+				<div class="twinkling"></div>
 			</div>
-			<!-- END  -->
-			<h2 class="dom_p" style="color: #ffffff">Select your own problem statement from any of the domains!</h2>
+			<br />
+			<div data-aos="fade-down" data-aos-once="true">
+				<div class="heading">
+					<!-- HEADING -->
+					<h1 class="heading-shadow not-selectable">DOMAINS</h1>
+					<h2 class="heading-small not-selectable" style="color: #ffffff">
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">D</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">O</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">M</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">A</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">I</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">N</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">S</div>
+						</div>
+					</h2>
+				</div>
+				<h2 class="dom_p" style="color: #ffffff">Select your own problem statement from any of the domains!</h2>
 
-			<div class="wrapper">
-				<div class="container1">
-					<input type="radio" name="slide" id="c1" checked />
-					<label for="c1" class="clash">
-						<div class="marvel">
-							<div class="icon">1</div>
-							<div class="description">
-								<h4>Blockchain & Web 3</h4>
+				<div class="wrapper">
+					<div class="container1">
+						<input type="radio" name="slide" id="c1" checked />
+						<label for="c1" class="clash">
+							<div class="marvel">
+								<div class="icon">1</div>
+								<div class="description">
+									<h4>Blockchain & Web 3</h4>
+								</div>
 							</div>
-						</div>
-					</label>
-					<input type="radio" name="slide" id="c2" />
-					<label for="c2" class="clash">
-						<div class="marvel">
-							<div class="icon">2</div>
-							<div class="description">
-								<h4>Artificial Intelligence</h4>
+						</label>
+						<input type="radio" name="slide" id="c2" />
+						<label for="c2" class="clash">
+							<div class="marvel">
+								<div class="icon">2</div>
+								<div class="description">
+									<h4>Artificial Intelligence</h4>
+								</div>
 							</div>
-						</div>
-					</label>
-					<input type="radio" name="slide" id="c3" />
-					<label for="c3" class="clash">
-						<div class="marvel">
-							<div class="icon">3</div>
-							<div class="description">
-								<h4>Health Care</h4>
+						</label>
+						<input type="radio" name="slide" id="c3" />
+						<label for="c3" class="clash">
+							<div class="marvel">
+								<div class="icon">3</div>
+								<div class="description">
+									<h4>Health Care</h4>
+								</div>
 							</div>
-						</div>
-					</label>
-					<input type="radio" name="slide" id="c4" />
-					<label for="c4" class="clash">
-						<div class="marvel">
-							<div class="icon">4</div>
-							<div class="description">
-								<h4>Social Impact</h4>
+						</label>
+						<input type="radio" name="slide" id="c4" />
+						<label for="c4" class="clash">
+							<div class="marvel">
+								<div class="icon">4</div>
+								<div class="description">
+									<h4>Social Impact</h4>
+								</div>
 							</div>
-						</div>
-					</label>
-					<input type="radio" name="slide" id="c5" />
-					<label for="c5" class="clash">
-						<div class="marvel">
-							<div class="icon">5</div>
-							<div class="description">
-								<h4>Open Track</h4>
+						</label>
+						<input type="radio" name="slide" id="c5" />
+						<label for="c5" class="clash">
+							<div class="marvel">
+								<div class="icon">5</div>
+								<div class="description">
+									<h4>Open Track</h4>
+								</div>
 							</div>
-						</div>
-					</label>
-					<!-- <input type="radio" name="slide" id="c6" />
-					<label for="c6" class="clash">
-						<div class="marvel">
-							<div class="icon">6</div>
-							<div class="description">
-								<h4>High School Track</h4>
-							</div>
-						</div>
-					</label> -->
+						</label>
+						<!-- <input type="radio" name="slide" id="c6" />
+							<label for="c6" class="clash">
+								<div class="marvel">
+									<div class="icon">6</div>
+									<div class="description">
+										<h4>High School Track</h4>
+									</div>
+								</div>
+							</label> -->
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+
 	</section>
 	<!-- End of Domains Section -->
 
 	<!-- Start of Timeline	 -->
-	<section id="timeline" class="whole back_timeline">
-		<img class="big not-selectable" src="img/timeline.png" alt="Timeline" />
-		<img class="small not-selectable" src="img/big.png" alt="Timeline" />
-	</section>
-	<!-- End of Timeline -->
+	<!-- <section class="twinkle_back">
+		<div class="background-container">
+			<div class="stars"></div>
+			<div class="twinkling"></div>
+		</div> -->
+	<section id="hackathon-timeline" class="twinkle_back">
+		<div class="background-container">
+			<div class="stars"></div>
+			<div class="twinkling"></div>
+		</div>
+		<div class="heading">
+			<h1 class="heading-shadow not-selectable">TIMELINE</h1>
+			<h2 class="heading-small not-selectable" style="color: #ffffff;">
+				<div style="overflow: hidden">
+					<div style="transform: translateY(0%); will-change: auto">T</div>
+				</div>
+				<div style="overflow: hidden">
+					<div style="transform: translateY(0%); will-change: auto">I</div>
+				</div>
+				<div style="overflow: hidden">
+					<div style="transform: translateY(0%); will-change: auto">M</div>
+				</div>
+				<div style="overflow: hidden">
+					<div style="transform: translateY(0%); will-change: auto">E</div>
+				</div>
+				<div style="overflow: hidden">
+					<div style="transform: translateY(0%); will-change: auto">L</div>
+				</div>
+				<div style="overflow: hidden">
+					<div style="transform: translateY(0%); will-change: auto">I</div>
+				</div>
+				<div style="overflow: hidden">
+					<div style="transform: translateY(0%); will-change: auto">N</div>
+				</div>
+				<div style="overflow: hidden">
+					<div style="transform: translateY(0%); will-change: auto">E</div>
+				</div>
+			</h2>
+		</div>
+		<div class="timeline">
+			<!-- The vertical line in the middle of the timeline -->
+			<div class="timeline-line"></div>
 
-	<!-- Start of Prizes Section -->
-	<section id="prizes" class="back_prices">
-		<br />
-		<br />
-		<div data-aos="fade-down" data-aos-once="true">
-			<!-- HEADING -->
-			<div class="heading">
-				<h1 id="white-back" class="heading-shadow not-selectable">PRIZES</h1>
-				<h2 class="heading-small not-selectable">
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">P</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">R</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">I</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">Z</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">E</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">S</div>
-					</div>
-				</h2>
+			<div class="timeline-item" data-aos="fade-right">
+				<div class="timeline-content">
+					<div class="icon">📅</div>
+					<p class="timeline-date">29th August 2024</p>
+					<h3>Registration & Idea Submission Starts</h3>
+				</div>
 			</div>
-			<!-- end of heading -->
-			<br /><br />
-			<div class="award-container">
-				<!-- First Row: Winner -->
-				<div class="award-row">
-					<div class="award-item">
-						<div class="award-box">
-							<img class="winners-image not-selectable" src="img/Prices/1.jpeg"
-								alt="First Prize Winner" />
-						</div>
-						<div class="award-content">
-							<h3>Winner</h3>
-							<p>Cash Prize of INR <strong>1,00,000+</strong> </p>
-						</div>
-					</div>
-				</div>
 
-				<!-- Second Row: Second Runner Up and Third Runner Up -->
-				<div class="award-row">
-					<div class="award-item">
-						<div class="award-box">
-							<img class="winners-image not-selectable" src="img/Prices/2.jpeg"
-								alt="Second Prize Winner" />
-						</div>
-						<div class="award-content">
-							<h3>First Runner Up</h3>
-							<p>Cash Prize of INR <strong>75,000+</strong></p>
-						</div>
-					</div>
-					<div class="award-item">
-						<div class="award-box">
-							<img class="winners-image not-selectable" src="img/Prices/3.jpeg"
-								alt="Third Prize Winner" />
-						</div>
-						<div class="award-content">
-							<h3>Second Runner Up</h3>
-							<p>Cash Prize of INR <strong>50,000+</strong></p>
-						</div>
-					</div>
+			<div class="timeline-item" data-aos="fade-left">
+				<div class="timeline-content">
+					<div class="icon">📝</div>
+					<p class="timeline-date">20th October 2024</p>
+					<h3>Registration Ends</h3>
 				</div>
+			</div>
 
-				<!-- Third Row: High School Prize and Best All Girls Team Prize -->
-				<div class="award-row">
-					<div class="award-item">
-						<div class="award-box">
-							<img class="winners-image not-selectable" src="img/Prices/highschool.jpeg"
-								alt="School Prize Winner" />
-						</div>
-						<div class="award-content">
-							<h3>High School Prize</h3>
-							<p>Cash Prize of INR <strong>25,000+</strong></p>
-						</div>
-					</div>
-					<div class="award-item">
-						<div class="award-box">
-							<img class="winners-image not-selectable" src="img/Prices/allgirls.jpeg"
-								alt="Best All Girls Team Prize" />
-						</div>
-						<div class="award-content">
-							<h3>Best All Girls Team Prize</h3>
-							<p>Cash Prize of INR <strong>35,000+</strong></p>
-						</div>
-					</div>
+			<div class="timeline-item" data-aos="fade-right">
+				<div class="timeline-content">
+					<div class="icon">💡</div>
+					<p class="timeline-date">25th October 2024</p>
+					<h3>Idea Submission Ends</h3>
+				</div>
+			</div>
+
+			<div class="timeline-item" data-aos="fade-left">
+				<div class="timeline-content">
+					<div class="icon">📢</div>
+					<p class="timeline-date">15th November 2024</p>
+					<h3>Announcement of Shortlisted Teams</h3>
+				</div>
+			</div>
+
+			<div class="timeline-item" data-aos="fade-right">
+				<div class="timeline-content">
+					<div class="icon">🤝</div>
+					<p class="timeline-date">22nd November 2024</p>
+					<h3>Teams RSVP</h3>
+				</div>
+			</div>
+
+			<div class="timeline-item" data-aos="fade-left">
+				<div class="timeline-content">
+					<div class="icon">🎓</div>
+					<p class="timeline-date">13th December 2024</p>
+					<h3>Team Mentoring</h3>
+				</div>
+			</div>
+
+			<div class="timeline-item" data-aos="fade-right">
+				<div class="timeline-content">
+					<div class="icon">🚀</div>
+					<p class="timeline-date">28th December 2024</p>
+					<h3>Hackathon Starts</h3>
+				</div>
+			</div>
+
+			<div class="timeline-item" data-aos="fade-left">
+				<div class="timeline-content">
+					<div class="icon">🏆</div>
+					<p class="timeline-date">29th December 2024</p>
+					<h3>Hackathon Ends</h3>
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- End of Timeline -->
+
+	<!-- Start of Prizes Section -->
+	<section class="twinkle_back" id="prizes">
+		<section class="back_prices">
+			<div class="background-container">
+				<div class="stars"></div>
+				<div class="twinkling"></div>
+			</div>
+
+			<br />
+			<div data-aos="fade-down" data-aos-once="true">
+				<!-- HEADING -->
+				<div class="heading">
+					<h1 class="heading-shadow not-selectable">PRIZES</h1>
+					<h2 class="heading-small not-selectable" style="color: #ffffff;">
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">P</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">R</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">I</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">Z</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">E</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">S</div>
+						</div>
+					</h2>
+				</div>
+				<!-- end of heading -->
+				<br /><br />
+				<div class="award-container">
+					<!-- First Row: Winner -->
+					<div class="award-row">
+						<div class="award-item gold-pri">
+							<div class="award-box">
+								<img class="winners-image not-selectable" src="img/Prices/1.jpeg"
+									alt="First Prize Winner" />
+							</div>
+							<div class="award-content">
+								<h3>Winner</h3>
+								<p>Cash Prize of INR <strong>1,00,000+</strong> </p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Second Row: Second Runner Up and Third Runner Up -->
+					<div class="award-row">
+						<div class="award-item silver-pri">
+							<div class="award-box">
+								<img class="winners-image not-selectable" src="img/Prices/2.jpeg"
+									alt="Second Prize Winner" />
+							</div>
+							<div class="award-content">
+								<h3>First Runner Up</h3>
+								<p>Cash Prize of INR <strong>75,000+</strong></p>
+							</div>
+						</div>
+						<div class="award-item bronze-pri">
+							<div class="award-box">
+								<img class="winners-image not-selectable" src="img/Prices/3.jpeg"
+									alt="Third Prize Winner" />
+							</div>
+							<div class="award-content">
+								<h3>Second Runner Up</h3>
+								<p>Cash Prize of INR <strong>50,000+</strong></p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Third Row: High School Prize and Best All Girls Team Prize -->
+					<div class="award-row">
+						<div class="award-item school-pri">
+							<div class="award-box">
+								<img class="winners-image not-selectable" src="img/Prices/highschool.jpeg"
+									alt="School Prize Winner" />
+							</div>
+							<div class="award-content">
+								<h3>High School Prize</h3>
+								<p>Cash Prize of INR <strong>25,000+</strong></p>
+							</div>
+						</div>
+						<div class="award-item girls-pri">
+							<div class="award-box">
+								<img class="winners-image not-selectable" src="img/Prices/allgirls.jpeg"
+									alt="Best All Girls Team Prize" />
+							</div>
+							<div class="award-content">
+								<h3>Girls Team Prize</h3>
+								<p>Cash Prize of INR <strong>35,000+</strong></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<!-- </section> -->
 
 
 
 	<!-- End of Prizes Section -->
 
 	<!-- Start of Sponsors Section -->
-	<section id="sponsers" class="back_sponsors">
-		<div data-aos="fade-down" data-aos-once="true">
-			<br />
-			<br>
-			<!-- HEADING -->
-			<div class="heading">
-				<h1 class="heading-shadow">SPONSORS</h1>
-				<h2 class="heading-small" style="color: #ffffff">
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">S</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">P</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">O</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">N</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">S</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">O</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">R</div>
-					</div>
-					<div style="overflow: hidden">
-						<div style="transform: translateY(0%); will-change: auto">S</div>
-					</div>
-				</h2>
+	<section id="sponsers" class="twinkle_back">
+		<section class="back_sponsors">
+			<div class="background-container">
+				<div class="stars"></div>
+				<div class="twinkling"></div>
 			</div>
-			<!-- end of heading -->
-
-			<div class="sponsors">
-				<pre><h2><b id="light-des">GOLD SPONSORS</b></h2></pre>
-				<div class="gold">
-					<a href="https://devfolio.co/" target="_blank"><img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/devfolio.png?updatedAt=1725590141525"
-							alt="DEVFOLIO LOGO" /></a>
-					<a href="https://polygon.technology/" target="_blank"><img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/polygon.png?updatedAt=1725590145961"
-							alt="POLYGON LOGO" /></a>
-				</div>
+			<div data-aos="fade-down" data-aos-once="true">
+				<br />
 				<br>
+				<!-- HEADING -->
+				<div class="heading">
+					<h1 class="heading-shadow">SPONSORS</h1>
+					<h2 class="heading-small" style="color: #ffffff">
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">S</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">P</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">O</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">N</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">S</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">O</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">R</div>
+						</div>
+						<div style="overflow: hidden">
+							<div style="transform: translateY(0%); will-change: auto">S</div>
+						</div>
+					</h2>
+				</div>
+				<!-- end of heading -->
 
-			</div>
-			<br />
-			<pre><h2><b id="light-des">SILVER SPONSORS</b></h2></pre>
-			<div class="gold silver">
-				<a href="https://github.com/" target="_blank"><img class="hvr-float-shadow"
-						src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/github.png?updatedAt=1725590143567"
-						alt="Silver Sponsor" /></a>
-				<a href="https://ethindia.co/" target="_blank"><img class="hvr-float-shadow"
-						src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/ethindia.png?updatedAt=1725590143545"
-						alt="ETHINDIA LOGO" /></a>
-				<a href="https://aptos.dev/" target="_blank"><img class="hvr-float-shadow"
-						src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/aptos.png?updatedAt=1725590141097"
-						alt="APTOS LOGO" /></a>
-			</div>
-			<pre><h2 class="spon"><b id="light-des">BRONZE SPONSORS</b></h2></pre>
+				<div class="sponsors">
+					<pre><h2><b id="light-des">GOLD SPONSORS</b></h2></pre>
+					<div class="gold">
+						<a href="https://devfolio.co/" target="_blank"><img class="hvr-float-shadow"
+								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/devfolio.png?updatedAt=1725590141525"
+								alt="DEVFOLIO LOGO" /></a>
+						<a href="https://polygon.technology/" target="_blank"><img class="hvr-float-shadow"
+								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/polygon.png?updatedAt=1725590145961"
+								alt="POLYGON LOGO" /></a>
+					</div>
+					<br>
 
-		</div>
-		<div class="carousel-container bronze_slide">
-			<div class="owl-carousel owl-theme bronze_slide" id="owl-height">
-				<div class="gold com">
-					<a href="https://niia.ai/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/niia.png?updatedAt=1725590145992"
-							alt="NavanAi LOGO" />
-					</a>
 				</div>
-				<div class="gold com">
-					<a href="https://www.axure.com/" target="_blank">
-						<img class="hvr-float-shadow "
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/axure.png?updatedAt=1725590141140"
-							alt="AXURE LOGO" />
-					</a>
+				<br />
+				<pre><h2><b id="light-des">SILVER SPONSORS</b></h2></pre>
+				<div class="gold silver">
+					<a href="https://github.com/" target="_blank"><img class="hvr-float-shadow"
+							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/github.png?updatedAt=1725590143567"
+							alt="Silver Sponsor" /></a>
+					<a href="https://ethindia.co/" target="_blank"><img class="hvr-float-shadow"
+							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/ethindia.png?updatedAt=1725590143545"
+							alt="ETHINDIA LOGO" /></a>
+					<a href="https://aptos.dev/" target="_blank"><img class="hvr-float-shadow"
+							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/aptos.png?updatedAt=1725590141097"
+							alt="APTOS LOGO" /></a>
 				</div>
-				<div class="gold com">
-					<a href="https://flatlogic.com/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/flatlogic.png?updatedAt=1725590141248"
-							alt="Flatlogic LOGO" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://nordpass.com/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/nordpass.png?updatedAt=1725590144199"
-							alt="Nordpass LOGO" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://nordvpn.com/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/nordvpn.png?updatedAt=1725590144158"
-							alt="Nordvpn LOGO" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://balsamiq.com/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/balsamiq.png?updatedAt=1725590141252"
-							alt="Balsamiq LOGO" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://incogni.com/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/incogni.png?updatedAt=1725590145933"
-							alt="Incogni LOGO" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://saily.com/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/saily.png?updatedAt=1725612006906"
-							alt="Saily LOGO" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://www.slido.com/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/slido.png?updatedAt=1725626942757"
-							alt="Slido LOGO" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://beeceptor.com/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/beeceptor.png?updatedAt=1725626943068"
-							alt="Beeceptor LOGO" />
-					</a>
-				</div>
-				<div class="gold bronze">
-					<a href="https://interviewbuddy.net/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/interview_buddy.png?updatedAt=1725626943355"
-							alt="Interview Buddy LOGO" />
-					</a>
-				</div>
-				<div class="gold bronze">
-					<a href="https://gen.xyz/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/xyz.png?updatedAt=1725953608575"
-							alt=".XYZ LOGO" />
-					</a>
-				</div>
-			</div>
-		</div>
-		</div>
+				<pre><h2 class="spon"><b id="light-des">BRONZE SPONSORS</b></h2></pre>
 
 
+				<div class="carousel-container bronze_slide">
+					<div class="owl-carousel owl-theme bronze_slide" id="owl-height">
+						<div class="gold com">
+							<a href="https://niia.ai/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/niia.png?updatedAt=1725590145992"
+									alt="NavanAi LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://www.axure.com/" target="_blank">
+								<img class="hvr-float-shadow "
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/axure.png?updatedAt=1725590141140"
+									alt="AXURE LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://flatlogic.com/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/flatlogic.png?updatedAt=1725590141248"
+									alt="Flatlogic LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://nordpass.com/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/nordpass.png?updatedAt=1725590144199"
+									alt="Nordpass LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://nordvpn.com/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/nordvpn.png?updatedAt=1725590144158"
+									alt="Nordvpn LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://balsamiq.com/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/balsamiq.png?updatedAt=1725590141252"
+									alt="Balsamiq LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://incogni.com/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/incogni.png?updatedAt=1725590145933"
+									alt="Incogni LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://saily.com/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/saily.png?updatedAt=1725612006906"
+									alt="Saily LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://www.slido.com/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/slido.png?updatedAt=1725626942757"
+									alt="Slido LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://beeceptor.com/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/beeceptor.png?updatedAt=1725626943068"
+									alt="Beeceptor LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://interviewbuddy.net/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/interview_buddy.png?updatedAt=1725626943355"
+									alt="Interview Buddy LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://gen.xyz/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/xyz.png?updatedAt=1725953608575"
+									alt=".XYZ LOGO" />
+							</a>
+						</div>
+					</div>
+				</div>
 
-		<br />
-		<br />
-		<pre><h2><b id="light-des">COMMUNITY PARTNERS</b></h2></pre>
-		<div class="carousel-container bronze_slide">
-			<div class="owl-carousel owl-theme bronze_slide" id="owl-height">
-				<div class="gold com">
-					<a href="https://www.socialwinterofcode.com/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/SWOC.png?updatedAt=1725590145906"
-							alt="SWOC LOGO" />
-					</a>
-				</div>
-				<!-- <div class="gold com">
-					<a href="https://gdsc.community.dev/psg-college-of-arts-science-coimbatore-india/" target="_blank">
-						<img class="hvr-float-shadow "
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/gdscpsgcas.png?updatedAt=1725590143571"
-							alt="GDSCPSGCAS LOGO" />
-					</a>
-				</div> -->
-				<div class="gold com">
-					<a href="https://avishkaar2024.adityatekkali.edu.in/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/avishkaar.png?updatedAt=1725590141216"
-							alt="avishkaar LOGO" />
-					</a>
-				</div>
-				<!-- <div class="gold com">
-					<a href="https://gdsc.community.dev/coimbatore-institute-of-technology-coimbatore-india/"
-						target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/gdsccit.png?updatedAt=1725941162331"
-							alt="GDSCCIT LOGO" />
-					</a>
-				</div> -->
-				<div class="gold com">
-					<a href="https://www.linkedin.com/company/hack-club-sist/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/Hacksist.png?updatedAt=1726150392072"
-							alt="Hacksist LOGO" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://blockseblock.com/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/blockseblock.png?updatedAt=1726313608730"
-							alt="Blockseblock LOGO" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://www.linkedin.com/company/chennaireact/?originalSubdomain=in" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/chennai_react.PNG?updatedAt=1726640551641"
-							alt="Chennai React js LOGO" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://www.linkedin.com/company/newbiev6/" target="_blank">
-						<img class="hvr-float-shadow"
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/newbie.png?updatedAt=1726818908615"
-							alt="Newbie LOGO" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://gdg.community.dev/gdg-on-campus-government-engineering-college-palakkad-india/" target="_blank">
-						<img class="hvr-float-shadow" 
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/GDG%20Palakkad.png?updatedAt=1726819903190" 
-							alt="GDG GEC Palakkad Logo" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://www.linkedin.com/company/intellexa-rec/posts/?feedView=all" target="_blank">
-						<img class="hvr-float-shadow" 
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/Intellexa.png?updatedAt=1726888395252" 
-							alt="Intellexa REC Logo" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://gdg.community.dev/gdg-on-campus-kalasalingam-academy-of-research-education-krishnankoil-india/" target="_blank">
-						<img class="hvr-float-shadow" 
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/GDG%20Kalasalingam.png?updatedAt=1727062379058" 
-							alt="GDG Kalasalingam Logo" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://crescent.education/student-affairs/crescent-innovation-and-startup-club/" target="_blank">
-						<img class="hvr-float-shadow" 
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/CISC.png?updatedAt=1727063391322" 
-							alt="CISC Logo" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://lu.ma/k9lnt71x" target="_blank">
-						<img class="hvr-float-shadow" 
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/buildersqoneqt.png?updatedAt=1727063390387" 
-							alt="Builders Qoneqt Logo" />
-					</a>
-				</div>
-				<div class="gold com">
-					<a href="https://gdg.community.dev/gdg-on-campus-kg-college-of-arts-science-coimbatore-india/" target="_blank">
-						<img class="hvr-float-shadow" 
-							src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/GDG%20KG%20ARTS&SCIENCE.png?updatedAt=1727168077251" 
-							alt="GDG KG College of Arts and Science" />
-					</a>
+
+
+
+				<br />
+				<br />
+				<pre><h2><b id="light-des">COMMUNITY PARTNERS</b></h2></pre>
+				<div class="carousel-container bronze_slide">
+					<div class="owl-carousel owl-theme bronze_slide" id="owl-height">
+						<div class="gold com">
+							<a href="https://www.socialwinterofcode.com/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/SWOC.png?updatedAt=1725590145906"
+									alt="SWOC LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://gdsc.community.dev/psg-college-of-arts-science-coimbatore-india/"
+								target="_blank">
+								<img class="hvr-float-shadow "
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/gdscpsgcas.png?updatedAt=1725590143571"
+									alt="GDSCPSGCAS LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://avishkaar2024.adityatekkali.edu.in/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/avishkaar.png?updatedAt=1725590141216"
+									alt="avishkaar LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://gdsc.community.dev/coimbatore-institute-of-technology-coimbatore-india/"
+								target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/gdsccit.png?updatedAt=1725941162331"
+									alt="GDSCCIT LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://www.linkedin.com/company/hack-club-sist/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/Hacksist.png?updatedAt=1726150392072"
+									alt="Hacksist LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://blockseblock.com/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/blockseblock.png?updatedAt=1726313608730"
+									alt="Blockseblock LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://www.linkedin.com/company/chennaireact/?originalSubdomain=in"
+								target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/chennai_react.PNG?updatedAt=1726640551641"
+									alt="Chennai React js LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://www.linkedin.com/company/newbiev6/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/newbie.png?updatedAt=1726818908615"
+									alt="Newbie LOGO" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://gdg.community.dev/gdg-on-campus-government-engineering-college-palakkad-india/"
+								target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/GDG%20Palakkad.png?updatedAt=1726819903190"
+									alt="GDG GEC Palakkad Logo" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://www.linkedin.com/company/intellexa-rec/posts/?feedView=all"
+								target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/Intellexa.png?updatedAt=1726888395252"
+									alt="Intellexa REC Logo" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://gdg.community.dev/gdg-on-campus-kalasalingam-academy-of-research-education-krishnankoil-india/"
+								target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/GDG%20Kalasalingam.png?updatedAt=1727062379058"
+									alt="GDG Kalasalingam Logo" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://crescent.education/student-affairs/crescent-innovation-and-startup-club/"
+								target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/CISC.png?updatedAt=1727063391322"
+									alt="CISC Logo" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://lu.ma/k9lnt71x" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/buildersqoneqt.png?updatedAt=1727063390387"
+									alt="Builders Qoneqt Logo" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://gdg.community.dev/gdg-on-campus-kg-college-of-arts-science-coimbatore-india/"
+								target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/GDG%20KG%20ARTS&SCIENCE.png?updatedAt=1727168077251"
+									alt="GDG KG College of Arts and Science" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="https://aiclub24.web.app/" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/AI%20MKCE.png?updatedAt=1727238400219"
+									alt="AI Club MKCE" />
+							</a>
+						</div>
+						<div class="gold com">
+							<a href="" target="_blank">
+								<img class="hvr-float-shadow"
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/sponsors/Student%20Developers%20Cell.png?updatedAt=1727238400226"
+									alt="Student Developer Cell" />
+							</a>
+						</div>
+					</div>
 				</div>
 				<div class="gold com">
 					<a href="https://aiclub24.web.app/" target="_blank">
@@ -926,39 +1107,48 @@
 					</a>
 				</div>
 			</div>
-		</div>
-		</div>
+			</div>
+		</section>
+
 	</section>
 	<!-- End of Sponsors Section -->
 
 
 
 	<!-- Start of Partner with us -->
-	<section id="proposal" class="cta back_puw">
-		<div class="container" data-aos="fade-down" data-aos-once="true">
-			<div class="card-ct card-body">
-				<div class="text-center">
-					<h3 class="non-selectable">WANT TO PARTNER WITH US?</h3>
-					<br />
-					<p id="proposal-p" class="non-selectable">
-						Be part of the transformation and make a lasting impact by partnering PEC HACKS, a premier
-						hackathon event that brings together
-						talented individuals to innovate and create groundbreaking solutions. As a partner, you'll gain
-						valuable visibility among a highly
-						engaged audience, connect with top tech talent, and position your brand as a leader in the
-						industry. Join us in empowering the next
-						generation of innovators and driving technological advancements.
-					</p>
-					<br />
-					<div class="puw-btn">
-						<a class="cta-btn sponsor-brochure" href="assets/PEC Hacks 2.0 - Sponsor Deck.pdf">View
-							Brochure</a>
-						<!-- <span> | </span>
-						<a class="cta-btn contact-cta" href="#Contact">Contact Us</a> -->
+	<section id="proposal" class="twinkle_back">
+		<div class="background-container">
+			<div class="stars"></div>
+			<div class="twinkling"></div>
+		</div>
+		<section class="cta back_puw">
+			<div class="container" data-aos="fade-down" data-aos-once="true">
+				<div class="card-ct card-body">
+					<div class="text-center">
+						<h3 class="non-selectable">WANT TO PARTNER WITH US?</h3>
+						<br />
+						<p id="proposal-p" class="non-selectable">
+							Be part of the transformation and make a lasting impact by partnering PEC HACKS, a premier
+							hackathon event that brings together
+							talented individuals to innovate and create groundbreaking solutions. As a partner, you'll
+							gain
+							valuable visibility among a highly
+							engaged audience, connect with top tech talent, and position your brand as a leader in the
+							industry. Join us in empowering the next
+							generation of innovators and driving technological advancements.
+						</p>
+						<br />
+						<div class="puw-btn">
+							<a class="cta-btn sponsor-brochure" href="assets/PEC Hacks 2.0 - Sponsor Deck.pdf">View
+								Brochure</a>
+							<!-- <span> | </span>
+							<a class="cta-btn contact-cta" href="#Contact">Contact Us</a> -->
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+
 	</section>
 	<!-- End of partner with us -->
 
@@ -1111,261 +1301,277 @@
 
 	<!-- Start of Organizing Teams -->
 
-	<section class="back_teams st">
-		<br>
-		<br>
-		<div class="heading">
-			<h1 class="heading-shadow">OUR TEAM</h1>
-			<h2 class="heading-small" style="color: white">
-				<div style="overflow: hidden">
-					<div style="transform: translateY(0%); will-change: auto">O</div>
-				</div>
-				<div style="overflow: hidden">
-					<div style="transform: translateY(0%); will-change: auto">U</div>
-				</div>
-				<div style="overflow: hidden">
-					<div style="transform: translateY(0%); will-change: auto">R</div>
-				</div>
-				<div style="overflow: hidden">
-					<div style="transform: translateY(0%); will-change: auto">&nbsp;</div>
-				</div>
-				<div style="overflow: hidden">
-					<div style="transform: translateY(0%); will-change: auto">T</div>
-				</div>
-				<div style="overflow: hidden">
-					<div style="transform: translateY(0%); will-change: auto">E</div>
-				</div>
-				<div style="overflow: hidden">
-					<div style="transform: translateY(0%); will-change: auto">A</div>
-				</div>
-				<div style="overflow: hidden">
-					<div style="transform: translateY(0%); will-change: auto">M</div>
-				</div>
-			</h2>
+	<section class="twinkle_back">
+		<div class="background-container">
+			<div class="stars"></div>
+			<div class="twinkling"></div>
 		</div>
-
-		<div class="container">
-			<div class="first">
-				<div class="card ">
-					<div class="content">
-						<div class="img"><img
-								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/Organizers/HOD.jpg?updatedAt=1726027457118"
-								alt="Dr D Anuradha">
-						</div>
-						<div class="cardContent">
-							<h3>Dr D Anuradha</h3>
-							<p>Lead Organiser</p>
-						</div>
+		<section class="back_teams st">
+			<br>
+			<br>
+			<div class="heading">
+				<h1 class="heading-shadow">OUR TEAM</h1>
+				<h2 class="heading-small" style="color: white">
+					<div style="overflow: hidden">
+						<div style="transform: translateY(0%); will-change: auto">O</div>
 					</div>
-					<ul class="sci">
-						<li style="--i:1">
-							<a href="https://www.linkedin.com/in/anuradhadurairaj/" target="_blank"><i
-									class="fa fa-linkedin" aria-hidden="true"></i></a>
-						</li>
-						<li style="--i:2">
-							<a href="mailto:csbshod@panimalar.ac.in"><i class="fa fa-envelope"
-									aria-hidden="true"></i></a>
-						</li>
-					</ul>
-				</div>
+					<div style="overflow: hidden">
+						<div style="transform: translateY(0%); will-change: auto">U</div>
+					</div>
+					<div style="overflow: hidden">
+						<div style="transform: translateY(0%); will-change: auto">R</div>
+					</div>
+					<div style="overflow: hidden">
+						<div style="transform: translateY(0%); will-change: auto">&nbsp;</div>
+					</div>
+					<div style="overflow: hidden">
+						<div style="transform: translateY(0%); will-change: auto">T</div>
+					</div>
+					<div style="overflow: hidden">
+						<div style="transform: translateY(0%); will-change: auto">E</div>
+					</div>
+					<div style="overflow: hidden">
+						<div style="transform: translateY(0%); will-change: auto">A</div>
+					</div>
+					<div style="overflow: hidden">
+						<div style="transform: translateY(0%); will-change: auto">M</div>
+					</div>
+				</h2>
 			</div>
 
-			<div class="grid">
-				<div class="card">
-					<div class="content">
-						<div class="img"><img
-								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/Organizers/Laavesh.jpeg?updatedAt=1726887908281"
-								alt="Laaveshwaran P">
+			<div class="container">
+				<div class="first">
+					<div class="card ">
+						<div class="content">
+							<div class="img"><img
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/Organizers/HOD.jpg?updatedAt=1726027457118"
+									alt="Dr D Anuradha">
+							</div>
+							<div class="cardContent">
+								<h3>Dr D Anuradha</h3>
+								<p>Lead Organiser</p>
+							</div>
 						</div>
-						<div class="cardContent">
-							<h3>Laaveshwaran P</h3>
-							<p>Event Director</p>
-						</div>
+						<ul class="sci">
+							<li style="--i:1">
+								<a href="https://www.linkedin.com/in/anuradhadurairaj/" target="_blank"><i
+										class="fa fa-linkedin" aria-hidden="true"></i></a>
+							</li>
+							<li style="--i:2">
+								<a href="mailto:csbshod@panimalar.ac.in"><i class="fa fa-envelope"
+										aria-hidden="true"></i></a>
+							</li>
+						</ul>
 					</div>
-					<ul class="sci">
-						<li style="--i:1">
-							<a href="mailto:laavesh1@gmail.com"><i class="fa fa-envelope"></i></a>
-						</li>
-						<li style="--i:2">
-							<a href="https://www.linkedin.com/in/laavesh/" target="_blank"><i
-									class="fa fa-linkedin"></i></a>
-						</li>
-						<li style="--i:3">
-							<a href="https://www.instagram.com/llvssh/" target="_blank"><i
-									class="fa fa-instagram"></i></a>
-						</li>
-						<li style="--i:4">
-							<a href="https://github.com/aviiciii" target="_blank"><i class="fa fa-github"></i></a>
-						</li>
-					</ul>
 				</div>
 
-				<div class="card">
-					<div class="content">
-						<div class="img"><img
-								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/Organizers/aswin.jpg?updatedAt=1726205345689"
-								alt="Aswin A S">
+				<div class="grid">
+					<div class="card">
+						<div class="content">
+							<div class="img"><img
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/Organizers/Laavesh.jpeg?updatedAt=1726887908281"
+									alt="Laaveshwaran P">
+							</div>
+							<div class="cardContent">
+								<h3>Laaveshwaran P</h3>
+								<p>Event Director</p>
+							</div>
 						</div>
-						<div class="cardContent">
-							<h3>Aswin A S</h3>
-							<p>Event Director</p>
-						</div>
+						<ul class="sci">
+							<li style="--i:1">
+								<a href="mailto:laavesh1@gmail.com"><i class="fa fa-envelope"></i></a>
+							</li>
+							<li style="--i:2">
+								<a href="https://www.linkedin.com/in/laavesh/" target="_blank"><i
+										class="fa fa-linkedin"></i></a>
+							</li>
+							<li style="--i:3">
+								<a href="https://www.instagram.com/llvssh/" target="_blank"><i
+										class="fa fa-instagram"></i></a>
+							</li>
+							<li style="--i:4">
+								<a href="https://github.com/aviiciii" target="_blank"><i class="fa fa-github"></i></a>
+							</li>
+						</ul>
 					</div>
-					<ul class="sci">
-						<li style="--i:1">
-							<a href="mailto:aswinash1002@gmail.com"><i class="fa fa-envelope"></i></a>
-						</li>
-						<li style="--i:2">
-							<a href="https://www.linkedin.com/in/aswinx" target="_blank"><i
-									class="fa fa-linkedin"></i></a>
-						</li>
-						<li style="--i:3">
-							<a href="https://www.instagram.com/ft.aswinx/" target="_blank"><i
-									class="fa fa-instagram"></i></a>
-						</li>
-						<li style="--i:4">
-							<a href="https://github.com/sasukexo" target="_blank"><i class="fa fa-github"></i></a>
-						</li>
-					</ul>
-				</div>
-				<div class="card">
-					<div class="content">
-						<div class="img"><img
-								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/Organizers/Harish.png?updatedAt=1726027886755"
-								alt="Harrish M">
+
+					<div class="card">
+						<div class="content">
+							<div class="img"><img
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/Organizers/aswin.jpeg?updatedAt=1727247350342"
+									alt="Aswin A S">
+							</div>
+							<div class="cardContent">
+								<h3>Aswin A S</h3>
+								<p>Event Director</p>
+							</div>
 						</div>
-						<div class="cardContent">
-							<h3>Harrish M</h3>
-							<p>Outreach Head</p>
-						</div>
+						<ul class="sci">
+							<li style="--i:1">
+								<a href="mailto:aswinash1002@gmail.com"><i class="fa fa-envelope"></i></a>
+							</li>
+							<li style="--i:2">
+								<a href="https://www.linkedin.com/in/aswinx" target="_blank"><i
+										class="fa fa-linkedin"></i></a>
+							</li>
+							<li style="--i:3">
+								<a href="https://www.instagram.com/ft.aswinx/" target="_blank"><i
+										class="fa fa-instagram"></i></a>
+							</li>
+							<li style="--i:4">
+								<a href="https://github.com/sasukexo" target="_blank"><i class="fa fa-github"></i></a>
+							</li>
+						</ul>
 					</div>
-					<ul class="sci">
-						<li style="--i:1">
-							<a href="mailto:harrishoffical@gmail.com"><i class="fa fa-envelope"></i></a>
-						</li>
-						<li style="--i:2">
-							<a href="https://www.linkedin.com/in/harrish7" target="_blank"><i
-									class="fa fa-linkedin"></i></a>
-						</li>
-						<li style="--i:3">
-							<a href="https://www.instagram.com/h4ri_ig/" target="_blank"><i
-									class="fa fa-instagram"></i></a>
-						</li>
-						<li style="--i:4">
-							<a href="https://github.com/harrishDev" target="_blank"><i class="fa fa-github"></i></a>
-						</li>
-					</ul>
-				</div>
+					<div class="card">
+						<div class="content">
+							<div class="img"><img
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/Organizers/Harish.png?updatedAt=1726027886755"
+									alt="Harrish M">
+							</div>
+							<div class="cardContent">
+								<h3>Harrish M</h3>
+								<p>Outreach Head</p>
+							</div>
+						</div>
+						<ul class="sci">
+							<li style="--i:1">
+								<a href="mailto:harrishoffical@gmail.com"><i class="fa fa-envelope"></i></a>
+							</li>
+							<li style="--i:2">
+								<a href="https://www.linkedin.com/in/harrish7" target="_blank"><i
+										class="fa fa-linkedin"></i></a>
+							</li>
+							<li style="--i:3">
+								<a href="https://www.instagram.com/h4ri_ig/" target="_blank"><i
+										class="fa fa-instagram"></i></a>
+							</li>
+							<li style="--i:4">
+								<a href="https://github.com/harrishDev" target="_blank"><i class="fa fa-github"></i></a>
+							</li>
+						</ul>
+					</div>
 
 
 
-				<!-- Add more cards as needed -->
+					<!-- Add more cards as needed -->
 
-				<div class="card">
-					<div class="content">
-						<div class="img"><img
-								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/Organizers/Surya.jpg?updatedAt=1726803003872"
-								alt="Noyal Surya J J">
+					<div class="card">
+						<div class="content">
+							<div class="img"><img
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/Organizers/Surya.jpg?updatedAt=1726803003872"
+									alt="Noyal Surya J J">
+							</div>
+							<div class="cardContent">
+								<h3>Noyal Surya J J</h3>
+								<p>Editorial Head</p>
+							</div>
 						</div>
-						<div class="cardContent">
-							<h3>Noyal Surya J J</h3>
-							<p>Editorial Head</p>
-						</div>
+						<ul class="sci">
+							<li style="--i:1">
+								<a href="mailto:suryanoyal@gmail.com"><i class="fa fa-envelope"></i></a>
+							</li>
+							<li style="--i:2">
+								<a href="https://www.linkedin.com/in/surya-havoc/" target="_blank"><i
+										class="fa fa-linkedin"></i></a>
+							</li>
+							<li style="--i:3">
+								<a href="https://www.instagram.com/_surya_havoc_" target="_blank"><i
+										class="fa fa-instagram"></i></a>
+							</li>
+							<li style="--i:4">
+								<a href="https://github.com/suryanoyal" target="_blank"><i class="fa fa-github"></i></a>
+							</li>
+						</ul>
 					</div>
-					<ul class="sci">
-						<li style="--i:1">
-							<a href="mailto:suryanoyal@gmail.com"><i class="fa fa-envelope"></i></a>
-						</li>
-						<li style="--i:2">
-							<a href="https://www.linkedin.com/in/surya-havoc/" target="_blank"><i
-									class="fa fa-linkedin"></i></a>
-						</li>
-						<li style="--i:3">
-							<a href="https://www.instagram.com/_surya_havoc_" target="_blank"><i
-									class="fa fa-instagram"></i></a>
-						</li>
-						<li style="--i:4">
-							<a href="https://github.com/suryanoyal" target="_blank"><i class="fa fa-github"></i></a>
-						</li>
-					</ul>
-				</div>
 
-				<div class="card">
-					<div class="content">
-						<div class="img"><img
-								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/Organizers/Ajay%20Raj.jpg?updatedAt=1726027457244"
-								alt="Ajay Raj">
+					<div class="card">
+						<div class="content">
+							<div class="img"><img
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/Organizers/Ajay%20Raj.jpg?updatedAt=1726027457244"
+									alt="Ajay Raj">
+							</div>
+							<div class="cardContent">
+								<h3>Ajay Raj</h3>
+								<p>Sponsorship Head</p>
+							</div>
 						</div>
-						<div class="cardContent">
-							<h3>Ajay Raj</h3>
-							<p>Sponsorship Head</p>
-						</div>
+						<ul class="sci">
+							<li style="--i:1">
+								<a href="mailto:agasthyaajay22@gmail.com"><i class="fa fa-envelope"></i></a>
+							</li>
+							<li style="--i:2">
+								<a href="https://www.linkedin.com/in/ajayraj12/" target="_blank"><i
+										class="fa fa-linkedin"></i></a>
+							</li>
+							<li style="--i:3">
+								<a href="https://www.instagram.com/_.unbeatable/" target="_blank"><i
+										class="fa fa-instagram"></i></a>
+							</li>
+							<li style="--i:4">
+								<a href="https://github.com/Ajayraj08" target="_blank"><i class="fa fa-github"></i></a>
+							</li>
+						</ul>
 					</div>
-					<ul class="sci">
-						<li style="--i:1">
-							<a href="mailto:agasthyaajay22@gmail.com"><i class="fa fa-envelope"></i></a>
-						</li>
-						<li style="--i:2">
-							<a href="https://www.linkedin.com/in/ajayraj12/" target="_blank"><i
-									class="fa fa-linkedin"></i></a>
-						</li>
-						<li style="--i:3">
-							<a href="https://www.instagram.com/_.unbeatable/" target="_blank"><i
-									class="fa fa-instagram"></i></a>
-						</li>
-						<li style="--i:4">
-							<a href="https://github.com/Ajayraj08" target="_blank"><i class="fa fa-github"></i></a>
-						</li>
-					</ul>
-				</div>
-				<div class="card">
-					<div class="content">
-						<div class="img"><img
-								src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/Organizers/Dilip.jpeg?updatedAt=1726028012280"
-								alt="Dilip V">
+					<div class="card">
+						<div class="content">
+							<div class="img"><img
+									src="https://ik.imagekit.io/kkf9yxfnrh/pechacks/Organizers/Dilip.jpeg?updatedAt=1726028012280"
+									alt="Dilip V">
+							</div>
+							<div class="cardContent">
+								<h3>Dilip V</h3>
+								<p>Marketing Lead</p>
+							</div>
 						</div>
-						<div class="cardContent">
-							<h3>Dilip V</h3>
-							<p>Marketing Lead</p>
-						</div>
+						<ul class="sci">
+							<li style="--i:1">
+								<a href="mailto:dilipvenkatesan27@gmail.com"><i class="fa fa-envelope"></i></a>
+							</li>
+							<li style="--i:2">
+								<a href="https://www.linkedin.com/in/v-dilip/" target="_blank"><i
+										class="fa fa-linkedin"></i></a>
+							</li>
+							<li style="--i:3">
+								<a href="https://www.instagram.com/_.dixipp/" target="_blank"><i
+										class="fa fa-instagram"></i></a>
+							</li>
+							<li style="--i:4">
+								<a href="https://github.com/Codekrack" target="_blank"><i class="fa fa-github"></i></a>
+							</li>
+						</ul>
 					</div>
-					<ul class="sci">
-						<li style="--i:1">
-							<a href="mailto:dilipvenkatesan27@gmail.com"><i class="fa fa-envelope"></i></a>
-						</li>
-						<li style="--i:2">
-							<a href="https://www.linkedin.com/in/v-dilip/" target="_blank"><i
-									class="fa fa-linkedin"></i></a>
-						</li>
-						<li style="--i:3">
-							<a href="https://www.instagram.com/_.dixipp/" target="_blank"><i
-									class="fa fa-instagram"></i></a>
-						</li>
-						<li style="--i:4">
-							<a href="https://github.com/Codekrack" target="_blank"><i class="fa fa-github"></i></a>
-						</li>
-					</ul>
 				</div>
 			</div>
-		</div>
+		</section>
+
 	</section>
 
 	<!-- End of Organizing Teams -->
 
-		<!--Start of Contact us  -->
+	<!--Start of Contact us  -->
+	<section class="twinkle_back">
+		<div class="background-container">
+			<div class="stars"></div>
+			<div class="twinkling"></div>
+		</div>
 		<section class="back_contactus">
-			<div class="row aos-init mb-4" data-aos="none">
+			<div class="row-puw aos-init mb-4" data-aos="none">
 				<div
 					class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center flex-column contact-container">
-					<i class="bx bx-envelope icon-style"></i>
-					<h3 class="contact-title">Email Us</h3>
-					<p class="contact-detail"><b>team@pechacks.org</b></p>
+					<div class="details">
+						<i class="bx bx-envelope icon-style"></i>
+						<h3 class="contact-title">Email Us</h3>
+						<p class="contact-detail"><b>team@pechacks.org</b></p>
+					</div>
 				</div>
-	
+
 				<div
 					class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center flex-column contact-container">
-					<i class="bx bx-phone-call icon-style"></i>
-					<h3 class="contact-title">Call Us</h3>
+					<div class="details">
+						<i class="bx bx-phone-call icon-style"></i>
+						<h3 class="contact-title">Call Us</h3>
+					</div>
 					<div class="contact_name">
 						<p class="name contact-detail">
 							<b>Ajay Raj</b> <br />
@@ -1380,220 +1586,144 @@
 			</div>
 			<br>
 		</section>
-		<!-- End of Contact us -->
+
+	</section>
+	<!-- End of Contact us -->
 
 
 
 
 	<!-- Start of FAQ's Section -->
-	<section id="faq" class="bsb-faq-2 py-3 py-md-5 py-xl-8 back_faq">
-		<div data-aos="fade-down" data-aos-once="true">
-			<br />
-			<pre><h2 id="faq-head" class="not-selectable"><b>Frequently Asked Questions</b></h2></pre>
-			<div class="container" data-aos="fade-right" data-aos-once="true">
-				<div class="row justify-content-center">
-					<!-- Left Column FAQs -->
-					<div class="col-lg-5">
-						<div class="accordion accordion-flush" id="accordionExample">
-							<div class="accordion-item mb-4 shadow-sm">
-								<h2 class="accordion-header" id="headingOne">
-									<button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-										data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
-										aria-controls="collapseOne">
-										Is this Hackathon an online event or offline?
-									</button>
-								</h2>
-								<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-									data-bs-parent="#accordionExample">
-									<div class="accordion-body">This is an offline event.</div>
-								</div>
+	<section id="faq" class="faq-section">
+		<div class="container">
+			<h2 class="faq-title">FREQUENTLY ASKED QUESTIONS</h2>
+			<div class="row">
+				<!-- Left Column (First 6 questions) -->
+				<div class="faq-column">
+					<div class="accordion">
+						<div class="accordion-item">
+							<button class="accordion-button">Is this Hackathon an online event or offline?
+								<span class="accordion-icon">+</span>
+							</button>
+							<div class="accordion-content">
+								<p>This is an offline event.</p>
 							</div>
-							<div class="accordion-item mb-4 shadow-sm">
-								<h2 class="accordion-header" id="headingTwo">
-									<button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-										data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-										aria-controls="collapseTwo">
-										Is there any registration fee?
-									</button>
-								</h2>
-								<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-									data-bs-parent="#accordionExample">
-									<div class="accordion-body">No, registrations for the event are entirely free of
-										charge.</div>
-								</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-button">Is there any registration fee?
+								<span class="accordion-icon">+</span>
+							</button>
+							<div class="accordion-content">
+								<p>No, registrations for the event are entirely free of charge.</p>
 							</div>
-							<div class="accordion-item mb-4 shadow-sm">
-								<h2 class="accordion-header" id="headingFour">
-									<button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-										data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
-										aria-controls="collapseFour">
-										Should you stay on campus overnight?
-									</button>
-								</h2>
-								<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-									data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										Yes, We ask that all participants stay on campus throughout the hackathon for
-										the best experience. High school students,
-										however, are allowed to leave campus and return the next day.
-									</div>
-								</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-button">Should you stay on campus overnight?
+								<span class="accordion-icon">+</span>
+							</button>
+							<div class="accordion-content">
+								<p>Yes, we ask that all participants stay on campus throughout the hackathon for the
+									best experience.</p>
 							</div>
-							<div class="accordion-item mb-4 shadow-sm">
-								<h2 class="accordion-header" id="headingFive">
-									<button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-										data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
-										aria-controls="collapseFive">
-										What are the facilities arranged by the organizers?
-									</button>
-								</h2>
-								<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-									data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										We have arranged everything for you, including meals, comfortable
-										accommodations, and a selection of exciting swag,
-										ensuring a memorable experience throughout the event.
-									</div>
-								</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-button">What are the facilities arranged by the organizers?
+								<span class="accordion-icon">+</span>
+							</button>
+							<div class="accordion-content">
+								<p>We have arranged everything for you, including meals, comfortable accommodations, and
+									swag.</p>
 							</div>
-							<div class="accordion-item mb-4 shadow-sm">
-								<h2 class="accordion-header" id="heading12">
-									<button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-										data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false"
-										aria-controls="collapse12">
-										I am a newbie, can I hack?
-									</button>
-								</h2>
-								<div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
-									data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										Absolutely! At PEC Hacks, we are committed to ensuring that every participant
-										receives the support they need. Our dedicated
-										mentors and volunteers are here to assist you throughout the hackathon, ensuring
-										that no one is left behind.
-									</div>
-								</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-button">I am a newbie, can I hack?
+								<span class="accordion-icon">+</span>
+							</button>
+							<div class="accordion-content">
+								<p>Absolutely! Mentors will assist you throughout the event.</p>
 							</div>
-							<div class="accordion-item shadow-sm">
-								<h2 class="accordion-header" id="headingThree">
-									<button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-										data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-										aria-controls="collapseThree">
-										Does this hackathon cover both software and hardware projects?
-									</button>
-								</h2>
-								<div id="collapseThree" class="accordion-collapse collapse"
-									aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-									<div class="accordion-body">Yes, this hackathon includes both software and hardware
-										projects.</div>
-								</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-button">Does this hackathon cover both software and hardware
+								projects?
+								<span class="accordion-icon">+</span>
+							</button>
+							<div class="accordion-content">
+								<p>Yes, it includes both software and hardware projects.</p>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<!-- Right Column FAQs -->
-					<div class="col-lg-5 faq_res">
-						<div class="accordion accordion-flush" id="accordionExample">
-							<div class="accordion-item mb-4 shadow-sm">
-								<h2 class="accordion-header" id="headingSeven">
-									<button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-										data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
-										aria-controls="collapseSeven">
-										What should I bring for the hackathon?
-									</button>
-								</h2>
-								<div id="collapseSeven" class="accordion-collapse collapse"
-									aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-									<div class="accordion-body">Bring your student ID, laptops, gadgets, or anything
-										else you want to work on.</div>
-								</div>
+				<!-- Right Column (Last 6 questions) -->
+				<div class="faq-column">
+					<div class="accordion">
+						<div class="accordion-item">
+							<button class="accordion-button">What should I bring for the hackathon?
+								<span class="accordion-icon">+</span>
+							</button>
+							<div class="accordion-content">
+								<p>Bring your student ID, laptops, gadgets, or anything else you want to work on.</p>
 							</div>
-							<div class="accordion-item mb-4 shadow-sm">
-								<h2 class="accordion-header" id="headingEight">
-									<button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-										data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false"
-										aria-controls="collapseEight">
-										Will the hackathon have Wi-Fi facilities?
-									</button>
-								</h2>
-								<div id="collapseEight" class="accordion-collapse collapse"
-									aria-labelledby="headingEight" data-bs-parent="#accordionExample">
-									<div class="accordion-body">Yes, we will provide Wi-Fi Internet facilities
-										throughout the event.</div>
-								</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-button">Will the hackathon have Wi-Fi facilities?
+								<span class="accordion-icon">+</span>
+							</button>
+							<div class="accordion-content">
+								<p>Yes, we will provide Wi-Fi throughout the event.</p>
 							</div>
-							<div class="accordion-item mb-4 shadow-sm">
-								<h2 class="accordion-header" id="headingNine">
-									<button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-										data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false"
-										aria-controls="collapseNine">
-										Can I participate without a team?
-									</button>
-								</h2>
-								<div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
-									data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										No, this hackathon is a team event. You can participate in teams of 3 to 5. You
-										can team up with other folks in our
-										community group.
-									</div>
-								</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-button">Can I participate without a team?
+								<span class="accordion-icon">+</span>
+							</button>
+							<div class="accordion-content">
+								<p>No, this hackathon is a team event. You can team up with others in our community
+									group.</p>
 							</div>
-							<div class="accordion-item mb-4 shadow-sm">
-								<h2 class="accordion-header" id="headingTen">
-									<button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-										data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false"
-										aria-controls="collapseTen">
-										Will you sponsor our travel costs?
-									</button>
-								</h2>
-								<div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
-									data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										No, we do not reimburse travel costs, but we do provide accommodation for
-										everyone traveling from outside Chennai.
-									</div>
-								</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-button">Will you sponsor our travel costs?
+								<span class="accordion-icon">+</span>
+							</button>
+							<div class="accordion-content">
+								<p>No, we do not reimburse travel costs, but accommodation is provided for those
+									traveling from outside the city.</p>
 							</div>
-							<div class="accordion-item mb-4 shadow-sm">
-								<h2 class="accordion-header" id="headingEleven">
-									<button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-										data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false"
-										aria-controls="collapseEleven">
-										Will there be any mentoring sessions?
-									</button>
-								</h2>
-								<div id="collapseEleven" class="accordion-collapse collapse"
-									aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										Yes, we have arranged for mentors who will help you and your team throughout the
-										hackathon, providing guidance when
-										needed.
-									</div>
-								</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-button">Will there be any mentoring sessions?
+								<span class="accordion-icon">+</span>
+							</button>
+							<div class="accordion-content">
+								<p>Yes, mentors will guide you throughout the hackathon.</p>
 							</div>
-							<div class="accordion-item shadow-sm">
-								<h2 class="accordion-header" id="headingSix">
-									<button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-										data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
-										aria-controls="collapseSix">
-										Do I need to be a student to participate in the hackathon?
-									</button>
-								</h2>
-								<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-									data-bs-parent="#accordionExample">
-									<div class="accordion-body">Yes, this hackathon is open to students currently
-										pursuing high school or undergraduate degrees.</div>
-								</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-button">Do I need to be a student to participate?
+								<span class="accordion-icon">+</span>
+							</button>
+							<div class="accordion-content">
+								<p>Yes, this hackathon is open to high school and undergraduate students.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<script src="scripts.js"></script>
 	</section>
-
-
 
 	<!-- End of FAQ's Section -->
 
@@ -1657,16 +1787,14 @@
 
 	<!-- Scripts -->
 	<script src="js/main.js"></script>
-
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/tiny-slider.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="js/script.js"></script>
-	<script>
-		AOS.init();
-	</script>
+	<script>AOS.init();</script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -1674,6 +1802,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<!-- Include Owl Carousel JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
 
 	<!-- devfolio -->
 	<!-- <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script> -->

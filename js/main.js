@@ -2,35 +2,92 @@
 const preloader = document.querySelector("#preloader");
 
 window.addEventListener("load", () => {
-	// load
+    // load
 
-	console.log("preloader removed");
-	preloader.style.transition = "1s ease";
-	setTimeout(() => {
-		preloader.style.opacity = 0;
-		preloader.style.display = "none";
-	}, 1000);
+    console.log("preloader removed");
+    preloader.style.transition = "1s ease";
+    setTimeout(() => {
+        preloader.style.opacity = 0;
+        preloader.style.display = "none";
+    }, 1000);
 });
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  
+// Accordion Functionality with Single Open Question and Smooth Transition
+document.addEventListener("DOMContentLoaded", function () {
+    const accordionItems = document.querySelectorAll("#faq .accordion-item");
+    const accordionButtons = document.querySelectorAll("#faq .accordion-button");
+
+    accordionButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const content = button.nextElementSibling;
+            const parentItem = button.parentElement;
+            const isActive = parentItem.classList.contains("active");
+
+            // Close all accordion items
+            accordionItems.forEach(item => {
+                item.classList.remove("active");
+                const btn = item.querySelector('.accordion-button');
+                btn.classList.remove('active');  // Remove active class from button as well
+                const content = item.querySelector('.accordion-content');
+                content.style.maxHeight = null; // Close content
+                content.style.padding = "0 15px"; // Ensure padding is reset when collapsed
+            });
+
+            // If clicked button's parent wasn't active, open it
+            if (!isActive) {
+                parentItem.classList.add("active");
+                button.classList.add("active");  // Add active class to the button for icon rotation
+                content.style.maxHeight = content.scrollHeight + "px";  // Set max-height dynamically
+                content.style.padding = "15px 15px";  // Add padding inside the accordion when opened
+            }
+        });
+    });
+});
 
 
 
-	const nav_list = document.querySelector("#nav-js");
-	const list_items = nav_list.querySelectorAll("li");
 
-	list_items.forEach((item) => {
-		item.addEventListener("click", () => {
-			// remove 'active' class from all list items
-			list_items.forEach((li) => li.classList.remove("active"));
+// Time line script
 
-			// add 'active' class to the clicked list item
-			item.classList.add("active");
-		});
-	});
-  
+document.addEventListener("DOMContentLoaded", function () {
+    const timelineLine = document.querySelector('.timeline-line');
+    const timelineSection = document.querySelector('#hackathon-timeline');
+    let isLineRevealed = false; // Flag to ensure reveal happens only once
 
+    // Initialize AOS for animating event boxes
+    AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true,     // Trigger animation only once
+    });
+
+    // Reveal timeline line on scroll
+    const revealTimelineLine = () => {
+        if (isLineRevealed) return; // Stop if already revealed
+
+        const sectionRect = timelineSection.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        // Check if timeline section is in the viewport
+        if (sectionRect.top <= windowHeight && sectionRect.bottom >= 0) {
+            const visibleHeight = Math.min(windowHeight - sectionRect.top, sectionRect.height);
+            const totalHeight = sectionRect.height;
+
+            // Calculate the percentage of the section scrolled and adjust the height of the line
+            const scrollPercentage = Math.min(visibleHeight / totalHeight, 1);
+            timelineLine.style.height = `${scrollPercentage * 100}%`;
+
+            // If the line has fully revealed, set the flag to true
+            if (scrollPercentage === 1) {
+                isLineRevealed = true;
+            }
+        }
+    };
+
+    // Listen for scroll event
+    window.addEventListener("scroll", revealTimelineLine);
+
+    // Initial check in case the section is already in view
+    revealTimelineLine();
 });
