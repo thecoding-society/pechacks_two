@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 btn.classList.remove('active');  // Remove active class from button as well
                 const content = item.querySelector('.accordion-content');
                 content.style.maxHeight = null; // Close content
-                content.style.padding = "0 15px"; // Ensure padding is reset when collapsed
+                content.style.padding = "0 0px"; // Ensure padding is reset when collapsed
             });
 
             // If clicked button's parent wasn't active, open it
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 parentItem.classList.add("active");
                 button.classList.add("active");  // Add active class to the button for icon rotation
                 content.style.maxHeight = content.scrollHeight + "px";  // Set max-height dynamically
-                content.style.padding = "15px 15px";  // Add padding inside the accordion when opened
+                content.style.padding = "0px 0px";  // Add padding inside the accordion when opened
             }
         });
     });
