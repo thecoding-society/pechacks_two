@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 /*--------------------------------------------------------------
 # HTML & BODY
 --------------------------------------------------------------*/
@@ -508,7 +508,6 @@ header.scrolled {
 	padding-top: 20px;
 }
 
-/* CSS for particles-about background */
 #particles-about {
     position: absolute;
     top: 0;
@@ -518,7 +517,9 @@ header.scrolled {
     z-index: 0;
     pointer-events: none;
 }
-
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
 .back_about {
     position: relative;
     z-index: 1;
@@ -546,7 +547,14 @@ header.scrolled {
     justify-content: center;
     text-align: center;
 }
+.about-section span, h3{
+	font-family: "Acme", sans-serif;
+	font-weight: 600;
+}
+.about-section p{
+	letter-spacing: 2px;
 
+}
 .icon-reg p,
 .icon-man p,
 .icon-projects p {
@@ -565,7 +573,7 @@ header.scrolled {
     justify-content: space-between;
     gap: 20px;
     position: relative;
-    z-index: 1; /* Ensure content is above particles */
+    z-index: 1;
 }
 
 .col-lg-5 {
