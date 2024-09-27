@@ -293,7 +293,11 @@ pre,
 	position: relative;
 }
 .spon-title{
-	font-size: 12px !important;
+	font-size: 20px !important;
+	margin: 10px;
+}
+.first-title{
+	margin-top: 40px;
 }
 #owl-height {
 	height: 180px;
@@ -821,6 +825,9 @@ div .contact_name .name {
 # Timeline
 --------------------------------------------------------------*/
 @media(max-width : 768px) {
+	.timeline{
+		padding: 100px 0px 0px 0px;
+	}
 
 	.timeline-item:nth-child(even),
 	.timeline-item:nth-child(odd) {
