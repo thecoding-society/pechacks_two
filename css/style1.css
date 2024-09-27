@@ -123,6 +123,7 @@ h2 {
 # PARTICLES
 --------------------------------------------------------------*/
 #particles-home,
+#partcles-about,
 #particles-domains {
 	position: absolute;
 	background: rgb(34, 33, 33);
@@ -507,101 +508,70 @@ header.scrolled {
 	padding-top: 20px;
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
+/* CSS for particles-about background */
+#particles-about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.back_about {
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    background: rgb(34, 33, 33);
+	background: radial-gradient(circle, rgba(34, 33, 33, 1) 0%, rgba(2, 6, 8, 1) 100%);
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
 .icon-container {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-wrap: wrap;
-	margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .icon-reg,
 .icon-man,
 .icon-projects {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .icon-reg p,
 .icon-man p,
 .icon-projects p {
-	margin-top: 10px;
-	font-size: 1em;
-	font-family: "Oswald", sans-serif !important;
-	font-optical-sizing: auto !important;
-	font-weight: 600 !important;
-	font-style: normal !important;
-}
-
-.back_about {
-	color: black;
-	background-color: wheat;
-	font-size: 1.4rem;
-	text-align: justify;
-}
-
-.back_about span {
-	font-weight: bolder;
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: "Oswald", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
 }
 
 .about-section {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	gap: 20px;
-}
-
-.about-section .col-lg-5 {
-	flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    z-index: 1; /* Ensure content is above particles */
 }
 
 .col-lg-5 {
-	margin-top: 50px;
+    margin-top: 50px;
 }
 
-.about-section .about_img {
-	flex: 1;
-	text-align: right;
-}
-
-.about-section img {
-	max-width: 100%;
-	height: auto;
-}
-
-.new-section {
-	text-align: center;
-	display: flex;
-	align-items: center;
-	gap: 80px;
-	margin-top: 50px !important;
-}
-
-.new-section img {
-	max-width: 200px;
-	height: auto;
-	border-radius: 0px;
-}
-
-.new-section p {
-	margin-top: 15px;
-	font-size: 18px;
-	color: #333;
-	font-weight: 500;
-	letter-spacing: 0.5px;
-}
-
-.new-section span {
-	font-weight: 700;
-	color: black;
-}
 
 /*--------------------------------------------------------------
 # Glimpses
