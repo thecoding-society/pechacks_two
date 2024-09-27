@@ -1135,7 +1135,7 @@ Base
 
 @media(max-width: 1000px) and (min-width: 768px) {
 	.back_home {
-		height: 100vh !important;
+		height: 750px !important;
 	}
 
 	.hero {
