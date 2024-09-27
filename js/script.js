@@ -190,3 +190,35 @@ window.addEventListener('scroll', function () {
         header.classList.remove('scrolled');
     }
 });
+
+// Script for Timeline
+
+    // Function to update AOS attributes based on screen size
+    function updateTimelineAOS() {
+        const timelineItems = document.querySelectorAll('.timeline-item');
+
+        // For smaller screens, set all to 'fade-left'
+        if (window.innerWidth < 768) {
+            timelineItems.forEach((item) => {
+                item.setAttribute('data-aos', 'fade-left');
+            });
+        } else {
+            // For larger screens, restore original data-aos values
+            timelineItems.forEach((item, index) => {
+                if (index % 2 === 0) {
+                    item.setAttribute('data-aos', 'fade-right');
+                } else {
+                    item.setAttribute('data-aos', 'fade-left');
+                }
+            });
+        }
+    }
+
+    // Initialize AOS
+    AOS.init();
+
+    // Initial update on page load
+    updateTimelineAOS();
+
+    // Update AOS on window resize
+    window.addEventListener('resize', updateTimelineAOS);

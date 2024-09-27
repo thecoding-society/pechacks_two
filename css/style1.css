@@ -193,7 +193,8 @@ nav {
 }
 
 nav a {
-	font-size: 14px;
+	font-family: "Teko", sans-serif;
+	font-size: 18px;
 	color: rgba(255, 255, 255, .55);
 	;
 	text-decoration: none;
