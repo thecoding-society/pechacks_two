@@ -749,14 +749,17 @@ div .contact_name .name {
     background-color: #444;
     transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
     padding: 0 15px;
+	line-height: 1.6;
 }
 #faq .accordion-content p {
 	margin: 10px 0;
+	padding: 5px 10px;
 	font-size: 18px !important;
-    padding-right: 10px;
     color: #fff; 
 	align-items: center !important;
+	text-align: justify;
 }
+
 #faq .accordion-item.active {
     box-shadow: 0 0 15px rgba(50, 205, 50, 0.7);
     border: 1px solid rgba(50, 205, 50, 0.7);
