@@ -1016,6 +1016,11 @@ Responsive Styles For Style 1
 		padding-left: 0px;
 	}
 }
+@media(max-width: 360px){
+	#heading-pec{
+		font-size: 4.2rem;
+	}
+}
 @media (max-width: 768px) {
 	#timer {
 		font-size: 2.5vw;
