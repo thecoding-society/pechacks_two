@@ -542,7 +542,6 @@ pre,
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	opacity: 0.5;
 	transition: 0.5s;
 }
 .container .card .content .img {
@@ -552,6 +551,8 @@ pre,
 	border-radius: 50%;
 	overflow: hidden;
 	border: 5px solid black;
+	opacity: 0.95;
+	transition: 0.5s;
 }
 .container .card .content .img img {
 	position: absolute;
@@ -561,6 +562,19 @@ pre,
 	height: 100%;
 	object-fit: cover;
 }
+.container .card .content .cardContent{
+	opacity: 0.5;
+	transition: 0.5s;
+}
+.container .card:hover .content .cardContent{
+	transition: 0.5s;
+	opacity: 1;
+}
+.container .card:hover .content .img {
+	opacity: 1;
+	transition: 0.5s;
+}
+
 .container .card .content .cardContent h3 {
 	color: #fff;
 	text-transform: uppercase;
@@ -1045,6 +1059,7 @@ div .contact_name .name {
 	.container .card .content .img {
 		width: 110px;
 		height: 110px;
+
 	}
 	.first,
 	.cardContent p {
