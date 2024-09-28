@@ -283,7 +283,7 @@ header.scrolled {
 --------------------------------------------------------------*/
 .back_home {
 	background-color: black;
-	height: 110vh;
+	height: 100vh;
 	padding-top: 5%;
 	position: relative;
 	font-family: "Teko", sans-serif;
@@ -785,8 +785,9 @@ section .domains {
 .description h4 {
 	text-transform: uppercase;
 	color: black;
-	font-size: 16px;
+	font-size: 2rem;
 	font-weight: 700;
+	padding-top: 5px;
 }
 
 .dom_p {
@@ -1454,6 +1455,8 @@ Base
 
 	.description h4 {
 		opacity: 1 !important;
+		padding-top: 5px;
+		font-size: 1.4rem;
 	}
 
 	input:checked+.clash {
