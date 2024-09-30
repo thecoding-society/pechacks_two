@@ -511,7 +511,12 @@ pre,
 }
 .grid {
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto auto auto;
+	justify-content: center;
+	align-items: center;
+}
+.event-directors{
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
@@ -1053,10 +1058,16 @@ div .contact_name .name {
 /*--------------------------------------------------------------
 # Our Team
 --------------------------------------------------------------*/
+@media(max-width: 1400px){
+	.grid{
+		grid-template-columns: auto auto auto;
+	}
+}
 @media(max-width: 1075px) {
 	.container .card {
-		width: 200px;
+		width: 230px;
 		height: 290px;
+		margin: .6em;
 	}
 	.container .card .content .img img {
 		width: 110px;
@@ -1082,7 +1093,7 @@ div .contact_name .name {
 		font-size: 12px;
 	}
 	.container .card .content .cardContent p {
-		font-size: 10px;
+		font-size: 15px;
 	}
 }
 @media(max-width: 530px) {
