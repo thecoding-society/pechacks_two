@@ -895,6 +895,9 @@ div .contact_name .name {
 	.award-content p {
 		font-size: 0.9rem;
 	}
+	.timeline-content h3{
+		font-size: .8em !important;
+	}
 }
 @media (max-width: 320px) {
 	.award-box {
@@ -905,6 +908,9 @@ div .contact_name .name {
 	}
 	.award-content p {
 		font-size: 0.8rem;
+	}
+	.timeline-content h3{
+		font-size: .6em !important;
 	}
 }
 /*--------------------------------------------------------------
