@@ -75,6 +75,13 @@
 
 })()
 
-/**
-   * Preloader
-   */
+// Track Prices Re-direction
+const clickableArticles = document.getElementsByClassName('clickableArticle');
+for (let i = 0; i < clickableArticles.length; i++) {
+    clickableArticles[i].addEventListener("click", function() {
+        const url = this.getAttribute('data-url');
+        window.open(url, "_blank"); // Open the URL in a new tab
+    });
+}
+
+
