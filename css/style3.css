@@ -2,10 +2,12 @@
 # Footer
 --------------------------------------------------------------*/
 .custom-footer {
+	
 	background-color: #222;
 	color: #fff;
 	padding: 40px 0;
 	font-family: Arial, sans-serif;
+	letter-spacing: 0.07rem;
 }
 .custom-container {
 	width: 90%;
@@ -22,13 +24,14 @@
 	min-width: 200px;
 }
 .custom-footer-logo {
-	font-size: 24px;
+	font-size: 50px;
 	font-weight: bold;
 	margin-bottom: 15px;
 }
 .custom-footer-text {
 	margin-bottom: 15px;
-	font-size: 16px;
+	font-size: 26px;
+	letter-spacing: 0.04rem;
 }
 .custom-social-links {
 	list-style: none;

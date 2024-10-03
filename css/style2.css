@@ -889,6 +889,7 @@ div .contact_name .name {
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s ease;
+	letter-spacing: .05rem;
 }
 #faq .accordion-button:hover {
     background-color: #444;
