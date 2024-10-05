@@ -83,5 +83,13 @@ for (let i = 0; i < clickableArticles.length; i++) {
         window.open(url, "_blank"); // Open the URL in a new tab
     });
 }
+//  Old Site Redirection
 
+const redirection_old = document.getElementsByClassName('font-box');
+        for (let i = 0; i < redirection_old.length; i++) {
+            redirection_old[i].addEventListener("click", function () {
+                const url = this.getAttribute('data-url');
+                window.open(url, "_blank");
+            });
+        }
 

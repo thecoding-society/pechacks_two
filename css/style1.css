@@ -550,7 +550,7 @@ header.scrolled {
     justify-content: center;
     text-align: center;
 }
-.about-section span, h3{
+.about-section span, h3 , .source{
 	font-family: "Acme", sans-serif;
 	font-weight: 600;
 }
@@ -583,8 +583,50 @@ header.scrolled {
     margin-top: 50px;
 	padding: 0rem 4.5rem;
 }
-
-
+.font-box {
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	height: auto; 
+	text-align: center; 
+	margin-top: 100px;
+  }
+  
+  .font-head {
+	font-size: 3rem;
+	font-weight: 800;
+	background: linear-gradient(45deg, #ffffff, #cccccc);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+	transform: perspective(400px) rotateX(15deg);
+	transition: transform 0.3s ease, text-shadow 0.3s ease;
+	letter-spacing: 3px;
+  }
+  
+  .font-head:hover {
+	transform: perspective(400px) rotateX(0deg);
+	text-shadow: 5px 5px 12px rgba(88, 83, 83, 0.7), 5px 8px 12px rgba(51, 45, 45, 0.5);
+  }
+  .source p{
+	position: absolute;
+	right: 10%;
+	font-weight: 300 !important;
+	font-size: 20px;
+  }
+  @media (max-width: 768px) {
+	.font-head {
+		font-size: 1.75rem;
+		letter-spacing: 1.5px;
+	}
+	.font-box{
+		margin-top: 20px;
+	}
+	.source p{
+		font-size: 15px;
+	}
+  }
+  
 /*--------------------------------------------------------------
 # Glimpses
 --------------------------------------------------------------*/
