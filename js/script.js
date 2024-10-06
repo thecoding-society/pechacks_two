@@ -95,25 +95,46 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
-let nav = document.querySelector('nav');
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('section[id]'); // Only select sections with id attributes
+    const navLinks = document.querySelectorAll('nav a');
 
-// Scroll event to highlight active link
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('hit');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('hit');
-            });
-        }
+    // Function to remove 'hit' class from all links
+    const removeActiveClass = () => {
+        navLinks.forEach(link => {
+            link.classList.remove('hit');
+        });
+    };
+
+    // Function to add 'hit' class to the corresponding link
+    const addActiveClass = (id) => {
+        navLinks.forEach(link => {
+            if (link.getAttribute('href').substring(1) === id) {
+                link.classList.add('hit');
+            }
+        });
+    };
+
+    // Adjusted IntersectionObserver with a lower threshold for larger sections
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && entry.intersectionRatio >= 0.2) { // Lower threshold to 20%
+                const sectionId = entry.target.id;
+                removeActiveClass();  // Remove the active class from all links
+                addActiveClass(sectionId);  // Add the active class to the visible section
+            }
+        });
+    }, {
+        threshold: [0.2, 0.4, 0.6],  // Trigger when 20% of the section is visible
     });
-};
+
+    // Observe only sections with ids
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
+
 
 // Toggle menu for mobile view
 function toggleMenu() {
@@ -174,6 +195,7 @@ accordionButtons.forEach(button => {
         }
     });
 });
+
 
 
 
