@@ -512,10 +512,9 @@ header.scrolled {
 #timer div span {
 	color: #aa1d39;
 	display: block;
-	font-size: 1.5vw;
+	font-size: 2vw;
 	font-weight: 900;
 	text-align: center;
-	padding-top: 20px;
 }
 
 #particles-about {
@@ -1298,7 +1297,7 @@ Base
 
 @media (max-width: 768px) {
 	#timer {
-		font-size: 2.5vw;
+		font-size: 2.8vw;
 	}
 
 	#timer div {
@@ -1307,14 +1306,14 @@ Base
 	}
 
 	#timer div span {
-		font-size: 2vw;
+		font-size: 2.3vw;
 		padding-top: 0px;
 	}
 }
 
 @media (max-width: 480px) {
 	#timer {
-		font-size: 3vw;
+		font-size: 4.8vw;
 		margin-bottom: 50px;
 	}
 
@@ -1324,7 +1323,7 @@ Base
 	}
 
 	#timer div span {
-		font-size: 3vw;
+		font-size: 5vw !important;
 		padding-top: 0px;
 	}
 
@@ -1335,31 +1334,17 @@ Base
 
 @media (max-width: 320px) {
 	#timer {
-		font-size: 6vw;
+		font-size: 5vw;
+		padding: 0px !important;
 	}
 
 	#timer div {
-		min-width: 30vw;
-		padding: 5vw;
+		min-width: 20vw;
+		padding: 2vw;
 	}
 
 	#timer div span {
-		font-size: 4vw;
-	}
-}
-
-@media (max-width: 425px) {
-	#timer {
-		font-size: 2.5vw;
-	}
-
-	#timer div {
-		min-width: 12vw;
-		padding: 3.5vw;
-	}
-
-	#timer div span {
-		font-size: 2.5vw;
+		font-size: 5.5vw !important;
 	}
 }
 
