@@ -415,13 +415,20 @@ header.scrolled {
 
 #heading-pec {
 	font-size: 8rem;
-	font-weight: 300;
 	line-height: 1;
 	letter-spacing: 0.01em;
 	color: black;
 	position: relative;
 	z-index: 1;
 	background: none;
+}
+
+.CLH{
+	font-size: 3.5rem;
+	margin: 15px 0px;
+	display: block;
+	font-style: normal;
+	color: #fff;
 }
 
 .btn {
@@ -533,6 +540,10 @@ header.scrolled {
     text-align: justify;
 }
 
+#about{
+	padding-top: 20px;
+}
+
 .icon-container {
     display: flex;
     justify-content: space-evenly;
@@ -550,13 +561,14 @@ header.scrolled {
     justify-content: center;
     text-align: center;
 }
-.about-section span, h3 , .source{
-	font-family: "Acme", sans-serif;
+.about-section span, h3 {
 	font-weight: 600;
+}
+.about-section h3{
+	text-align: center;
 }
 .about-section p{
 	letter-spacing: 2px;
-
 }
 .icon-reg p,
 .icon-man p,
@@ -570,6 +582,7 @@ header.scrolled {
 }
 
 .about-section {
+	font-family: "Acme", sans-serif;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1006,6 +1019,10 @@ Base
 	header {
 		justify-content: space-between;
 	}
+
+	.back_home{
+		padding: 20px;
+	}
 }
 
 @media(max-width: 970px) {
@@ -1025,6 +1042,15 @@ Base
 @media(max-width: 768px) {
 	.back_home {
 		height: 100vh;
+	}
+	.CLH{
+		font-size: 2.5rem;
+		margin-bottom: 0px;
+	}
+
+	.custom{
+		display: flex;
+		justify-content: center;
 	}
 
 }
@@ -1071,6 +1097,15 @@ Base
 		text-align: center;
 		padding: 8px;
 	}
+
+	.CLH{
+		font-size: 1.5rem;
+		margin-bottom: 0px;
+	}
+
+	.cont{
+		margin-bottom: 20px;
+	}
 }
 
 @media(max-width: 768px) {
@@ -1111,6 +1146,11 @@ Base
 	.home_contents,
 	.fans {
 		flex-direction: column;
+	}
+
+	.custom{
+		display: flex;
+		justify-content: center;
 	}
 }
 
