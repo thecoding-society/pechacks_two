@@ -134,10 +134,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-
-// Toggle menu for mobile view
 function toggleMenu() {
+    const nav = document.querySelector('nav');
     nav.classList.toggle('active');
 }
 
