@@ -538,7 +538,7 @@ header.scrolled {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .icon-reg,
@@ -589,7 +589,7 @@ header.scrolled {
 	align-items: center; 
 	height: auto; 
 	text-align: center; 
-	margin-top: 100px;
+	margin-top: 50px;
   }
   
   .font-head {
@@ -610,9 +610,10 @@ header.scrolled {
   }
   .source p{
 	position: absolute;
-	right: 10%;
+	right: 5%;
 	font-weight: 300 !important;
 	font-size: 20px;
+	margin-bottom: 70px;
   }
   @media (max-width: 768px) {
 	.font-head {
