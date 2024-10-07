@@ -415,13 +415,20 @@ header.scrolled {
 
 #heading-pec {
 	font-size: 8rem;
-	font-weight: 300;
 	line-height: 1;
 	letter-spacing: 0.01em;
 	color: black;
 	position: relative;
 	z-index: 1;
 	background: none;
+}
+
+.CLH{
+	font-size: 3.5rem;
+	margin: 15px 0px;
+	display: block;
+	font-style: normal;
+	color: #fff;
 }
 
 .btn {
@@ -533,12 +540,16 @@ header.scrolled {
     text-align: justify;
 }
 
+#about{
+	padding-top: 20px;
+}
+
 .icon-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .icon-reg,
@@ -550,13 +561,14 @@ header.scrolled {
     justify-content: center;
     text-align: center;
 }
-.about-section span, h3{
-	font-family: "Acme", sans-serif;
+.about-section span, h3 {
 	font-weight: 600;
+}
+.about-section h3{
+	text-align: center;
 }
 .about-section p{
 	letter-spacing: 2px;
-
 }
 .icon-reg p,
 .icon-man p,
@@ -570,6 +582,7 @@ header.scrolled {
 }
 
 .about-section {
+	font-family: "Acme", sans-serif;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -583,8 +596,51 @@ header.scrolled {
     margin-top: 50px;
 	padding: 0rem 4.5rem;
 }
-
-
+.font-box {
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	height: auto; 
+	text-align: center; 
+	margin-top: 50px;
+  }
+  
+  .font-head {
+	font-size: 3rem;
+	font-weight: 800;
+	background: linear-gradient(45deg, #ffffff, #cccccc);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+	transform: perspective(400px) rotateX(15deg);
+	transition: transform 0.3s ease, text-shadow 0.3s ease;
+	letter-spacing: 3px;
+  }
+  
+  .font-head:hover {
+	transform: perspective(400px) rotateX(0deg);
+	text-shadow: 5px 5px 12px rgba(88, 83, 83, 0.7), 5px 8px 12px rgba(51, 45, 45, 0.5);
+  }
+  .source p{
+	position: absolute;
+	right: 5%;
+	font-weight: 300 !important;
+	font-size: 20px;
+	margin-bottom: 70px;
+  }
+  @media (max-width: 768px) {
+	.font-head {
+		font-size: 1.75rem;
+		letter-spacing: 1.5px;
+	}
+	.font-box{
+		margin-top: 20px;
+	}
+	.source p{
+		font-size: 15px;
+	}
+  }
+  
 /*--------------------------------------------------------------
 # Glimpses
 --------------------------------------------------------------*/
@@ -963,6 +1019,10 @@ Base
 	header {
 		justify-content: space-between;
 	}
+
+	.back_home{
+		padding: 20px;
+	}
 }
 
 @media(max-width: 970px) {
@@ -982,6 +1042,15 @@ Base
 @media(max-width: 768px) {
 	.back_home {
 		height: 100vh;
+	}
+	.CLH{
+		font-size: 2.5rem;
+		margin-bottom: 0px;
+	}
+
+	.custom{
+		display: flex;
+		justify-content: center;
 	}
 
 }
@@ -1028,6 +1097,15 @@ Base
 		text-align: center;
 		padding: 8px;
 	}
+
+	.CLH{
+		font-size: 1.5rem;
+		margin-bottom: 0px;
+	}
+
+	.cont{
+		margin-bottom: 20px;
+	}
 }
 
 @media(max-width: 768px) {
@@ -1068,6 +1146,11 @@ Base
 	.home_contents,
 	.fans {
 		flex-direction: column;
+	}
+
+	.custom{
+		display: flex;
+		justify-content: center;
 	}
 }
 
