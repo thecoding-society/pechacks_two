@@ -916,6 +916,10 @@ Base
 		.heading-small-p {
 			line-height: 12vw;
 		}
+
+		.col-lg-5{
+			padding: 0px 1rem;
+		}
 }
 @media(max-width: 480px){
 	.heading-small,
