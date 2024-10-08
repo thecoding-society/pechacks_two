@@ -1072,7 +1072,7 @@ Base
 	#heading-pec {
 
 		font-size: 4rem;
-		margin: 60px auto 5px auto;
+		margin: 50px auto 5px auto;
 		text-align: center;
 	}
 
@@ -1355,6 +1355,10 @@ Base
 @media(max-width: 480px) {
 	.back_about {
 		padding-top: 0;
+	}
+	.icon-container{
+		column-gap: 12px;
+		row-gap: 50px;
 	}
 }
 
