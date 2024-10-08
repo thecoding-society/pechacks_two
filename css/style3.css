@@ -29,7 +29,6 @@
 	margin-bottom: 15px;
 }
 .custom-footer-text {
-	margin-bottom: 15px;
 	font-size: 26px;
 	letter-spacing: 0.04rem;
 }
@@ -52,6 +51,10 @@
 .custom-footer-links {
 	margin-bottom: 15px;
 	font-size: 16px;
+}
+
+.custom-footer-para{
+	font-size: 20px;
 }
 .custom-footer-links {
 	list-style: none;
