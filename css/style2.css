@@ -1288,9 +1288,6 @@ div .contact_name .name {
   }
   
   @media screen and (min-width: 1120px) {
-	.track-price {
-	  height: 100vh;
-	}
   
 	.price-box {
 	  grid-template-columns: repeat(3, 345px);
