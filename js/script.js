@@ -96,7 +96,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const sections = document.querySelectorAll('section[id]'); // Only select sections with id attributes
+    const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('nav a');
 
     // Function to remove 'hit' class from all links
@@ -115,22 +115,41 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     };
 
-    // Adjusted IntersectionObserver with a lower threshold for larger sections
+    // IntersectionObserver to detect when a section reaches the middle of the viewport
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-            if (entry.isIntersecting && entry.intersectionRatio >= 0.2) { // Lower threshold to 20%
-                const sectionId = entry.target.id;
-                removeActiveClass();  // Remove the active class from all links
-                addActiveClass(sectionId);  // Add the active class to the visible section
+            const sectionId = entry.target.id;
+            if (entry.isIntersecting) {
+                removeActiveClass();
+                addActiveClass(sectionId);
             }
         });
     }, {
-        threshold: [0.2, 0.4, 0.6],  // Trigger when 20% of the section is visible
+        root: null,
+        threshold: 0.5 // Trigger when the section reaches 50% of the viewport height
     });
 
-    // Observe only sections with ids
+    // Observe sections with IDs
     sections.forEach(section => {
         observer.observe(section);
+    });
+
+    // Fallback: Scroll event listener for quick scrolling
+    window.addEventListener('scroll', function () {
+        const middleOfViewport = window.innerHeight / 2; // Middle of the viewport
+        let currentSectionId = null;
+
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= middleOfViewport && rect.bottom >= middleOfViewport) {
+                currentSectionId = section.id;
+            }
+        });
+
+        if (currentSectionId) {
+            removeActiveClass();
+            addActiveClass(currentSectionId);
+        }
     });
 });
 
@@ -146,6 +165,20 @@ hamburger.className = 'hamburger';
 hamburger.innerHTML = '<span></span><span></span><span></span>';
 hamburger.onclick = toggleMenu;
 header.appendChild(hamburger);
+
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+
+    // Check if the user has scrolled down from the top
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+
+
 
 // FAQ transition js
 // Select all accordion buttons
@@ -197,19 +230,7 @@ accordionButtons.forEach(button => {
 
 
 
-window.addEventListener('scroll', function () {
-    const header = document.querySelector('header');
-    const heading = document.getElementById('heading-pec'); // "PEC HACKS 2.0" heading
 
-    const headingOffset = heading.offsetTop; // Get the heading's position from the top of the page
-    const scrollPosition = window.scrollY; // Current scroll position
-
-    if (scrollPosition > headingOffset) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-});
 
 // Script for Timeline
 
