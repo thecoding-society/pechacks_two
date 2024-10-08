@@ -283,10 +283,11 @@ header.scrolled {
 --------------------------------------------------------------*/
 .back_home {
 	background-color: black;
-	height: 100vh;
 	padding-top: 5%;
+	height: 100vh;
 	position: relative;
 	font-family: "Teko", sans-serif;
+	margin: 0 auto;
 }
 
 .home_contents,
@@ -425,7 +426,7 @@ header.scrolled {
 
 .CLH{
 	font-size: 3.5rem;
-	margin: 15px 0px;
+	margin: 25px 0px 15px 0px;
 	display: block;
 	font-style: normal;
 	color: #fff;
