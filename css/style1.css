@@ -574,14 +574,9 @@ header.scrolled {
 .icon-projects p {
     margin-top: 10px;
     font-size: 1em;
-    font-family: "Oswald", sans-serif !important;
-    font-optical-sizing: auto !important;
-    font-weight: 600 !important;
-    font-style: normal !important;
 }
 
 .about-section {
-	font-family: "Acme", sans-serif;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
