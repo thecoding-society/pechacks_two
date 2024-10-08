@@ -570,6 +570,8 @@ header.scrolled {
 }
 .about-section p{
 	letter-spacing: 2px;
+	text-align: justify;
+	text-align-last: center;
 }
 .icon-reg p,
 .icon-man p,
