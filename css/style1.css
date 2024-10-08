@@ -5,11 +5,12 @@
 --------------------------------------------------------------*/
 html {
 	overflow-x: hidden;
+	background-color: #000;
 }
 
 body {
 	overflow-x: hidden;
-
+	background-color: #000;
 	position: relative;
 }
 
@@ -158,7 +159,7 @@ h2 {
 	top: calc(50% - 30px);
 	left: calc(50% - 30px);
 	border: 6px solid whitesmoke;
-	border-top-color: #37007a;
+	border-top-color: #ff0000;
 	border-radius: 50%;
 	width: 60px;
 	height: 60px;
@@ -283,10 +284,11 @@ header.scrolled {
 --------------------------------------------------------------*/
 .back_home {
 	background-color: black;
+	padding-top: 5.5%;
 	height: 100vh;
-	padding-top: 5%;
 	position: relative;
 	font-family: "Teko", sans-serif;
+	margin: 0 auto;
 }
 
 .home_contents,
@@ -415,13 +417,20 @@ header.scrolled {
 
 #heading-pec {
 	font-size: 8rem;
-	font-weight: 300;
 	line-height: 1;
 	letter-spacing: 0.01em;
 	color: black;
 	position: relative;
 	z-index: 1;
 	background: none;
+}
+
+.CLH{
+	font-size: 3.5rem;
+	margin: 25px 0px 15px 0px;
+	display: block;
+	font-style: normal;
+	color: #fff;
 }
 
 .btn {
@@ -505,10 +514,9 @@ header.scrolled {
 #timer div span {
 	color: #aa1d39;
 	display: block;
-	font-size: 1.5vw;
+	font-size: 2vw;
 	font-weight: 900;
 	text-align: center;
-	padding-top: 20px;
 }
 
 #particles-about {
@@ -533,12 +541,14 @@ header.scrolled {
     text-align: justify;
 }
 
+#about{
+	padding-top: 20px;
+}
+
 .icon-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
+    display: grid;
+	grid-template-columns: auto auto auto auto;
+    margin-top: 70px;
 }
 
 .icon-reg,
@@ -550,23 +560,22 @@ header.scrolled {
     justify-content: center;
     text-align: center;
 }
-.about-section span, h3{
-	font-family: "Acme", sans-serif;
+.about-section span, h3 {
 	font-weight: 600;
+}
+.about-section h3{
+	text-align: center;
 }
 .about-section p{
 	letter-spacing: 2px;
-
+	text-align: justify;
+	text-align-last: center;
 }
 .icon-reg p,
 .icon-man p,
 .icon-projects p {
     margin-top: 10px;
     font-size: 1em;
-    font-family: "Oswald", sans-serif !important;
-    font-optical-sizing: auto !important;
-    font-weight: 600 !important;
-    font-style: normal !important;
 }
 
 .about-section {
@@ -583,8 +592,51 @@ header.scrolled {
     margin-top: 50px;
 	padding: 0rem 4.5rem;
 }
-
-
+.font-box {
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	height: auto; 
+	text-align: center; 
+	margin-top: 50px;
+  }
+  
+  .font-head {
+	font-size: 3rem;
+	font-weight: 800;
+	background: linear-gradient(45deg, #ffffff, #cccccc);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+	transform: perspective(400px) rotateX(15deg);
+	transition: transform 0.3s ease, text-shadow 0.3s ease;
+	letter-spacing: 3px;
+  }
+  
+  .font-head:hover {
+	transform: perspective(400px) rotateX(0deg);
+	text-shadow: 5px 5px 12px rgba(88, 83, 83, 0.7), 5px 8px 12px rgba(51, 45, 45, 0.5);
+  }
+  .source p{
+	position: absolute;
+	right: 5%;
+	font-weight: 300 !important;
+	font-size: 20px;
+	margin-bottom: 70px;
+  }
+  @media (max-width: 768px) {
+	.font-head {
+		font-size: 1.75rem;
+		letter-spacing: 1.5px;
+	}
+	.font-box{
+		margin-top: 20px;
+	}
+	.source p{
+		font-size: 15px;
+	}
+  }
+  
 /*--------------------------------------------------------------
 # Glimpses
 --------------------------------------------------------------*/
@@ -861,6 +913,10 @@ Base
 		.heading-small-p {
 			line-height: 12vw;
 		}
+
+		.col-lg-5{
+			padding: 0px 1rem;
+		}
 }
 @media(max-width: 480px){
 	.heading-small,
@@ -963,6 +1019,10 @@ Base
 	header {
 		justify-content: space-between;
 	}
+
+	.back_home{
+		padding: 20px;
+	}
 }
 
 @media(max-width: 970px) {
@@ -982,6 +1042,15 @@ Base
 @media(max-width: 768px) {
 	.back_home {
 		height: 100vh;
+	}
+	.CLH{
+		font-size: 2.5rem;
+		margin-bottom: 0px;
+	}
+
+	.custom{
+		display: flex;
+		justify-content: center;
 	}
 
 }
@@ -1003,7 +1072,7 @@ Base
 	#heading-pec {
 
 		font-size: 4rem;
-		margin: 60px auto 5px auto;
+		margin: 50px auto 5px auto;
 		text-align: center;
 	}
 
@@ -1027,6 +1096,15 @@ Base
 		width: 50%;
 		text-align: center;
 		padding: 8px;
+	}
+
+	.CLH{
+		font-size: 1.5rem;
+		margin-bottom: 0px;
+	}
+
+	.cont{
+		margin-bottom: 20px;
 	}
 }
 
@@ -1068,6 +1146,11 @@ Base
 	.home_contents,
 	.fans {
 		flex-direction: column;
+	}
+
+	.custom{
+		display: flex;
+		justify-content: center;
 	}
 }
 
@@ -1215,7 +1298,7 @@ Base
 
 @media (max-width: 768px) {
 	#timer {
-		font-size: 2.5vw;
+		font-size: 2.8vw;
 	}
 
 	#timer div {
@@ -1224,14 +1307,14 @@ Base
 	}
 
 	#timer div span {
-		font-size: 2vw;
+		font-size: 2.3vw;
 		padding-top: 0px;
 	}
 }
 
 @media (max-width: 480px) {
 	#timer {
-		font-size: 3vw;
+		font-size: 4.8vw;
 		margin-bottom: 50px;
 	}
 
@@ -1241,7 +1324,7 @@ Base
 	}
 
 	#timer div span {
-		font-size: 3vw;
+		font-size: 5vw !important;
 		padding-top: 0px;
 	}
 
@@ -1252,31 +1335,17 @@ Base
 
 @media (max-width: 320px) {
 	#timer {
-		font-size: 6vw;
+		font-size: 5vw;
+		padding: 0px !important;
 	}
 
 	#timer div {
-		min-width: 30vw;
-		padding: 5vw;
+		min-width: 20vw;
+		padding: 2vw;
 	}
 
 	#timer div span {
-		font-size: 4vw;
-	}
-}
-
-@media (max-width: 425px) {
-	#timer {
-		font-size: 2.5vw;
-	}
-
-	#timer div {
-		min-width: 12vw;
-		padding: 3.5vw;
-	}
-
-	#timer div span {
-		font-size: 2.5vw;
+		font-size: 5.5vw !important;
 	}
 }
 
@@ -1286,6 +1355,10 @@ Base
 @media(max-width: 480px) {
 	.back_about {
 		padding-top: 0;
+	}
+	.icon-container{
+		column-gap: 12px;
+		row-gap: 50px;
 	}
 }
 
@@ -1330,8 +1403,12 @@ Base
 		font-size: 15px;
 	}
 
-	.icon-container {
-		flex-direction: column !important;
+	.icon-container{
+		grid-template-columns: auto auto;
+		row-gap: 20px;
+		width: 70%;
+		margin: 0 auto;
+		margin-top: 50px;
 	}
 
 	.new-section {
@@ -1346,6 +1423,12 @@ Base
 
 	.back_about {
 		height: auto;
+	}
+}
+
+@media(max-width: 375px){
+	.icon-container{
+		grid-template-columns: auto;
 	}
 }
 

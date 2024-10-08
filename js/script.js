@@ -95,28 +95,66 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
-let nav = document.querySelector('nav');
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a');
 
-// Scroll event to highlight active link
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('hit');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('hit');
-            });
+    // Function to remove 'hit' class from all links
+    const removeActiveClass = () => {
+        navLinks.forEach(link => {
+            link.classList.remove('hit');
+        });
+    };
+
+    // Function to add 'hit' class to the corresponding link
+    const addActiveClass = (id) => {
+        navLinks.forEach(link => {
+            if (link.getAttribute('href').substring(1) === id) {
+                link.classList.add('hit');
+            }
+        });
+    };
+
+    // IntersectionObserver to detect when a section reaches the middle of the viewport
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const sectionId = entry.target.id;
+            if (entry.isIntersecting) {
+                removeActiveClass();
+                addActiveClass(sectionId);
+            }
+        });
+    }, {
+        root: null,
+        threshold: 0.5 // Trigger when the section reaches 50% of the viewport height
+    });
+
+    // Observe sections with IDs
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+
+    // Fallback: Scroll event listener for quick scrolling
+    window.addEventListener('scroll', function () {
+        const middleOfViewport = window.innerHeight / 2; // Middle of the viewport
+        let currentSectionId = null;
+
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= middleOfViewport && rect.bottom >= middleOfViewport) {
+                currentSectionId = section.id;
+            }
+        });
+
+        if (currentSectionId) {
+            removeActiveClass();
+            addActiveClass(currentSectionId);
         }
     });
-};
+});
 
-// Toggle menu for mobile view
 function toggleMenu() {
+    const nav = document.querySelector('nav');
     nav.classList.toggle('active');
 }
 
@@ -127,6 +165,20 @@ hamburger.className = 'hamburger';
 hamburger.innerHTML = '<span></span><span></span><span></span>';
 hamburger.onclick = toggleMenu;
 header.appendChild(hamburger);
+
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+
+    // Check if the user has scrolled down from the top
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+
+
 
 // FAQ transition js
 // Select all accordion buttons
@@ -177,19 +229,8 @@ accordionButtons.forEach(button => {
 
 
 
-window.addEventListener('scroll', function () {
-    const header = document.querySelector('header');
-    const heading = document.getElementById('heading-pec'); // "PEC HACKS 2.0" heading
 
-    const headingOffset = heading.offsetTop; // Get the heading's position from the top of the page
-    const scrollPosition = window.scrollY; // Current scroll position
 
-    if (scrollPosition > headingOffset) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-});
 
 // Script for Timeline
 
