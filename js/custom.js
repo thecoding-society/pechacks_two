@@ -1,95 +1,25 @@
+function moveDateCon() {
+    const homeContents = document.querySelector('.home_contents');
+    const introExcerpt = document.querySelector('.intro-excerpt');
+    const dateCon = document.querySelector('.date-con');
 
-
-
-(function () {
-	'use strict';
-
-	var tinyslider = function () {
-		var el = document.querySelectorAll('.testimonial-slider');
-
-		if (el.length > 0) {
-			var slider = tns({
-				container: '.testimonial-slider',
-				items: 1,
-				axis: "horizontal",
-				controlsContainer: "#testimonial-nav",
-				swipeAngle: false,
-				speed: 700,
-				nav: true,
-				controls: true,
-				autoplay: true,
-				autoplayHoverPause: true,
-				autoplayTimeout: 3500,
-				autoplayButtonOutput: false
-			});
-		}
-	};
-	tinyslider();
-
-
-
-
-	var sitePlusMinus = function () {
-
-		var value,
-			quantity = document.getElementsByClassName('quantity-container');
-
-		function createBindings(quantityContainer) {
-			var quantityAmount = quantityContainer.getElementsByClassName('quantity-amount')[0];
-			var increase = quantityContainer.getElementsByClassName('increase')[0];
-			var decrease = quantityContainer.getElementsByClassName('decrease')[0];
-			increase.addEventListener('click', function (e) { increaseValue(e, quantityAmount); });
-			decrease.addEventListener('click', function (e) { decreaseValue(e, quantityAmount); });
-		}
-
-		function init() {
-			for (var i = 0; i < quantity.length; i++) {
-				createBindings(quantity[i]);
-			}
-		};
-
-		function increaseValue(event, quantityAmount) {
-			value = parseInt(quantityAmount.value, 10);
-
-			console.log(quantityAmount, quantityAmount.value);
-
-			value = isNaN(value) ? 0 : value;
-			value++;
-			quantityAmount.value = value;
-		}
-
-		function decreaseValue(event, quantityAmount) {
-			value = parseInt(quantityAmount.value, 10);
-
-			value = isNaN(value) ? 0 : value;
-			if (value > 0) value--;
-
-			quantityAmount.value = value;
-		}
-
-		init();
-
-	};
-	sitePlusMinus();
-
-
-})()
-
-// Track Prices Re-direction
-const clickableArticles = document.getElementsByClassName('clickableArticle');
-for (let i = 0; i < clickableArticles.length; i++) {
-    clickableArticles[i].addEventListener("click", function() {
-        const url = this.getAttribute('data-url');
-        window.open(url, "_blank"); // Open the URL in a new tab
-    });
-}
-//  Old Site Redirection
-
-const redirection_old = document.getElementsByClassName('font-box');
-        for (let i = 0; i < redirection_old.length; i++) {
-            redirection_old[i].addEventListener("click", function () {
-                const url = this.getAttribute('data-url');
-                window.open(url, "_blank");
-            });
+    if (window.innerWidth >= 550 && window.innerWidth < 1000) {
+        // Move dateCon outside homeContents between 550px and 1000px
+        if (homeContents && homeContents.contains(dateCon)) {
+            homeContents.parentNode.insertBefore(dateCon, homeContents.nextSibling);
         }
+    } else if (window.innerWidth < 550) {
+        // Move dateCon back inside introExcerpt when less than 550px
+        if (!introExcerpt.contains(dateCon)) {
+            introExcerpt.appendChild(dateCon);
+        }
+    } else if (window.innerWidth >= 1000) {
+        // Move dateCon back inside introExcerpt when greater than 1000px
+        if (!introExcerpt.contains(dateCon)) {
+            introExcerpt.appendChild(dateCon);
+        }
+    }
+}
 
+window.addEventListener('load', moveDateCon);
+window.addEventListener('resize', moveDateCon);

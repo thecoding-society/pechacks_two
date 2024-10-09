@@ -14,6 +14,10 @@ body {
 	position: relative;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 /*--------------------------------------------------------------
 # UNIVERSAL
 --------------------------------------------------------------*/
@@ -327,7 +331,7 @@ header.scrolled {
 
 .cont {
 	margin-bottom: 50px;
-	margin-top: 100px;
+	margin-top: 60px;
 	gap: 200px;
 	align-items: center;
 }
@@ -395,10 +399,14 @@ header.scrolled {
 	-webkit-text-stroke: 1.5px #fff;
 }
 
+.outline-schl{
+	color: transparent;
+	-webkit-text-stroke: 1.5px black;
+}
+
 #hero-sub {
 	font-size: 1.5rem;
-	color: var(--BGCOLOR);
-	line-height: 4vw;
+	color: var(--cherry-red);
 	width: auto;
 	z-index: -100;
 }
@@ -431,6 +439,20 @@ header.scrolled {
 	display: block;
 	font-style: normal;
 	color: #fff;
+}
+
+.join_com{
+	margin-top: 40px;
+}
+
+.join_com a{
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.align-center{
+	align-self: center;
 }
 
 .btn {
@@ -1122,12 +1144,16 @@ Base
 		line-height: 8vw;
 	}
 
-	.hero-buttons a {
+	.hero-buttons a, .join_com a {
 		font-size: 12px;
 	}
 
 	.hero {
 		height: 650px !important;
+	}
+
+	.hero p{
+		text-align: center;
 	}
 }
 
@@ -1139,19 +1165,28 @@ Base
 	.custom {
 		margin-top: 20px;
 	}
+
+	.date-con{
+		text-align: center;
+	}
 }
 
 @media(max-width: 1000px) {
 
 	.home_contents,
 	.fans {
-		flex-direction: column;
+		column-gap: 0px;
 	}
 
 	.custom{
 		display: flex;
 		justify-content: center;
 	}
+
+	.align-center{
+		align-self: flex-start;
+	}
+
 }
 
 @media(min-width: 1600px) {
@@ -1218,6 +1253,10 @@ Base
 	.icon-container p {
 		font-size: 20px;
 
+	}
+
+	.hero p{
+		font-size: 1.2rem;
 	}
 }
 
@@ -1302,13 +1341,60 @@ Base
 	}
 
 	#timer div {
-		min-width: 20vw;
-		padding: 2vw;
+		min-width: 8vw;
+		padding: .5vw;
 	}
 
 	#timer div span {
 		font-size: 2.3vw;
 		padding-top: 0px;
+	}
+}
+
+@media(max-width: 550px){
+	.home_contents{
+		flex-direction: column;
+	}
+
+	.join_com a{
+		width: 50%;
+	}
+
+	.join_com{
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	#hero-sub{
+		line-height: 6vw;
+	}
+
+	.date-con{
+		margin-top: 20px;
+	}
+	.align-center{
+		margin: 0 auto;
+	}
+
+	.hero-buttons a, .join_com a{
+		font-size: 16px;
+	}
+
+	.custom{
+		padding-left: 0px;
+	}
+
+	.cont{
+		margin-bottom: 30px;
+	}
+
+	.CLH{
+		font-size: 2.3rem;
+	}
+
+	#heading-pec{
+		font-size: 4.8rem;
 	}
 }
 
@@ -1330,6 +1416,41 @@ Base
 
 	.hero {
 		height: 650px !important;
+	}
+
+	.cont{
+		margin-bottom: 20px;
+	}
+
+	.join_com a{
+		padding: 8px;
+		font-size: 14px;
+	}
+
+	.join_com{
+		margin-top: 0px;
+	}
+
+	.date-con{
+		margin-top: 10px;
+	}
+
+	#hero-sub{
+		line-height: 4.5vw;
+		font-size: 15px !important;
+	}
+
+	.hero-buttons a{
+		font-size: 14px;
+	}
+
+	.CLH{
+		margin-top: 18px;
+		font-size: 2rem;
+	}
+
+	#heading-pec{
+		font-size: 4rem;
 	}
 }
 
