@@ -359,10 +359,17 @@ header.scrolled {
 	z-index: auto;
 	font-family: "Anton SC", sans-serif;
 	text-align: left !important;
-	padding-left: 40px;
 	color: transparent !important;
 	-webkit-text-stroke: 1.5px #fff;
 	letter-spacing: 1.5px;
+}
+
+.white{
+	border: 2px solid white;
+}
+
+.black{
+	border: 2px solid black;
 }
 
 .container-home {
@@ -1269,6 +1276,12 @@ Base
 @media (min-width: 992px) {
 	.hero {
 		padding: .5rem 0;
+	}
+}
+
+@media(min-width: 1000px){
+	.custom{
+		padding-left: 60px;
 	}
 }
 
