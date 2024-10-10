@@ -2,10 +2,12 @@
 # Footer
 --------------------------------------------------------------*/
 .custom-footer {
+	
 	background-color: #222;
 	color: #fff;
 	padding: 40px 0;
 	font-family: Arial, sans-serif;
+	letter-spacing: 0.07rem;
 }
 .custom-container {
 	width: 90%;
@@ -22,33 +24,42 @@
 	min-width: 200px;
 }
 .custom-footer-logo {
-	font-size: 24px;
+	font-size: 50px;
 	font-weight: bold;
 	margin-bottom: 15px;
 }
 .custom-footer-text {
-	margin-bottom: 15px;
-	font-size: 16px;
+	font-size: 26px;
+	letter-spacing: 0.04rem;
 }
 .custom-social-links {
 	list-style: none;
 	padding: 0;
 	display: flex;
 	gap: 15px;
+
 }
 .custom-social-links li a {
 	color: #fff;
 	font-size: 18px;
 }
+.bx-chevron-right{
+	color: #cc1616;
+}
 .custom-footer-heading {
-	font-size: 18px;
+
+	font-size: 24px;
 	font-weight: bold;
 	margin-bottom: 10px;
 }
 .custom-footer-address,
 .custom-footer-links {
 	margin-bottom: 15px;
-	font-size: 16px;
+	font-size: 20px;
+}
+
+.custom-footer-para{
+	font-size: 14px;
 }
 .custom-footer-links {
 	list-style: none;
@@ -109,15 +120,6 @@
     to {
         -webkit-transform: translate3d(1000px, 0px, 0px);
     }
-}
-/*--------------------------------------------------------------
-# Judges
---------------------------------------------------------------*/
-.bd-container {
-	max-width: 968px;
-	width: calc(100% - 3rem);
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;
 }
 /*--------------------------------------------------------------
 # Our Patrons
