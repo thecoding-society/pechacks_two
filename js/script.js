@@ -1,39 +1,44 @@
 $(document).ready(function () {
-	var owl = $(".owl-carousel").owlCarousel({
-		loop: true,
-		margin: 10,
-		nav: true, // Enable navigation arrows
-		dots: false, // Disable dots
-		autoplay: true,
-		autoplayTimeout: 3000,
-		autoplayHoverPause: true, // This will stop autoplay on hover
-		smartSpeed: 1000,
-		navText: ["<span>&#8249;</span>", "<span>&#8250;</span>"], // Custom arrow icons
-		responsive: {
-			0: {
-				items: 1,
-			},
-			600: {
-				items: 2,
-			},
-			800: {
-				items: 4, // Ensure 4 items fit within 800px
-			},
-		},
-	});
+    // Shuffle function to randomize the order of carousel items
+    function shuffleItems() {
+        var container = $(".owl-carousel");
+        var items = container.children(); // Get all carousel items
 
-	// Manually handle hover events
-	$(".owl-carousel .item").hover(
-		function () {
-			// On mouse over
-			owl.trigger("stop.owl.autoplay"); // Stop autoplay
-		},
-		function () {
-			// On mouse leave
-			owl.trigger("play.owl.autoplay"); // Resume autoplay
-		}
-	);
+        // Shuffle the items using the Fisher-Yates shuffle algorithm
+        for (var i = items.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1)); // Pick a random index
+            container.append(items.eq(j)); // Reappend the randomly picked item
+        }
+    }
+
+    // Call the shuffle function before initializing the Owl Carousel
+    shuffleItems();
+
+    // Initialize Owl Carousel
+    var owl = $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true, // Enable navigation arrows
+        dots: false, // Disable dots
+        autoplay: true, // Enable autoplay
+        autoplayTimeout: 3000, // Autoplay interval (in ms)
+        autoplayHoverPause: true, // Pause autoplay on hover
+        smartSpeed: 1000, // Smooth animation speed
+        navText: ["<span>&#8249;</span>", "<span>&#8250;</span>"], // Custom arrow icons
+        responsive: {
+            0: {
+                items: 1 // Show 1 item on smaller screens
+            },
+            600: {
+                items: 2 // Show 2 items on medium screens
+            },
+            800: {
+                items: 4 // Show 4 items on larger screens
+            }
+        }
+    });
 });
+
 
 //   Timer
 
