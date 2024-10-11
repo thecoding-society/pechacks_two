@@ -413,7 +413,7 @@ header.scrolled {
 
 #hero-sub {
 	font-size: 1.5rem;
-	color: var(--cherry-red);
+	color: white;
 	width: auto;
 	z-index: -100;
 }
