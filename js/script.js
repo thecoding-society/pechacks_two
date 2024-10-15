@@ -1,53 +1,54 @@
 $(document).ready(function () {
-	// Shuffle function to randomize the order of images
-	function shuffleItems() {
-		var items = $(".owl-carousel .gold.com");
-		for (var i = items.length - 1; i >= 0; i--) {
-			var j = Math.floor(Math.random() * (i + 1));
-			// Swap items
-			items.eq(i).before(items.eq(j));
-		}
-	}
+    // Shuffle function to randomize the order of images
+    function shuffleItems() {
+        var items = $(".owl-carousel .gold.com");
+        for (var i = items.length - 1; i >= 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            // Swap items
+            items.eq(i).before(items.eq(j));
+        }
+    }
 
-	// Call the shuffle function before initializing the carousel
-	shuffleItems();
+    // Call shuffleItems to shuffle images when the page loads
+    shuffleItems();
 
-	// Initialize Owl Carousel after shuffling
-	var owl = $(".owl-carousel").owlCarousel({
-		loop: true,
-		margin: 10,
-		nav: true,
-		dots: false,
-		autoplay: true,
-		autoplayTimeout: 3000,
-		autoplayHoverPause: true,
-		smartSpeed: 1000,
-		navText: ["<span>&#8249;</span>", "<span>&#8250;</span>"], // Custom arrow icons
-		responsive: {
-			0: {
-				items: 1,
-			},
-			600: {
-				items: 2,
-			},
-			800: {
-				items: 4,
-			},
-		},
-	});
+    // Initialize Owl Carousel after images are shuffled
+    var owl = $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        smartSpeed: 1000,
+        navText: ["<span>&#8249;</span>", "<span>&#8250;</span>"], // Custom arrow icons
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            800: {
+                items: 4,
+            },
+        },
+    });
 
-	// Manually handle hover events
-	$(".owl-carousel .item").hover(
-		function () {
-			// On mouse over
-			owl.trigger("stop.owl.autoplay");
-		},
-		function () {
-			// On mouse out
-			owl.trigger("play.owl.autoplay", [3000]);
-		}
-	);
+    // Manually handle hover events to stop and play autoplay
+    $(".owl-carousel .item").hover(
+        function () {
+            // On mouse over
+            owl.trigger("stop.owl.autoplay");
+        },
+        function () {
+            // On mouse out
+            owl.trigger("play.owl.autoplay", [3000]);
+        }
+    );
 });
+
 
 
 //   Timer
