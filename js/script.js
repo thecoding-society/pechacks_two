@@ -1,12 +1,26 @@
 $(document).ready(function () {
+	// Shuffle function to randomize the order of images
+	function shuffleItems() {
+		var items = $(".owl-carousel .gold.com");
+		for (var i = items.length - 1; i >= 0; i--) {
+			var j = Math.floor(Math.random() * (i + 1));
+			// Swap items
+			items.eq(i).before(items.eq(j));
+		}
+	}
+
+	// Call the shuffle function before initializing the carousel
+	shuffleItems();
+
+	// Initialize Owl Carousel after shuffling
 	var owl = $(".owl-carousel").owlCarousel({
 		loop: true,
 		margin: 10,
-		nav: true, // Enable navigation arrows
-		dots: false, // Disable dots
+		nav: true,
+		dots: false,
 		autoplay: true,
 		autoplayTimeout: 3000,
-		autoplayHoverPause: true, // This will stop autoplay on hover
+		autoplayHoverPause: true,
 		smartSpeed: 1000,
 		navText: ["<span>&#8249;</span>", "<span>&#8250;</span>"], // Custom arrow icons
 		responsive: {
@@ -17,7 +31,7 @@ $(document).ready(function () {
 				items: 2,
 			},
 			800: {
-				items: 4, // Ensure 4 items fit within 800px
+				items: 4,
 			},
 		},
 	});
@@ -26,14 +40,15 @@ $(document).ready(function () {
 	$(".owl-carousel .item").hover(
 		function () {
 			// On mouse over
-			owl.trigger("stop.owl.autoplay"); // Stop autoplay
+			owl.trigger("stop.owl.autoplay");
 		},
 		function () {
-			// On mouse leave
-			owl.trigger("play.owl.autoplay"); // Resume autoplay
+			// On mouse out
+			owl.trigger("play.owl.autoplay", [3000]);
 		}
 	);
 });
+
 
 //   Timer
 
