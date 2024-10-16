@@ -240,6 +240,7 @@ pre,
 	color: white;
 }
 .award-content strong {
+	font-family: "Agdasima", sans-serif;
 	color: transparent;
 	-webkit-text-stroke: 1.5px #fff;
 	font-size: 25px;
@@ -338,6 +339,13 @@ pre,
 .owl-carousel .owl-nav button.owl-next span {
 	font-size: 40px;
 	color: #ffffff;
+}
+.bronze_sponsers{
+	display: grid;
+	grid-template-columns: repeat(4,200px);
+	column-gap: 20px;
+	row-gap: 20px;
+	justify-content: center;
 }
 /*--------------------------------------------------------------
 # Partner With us
@@ -531,7 +539,7 @@ pre,
 	justify-content: center;
 	align-items: center;
 }
-.container-team .card {
+.container-team .grid .card , .first .card , .event-directors .card {
 	position: relative;
 	width: 290px;
 	height: 350px;
@@ -543,7 +551,6 @@ pre,
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	flex: 0 0 290px;
 	backdrop-filter: blur(40px);
 	border: solid 2px transparent;
 	background-clip: padding-box;
@@ -596,7 +603,7 @@ pre,
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 22px;
 	text-align: center;
 	margin: 20px 0 10px;
 	line-height: 1.1em;
@@ -639,6 +646,7 @@ pre,
 	justify-content: center;
 	align-items: center;
 	color:#adadad;
+	font-size: 20px;
 }
 .cardContent p {
 	margin-bottom: 50px;
@@ -1073,6 +1081,15 @@ div .contact_name .name {
 		width: 16vw;
 	}
 }
+@media(max-width : 1024px){
+	.bronze_sponsers{
+		grid-template-columns: repeat(3,200px);
+		column-gap: 40px;
+	}
+	.bronze_sponsers a img{
+		width: 200px;
+	}
+}
 @media (min-width: 768px) and (max-width: 1023px) {
 	.gold img {
 		width: 25vw;
@@ -1093,6 +1110,27 @@ div .contact_name .name {
 	.com {
 		margin-bottom: 20px;
 	}
+	.bronze_sponsers{
+		grid-template-columns: repeat(2,150px);
+		column-gap: 55px;
+	}
+	.bronze_sponsers a img{
+		width: 160px;
+	}
+	.bronze_sponsers .com{
+		margin-bottom: 0px;
+	}
+}
+@media(min-width: 600px) and (max-width: 768px){
+	.bronze_sponsers{
+		grid-template-columns: repeat(3,150px);
+	}
+	.bronze_sponsers a img{
+		width: 160px;
+	}
+	.bronze_sponsers .com{
+		margin-bottom: 0px;
+	}
 }
 @media (max-width: 425px) {
 	.gold {
@@ -1104,6 +1142,9 @@ div .contact_name .name {
 	}
 	.gold a {
 		width: auto;
+	}
+	.bronze_sponsers{
+		column-gap: 10px;
 	}
 }
 @media only screen and (max-width: 1000px) and (min-width: 760px) {
@@ -1245,13 +1286,56 @@ div .contact_name .name {
 	.container .card .content .cardContent p {
 		font-size: 15px;
 	}
+	.container-team .grid .card{
+		margin: .5em;
+		width: 250px;
+	}
+	.container-team .event-directors .card , .container-team .first .card{
+		margin: .1em;
+	}
 }
 @media(max-width: 530px) {
 	.grid {
 		grid-template-columns: auto;
 	}
-	.container .card {
+	.container-team .grid .card , .event-directors .card {
 		width: 290px;
+		height: 350px;
+	}
+	.event-directors{
+		flex-direction: column;
+		row-gap: 10px;
+	}
+	.event-directors .card{
+		padding: 40px 0px;
+	}
+}
+@media(max-width: 375px){
+	.container-team .grid .card , .event-directors .card{
+		width: 230px !important;
+		height:280px;
+	}
+	.event-directors .card{
+		padding: 20px 0px;
+	}
+	.container-team .card .content .img , .container-team .card .content .img img{
+		width: 100px;
+		height: 100px;
+	}
+	.container-team .first .card{
+		width: 230px !important;
+		height: 280px;
+	}
+}
+@media(max-width: 1000px) and (min-width: 768px){
+	.container-team .grid .card{
+		width: 250px;
+		margin: .1em;
+		height: 300px;
+	}
+	.grid{
+		row-gap: 15px;
+		margin-top: 15px;
 	}
 }
 /*--------------------------------------------------------------

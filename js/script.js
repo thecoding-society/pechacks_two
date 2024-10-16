@@ -1,39 +1,55 @@
 $(document).ready(function () {
-	var owl = $(".owl-carousel").owlCarousel({
-		loop: true,
-		margin: 10,
-		nav: true, // Enable navigation arrows
-		dots: false, // Disable dots
-		autoplay: true,
-		autoplayTimeout: 3000,
-		autoplayHoverPause: true, // This will stop autoplay on hover
-		smartSpeed: 1000,
-		navText: ["<span>&#8249;</span>", "<span>&#8250;</span>"], // Custom arrow icons
-		responsive: {
-			0: {
-				items: 1,
-			},
-			600: {
-				items: 2,
-			},
-			800: {
-				items: 4, // Ensure 4 items fit within 800px
-			},
-		},
-	});
+    // Shuffle function to randomize the order of images
+    function shuffleItems() {
+        var items = $(".owl-carousel .gold.com");
+        for (var i = items.length - 1; i >= 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            // Swap items
+            items.eq(i).before(items.eq(j));
+        }
+    }
 
-	// Manually handle hover events
-	$(".owl-carousel .item").hover(
-		function () {
-			// On mouse over
-			owl.trigger("stop.owl.autoplay"); // Stop autoplay
-		},
-		function () {
-			// On mouse leave
-			owl.trigger("play.owl.autoplay"); // Resume autoplay
-		}
-	);
+    // Call shuffleItems to shuffle images when the page loads
+    shuffleItems();
+
+    // Initialize Owl Carousel after images are shuffled
+    var owl = $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        smartSpeed: 1000,
+        navText: ["<span>&#8249;</span>", "<span>&#8250;</span>"], // Custom arrow icons
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            800: {
+                items: 4,
+            },
+        },
+    });
+
+    // Manually handle hover events to stop and play autoplay
+    $(".owl-carousel .item").hover(
+        function () {
+            // On mouse over
+            owl.trigger("stop.owl.autoplay");
+        },
+        function () {
+            // On mouse out
+            owl.trigger("play.owl.autoplay", [3000]);
+        }
+    );
 });
+
+
 
 //   Timer
 
