@@ -240,6 +240,7 @@ pre,
 	color: white;
 }
 .award-content strong {
+	font-family: "Agdasima", sans-serif;
 	color: transparent;
 	-webkit-text-stroke: 1.5px #fff;
 	font-size: 25px;
@@ -338,6 +339,13 @@ pre,
 .owl-carousel .owl-nav button.owl-next span {
 	font-size: 40px;
 	color: #ffffff;
+}
+.bronze_sponsers{
+	display: grid;
+	grid-template-columns: repeat(4,200px);
+	column-gap: 20px;
+	row-gap: 20px;
+	justify-content: center;
 }
 /*--------------------------------------------------------------
 # Partner With us
@@ -1073,6 +1081,15 @@ div .contact_name .name {
 		width: 16vw;
 	}
 }
+@media(max-width : 1024px){
+	.bronze_sponsers{
+		grid-template-columns: repeat(3,200px);
+		column-gap: 40px;
+	}
+	.bronze_sponsers a img{
+		width: 200px;
+	}
+}
 @media (min-width: 768px) and (max-width: 1023px) {
 	.gold img {
 		width: 25vw;
@@ -1093,6 +1110,27 @@ div .contact_name .name {
 	.com {
 		margin-bottom: 20px;
 	}
+	.bronze_sponsers{
+		grid-template-columns: repeat(2,150px);
+		column-gap: 55px;
+	}
+	.bronze_sponsers a img{
+		width: 160px;
+	}
+	.bronze_sponsers .com{
+		margin-bottom: 0px;
+	}
+}
+@media(min-width: 600px) and (max-width: 768px){
+	.bronze_sponsers{
+		grid-template-columns: repeat(3,150px);
+	}
+	.bronze_sponsers a img{
+		width: 160px;
+	}
+	.bronze_sponsers .com{
+		margin-bottom: 0px;
+	}
 }
 @media (max-width: 425px) {
 	.gold {
@@ -1104,6 +1142,9 @@ div .contact_name .name {
 	}
 	.gold a {
 		width: auto;
+	}
+	.bronze_sponsers{
+		column-gap: 10px;
 	}
 }
 @media only screen and (max-width: 1000px) and (min-width: 760px) {
