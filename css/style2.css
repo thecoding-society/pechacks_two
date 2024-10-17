@@ -1073,6 +1073,12 @@ div .contact_name .name {
 /*--------------------------------------------------------------
 # Sponsors
 --------------------------------------------------------------*/
+@media (min-width: 1300px) and (max-width: 1441px) {
+	.bronze_sponsers{
+		row-gap: 20px;
+		column-gap: 50px;
+	}
+}
 @media (min-width: 1024px) and (max-width: 1439px) {
 	.gold img {
 		width: 16vw;
