@@ -1079,6 +1079,21 @@ div .contact_name .name {
 		column-gap: 50px;
 	}
 }
+@media(min-width: 1700px){
+	.bronze_sponsers{
+		column-gap: 70px;
+	}
+}
+@media (min-width: 2150px) {
+	.bronze_sponsers{
+		column-gap: 110px;
+	}
+}
+@media (min-width: 2400px) {
+	.bronze_sponsers{
+		column-gap: 130px;
+	}
+}
 @media (min-width: 1024px) and (max-width: 1439px) {
 	.gold img {
 		width: 16vw;
