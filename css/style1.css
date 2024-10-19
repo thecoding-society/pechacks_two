@@ -194,6 +194,7 @@ a.more {
 }
 
 header {
+	position: relative;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -220,6 +221,7 @@ header .logo img {
 }
 
 nav {
+	position: relative;
 	display: flex;
 	gap: 20px;
 	flex-wrap: wrap;
@@ -237,6 +239,10 @@ nav a {
 	transition: 0.3s;
 }
 
+.one{
+	display: none;
+	color: transparent;
+}
 nav a:hover,
 nav a.hit {
 	color: white;
@@ -263,6 +269,20 @@ nav a::after {
 	height: 4px;
 	background-color: #cc1616;
 	transition: width 0.3s ease;
+}
+
+header .define{
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+.header_a{
+	display: block;
+	max-width: 100px;
+	min-width: 60px;
+	width: 10%;
+	z-index: 1000
 }
 
 .hamburger {
@@ -1010,11 +1030,29 @@ Base
 	header .logo img {
 		width: 120px !important;
 	}
+	.header_a{
+		max-width: 60px;
+		min-width: 20px;
+	}
+}
+
+@media(max-width: 1340px){
+	.none{
+		display: none;
+	}
+	.one{
+		display: block;
+	}
 }
 
 @media (max-width: 768px) {
 	header {
 		padding: 15px 50px;
+	}
+
+	header .define{
+		width: 40px;
+		right: 40px;
 	}
 
 	nav {
@@ -1063,6 +1101,9 @@ Base
 		font-weight: 500;
 		margin-left: 10px;
 		transition: 0.3s;
+	}
+	.header .define{
+		right: 0px;
 	}
 }
 
