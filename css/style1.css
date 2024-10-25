@@ -1032,7 +1032,7 @@ Base
 	}
 	.header_a{
 		max-width: 60px;
-		min-width: 20px;
+		min-width: 55px;
 	}
 }
 
@@ -1047,12 +1047,12 @@ Base
 
 @media (max-width: 768px) {
 	header {
-		padding: 15px 50px;
+		padding: 15px 20px 15px 50px;
 	}
 
 	header .define{
 		width: 40px;
-		right: 40px;
+		right: 35px;
 	}
 
 	nav {
