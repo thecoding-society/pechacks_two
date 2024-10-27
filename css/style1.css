@@ -858,6 +858,9 @@ section .domains {
 	color: white;
 	display: flex;
 	flex-wrap: nowrap;
+	backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .clash>.marvel>.icon {
@@ -914,27 +917,27 @@ input:checked+.clash .description {
 }
 
 .clash[for="c1"] {
-	background-image: url("../img/Domains/blockchain.jpg");
+	background-image: url("../img/Domains/Web_3_Blockchain_final.jpg");
 }
 
 .clash[for="c2"] {
-	background-image: url("../img/Domains/ai.jpg");
+	background-image: url("../img/Domains/AI_final.jpg");
 }
 
 .clash[for="c3"] {
-	background-image: url("../img/Domains/healthcare.jpg");
+	background-image: url("../img/Domains/Healthcare_final.jpg");
 }
 
 .clash[for="c4"] {
-	background-image: url("../img/Domains/socialimpact.jpg");
+	background-image: url("../img/Domains/Social_Impact_final.jpg");
 }
 
 .clash[for="c5"] {
-	background-image: url("../img/Domains/schooltrack.png");
+	background-image: url("../img/Domains/Open_Track_final.jpg");
 }
 
-.clash[for="c6"] {
-	background-image: url("../img/Domains/hightrack.avif");
+.clash{
+	background-position: bottom;
 }
 
 .col-lg-2 {
@@ -1726,27 +1729,26 @@ Base
 	}
 
 	.clash[for="c1"] {
-		background-image: url("../img/Domains/image\ \(7\).png");
+		background-image: url("../img/Domains/Web3_Blockchain_blur.jpg");
 	}
 
 	.clash[for="c2"] {
-		background-image: url("../img/Domains/image\ \(6\).png");
+		background-image: url("../img/Domains/AI_blur.jpg");
 	}
 
 	.clash[for="c3"] {
-		background-image: url("../img/Domains/image\ \(8\).png");
+		background-image: url("../img/Domains/HealthCare_blur.jpg");
 	}
 
 	.clash[for="c4"] {
-		background-image: url("../img/Domains/image\ \(11\).png");
+		background-image: url("../img/Domains/Social_Impact_blur.jpg");
 	}
 
 	.clash[for="c5"] {
-		background-image: url("../img/Domains/image\ \(9\).png");
+		background-image: url("../img/Domains/Open_Track_blur.jpg");
 	}
-
-	.clash[for="c6"] {
-		background-image: url("../img/Domains/image\ \(10\).png");
+	.clash>.marvel{
+		background-color: transparent;
 	}
 }
 
