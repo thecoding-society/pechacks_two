@@ -291,54 +291,13 @@ pre,
 .silver {
 	padding-bottom: 40px;
 }
-.carousel-container {
-	height: 160px;
-	max-width: 860px;
-	margin: 0 auto;
-	padding: 0px 20px 20px 20px;
-	position: relative;
-}
+
 .spon-title{
 	font-size: 20px !important;
 	margin: 10px;
 }
 .first-title{
 	margin-top: 40px;
-}
-#owl-height {
-	height: 180px;
-}
-.owl-carousel .owl-stage-outer {
-	height: 200px !important;
-}
-.owl-carousel .owl-stage {
-	height: 200px !important;
-	display: flex;
-	align-items: center;
-}
-
-.owl-prev,
-.owl-next {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	background: #000;
-	color: #fff;
-	padding: 15px;
-	border-radius: 50%;
-	cursor: pointer;
-	font-size: 30px;
-}
-.owl-prev {
-	left: -35px;
-}
-.owl-next {
-	right: -35px;
-}
-.owl-carousel .owl-nav button.owl-prev span,
-.owl-carousel .owl-nav button.owl-next span {
-	font-size: 40px;
-	color: #ffffff;
 }
 .bronze_sponsers{
 	display: grid;
@@ -347,6 +306,58 @@ pre,
 	row-gap: 20px;
 	justify-content: center;
 }
+#carousel-images-section {
+    padding: 50px 0;
+}
+
+.carousel-images-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-images-scroll-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-images {
+    display: flex;
+    white-space: nowrap;
+    animation-timing-function: linear;
+}
+
+.primary-carousel {
+    animation: scroll-left 250s linear infinite;
+}
+
+.secondary-carousel {
+    animation: scroll-right 300s linear infinite;
+}
+
+.carousel-images img {
+    width: 10px;
+    margin: 0 10px;
+    border: 2px solid #D0A022;
+    object-fit: contain;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+@keyframes scroll-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+    from { transform: translateX(0); }
+    to { transform: translateX(50%); }
+}
+
 /*--------------------------------------------------------------
 # Partner With us
 --------------------------------------------------------------*/
@@ -1097,6 +1108,11 @@ div .contact_name .name {
 /*--------------------------------------------------------------
 # Sponsors
 --------------------------------------------------------------*/
+@media (min-width: 1700px) {
+	.carousel-images-container{
+		width: 200vw !important;
+	}
+}
 @media (min-width: 1300px) and (max-width: 1441px) {
 	.bronze_sponsers{
 		row-gap: 20px;
@@ -1125,6 +1141,12 @@ div .contact_name .name {
 	.gold a {
 		width: 16vw;
 	}
+	.cara a img{
+		width: 15vw;
+	}
+	.carousel-images-container{
+		width: 80%;
+	}
 }
 @media(max-width : 1024px){
 	.bronze_sponsers{
@@ -1134,6 +1156,9 @@ div .contact_name .name {
 	.bronze_sponsers a img{
 		width: 200px;
 	}
+	.cara a img{
+		width: 22vw;
+	}
 }
 @media (min-width: 768px) and (max-width: 1023px) {
 	.gold img {
@@ -1142,6 +1167,9 @@ div .contact_name .name {
 	.gold a {
 		width: 25vw;
 	}
+	.carousel-images-container{
+		width: 80%;
+	}
 }
 @media (min-width: 426px) and (max-width: 767px) {
 	.gold img {
@@ -1149,6 +1177,15 @@ div .contact_name .name {
 	}
 	.gold a {
 		width: 35vw;
+	}
+	.cara a{
+		width: 24vw;
+	}
+	.cara a img {
+		width: 23vw;
+	}
+	.carousel-images-container{
+		width: 80%;
 	}
 }
 @media(max-width: 600px) {
@@ -1176,6 +1213,15 @@ div .contact_name .name {
 	.bronze_sponsers .com{
 		margin-bottom: 0px;
 	}
+	.cara a{
+		width: 26vw;
+	}
+	.cara a img {
+		width: 25vw;
+	}
+	.carousel-images-container{
+		width: 80%;
+	}
 }
 @media (max-width: 425px) {
 	.gold {
@@ -1190,6 +1236,15 @@ div .contact_name .name {
 	}
 	.bronze_sponsers{
 		column-gap: 10px;
+	}
+	.cara a{
+		width: 33vw !important;
+	}
+	.cara a img {
+		width: 32vw !important;
+	}
+	.carousel-images-container{
+		width: 90% !important;
 	}
 }
 @media only screen and (max-width: 1000px) and (min-width: 760px) {
@@ -1209,6 +1264,15 @@ div .contact_name .name {
 	.spon {
 		margin-bottom: 0 !important;
 	}
+	.cara a{
+		width: 26vw;
+	}
+	.cara a img {
+		width: 25vw;
+	}
+	.carousel-images-container{
+		width: 80%;
+	}
 }
 @media (min-width: 1440px) {
 	.gold img {
@@ -1219,7 +1283,10 @@ div .contact_name .name {
 	}
 	.bronze,
 	.com img {
-		width: 12vw;
+		width: 11vw;
+	}
+	.non-cara a img{
+		width: 12vw !important;
 	}
 	.bronze,
 	.com a {
