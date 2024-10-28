@@ -86,3 +86,20 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Initial check in case the section is already in view
 	revealTimelineLine();
 });
+
+// Event-directors
+
+function updateLayout() {
+    const element = document.querySelector('.event-directors');
+    if (window.innerWidth < 768) {
+      element.classList.remove('layout'); // Remove the layout class below 630px
+    } else {
+      element.classList.add('layout'); // Add it back above 630px
+    }
+  }
+
+  // Check on load
+  updateLayout();
+
+  // Check on window resize
+  window.addEventListener('resize', updateLayout);
