@@ -1,40 +1,27 @@
-$(document).ready(function () {
-    // Initialize first carousel
-    var firstOwl = $("#first-carousel").owlCarousel({
-        margin: 10,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: false, // Keeps moving even on hover
-        items: 4,
-        loop: true
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    const primaryCarousel = document.querySelector('.primary-carousel');
+    const secondaryCarousel = document.querySelector('.secondary-carousel');
 
-    // Initialize second carousel
-    var secondOwl = $("#second-carousel").owlCarousel({
-        margin: 10,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: false,
-        items: 4,
-        loop: true,
-        rtl: true // Reverse direction for the second carousel
-    });
+    // Duplicate content for seamless looping
+    primaryCarousel.innerHTML += primaryCarousel.innerHTML;
+    secondaryCarousel.innerHTML += secondaryCarousel.innerHTML;
 
-    // Synchronize items between carousels
-    firstOwl.on('translated.owl.carousel', function(event) {
-        // Get the last item from the first carousel
-        let $lastItem = $(event.target).find('.owl-item').last().clone();
-        
-        // Add cloned item to the start of the second carousel
-        secondOwl.trigger('add.owl.carousel', [$lastItem, 0]).trigger('refresh.owl.carousel');
+    // Function to pause and resume animations on hover
+    function pauseAnimations() {
+        primaryCarousel.style.animationPlayState = 'paused';
+        secondaryCarousel.style.animationPlayState = 'paused';
+    }
 
-        // Optionally, remove the cloned item to keep it from accumulating in the first
-        firstOwl.trigger('remove.owl.carousel', event.item.index).trigger('refresh.owl.carousel');
-    });
+    function resumeAnimations() {
+        primaryCarousel.style.animationPlayState = 'running';
+        secondaryCarousel.style.animationPlayState = 'running';
+    }
+
+    // Add hover event listeners
+    primaryCarousel.addEventListener('mouseover', pauseAnimations);
+    secondaryCarousel.addEventListener('mouseover', pauseAnimations);
+    primaryCarousel.addEventListener('mouseleave', resumeAnimations);
+    secondaryCarousel.addEventListener('mouseleave', resumeAnimations);
 });
 
 
