@@ -1,53 +1,42 @@
 $(document).ready(function () {
-    // Shuffle function to randomize the order of images
-    function shuffleItems() {
-        var items = $(".owl-carousel .gold.com");
-        for (var i = items.length - 1; i >= 0; i--) {
-            var j = Math.floor(Math.random() * (i + 1));
-            // Swap items
-            items.eq(i).before(items.eq(j));
-        }
-    }
-
-    // Call shuffleItems to shuffle images when the page loads
-    shuffleItems();
-
-    // Initialize Owl Carousel after images are shuffled
-    var owl = $(".owl-carousel").owlCarousel({
-        loop: true,
+    // Initialize first carousel
+    var firstOwl = $("#first-carousel").owlCarousel({
         margin: 10,
-        nav: true,
+        nav: false,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        smartSpeed: 1000,
-        navText: ["<span>&#8249;</span>", "<span>&#8250;</span>"], // Custom arrow icons
-        responsive: {
-            0: {
-                items: 1,
-            },
-            600: {
-                items: 2,
-            },
-            800: {
-                items: 4,
-            },
-        },
+        autoplayTimeout: 2000,
+        autoplayHoverPause: false, // Keeps moving even on hover
+        items: 4,
+        loop: true
     });
 
-    // Manually handle hover events to stop and play autoplay
-    $(".owl-carousel .item").hover(
-        function () {
-            // On mouse over
-            owl.trigger("stop.owl.autoplay");
-        },
-        function () {
-            // On mouse out
-            owl.trigger("play.owl.autoplay", [3000]);
-        }
-    );
+    // Initialize second carousel
+    var secondOwl = $("#second-carousel").owlCarousel({
+        margin: 10,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: false,
+        items: 4,
+        loop: true,
+        rtl: true // Reverse direction for the second carousel
+    });
+
+    // Synchronize items between carousels
+    firstOwl.on('translated.owl.carousel', function(event) {
+        // Get the last item from the first carousel
+        let $lastItem = $(event.target).find('.owl-item').last().clone();
+        
+        // Add cloned item to the start of the second carousel
+        secondOwl.trigger('add.owl.carousel', [$lastItem, 0]).trigger('refresh.owl.carousel');
+
+        // Optionally, remove the cloned item to keep it from accumulating in the first
+        firstOwl.trigger('remove.owl.carousel', event.item.index).trigger('refresh.owl.carousel');
+    });
 });
+
 
 
 
