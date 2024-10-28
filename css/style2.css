@@ -548,6 +548,16 @@ pre,
 	justify-content: center;
 	align-items: center;
 }
+.layout .card .content , .layout .card{
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: space-evenly !important;
+	width: 400px !important;
+	height: 230px !important;
+}
+.layout .card .content .cardContent h3{
+	font-size: 25px !important;
+}
 .container-team .grid .card , .first .card , .event-directors .card {
 	position: relative;
 	width: 250px;
@@ -629,6 +639,11 @@ pre,
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
+}
+.layout .card .sci{
+	position: absolute !important;
+	bottom: 45px !important;
+	right: 23px !important;
 }
 .container-team .card .sci li {
 	margin: 0 10px;
@@ -1300,6 +1315,15 @@ div .contact_name .name {
 	.cardContent p{
 		margin-bottom: 30px;
 	}
+	.layout .card .content , .layout .card{
+		width: 400px !important;
+		height: 230px !important;
+	}
+	.layout .card .sci{
+		position: absolute !important;
+		bottom: 45px !important;
+		right: 40px !important;
+	}
 }
 @media (max-width: 1750px){
 	.container-team .grid .card{
@@ -1318,6 +1342,15 @@ div .contact_name .name {
 	}
 	.container-team .card .sci li a {
 		font-size: 20px;
+	}
+	.layout .card .content , .layout .card{
+		width: 350px !important;
+		height: 180px !important;
+	}
+	.layout .card .sci{
+		position: absolute !important;
+		bottom: 30px !important;
+		right: 40px !important;
 	}
 }
 @media (max-width: 1560px){
@@ -1347,6 +1380,9 @@ div .contact_name .name {
 	}
 	.modify{
 		font-size: 125px !important;
+	}
+	.layout .card .content .cardContent h3{
+		font-size: 20px !important;
 	}
 }
 @media(max-width: 968px){
