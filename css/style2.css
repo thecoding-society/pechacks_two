@@ -332,17 +332,18 @@ pre,
 }
 
 .primary-carousel {
-    animation: scroll-left 250s linear infinite;
+    animation: scroll-left 150s linear infinite;
 }
 
 .secondary-carousel {
-    animation: scroll-right 300s linear infinite;
+    animation: scroll-right 200s linear infinite;
 }
 
 .carousel-images img {
     width: 10px;
     margin: 0 10px;
-    border: 2px solid #D0A022;
+    /* border: 2px solid #D0A022; */
+	border-radius: 15px;
     object-fit: contain;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     background-color: white;
