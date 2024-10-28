@@ -340,8 +340,7 @@ pre,
 }
 
 .carousel-images img {
-    width: 200px;
-    height: 150px;
+    width: 10px;
     margin: 0 10px;
     border: 2px solid #D0A022;
     object-fit: contain;
@@ -1094,6 +1093,11 @@ div .contact_name .name {
 /*--------------------------------------------------------------
 # Sponsors
 --------------------------------------------------------------*/
+@media (min-width: 1700px) {
+	.carousel-images-container{
+		width: 200vw !important;
+	}
+}
 @media (min-width: 1300px) and (max-width: 1441px) {
 	.bronze_sponsers{
 		row-gap: 20px;
@@ -1122,6 +1126,12 @@ div .contact_name .name {
 	.gold a {
 		width: 16vw;
 	}
+	.cara a img{
+		width: 15vw;
+	}
+	.carousel-images-container{
+		width: 80%;
+	}
 }
 @media(max-width : 1024px){
 	.bronze_sponsers{
@@ -1131,6 +1141,9 @@ div .contact_name .name {
 	.bronze_sponsers a img{
 		width: 200px;
 	}
+	.cara a img{
+		width: 22vw;
+	}
 }
 @media (min-width: 768px) and (max-width: 1023px) {
 	.gold img {
@@ -1139,6 +1152,9 @@ div .contact_name .name {
 	.gold a {
 		width: 25vw;
 	}
+	.carousel-images-container{
+		width: 80%;
+	}
 }
 @media (min-width: 426px) and (max-width: 767px) {
 	.gold img {
@@ -1146,6 +1162,15 @@ div .contact_name .name {
 	}
 	.gold a {
 		width: 35vw;
+	}
+	.cara a{
+		width: 24vw;
+	}
+	.cara a img {
+		width: 23vw;
+	}
+	.carousel-images-container{
+		width: 80%;
 	}
 }
 @media(max-width: 600px) {
@@ -1173,6 +1198,15 @@ div .contact_name .name {
 	.bronze_sponsers .com{
 		margin-bottom: 0px;
 	}
+	.cara a{
+		width: 26vw;
+	}
+	.cara a img {
+		width: 25vw;
+	}
+	.carousel-images-container{
+		width: 80%;
+	}
 }
 @media (max-width: 425px) {
 	.gold {
@@ -1187,6 +1221,15 @@ div .contact_name .name {
 	}
 	.bronze_sponsers{
 		column-gap: 10px;
+	}
+	.cara a{
+		width: 33vw !important;
+	}
+	.cara a img {
+		width: 32vw !important;
+	}
+	.carousel-images-container{
+		width: 90% !important;
 	}
 }
 @media only screen and (max-width: 1000px) and (min-width: 760px) {
@@ -1206,6 +1249,15 @@ div .contact_name .name {
 	.spon {
 		margin-bottom: 0 !important;
 	}
+	.cara a{
+		width: 26vw;
+	}
+	.cara a img {
+		width: 25vw;
+	}
+	.carousel-images-container{
+		width: 80%;
+	}
 }
 @media (min-width: 1440px) {
 	.gold img {
@@ -1216,7 +1268,10 @@ div .contact_name .name {
 	}
 	.bronze,
 	.com img {
-		width: 12vw;
+		width: 11vw;
+	}
+	.non-cara a img{
+		width: 12vw !important;
 	}
 	.bronze,
 	.com a {
