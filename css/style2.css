@@ -1109,6 +1109,11 @@ div .contact_name .name {
 /*--------------------------------------------------------------
 # Sponsors
 --------------------------------------------------------------*/
+
+.com{
+	margin: 10px 0px;
+}
+
 @media (min-width: 1700px) {
 	.carousel-images-container{
 		width: 200vw !important;
