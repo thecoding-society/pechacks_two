@@ -394,7 +394,7 @@ header.scrolled {
 
 .container-home {
 	position: absolute;
-	top: 0;
+	top: -50px;
 	z-index: -1;
 }
 
@@ -1188,6 +1188,10 @@ Base
 		letter-spacing: .01em;
 	}
 
+	.container-home{
+		top: 0px !important;
+	}
+
 	#hero-sub {
 		font-size: 1.5rem;
 		line-height: 8vw;
@@ -1225,6 +1229,10 @@ Base
 	.home_contents,
 	.fans {
 		column-gap: 0px;
+	}
+
+	header .logo img{
+		width: 150px !important;
 	}
 
 	.custom{
