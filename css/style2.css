@@ -426,14 +426,10 @@ pre,
 .card-j {
 	position: relative;
 	overflow: hidden;
-	padding: 5rem 0 4rem 0;
-}
-.modify{
-	font-size: 280px !important;
+	padding: 5rem 0;
 }
 .card__container {
-	display: flex;
-	justify-content: center;
+	display: grid;
 	gap: 1.5rem;
 }
 .card__glass {
@@ -441,21 +437,16 @@ pre,
 	overflow: hidden;
 	text-align: center;
 	padding: 1.8rem;
-	width: 19vw;
 	background-color: rgba(235, 235, 235, 0.1);
 	backdrop-filter: blur(5px);
 	border-radius: 1.5rem;
 }
 .card__img {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	border-radius: 50%;
 	border: 2px solid #F4F4FB;
 	margin-bottom: 1rem;
-}
-.speak_role{
-	font-size: 20px;
-	color: black;
 }
 .card__data {
 	margin-bottom: .5rem;
@@ -479,7 +470,6 @@ pre,
 	color: var(--title-color);
 	font-weight: 500;
 	transition: .4s;
-	pointer-events: none;
 }
 .card__button:hover {
 	background: linear-gradient(130deg, rgba(251, 251, 254, 1), rgba(251, 251, 254, .4));
@@ -488,7 +478,7 @@ pre,
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	padding-left: 10px;
+	padding-left: 3px;
 }
 .card__link {
 	display: block;
@@ -1330,78 +1320,10 @@ div .contact_name .name {
 /*--------------------------------------------------------------
 # Judges & Speakers
 --------------------------------------------------------------*/
-@media(min-width: 2000px) {
-	.card__glass{
-		width: 14vw !important;
-	}
-}
-@media(min-width: 1700px) {
-	.card__glass{
-		width: 17vw !important;
-	}
-}
-@media(min-width: 1440px) {
-	.card__glass{
-		width: 20vw !important;
-	}
-}
-@media (max-width: 1440px) {
-	.card__glass{
-		width: 26vw !important;
-	}
-}
-@media (max-width: 1024px) {
-	.card__glass{
-		width: 32vw !important;
-	}
-	.card__data h3{
-		font-size: 1.2rem;
-	}
-	.card__profession{
-		font-size: .9rem;
-	}
-}
 @media (max-width: 768px) and (min-width: 568px) {
 	.card__container {
 		grid-template-columns: repeat(2, 1fr);
 		margin-top: 90px;
-	}
-	.card__glass{
-		width: 40vw !important;
-	}
-}
-@media (max-width:600px) {
-	.card__container{
-		flex-direction: column;
-		justify-self: center;
-	}
-	.card__glass{
-		width: 55vw !important;
-	}
-}
-@media (max-width: 470px) {
-	.card__glass{
-		width: 65vw !important;
-	}
-	.card__social a , .bx{
-		font-size: 20px !important;
-	}
-}
-@media (max-width: 395px) {
-	.card__glass{
-		width: 70vw !important;
-	}
-	.card__social a , .bx{
-		font-size: 20px !important;
-	}
-	.card__data h3{
-		font-size: 1.1rem;
-	}
-	.card__profession{
-		font-size: .8rem;
-	}
-	.card__social a , .bx{
-		font-size: 15px !important;
 	}
 }
 @media screen and (min-width: 768px) {
@@ -1413,6 +1335,7 @@ div .contact_name .name {
 		padding: 0;
 	}
 	.card__container {
+		grid-template-columns: repeat(3, 1fr);
 		align-content: center;
 		margin-top: 50px;
 	}
@@ -1430,9 +1353,20 @@ div .contact_name .name {
 		margin-top: 80px;
 	}
 }
+@media(max-width: 400px){
+	.card__profession{
+		font-size: .8rem;
+	}
+}
+
 /*--------------------------------------------------------------
 # Our Team
 --------------------------------------------------------------*/
+@media (max-width: 2700px){
+	.modify{
+		font-size: 260px !important;
+	}
+}
 @media (max-width: 2100px){
 	.container-team .grid .card{
 		width: 240px;
