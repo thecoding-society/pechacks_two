@@ -635,7 +635,7 @@ pre,
 }
 .container-team .card .sci {
 	position: absolute;
-	bottom: 30px;
+	bottom: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1366,6 +1366,10 @@ div .contact_name .name {
 	.modify{
 		font-size: 260px !important;
 	}
+	.layout .card .content{
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
 }
 @media (max-width: 2100px){
 	.container-team .grid .card{
@@ -1419,8 +1423,11 @@ div .contact_name .name {
 	}
 	.layout .card .sci{
 		position: absolute !important;
-		bottom: 30px !important;
+		bottom: 20px !important;
 		right: 40px !important;
+	}
+	.hod .card .sci{
+		right: 75px !important;
 	}
 }
 @media (max-width: 1560px){
@@ -1467,6 +1474,15 @@ div .contact_name .name {
 	.modify{
 		font-size: 70px !important;
 	}
+	.hod .card .sci{
+		right: 90px !important;
+	}
+	.event-directors .eve_card .sci{
+		right: 50px !important;
+	}
+	.cardContent p{
+		margin-bottom: 10px !important;
+	}
 	.container .card .content .cardContent h3 {
 		letter-spacing: 0;
 		font-size: 12px;
@@ -1476,7 +1492,12 @@ div .contact_name .name {
 	}
 	.container-team .grid .card , .event-directors .card , .first .card	{
 		margin: .5em;
-		width: 250px;
+		width: 250px !important;
+		height: 260px !important;
+	}
+	.layout .card .content{
+		height: auto !important;
+		width: auto !important;
 	}
 	.event-directors{
 		margin: 20px 0px 10px 0px;
@@ -1487,6 +1508,9 @@ div .contact_name .name {
 	}
 	.modify-small{
 		font-size: 50px;
+	}
+	.layout .card .content{
+		flex-direction: column !important;
 	}
 }
 @media(max-width: 530px) {
@@ -1514,7 +1538,7 @@ div .contact_name .name {
 		padding: 20px 0px;
 	}
 	.container-team .card .content .cardContent h3{
-		font-size: 13px;
+		font-size: 13px !important;
 	}
 	.container-team .card .sci li a {
 		font-size: 15px;
