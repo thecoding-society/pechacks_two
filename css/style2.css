@@ -1524,6 +1524,9 @@ div .contact_name .name {
 	.event-directors .card{
 		padding: 40px 0px;
 	}
+	.event-directors .eve_card .sci{
+		right: 43px !important;
+	}
 }
 @media(max-width: 450px){
 	.container-team .grid .card , .event-directors .card , .first .card{
@@ -1542,6 +1545,15 @@ div .contact_name .name {
 	}
 	.container-team .card .sci li a {
 		font-size: 15px;
+	}
+	.event-directors .eve_card .sci{
+		right: 25px !important;
+	}
+	.event-directors .eve_card .sci li{
+		width: 10px;
+	}
+	.hod .card .sci{
+		right: 50px !important;
 	}
 }
 @media(max-width: 375px){
@@ -1568,6 +1580,15 @@ div .contact_name .name {
 	}
 	.cardContent p{
 		margin-bottom: 20px;
+	}
+	.event-directors .eve_card .sci{
+		right: 16px !important;
+	}
+	.event-directors .eve_card .sci li{
+		width: 5px;
+	}
+	.hod .card .sci{
+		right: 32px !important;
 	}
 }
 @media(max-width: 1000px) and (min-width: 768px){
