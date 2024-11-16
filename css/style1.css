@@ -340,9 +340,8 @@ header.scrolled {
 	overflow: hidden;
 }
 
-.hero .intro-excerpt {
-	position: relative;
-	z-index: 4;
+.hero-buttons{
+	width: 100%;
 }
 
 .date-con {
@@ -518,6 +517,9 @@ header.scrolled {
 	color: #fff;
 	background: var(--BGCOLOR);
 	margin-top: 10px;
+	text-align: center;
+	width: 100%;
+	display: block;
 }
 
 .btn.btn-secondary:hover {
