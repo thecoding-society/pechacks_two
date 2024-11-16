@@ -646,6 +646,16 @@ pre,
 	bottom: 45px !important;
 	right: 23px !important;
 }
+.third-row{
+	display: flex;
+	justify-content: center;
+	font-family: 'Teko' , sans-serif;
+	margin-top: 25px;
+	padding: 0 3rem;
+}
+.third-row .card__glass{
+	width: 275px;
+}
 .container-team .card .sci li {
 	margin: 0 10px;
 	transform: translateY(40px);
@@ -1351,6 +1361,9 @@ div .contact_name .name {
 @media(max-width: 568px){
 	.card__container{
 		margin-top: 80px;
+	}
+	.third-row , .third-row .card__glass{
+		width: 100%;
 	}
 }
 @media(max-width: 400px){
