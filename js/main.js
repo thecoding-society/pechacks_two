@@ -106,14 +106,20 @@ function updateLayout() {
 
 
 
-  function showEvents(day) {
-	// Hide all event cards
+// Function to show events for a specific day
+function showEvents(day) {
+	// Hide all event cards by removing the 'show' class
 	const allEvents = document.querySelectorAll('.days-event');
 	allEvents.forEach(event => event.classList.remove('show'));
 
-	// Show the selected day's events
+	// Show the selected day's events by adding the 'show' class
 	const selectedDayEvents = document.querySelector(`.day-${day}-events`);
 	if (selectedDayEvents) {
 		selectedDayEvents.classList.add('show');
 	}
 }
+
+// Ensure Day-1 events are shown by default on page load
+document.addEventListener("DOMContentLoaded", () => {
+	showEvents(1); // Show Day-1 events when the page loads
+});

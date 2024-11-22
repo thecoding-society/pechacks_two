@@ -553,7 +553,10 @@ pre,
 
 .days-des .days-event {
 	color: white;
-	display: none; /* Hide all events by default */
+	visibility: hidden; /* Hide events by default */
+	opacity: 0;
+	transform: translateY(10px);
+	transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease;
 }
 
 .event-cards {
@@ -583,17 +586,6 @@ pre,
 }
 
 /* Show event cards for a specific day */
-.day-1-events,
-.day-2-events,
-.day-3-events,
-.day-4-events,
-.day-5-events,
-.day-6-events,
-.day-7-events {
-	display: none;
-}
-
-/* Specific day visibility when clicked */
 .day-1-events.show,
 .day-2-events.show,
 .day-3-events.show,
@@ -601,7 +593,9 @@ pre,
 .day-5-events.show,
 .day-6-events.show,
 .day-7-events.show {
-	display: block;
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0); /* Slide in effect */
 }
 
 
