@@ -1336,16 +1336,14 @@ div .contact_name .name {
 		grid-template-columns: repeat(2, 1fr);
 		margin-top: 90px;
 	}
-	.card__container > :nth-child(9) {
-		grid-column: span 2;
-		justify-self: center;
-		padding: 2.5rem;
-	  }
 }
 @media screen and (min-width: 768px) {
 	.bd-container {
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.card__container > :nth-child(10){
+		grid-area: 4 / 2 / 5 / 3;
 	}
 	.card {
 		padding: 0;
