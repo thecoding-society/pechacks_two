@@ -103,3 +103,17 @@ function updateLayout() {
 
   // Check on window resize
   window.addEventListener('resize', updateLayout);
+
+
+
+  function showEvents(day) {
+	// Hide all event cards
+	const allEvents = document.querySelectorAll('.days-event');
+	allEvents.forEach(event => event.classList.remove('show'));
+
+	// Show the selected day's events
+	const selectedDayEvents = document.querySelector(`.day-${day}-events`);
+	if (selectedDayEvents) {
+		selectedDayEvents.classList.add('show');
+	}
+}

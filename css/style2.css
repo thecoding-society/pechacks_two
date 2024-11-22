@@ -529,17 +529,18 @@ pre,
 /*--------------------------------------------------------------
 # Workshop
 --------------------------------------------------------------*/
-.days-buttons{
+.days-buttons {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 30px 0px;
+	margin: 30px 0;
 }
-.days-buttons button{
-	font-family: 'Teko' , sans-serif;
+
+.days-buttons button {
+	font-family: 'Teko', sans-serif;
 	font-size: 30px;
 	font-weight: bolder;
-	margin: 10px 10px;
+	margin: 10px;
 	width: 140px;
 	padding: 10px;
 	border-radius: 20px;
@@ -549,9 +550,60 @@ pre,
 	color: white;
 	cursor: pointer;
 }
-.days-des .days-event{
+
+.days-des .days-event {
+	color: white;
+	display: none; /* Hide all events by default */
+}
+
+.event-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.event-card {
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(8px);
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 	color: white;
 }
+
+.event-card h3 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.event-card p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+/* Show event cards for a specific day */
+.day-1-events,
+.day-2-events,
+.day-3-events,
+.day-4-events,
+.day-5-events,
+.day-6-events,
+.day-7-events {
+	display: none;
+}
+
+/* Specific day visibility when clicked */
+.day-1-events.show,
+.day-2-events.show,
+.day-3-events.show,
+.day-4-events.show,
+.day-5-events.show,
+.day-6-events.show,
+.day-7-events.show {
+	display: block;
+}
+
 
 /*--------------------------------------------------------------
 # Our Team
