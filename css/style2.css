@@ -552,11 +552,14 @@ pre,
 }
 
 .days-des .days-event {
-	color: white;
-	visibility: hidden; /* Hide events by default */
-	opacity: 0;
-	transform: translateY(10px);
-	transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease;
+    display: flex;               /* Use flexbox to display events horizontally */
+    flex-wrap: wrap;             /* Allow wrapping of items if the container is too small */
+    justify-content: space-around; /* Distribute space between items */
+    color: white;
+    visibility: hidden;          /* Hide events by default */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease;
 }
 
 .event-card {
@@ -577,7 +580,19 @@ pre,
 	font-size: 16px;
 	line-height: 1.5;
 }
-
+.day-1-events,
+.day-2-events,
+.day-3-events,
+.day-4-events,
+.day-5-events,
+.day-6-events,
+.day-7-events {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;  /* Hide all events by default */
+}
 /* Show event cards for a specific day */
 .day-1-events.show,
 .day-2-events.show,
@@ -586,9 +601,10 @@ pre,
 .day-5-events.show,
 .day-6-events.show,
 .day-7-events.show {
-	visibility: visible;
-	opacity: 1;
-	transform: translateY(0);
+  display: block; /* Show only the selected day's events */
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 .ag-format-container {
 	width: 1142px;
@@ -607,12 +623,11 @@ pre,
 	padding: 50px 0;
   }
   .ag-courses_item {
-	-ms-flex-preferred-size: calc(33.33333% - 30px);
-	flex-basis: calc(33.33333% - 30px);
-	margin: 0 15px 30px;
-	overflow: hidden;
-	border-radius: 28px;
-  }
+    flex: 1 1 calc(33.33333% - 30px); /* Each item takes up 1/3rd of the row space */
+    margin: 0 15px 30px;
+    overflow: hidden;
+    border-radius: 28px;
+}
   .ag-courses-item_link {
 	display: block;
 	height: 200px;
