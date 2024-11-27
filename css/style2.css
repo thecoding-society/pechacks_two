@@ -1328,6 +1328,11 @@ div .contact_name .name {
 		justify-content: center;
 		margin: 0 auto;
 	}
+	.card__glass:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+		padding: 2rem 2.8rem !important;
+    }
 }
 @media screen and (max-width: 1150px) {
 	.card__container {
