@@ -509,6 +509,7 @@ pre,
 	margin-top: 25px;
 	padding: 0 3rem;
 	column-gap: 25px;
+	border-radius: 15px;
 }
 .third-row .card__glass{
 	width: 275px;
