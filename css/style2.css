@@ -419,7 +419,7 @@ pre,
 # Judges & Speakers
 --------------------------------------------------------------*/
 .bd-container {
-	max-width: 1250px;
+	max-width: 968px;
 	padding: 0 3rem;
 	font-family: "Teko", sans-serif !important;
 }
@@ -496,9 +496,6 @@ pre,
 .card__link:nth-child(3) {
 	transition: .7s;
 }
-.margin{
-	margin-bottom: 30px !important;
-}
 .card__glass:hover .card__link {
 	transform: translateX(-1.5rem);
 }
@@ -509,10 +506,25 @@ pre,
 	margin-top: 25px;
 	padding: 0 3rem;
 	column-gap: 25px;
-	border-radius: 15px;
 }
 .third-row .card__glass{
 	width: 275px;
+}
+.card__circle {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	background: linear-gradient(130deg, rgba(77, 73, 191, .8), rgba(255, 255, 255, .2));
+	border-radius: 50%;
+}
+.card__circle1 {
+	top: 20%;
+	left: -20%;
+}
+.card__circle2 {
+	bottom: -5%;
+	right: -25%;
+	background: linear-gradient(130deg, rgba(5, 219, 242, .8), rgba(255, 255, 255, .2));
 }
 /*--------------------------------------------------------------
 # Workshop
@@ -1532,36 +1544,40 @@ div .contact_name .name {
 /*--------------------------------------------------------------
 # Judges & Speakers
 --------------------------------------------------------------*/
+@media (max-width: 768px) and (min-width: 568px) {
+	.card__container {
+		grid-template-columns: repeat(2, 1fr);
+		margin-top: 90px;
+	}
+}
 @media screen and (min-width: 768px) {
+	.bd-container {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.card__container > :nth-child(10){
+		grid-area: 4 / 2 / 5 / 3;
+	}
 	.card {
 		padding: 0;
 	}
 	.card__container {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		align-content: center;
-		justify-content: center;
-		margin: 0 auto;
+		margin-top: 50px;
 	}
-	.card__glass:last-child {
-        grid-column: 1 / -1;
-        justify-self: center;
-		padding: 2rem 2.8rem !important;
-    }
-}
-@media screen and (max-width: 1150px) {
-	.card__container {
-		grid-template-columns: repeat(3, 1fr) !important;
+	.card__circle1 {
+		left: 5%;
+		top: 12%;
 	}
-}
-@media (max-width: 768px) and (min-width: 568px) {
-	.card__container {
-		grid-template-columns: repeat(2, 1fr) !important;
-		margin-top: 90px;
+	.card__circle2 {
+		right: 8%;
+		bottom: 15%;
 	}
 }
 @media(max-width: 568px){
-	.card__container {
-		grid-template-columns: repeat(1, 1fr) !important;
+	.card__container{
+		margin-top: 80px;
 	}
 	.third-row , .third-row .card__glass{
 		width: 100%;
@@ -1573,9 +1589,10 @@ div .contact_name .name {
 }
 @media(max-width: 400px){
 	.card__profession{
-		font-size: .8rem !important;
+		font-size: .8rem;
 	}
 }
+
 /*--------------------------------------------------------------
 # Our Team
 --------------------------------------------------------------*/
@@ -1863,12 +1880,6 @@ div .contact_name .name {
 	.price-box {
 	  grid-template-columns: repeat(2, 328px);
 	}
-  }
-  @media (max-width: 1120px) and (min-width: 576px){
-	.card__article:last-child {
-        grid-column: 1 / -1;
-        justify-self: center;
-    }
   }
   
   @media screen and (min-width: 1120px) {
