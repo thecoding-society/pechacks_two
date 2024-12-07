@@ -680,7 +680,7 @@ pre,
 	-o-transition: color .5s ease;
 	transition: color .5s ease
   }
-  .ag-courses-item_bg {
+  .ag-courses-item_bg, .day_2 , .day_3, .day_4 , .day_5, .day_6 {
 	height: 200px;
 	width: 250px;
 	background-color: #f9b234;
@@ -692,6 +692,21 @@ pre,
 	-webkit-transition: all .5s ease;
 	-o-transition: all .5s ease;
 	transition: all .5s ease;
+  }
+  .day_2{
+	background-color: #3ecd5e;
+  }
+  .day_3{
+	background-color: #e44002;
+  }
+  .day_4{
+	background-color: #952aff;
+  }
+  .day_5{
+	background-color: #cd3e94;
+  }
+  .day_6{
+	background-color: #4c49ea;
   }
   .des_con{
 	margin: 15px 0px 8px 0px !important;
@@ -705,21 +720,6 @@ pre,
   }
   .ag-courses-item_date-box i{
 	margin: 0px 5px;
-  }
-  .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-	background-color: #3ecd5e;
-  }
-  .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-	background-color: #e44002;
-  }
-  .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
-	background-color: #952aff;
-  }
-  .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
-	background-color: #cd3e94;
-  }
-  .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-	background-color: #4c49ea;
   }
 /*--------------------------------------------------------------
 # Our Team
