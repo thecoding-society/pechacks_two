@@ -123,3 +123,10 @@ function showEvents(day) {
 document.addEventListener("DOMContentLoaded", () => {
     showEvents(1); // Show Day-1 events when the page loads
 });
+
+function redirectToUrl(element) {
+    const url = element.getAttribute('data-url');
+    if (url) {
+      window.open(url, '_blank'); // Opens in a new tab
+    }
+  }
