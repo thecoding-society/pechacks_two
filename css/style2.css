@@ -299,19 +299,13 @@ pre,
 .first-title{
 	margin-top: 40px;
 }
-.bronze_sponsers {
+.bronze_sponsers{
 	display: grid;
-	grid-template-columns: repeat(4, 200px); /* Maintains 4-column layout */
+	grid-template-columns: repeat(4,200px);
 	column-gap: 20px;
 	row-gap: 20px;
-	justify-content: center; /* Centers the grid container as a whole */
-  }
-  
-  .bronze_sponsers .gold.com:last-child {
-	grid-column: 1 / -1; /* Makes the last item span all columns */
-	justify-self: center; /* Centers the item horizontally within the row */
-  }
-  
+	justify-content: center;
+}
 
 .carousel-images-container {
     width: 100%;
@@ -666,18 +660,13 @@ pre,
 	position: relative;
   }
   .ag-courses-item_title p{
-	font-size: 1.5rem !important;
-	letter-spacing: 1.5;
+	font-size: 1.3rem !important;
   }
   .ag-courses-item_date-box {
 	font-size: 18px;
 	color: #FFF;
 	z-index: 2;
 	position: relative;
-  }
-<<<<<<< HEAD
-  .flexo{
-	display: flex;
   }
   .ag-courses-item_date {
 =======
@@ -691,48 +680,8 @@ pre,
   }
 <<<<<<< HEAD
   .ag-courses-item_bg {
-	height: 230px;
-	width: 230px;
-=======
-  .ag-courses-item_date_2 {
-	font-weight: bold;
-	color: #3ecd5e;
-	-webkit-transition: color .5s ease;
-	-o-transition: color .5s ease;
-	transition: color .5s ease
-  }
-  .ag-courses-item_date_3 {
-	font-weight: bold;
-	color: #e44002;
-	-webkit-transition: color .5s ease;
-	-o-transition: color .5s ease;
-	transition: color .5s ease
-  }
-  .ag-courses-item_date_4 {
-	font-weight: bold;
-	color: #952aff;
-	-webkit-transition: color .5s ease;
-	-o-transition: color .5s ease;
-	transition: color .5s ease
-  }
-  .ag-courses-item_date_5 {
-	font-weight: bold;
-	color: #cd3e94;
-	-webkit-transition: color .5s ease;
-	-o-transition: color .5s ease;
-	transition: color .5s ease
-  }
-  .ag-courses-item_date_6 {
-	font-weight: bold;
-	color: #4c49ea;
-	-webkit-transition: color .5s ease;
-	-o-transition: color .5s ease;
-	transition: color .5s ease
-  }
-  .ag-courses-item_bg_1 {
 	height: 128px;
 	width: 128px;
->>>>>>> origin/bronze
 	background-color: #f9b234;
 	z-index: 1;
 	position: absolute;
@@ -1515,7 +1464,7 @@ div .contact_name .name {
 		width: 35vw;
 	}
 	.gold a {
-		width: auto;
+		width: 35vw;
 	}
 	.cara a{
 		width: 24vw;
@@ -1565,7 +1514,7 @@ div .contact_name .name {
 @media (max-width: 425px) {
 	.gold {
 		flex-direction: column;
-		row-gap: 10px;
+		row-gap: 20px;
 	}
 	.gold img {
 		width: 35vw !important;
@@ -1574,7 +1523,7 @@ div .contact_name .name {
 		width: auto;
 	}
 	.bronze_sponsers{
-		column-gap: 2px;
+		column-gap: 10px;
 	}
 	.cara a{
 		width: 33vw !important;
