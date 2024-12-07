@@ -675,20 +675,130 @@ pre,
 	z-index: 2;
 	position: relative;
   }
+<<<<<<< HEAD
   .flexo{
 	display: flex;
   }
   .ag-courses-item_date {
+=======
+  .ag-courses-item_date_1 {
+>>>>>>> origin/bronze
 	font-weight: bold;
 	color: #f9b234;
 	-webkit-transition: color .5s ease;
 	-o-transition: color .5s ease;
 	transition: color .5s ease
   }
+<<<<<<< HEAD
   .ag-courses-item_bg {
 	height: 230px;
 	width: 230px;
+=======
+  .ag-courses-item_date_2 {
+	font-weight: bold;
+	color: #3ecd5e;
+	-webkit-transition: color .5s ease;
+	-o-transition: color .5s ease;
+	transition: color .5s ease
+  }
+  .ag-courses-item_date_3 {
+	font-weight: bold;
+	color: #e44002;
+	-webkit-transition: color .5s ease;
+	-o-transition: color .5s ease;
+	transition: color .5s ease
+  }
+  .ag-courses-item_date_4 {
+	font-weight: bold;
+	color: #952aff;
+	-webkit-transition: color .5s ease;
+	-o-transition: color .5s ease;
+	transition: color .5s ease
+  }
+  .ag-courses-item_date_5 {
+	font-weight: bold;
+	color: #cd3e94;
+	-webkit-transition: color .5s ease;
+	-o-transition: color .5s ease;
+	transition: color .5s ease
+  }
+  .ag-courses-item_date_6 {
+	font-weight: bold;
+	color: #4c49ea;
+	-webkit-transition: color .5s ease;
+	-o-transition: color .5s ease;
+	transition: color .5s ease
+  }
+  .ag-courses-item_bg_1 {
+	height: 128px;
+	width: 128px;
+>>>>>>> origin/bronze
 	background-color: #f9b234;
+	z-index: 1;
+	position: absolute;
+	top: -75px;
+	right: -75px;
+	border-radius: 50%;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+  }
+  .ag-courses-item_bg_2 {
+	height: 128px;
+	width: 128px;
+	background-color: #3ecd5e;
+	z-index: 1;
+	position: absolute;
+	top: -75px;
+	right: -75px;
+	border-radius: 50%;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+  }
+  .ag-courses-item_bg_3 {
+	height: 128px;
+	width: 128px;
+	background-color: #e44002;
+	z-index: 1;
+	position: absolute;
+	top: -75px;
+	right: -75px;
+	border-radius: 50%;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+  }
+  .ag-courses-item_bg_4 {
+	height: 128px;
+	width: 128px;
+	background-color: #952aff;
+	z-index: 1;
+	position: absolute;
+	top: -75px;
+	right: -75px;
+	border-radius: 50%;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+  }
+  .ag-courses-item_bg_5 {
+	height: 128px;
+	width: 128px;
+	background-color: #cd3e94;
+	z-index: 1;
+	position: absolute;
+	top: -75px;
+	right: -75px;
+	border-radius: 50%;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+  }
+  .ag-courses-item_bg_6 {
+	height: 128px;
+	width: 128px;
+	background-color: #4c49ea;
 	z-index: 1;
 	position: absolute;
 	top: -75px;
