@@ -1567,6 +1567,11 @@ div .contact_name .name {
 		grid-template-columns: repeat(2, 1fr);
 		margin-top: 90px;
 	}
+
+	.card__container .card__glass:last-child {
+		grid-column: 1 / -1;
+		justify-self: center;
+	}
 }
 @media screen and (min-width: 768px) {
 	.bd-container {
