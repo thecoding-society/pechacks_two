@@ -90,43 +90,43 @@ document.addEventListener("DOMContentLoaded", function () {
 // Event-directors
 
 function updateLayout() {
-    const element = document.querySelector('.event-directors');
-    if (window.innerWidth < 768) {
-      element.classList.remove('layout'); // Remove the layout class below 630px
-    } else {
-      element.classList.add('layout'); // Add it back above 630px
-    }
-  }
+	const element = document.querySelector('.event-directors');
+	if (window.innerWidth < 768) {
+		element.classList.remove('layout'); // Remove the layout class below 630px
+	} else {
+		element.classList.add('layout'); // Add it back above 630px
+	}
+}
 
-  // Check on load
-  updateLayout();
+// Check on load
+updateLayout();
 
-  // Check on window resize
-  window.addEventListener('resize', updateLayout);
+// Check on window resize
+window.addEventListener('resize', updateLayout);
 
 
 
 // Function to show events for a specific day
 function showEvents(day) {
-    // Hide all event cards by removing the 'show' class
-    const allEvents = document.querySelectorAll('.days-event');
-    allEvents.forEach(event => event.classList.remove('show'));
+	// Hide all event cards by removing the 'show' class
+	const allEvents = document.querySelectorAll('.days-event');
+	allEvents.forEach(event => event.classList.remove('show'));
 
-    // Show the selected day's events by adding the 'show' class
-    const selectedDayEvents = document.querySelector(`.day-${day}-events`);
-    if (selectedDayEvents) {
-        selectedDayEvents.classList.add('show');
-    }
+	// Show the selected day's events by adding the 'show' class
+	const selectedDayEvents = document.querySelector(`.day-${day}-events`);
+	if (selectedDayEvents) {
+		selectedDayEvents.classList.add('show');
+	}
 }
 
 // Ensure Day-1 events are shown by default on page load
 document.addEventListener("DOMContentLoaded", () => {
-    showEvents(1); // Show Day-1 events when the page loads
+	showEvents(1); // Show Day-1 events when the page loads
 });
 
 function redirectToUrl(element) {
-    const url = element.getAttribute('data-url');
-    if (url) {
-      window.open(url, '_blank'); // Opens in a new tab
-    }
-  }
+	const url = element.getAttribute('data-url');
+	if (url) {
+		window.open(url, '_blank'); // Opens in a new tab
+	}
+}

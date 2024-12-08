@@ -2,36 +2,42 @@
 # Footer
 --------------------------------------------------------------*/
 .custom-footer {
-	
+
 	background-color: #222;
 	color: #fff;
 	padding: 40px 0;
 	font-family: Arial, sans-serif;
 	letter-spacing: 0.07rem;
 }
+
 .custom-container {
 	width: 90%;
 	margin: 0 auto;
 	max-width: 1200px;
 }
+
 .custom-row {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
 }
+
 .custom-col {
 	flex: 1;
 	min-width: 200px;
 }
+
 .custom-footer-logo {
 	font-size: 50px;
 	font-weight: bold;
 	margin-bottom: 15px;
 }
+
 .custom-footer-text {
 	font-size: 26px;
 	letter-spacing: 0.04rem;
 }
+
 .custom-social-links {
 	list-style: none;
 	padding: 0;
@@ -39,88 +45,103 @@
 	gap: 15px;
 
 }
+
 .custom-social-links li a {
 	color: #fff;
 	font-size: 18px;
 }
-.bx-chevron-right{
+
+.bx-chevron-right {
 	color: #cc1616;
 }
+
 .custom-footer-heading {
 
 	font-size: 24px;
 	font-weight: bold;
 	margin-bottom: 10px;
 }
+
 .custom-footer-address,
 .custom-footer-links {
 	margin-bottom: 15px;
 	font-size: 20px;
 }
 
-.custom-footer-para{
+.custom-footer-para {
 	font-size: 14px;
 }
+
 .custom-footer-links {
 	list-style: none;
 	padding: 0;
 }
+
 .custom-footer-links li {
 	margin-bottom: 10px;
 }
+
 .custom-footer-links li a {
 	color: #fff;
 	text-decoration: none;
 }
+
 .custom-footer-links li a:hover {
 	text-decoration: underline;
 }
+
 /*--------------------------------------------------------------
 # Twinkle Stars as Background
 --------------------------------------------------------------*/
 .twinkle_back {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
 }
+
 .background-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 0;
-    pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+	pointer-events: none;
 }
+
 .stars {
-    background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 0;
+	background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
 }
+
 .twinkling {
-    width: 10000px;
-    height: 100%;
-    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-    background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    animation: move-background 70s linear infinite;
+	width: 10000px;
+	height: 100%;
+	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+	background-size: 1000px 1000px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	animation: move-background 70s linear infinite;
 }
+
 @keyframes move-background {
-    from {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to {
-        -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+
+	to {
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
 }
+
 /*--------------------------------------------------------------
 # Our Patrons
 --------------------------------------------------------------*/
@@ -129,11 +150,13 @@
 		font-size: 12vw;
 	}
 }
+
 @media(max-width: 768px) {
 	.p-res {
 		font-size: 10vw;
 	}
 }
+
 @media(max-width: 1200px) {
 	.con {
 		gap: 150px;
@@ -143,6 +166,7 @@
 		width: 430px;
 	}
 }
+
 @media(max-width: 992px) {
 	.con {
 		gap: 70px;
@@ -152,14 +176,17 @@
 		width: 370px;
 	}
 }
+
 @media(max-width: 768px) {
 	.con {
 		flex-direction: column;
 	}
+
 	.con img {
 		width: 400px;
 	}
 }
+
 /*--------------------------------------------------------------
 # RESPONSIVE STYLES FOR STYLE 3
 --------------------------------------------------------------*/

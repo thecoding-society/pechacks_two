@@ -1,27 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const primaryCarousel = document.querySelector('.primary-carousel');
-    const secondaryCarousel = document.querySelector('.secondary-carousel');
+	const primaryCarousel = document.querySelector('.primary-carousel');
+	const secondaryCarousel = document.querySelector('.secondary-carousel');
 
-    // Duplicate content for seamless looping
-    primaryCarousel.innerHTML += primaryCarousel.innerHTML;
-    secondaryCarousel.innerHTML += secondaryCarousel.innerHTML;
+	// Duplicate content for seamless looping
+	primaryCarousel.innerHTML += primaryCarousel.innerHTML;
+	secondaryCarousel.innerHTML += secondaryCarousel.innerHTML;
 
-    // Function to pause and resume animations on hover
-    function pauseAnimations() {
-        primaryCarousel.style.animationPlayState = 'paused';
-        secondaryCarousel.style.animationPlayState = 'paused';
-    }
+	// Function to pause and resume animations on hover
+	function pauseAnimations() {
+		primaryCarousel.style.animationPlayState = 'paused';
+		secondaryCarousel.style.animationPlayState = 'paused';
+	}
 
-    function resumeAnimations() {
-        primaryCarousel.style.animationPlayState = 'running';
-        secondaryCarousel.style.animationPlayState = 'running';
-    }
+	function resumeAnimations() {
+		primaryCarousel.style.animationPlayState = 'running';
+		secondaryCarousel.style.animationPlayState = 'running';
+	}
 
-    // Add hover event listeners
-    primaryCarousel.addEventListener('mouseover', pauseAnimations);
-    secondaryCarousel.addEventListener('mouseover', pauseAnimations);
-    primaryCarousel.addEventListener('mouseleave', resumeAnimations);
-    secondaryCarousel.addEventListener('mouseleave', resumeAnimations);
+	// Add hover event listeners
+	primaryCarousel.addEventListener('mouseover', pauseAnimations);
+	secondaryCarousel.addEventListener('mouseover', pauseAnimations);
+	primaryCarousel.addEventListener('mouseleave', resumeAnimations);
+	secondaryCarousel.addEventListener('mouseleave', resumeAnimations);
 });
 
 
