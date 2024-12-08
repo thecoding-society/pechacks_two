@@ -306,7 +306,10 @@ pre,
 	row-gap: 20px;
 	justify-content: center;
 }
-
+.bronze_sponsers .gold:last-child {
+    grid-column: 1 / -1; /* Makes the last item span all columns */
+    justify-self: center; /* Centers the last item horizontally */
+}
 .carousel-images-container {
     width: 100%;
     max-width: 1000px;
@@ -419,7 +422,7 @@ pre,
 # Judges & Speakers
 --------------------------------------------------------------*/
 .bd-container {
-	max-width: 968px;
+	max-width: 1350px;
 	padding: 0 3rem;
 	font-family: "Teko", sans-serif !important;
 }
@@ -662,7 +665,7 @@ pre,
   }
   .ag-courses-item_date {
 	font-weight: bold;
-	color: #f9b234;
+	color: plum;
 	-webkit-transition: color .5s ease;
 	-o-transition: color .5s ease;
 	transition: color .5s ease
@@ -1498,7 +1501,7 @@ div .contact_name .name {
 @media (max-width: 900px) {
 	.ag-courses-item_link{
 		width: 750px;
-		height: 245px;
+		height: 250px;
 	}
 }
 @media (max-width: 768px) {
@@ -1587,10 +1590,11 @@ div .contact_name .name {
 		grid-template-columns: repeat(2, 1fr);
 		margin-top: 90px;
 	}
-
-	.card__container .card__glass:last-child {
-		grid-column: 1 / -1;
-		justify-self: center;
+}
+@media(max-width: 1200px) and (min-width: 768px){
+	.card__container {
+		grid-template-columns: repeat(3, 1fr) !important;
+		margin-top: 90px;
 	}
 }
 @media screen and (min-width: 768px) {
@@ -1602,7 +1606,7 @@ div .contact_name .name {
 		padding: 0;
 	}
 	.card__container {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		align-content: center;
 		margin-top: 50px;
 	}
