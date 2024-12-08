@@ -626,6 +626,7 @@ pre,
 	flex-wrap: wrap;
 	width: 100%;
 	padding: 50px 0;
+	margin-right: 10px;
   }
   .ag-courses_item {
 	width: 1150px;
@@ -635,6 +636,7 @@ pre,
 }
   .ag-courses-item_link {
 	display: block;
+	margin: 0 auto;
 	height: 230px;
 	padding: 30px 20px;
 	background-color: #121212;
@@ -1528,6 +1530,15 @@ div .contact_name .name {
 	.bronze,
 	.com a {
 		width: 12vw;
+	}
+}
+/*--------------------------------------------------------------
+# Workshop
+--------------------------------------------------------------*/
+@media (max-width: 1150px) {
+	.ag-courses-item_link{
+		width: 900px;
+		border-radius: 25px;
 	}
 }
 /*--------------------------------------------------------------
