@@ -530,7 +530,7 @@ pre,
 # Workshop
 --------------------------------------------------------------*/
 .days-des{
-	height: 300px;
+	height: 275px;
 }
 .days-buttons {
 	display: flex;
@@ -606,37 +606,22 @@ pre,
 .day-5-events.show,
 .day-6-events.show,
 .day-7-events.show {
-  display: block; /* Show only the selected day's events */
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
 }
 .ag-format-container {
 	width: 1142px;
-	margin: 0 auto;
   }
   .ag-courses_box {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
-	align-items: flex-start;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
 	width: 100%;
-	padding: 50px 0;
-	margin-right: 10px;
   }
   .ag-courses_item {
-	width: 1150px;
     overflow: hidden;
     border-radius: 28px;
-	margin: 0px 20px;
 }
   .ag-courses-item_link {
 	display: block;
-	margin: 0 auto;
 	height: 230px;
 	padding: 30px 20px;
 	background-color: #121212;
@@ -1254,42 +1239,6 @@ div .contact_name .name {
 	}
 }
 /*--------------------------------------------------------------
-# Workshops
---------------------------------------------------------------*/
-@media only screen and (max-width: 979px) {
-	.ag-courses_item {
-	  -ms-flex-preferred-size: calc(50% - 30px);
-	  flex-basis: calc(50% - 30px);
-	}
-	.ag-courses-item_title {
-	  font-size: 24px;
-	}
-  }
-  @media only screen and (max-width: 767px) {
-	.ag-format-container {
-	  width: 96%;
-	}
-  }
-  @media only screen and (max-width: 639px) {
-	.ag-courses_item {
-	  -ms-flex-preferred-size: 100%;
-	  flex-basis: 100%;
-	}
-	.ag-courses-item_title {
-	  min-height: 72px;
-	  line-height: 1;
-  
-	  font-size: 24px;
-	}
-	.ag-courses-item_link {
-	  padding: 22px 40px;
-	}
-	.ag-courses-item_date-box {
-	  font-size: 16px;
-	}
-  }
-
-/*--------------------------------------------------------------
 # Prices
 --------------------------------------------------------------*/
 @media (max-width: 1024px) {
@@ -1540,6 +1489,66 @@ div .contact_name .name {
 		width: 900px;
 		border-radius: 25px;
 	}
+	.ag-courses_item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media (max-width: 900px) {
+	.ag-courses-item_link{
+		width: 750px;
+		height: 245px;
+	}
+}
+@media (max-width: 768px) {
+	.ag-courses-item_link{
+		width: 520px;
+		height: 305px;
+	}
+	.days-des{
+		height: 300px !important;
+	}
+}
+@media (max-width: 530px) {
+	.ag-courses-item_link{
+		width: 400px;
+		height: 300px;
+	}
+	.ag-courses-item_title{
+		font-size: 21px;
+	}
+}
+@media (max-width: 425px) {
+	.ag-courses-item_link{
+		width: 290px;
+		height: 270px;
+	}
+	.ag-courses-item_title{
+		font-size: 18px;
+	}
+	.ag-courses-item_title p{
+		font-size: 1rem !important;
+	}
+	.ag-courses-item_date span{
+		font-size: 15px;
+	}
+	.bx{
+		font-size: 15px !important;
+	}
+	.days-buttons {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-rows: auto;
+		grid-auto-columns: auto;
+	}
+	.days-buttons button{
+		font-size: 16px !important;
+		justify-self: center;
+	}
+	.new{
+		font-size: .8rem !important;
+	}
 }
 /*--------------------------------------------------------------
 # Partner With us
@@ -1588,9 +1597,6 @@ div .contact_name .name {
 	.bd-container {
 		margin-left: auto;
 		margin-right: auto;
-	}
-	.card__container > :nth-child(10){
-		grid-area: 4 / 2 / 5 / 3;
 	}
 	.card {
 		padding: 0;
