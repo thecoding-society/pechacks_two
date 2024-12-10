@@ -367,11 +367,10 @@ pre,
 	justify-content: center;
 }
 
-.bronze_sponsers .gold:last-child {
-	grid-column: 1 / -1;
-	/* Makes the last item span all columns */
-	justify-self: center;
-	/* Centers the last item horizontally */
+.bronze_sponsers > :nth-last-child(2),
+.bronze_sponsers > :last-child {
+  grid-column: span 2;
+  justify-self: center;
 }
 
 .carousel-images-container {
