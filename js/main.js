@@ -130,3 +130,13 @@ function redirectToUrl(element) {
 		window.open(url, '_blank'); // Opens in a new tab
 	}
 }
+
+document.querySelectorAll('.link-button').forEach(button => {
+	button.addEventListener('click', function () {
+	  const url = this.getAttribute('data-url');
+	  if (url) {
+		window.open(url, '_blank'); // Opens in a new tab
+	  }
+	});
+  });
+  
