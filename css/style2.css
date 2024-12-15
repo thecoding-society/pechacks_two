@@ -1074,6 +1074,7 @@ a {
 .card__article {
 	--hue-1: 210;
 	--hue-2: 238;
+	height: 400px;
 	position: relative;
 	justify-items: center;
 	color: var(--white-color);
@@ -1100,8 +1101,8 @@ a {
 }
 
 .card__shape-3 {
-	width: 180px;
-	height: 180px;
+	width: auto;
+	height: 100;
 	background: linear-gradient(140deg, hsl(var(--hue-1), 85%, 60%) 3%, hsl(var(--hue-2), 85%, 60%) 100%);
 	border-radius: 1rem;
 	display: flex;
@@ -1112,7 +1113,7 @@ a {
 }
 
 .card__shape-3 img {
-	width: 250px;
+	width: 220px;
 	height: 100%;
 	object-fit: cover;
 	border-radius: 1rem;
@@ -1127,7 +1128,7 @@ a {
 }
 
 .card__title {
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	margin-bottom: 0.5rem;
 	font-weight: 600;
 	color: #fff;
@@ -1135,6 +1136,7 @@ a {
 
 .card__description {
 	margin-bottom: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .card__button {
@@ -1154,6 +1156,32 @@ a {
 	--hue-1: 180;
 	--hue-2: 50;
 }
+
+.card__cyan {
+	--hue-1: 190;
+	--hue-2: 210;
+}
+
+.card__yellow {
+	--hue-1: 50;
+	--hue-2: 60;
+}
+
+.card__purple {
+	--hue-1: 270;
+	--hue-2: 290;
+}
+
+.card__red {
+	--hue-1: 0;
+	--hue-2: 20;
+}
+
+.card__pink {
+	--hue-1: 330;
+	--hue-2: 350;
+}
+
 
 .card__scale-1 {
 	width: 148px;
@@ -2335,10 +2363,22 @@ div .contact_name .name {
 	}
 }
 
-@media screen and (min-width: 1120px) {
+@media (max-width: 1320px) and (min-width: 768px){
+	.price-box {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.card__article{
+		width: 300px;
+	}
+}
+
+@media screen and (min-width: 1320px) {
 
 	.price-box {
-		grid-template-columns: repeat(3, 345px);
+		grid-template-columns: repeat(4, 305px);
 	}
 
 	.card__article {
