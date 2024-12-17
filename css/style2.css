@@ -371,6 +371,24 @@ pre,
 	justify-content: center;
 }
 
+.bronze_sponsers > .gold:nth-last-child(-n+3) {
+	grid-column: span 1; 
+  }
+  
+  /* Proper centering for the last row */
+  .bronze_sponsers > .gold:nth-last-child(3):nth-child(odd) {
+	grid-column: 2 / span 1; 
+  }
+  
+  .bronze_sponsers > .gold:nth-last-child(2):nth-child(odd) {
+	grid-column: 3 / span 1; 
+  }
+  
+  .bronze_sponsers > .gold:nth-last-child(1) {
+	grid-column: 2 / span 2; 
+  }
+  
+
 .carousel-images-container {
 	width: 100%;
 	max-width: 1000px;
