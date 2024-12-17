@@ -1624,6 +1624,10 @@ div .contact_name .name {
 	.title_spon{
 		width: 35vw !important;
 	}
+
+	.bronze_sponsers > .gold:nth-last-child(1) {
+		grid-column: 2;
+	  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1679,6 +1683,13 @@ div .contact_name .name {
 	.bronze_sponsers .com {
 		margin-bottom: 0px;
 	}
+
+	.bronze_sponsers > .gold:nth-child(18) {
+		grid-area: 9 / 1 / 10 / 2 ;
+	}
+	.bronze_sponsers > .gold:nth-last-child(1) {
+		grid-column: 1 / span 2;
+	  }
 }
 
 @media(min-width: 600px) and (max-width: 768px) {
