@@ -256,3 +256,29 @@ updateTimelineAOS();
 
 // Update AOS on window resize
 window.addEventListener("resize", updateTimelineAOS);
+
+// Harrish Move
+const flexContainer = document.querySelector('.event-directors.layout');
+const gridContainer = document.querySelector('.grid');
+
+// Select the last card (Harrish)
+const lastCard = flexContainer.querySelector('.card:last-child');
+
+// Function to move the last card based on screen size
+function moveCard() {
+  if (window.innerWidth < 768) {
+    // If screen size is less than 768px, move to grid container as the first element
+    if (lastCard && gridContainer.contains(lastCard) === false) {
+      gridContainer.prepend(lastCard);
+    }
+  } else {
+    // If screen size is 768px or larger, move back to flex container
+    if (lastCard && flexContainer.contains(lastCard) === false) {
+      flexContainer.appendChild(lastCard);
+    }
+  }
+}
+
+// Run on page load and resize
+window.addEventListener('resize', moveCard);
+document.addEventListener('DOMContentLoaded', moveCard);

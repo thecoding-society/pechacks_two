@@ -891,7 +891,7 @@ pre,
 
 .grid {
 	display: grid;
-	grid-template-columns: auto auto auto auto auto auto;
+	grid-template-columns: auto auto auto auto auto ;
 	justify-content: center;
 	align-items: center;
 }
@@ -900,6 +900,7 @@ pre,
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .layout .card .content,
@@ -2315,7 +2316,12 @@ div .contact_name .name {
 		margin-top: 15px;
 	}
 }
-
+@media (min-width:768px) {
+	.grid > :last-child{
+		grid-column: 3;
+    	justify-self: center; 
+	}
+}
 /*--------------------------------------------------------------
 # Track Prices
 --------------------------------------------------------------*/
