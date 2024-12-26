@@ -536,11 +536,6 @@ pre,
 	gap: 1.5rem;
 }
 
-.card__container > :nth-last-child(-n+1) {
-	grid-column: span 4; /* Span all columns to center elements in the last row */
-	justify-self: center; /* Centers the content of each element */
-  }
-
 .card__glass {
 	position: relative;
 	overflow: hidden;
@@ -2384,7 +2379,7 @@ div .contact_name .name {
 @media screen and (min-width: 1320px) {
 
 	.price-box {
-		grid-template-columns: repeat(3, 305px);
+		grid-template-columns: repeat(4, 305px);
 	}
 
 	.card__article {
