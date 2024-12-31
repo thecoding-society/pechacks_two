@@ -195,6 +195,18 @@ pre,
 	animation: lightPinkGlow 2s infinite ease-in-out;
 }
 
+.win_button{
+	font-family: 'Teko' , sans-serif;
+	padding: 10px;
+	background-color: transparent;
+	border-radius: 25px;
+	color: white;
+	border-color: white;
+	width: 150px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
 @keyframes goldGlow {
 
 	0%,
@@ -1487,7 +1499,7 @@ div .contact_name .name {
 }
 
 /*--------------------------------------------------------------
-# Prices
+# Prizes
 --------------------------------------------------------------*/
 @media (max-width: 1024px) {
 	.award-box {
@@ -1513,6 +1525,14 @@ div .contact_name .name {
 	}
 }
 
+@media (max-width: 550px){
+	.win_button{
+		padding: 5px;
+		width: 85px;
+	}
+}
+
+
 @media (max-width: 480px) {
 	.award-box {
 		max-width: 120px;
@@ -1528,6 +1548,9 @@ div .contact_name .name {
 
 	.timeline-content h3 {
 		font-size: .8em !important;
+	}
+	.win_button{
+		font-size: 12px !important;
 	}
 }
 
@@ -1943,6 +1966,15 @@ div .contact_name .name {
 	.card__container {
 		grid-template-columns: repeat(3, 1fr) !important;
 		margin-top: 90px;
+	}
+}
+
+@media (min-width: 1200px){
+	.card__container > :nth-child(18) {
+		grid-area: 5 / -3 / 6 / -2;
+	}
+	.card__container > :nth-child(17) {
+		grid-area: 5 / -4 / 6 / -3;
 	}
 }
 
@@ -2378,7 +2410,7 @@ div .contact_name .name {
 @media screen and (min-width: 1320px) {
 
 	.price-box {
-		grid-template-columns: repeat(4, 305px);
+		grid-template-columns: repeat(3, 305px);
 	}
 
 	.card__article {

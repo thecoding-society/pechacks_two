@@ -320,11 +320,14 @@ header.scrolled {
 	margin: 0 auto;
 }
 
-.home_contents,
-.fans {
+.hero-buttons {
 	display: flex;
 	justify-content: space-between;
 	column-gap: 40px;
+}
+
+.date-con {
+	text-align: center;
 }
 
 .hero {
@@ -552,6 +555,20 @@ header.scrolled {
 	font-weight: 700;
 	color: #c7c7c7;
 	z-index: 100;
+}
+
+.back{
+	background-color: #aa1d39 !important;
+	color: white !important;
+	border: 1px solid black !important;
+}
+
+.okay:hover{
+	border-color: black !important;
+}
+
+.back:hover{
+	border-color: white !important;
 }
 
 #timer div {
@@ -1248,10 +1265,6 @@ Base
 	.custom {
 		margin-top: 20px;
 	}
-
-	.date-con {
-		text-align: center;
-	}
 }
 
 @media(max-width: 1000px) {
@@ -1281,12 +1294,6 @@ Base
 	.home_contents,
 	.fans {
 		column-gap: 100px;
-	}
-}
-
-@media (min-width: 992px) {
-	.hero .intro-excerpt {
-		max-width: 600px;
 	}
 }
 
