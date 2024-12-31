@@ -29,61 +29,61 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //   Timer
 
-function updateTimer() {
-	// Set the future date (change this to Dec 28 if needed)
-	future = Date.parse("Dec 28, 2024 8:00:00");
-	now = new Date();
-	diff = future - now;
+// function updateTimer() {
+// 	// Set the future date (change this to Dec 28 if needed)
+// 	future = Date.parse("Dec 28, 2024 8:00:00");
+// 	now = new Date();
+// 	diff = future - now;
 
-	// If the difference is negative, the event has passed
-	if (diff <= 0) {
-		document.getElementById("timer").innerHTML = "<div>Event has passed</div>";
-		return; // Stop further execution
-	}
+// 	// If the difference is negative, the event has passed
+// 	if (diff <= 0) {
+// 		document.getElementById("timer").innerHTML = "<div>Event has passed</div>";
+// 		return; // Stop further execution
+// 	}
 
-	days = Math.floor(diff / (1000 * 60 * 60 * 24));
-	hours = Math.floor(diff / (1000 * 60 * 60));
-	mins = Math.floor(diff / (1000 * 60));
-	secs = Math.floor(diff / 1000);
+// 	days = Math.floor(diff / (1000 * 60 * 60 * 24));
+// 	hours = Math.floor(diff / (1000 * 60 * 60));
+// 	mins = Math.floor(diff / (1000 * 60));
+// 	secs = Math.floor(diff / 1000);
 
-	d = days;
-	h = hours - days * 24;
-	m = mins - hours * 60;
-	s = secs - mins * 60;
+// 	d = days;
+// 	h = hours - days * 24;
+// 	m = mins - hours * 60;
+// 	s = secs - mins * 60;
 
-	document.getElementById("timer").innerHTML =
-		"<div>" +
-		d +
-		"<span> Days</span></div>" +
-		"<div>" +
-		h +
-		"<span> Hours</span></div>" +
-		"<div>" +
-		m +
-		"<span> Minutes</span></div>" +
-		"<div>" +
-		s +
-		"<span> Seconds</span></div>";
-}
+// 	document.getElementById("timer").innerHTML =
+// 		"<div>" +
+// 		d +
+// 		"<span> Days</span></div>" +
+// 		"<div>" +
+// 		h +
+// 		"<span> Hours</span></div>" +
+// 		"<div>" +
+// 		m +
+// 		"<span> Minutes</span></div>" +
+// 		"<div>" +
+// 		s +
+// 		"<span> Seconds</span></div>";
+// }
 
-setInterval(updateTimer, 1000);
+// setInterval(updateTimer, 1000);
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-	anchor.addEventListener("click", function (e) {
-		e.preventDefault();
+// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+// 	anchor.addEventListener("click", function (e) {
+// 		e.preventDefault();
 
-		const target = document.querySelector(this.getAttribute("href"));
-		const offset = 80; // Adjust this value based on your navbar's height
+// 		const target = document.querySelector(this.getAttribute("href"));
+// 		const offset = 80; // Adjust this value based on your navbar's height
 
-		const elementPosition = target.offsetTop;
-		const offsetPosition = elementPosition - offset;
+// 		const elementPosition = target.offsetTop;
+// 		const offsetPosition = elementPosition - offset;
 
-		window.scrollTo({
-			top: offsetPosition,
-			behavior: "smooth",
-		});
-	});
-});
+// 		window.scrollTo({
+// 			top: offsetPosition,
+// 			behavior: "smooth",
+// 		});
+// 	});
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
 	const sections = document.querySelectorAll("section[id]");
@@ -256,3 +256,24 @@ updateTimelineAOS();
 
 // Update AOS on window resize
 window.addEventListener("resize", updateTimelineAOS);
+
+// Winners Project Re-direction
+// Select all buttons with the class "win_button"
+const buttons = document.querySelectorAll(".win_button");
+
+// Add a click event listener to each button
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    // Get the URL from the data-url attribute
+    const url = button.getAttribute("data-url");
+    
+    // Open the URL in a new tab
+    if (url) {
+      window.open(url, "_blank");
+    } else {
+      console.error("No URL specified for this button!");
+    }
+  });
+});
+
+
